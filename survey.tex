@@ -1,0 +1,263 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{xcolor}
+
+\geometry{left=2.4cm,right=2.4cm,top=2.5cm,bottom=2.5cm}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  citecolor=blue!55!black,
+  urlcolor=blue!55!black
+}
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2em}
+
+\title{面向视频编辑器的导出前文件大小预估：综述与研究议程}
+\author{Video Export Size Estimation Project}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+视频编辑软件通常需要在真正导出之前向用户展示预计文件大小。然而在现代视频编码中，最终文件大小不仅由时长、分辨率和帧率决定，还受到内容复杂度、运动、噪声、时间线特效、编码器实现、码率控制模式、硬件编码器和封装开销等因素影响。现有产品中的即时估计往往基于目标码率公式，因此在恒定质量、可变码率或内容复杂度差异显著的场景下会产生数倍误差。本文综述导出前视频文件大小预估问题的工业现状、编码器内部码率控制机制、采样编码、内容复杂度分析、机器学习估计、per-title/per-shot 自适应编码以及相关开源工具，提出一个面向视频编辑器的研究议程：从即时粗估、后台探测编码、时间线感知建模、置信区间展示和目标大小约束五个层次构建可验证的预估系统。
+\end{abstract}
+
+\noindent\textbf{关键词：} 视频编码；文件大小预估；码率估计；视频编辑器；采样编码；码率控制；内容自适应编码
+
+\section{引言}
+
+在 Premiere Pro、Media Encoder、剪映、爱剪辑、DaVinci Resolve、HandBrake 等视频导出工作流中，用户往往希望在点击导出之前知道输出文件大约会占用多少空间。这一需求看似简单：如果导出时长为 $T$，目标视频码率为 $R_v$，音频码率为 $R_a$，则文件大小似乎可以由
+\begin{equation}
+  \hat{B} \approx \frac{(R_v + R_a)T}{8} + B_{\mathrm{container}}
+\end{equation}
+得到。许多软件界面中的 ``estimated size'' 也确实接近这种计算。
+
+问题在于，现代编码器并不总是在执行简单的恒定码率输出。用户常见的 ``推荐画质''、CRF、CQ、VBR、硬件编码、社交平台预设、HDR/SDR 转换、降噪、锐化、字幕叠加、调色、缩放和变速等操作，都会改变每一帧需要的比特数。相同分辨率和时长的视频，静态白底录屏可能只需要很低码率，包含噪声、颗粒、快速运动和复杂纹理的素材则可能需要数倍乃至十倍以上码率才能达到相近主观质量。
+
+因此，导出前文件大小预估不是一个单纯的用户界面问题，而是一个跨越视频编码、码率控制、内容复杂度分析、时间线渲染和人机交互的系统问题。本文的目标不是声称已有一个通用精确解，而是梳理已有技术路线，并给出适合视频编辑软件场景的研究入口。
+
+\section{问题定义}
+
+设一个待导出的编辑时间线为 $\mathcal{T}$，它包含源素材片段、裁剪、变速、转场、叠加轨道、字幕、滤镜、颜色空间变换和音频轨。导出配置为 $\mathcal{C}$，包括编码格式、容器、分辨率、帧率、码率控制模式、CRF/CQ/QP/目标码率、profile、preset、GOP、B 帧、lookahead、硬件或软件编码器等。实际编码器实现记为 $\mathcal{E}$。目标是构造估计器
+\begin{equation}
+  f(\mathcal{T}, \mathcal{C}, \mathcal{E}) \rightarrow \hat{B},
+\end{equation}
+使得 $\hat{B}$ 尽量接近真实导出文件大小 $B$，同时满足交互式软件对延迟、CPU/GPU 占用和用户体验的约束。
+
+在视频编辑器中，这个问题至少有四个变体：
+
+\begin{itemize}
+  \item \textbf{目标码率模式：} 用户显式选择平均码率或最大码率。此时大小估计主要是码率公式问题，难点在封装、音频、metadata 和编码器码控偏差。
+  \item \textbf{恒定质量模式：} 用户选择 CRF、CQ 或 ``推荐画质''。此时码率是结果而非输入，文件大小取决于内容复杂度。
+  \item \textbf{最大文件大小模式：} 用户给定大小上限，系统反推目标码率或质量参数。此时需要在大小、质量和编码时间之间折中。
+  \item \textbf{时间线编辑模式：} 输入不是单个已存在的视频，而是需要渲染的多轨时间线。源视频复杂度不等于导出视频复杂度，滤镜和合成会改变可压缩性。
+\end{itemize}
+
+\section{为什么简单估计会失败}
+
+\subsection{内容复杂度不是元数据}
+
+分辨率、帧率和时长只能描述采样规模，不能描述可压缩性。编码器真正关心的是帧间预测是否有效、残差能量是否高、运动是否复杂、纹理和噪声是否难以预测、场景切换是否频繁、GOP 结构是否适配内容等。屏幕录制、幻灯片、聊天窗口、游戏、实拍、颗粒胶片和演唱会视频在相同元数据下会产生完全不同的码率需求。
+
+\subsection{质量参数不是大小参数}
+
+CRF/CQ/QP 等恒定质量或近似恒定质量模式的目标是让编码器在给定质量尺度附近分配比特，而不是输出给定大小。HandBrake 文档明确区分了恒定质量与平均码率：前者控制质量，输出大小取决于源内容；后者更适合追求目标文件大小 \cite{handbrake_cq_abr}。x265 文档也将 CRF 描述为质量驱动模式，而非目标码率模式 \cite{x265_cli}。
+
+\subsection{视频编辑器引入了时间线变量}
+
+传统码率预测文献常以单个源视频为输入；视频编辑软件还要处理时间线渲染。字幕和贴纸可能增加边缘细节，调色和锐化可能增加高频成分，降噪可能降低码率，运动模糊可能提高可压缩性，画中画和多轨叠加会改变空间复杂度。真正的预测对象不是源素材，而是最终渲染后送入编码器的帧序列。
+
+\subsection{编码器实现不是统一黑箱}
+
+同为 H.264/H.265/AV1，不同编码器和不同 preset 的 rate-distortion 决策、lookahead、心理视觉优化、AQ、场景切分、硬件限制和码率控制策略不同。一个对 x264 veryslow 有效的估计器，未必能迁移到 NVENC、Quick Sync、VideoToolbox 或移动端硬件编码器。
+
+\section{工业界现状}
+
+\subsection{即时公式估计}
+
+许多软件中的文件大小预估本质上是目标码率公式。Adobe Media Encoder 的导出设置文档说明，Estimated File Size 基于恒定码率视频，并且可能不包含音频和 metadata \cite{adobe_export_settings}。这种方案速度极快，适合用户拖动码率滑条时实时反馈，但它无法解释恒定质量、VBR 和内容复杂度差异。
+
+\subsection{两遍编码和目标大小}
+
+编码器内部的两遍码率控制是最成熟的目标大小方案。x264 的 ratecontrol 文档指出，两遍编码在第一遍收集复杂度统计，第二遍依据这些统计选择量化参数以匹配目标大小；一遍 ABR 由于缺少未来帧信息，可能出现更大偏差 \cite{x264_ratecontrol}。这类方法能改善目标码率控制，但它已经接近完整编码流程，不能满足 ``导出前瞬时估计'' 的体验。
+
+\subsection{内容自适应编码}
+
+Netflix 的 per-title encode optimization 不再使用固定码率阶梯，而是针对每个内容计算 rate-quality 曲线，选择更合适的码率、分辨率和质量点 \cite{netflix_per_title}。后续 Dynamic Optimizer 进一步引入更细粒度的感知优化 \cite{netflix_dynamic_optimizer}。这类系统说明工业界已经承认固定码率表不足以刻画内容差异，但其目标通常是流媒体转码和码率阶梯优化，而不是视频编辑器 UI 中的导出前文件大小显示。
+
+\section{学术与工程方法谱系}
+
+\subsection{码率控制与 rate-distortion 模型}
+
+码率控制研究试图在目标码率、量化参数和失真之间建立关系。传统模型通常假设比特数与量化步长、残差复杂度、帧类型、缓冲区状态相关。编码器内部的 rate control、lookahead 和 first-pass stats 是这一方向的工程实现。其优势是与真实编码器紧密结合，缺点是通常需要进入编码流程，且不同编码器之间可迁移性有限。
+
+\subsection{采样编码与外推}
+
+采样编码是视频编辑器场景最直接可落地的路线：从时间线中抽取少量代表性片段，用最终导出参数进行短时间编码，测得真实 bits-per-second，再按片段时长和复杂度分布外推全片大小。开源工具 ab-av1 的 \texttt{sample-encode} 会报告 predicted full encode size，\texttt{crf-search} 则利用采样编码搜索合适 CRF \cite{ab_av1}。Av1an 也通过分块、探测和目标质量搜索构建编码决策 \cite{av1an_target_quality}。
+
+采样编码的核心优势是它不需要完全理解编码器内部模型：只要 probe 使用与最终导出一致的渲染链和编码参数，就能捕获内容、滤镜和编码器实现的综合影响。其主要挑战包括样本选择、短样本偏差、场景覆盖、硬件编码启动开销、长视频尾部分布漂移和用户等待时间。
+
+\subsection{内容复杂度特征}
+
+内容复杂度方法试图在较低成本下提取 spatial information、temporal information、DCT texture energy、运动强度、边缘密度、噪声估计、场景切换频率等特征。VCA 项目提供了面向视频复杂度分析的开源实现，可用于 per-title encoding、复杂度估计和后续建模 \cite{vca_project}。这类方法成本低于采样编码，但需要建立从特征到目标编码器码率的映射。
+
+\subsection{机器学习预测}
+
+Google/YouTube 的工作将问题表述为：预测在不同质量目标下的转码码率或反推达到目标码率所需的 CRF。其博客报告，在不做预转码时可达到一定比例的目标误差命中，加入快速低质转码特征后命中率进一步提高 \cite{google_ml_transcoding}。Cheng 和 Zhang 使用 x265 lookahead 中的编码成本、运动向量等信息，构建 GOP 级 CRF-bitrate 模型 \cite{cheng2019x265}. Cai 等提出 per-shot 的学习式 rate factor 预测，以实现目标 VMAF 附近的质量一致性 \cite{cai2022per_shot}. 这些工作说明学习式方法可行，但其训练数据、编码器绑定、泛化能力和产品延迟仍需单独评估。
+
+\subsection{质量指标与 rate-quality 曲线}
+
+文件大小预估本身只关心字节数，但用户真正关心的是 ``在给定质量下会有多大'' 或 ``在给定大小下质量会怎样''。VMAF 等感知质量指标使 rate-quality 曲线可以被量化 \cite{vmaf}. 在研究系统中，文件大小估计应与质量估计保持接口兼容，否则只能回答 ``多大''，无法回答 ``值不值得这么大''。
+
+\section{开源方案对比}
+
+\begin{longtable}{p{3.1cm}p{3.2cm}p{4.1cm}p{4.1cm}}
+\toprule
+\textbf{项目/组件} & \textbf{主要目标} & \textbf{对文件大小预估的价值} & \textbf{局限} \\
+\midrule
+\endhead
+x264/x265 rate control & 码率控制、两遍编码、lookahead & 提供工业级复杂度统计和目标码率控制机制 & 与具体编码器深度绑定；不是独立预估 SDK \\
+ab-av1 & AV1/视频压缩辅助工具 & \texttt{sample-encode} 可外推完整编码大小；\texttt{crf-search} 可搜索质量参数 & 更像 CLI 工具和实践方案；未覆盖复杂编辑时间线 \\
+Av1an & 分块/场景感知编码与目标质量搜索 & 证明 chunk-level probe/search 在工程上可行 & 重点是 AV1 编码调度和质量目标，不是通用编辑器大小估计库 \\
+VCA & 视频复杂度分析 & 提供低成本内容复杂度特征，可作为估计器输入 & 需要额外模型映射到具体编码器和配置 \\
+VMAF & 感知质量评估 & 支持 rate-quality 曲线和 per-title 决策 & 需要参考视频；本身不预测文件大小 \\
+\bottomrule
+\end{longtable}
+
+\section{评估指标}
+
+一个面向视频编辑器的估计系统不应只报告平均误差。建议至少评估以下指标：
+
+\begin{itemize}
+  \item \textbf{相对误差：} $\mathrm{APE}=|\hat{B}-B|/B$，并报告 median、P75、P90、P95。
+  \item \textbf{对数误差：} $|\log(\hat{B})-\log(B)|$，降低超大文件对平均值的支配。
+  \item \textbf{区间覆盖率：} 若系统显示 $[\hat{B}_{low}, \hat{B}_{high}]$，真实大小落入区间的比例应接近声明置信度。
+  \item \textbf{估计延迟：} 首屏粗估、后台精估、参数变化后的增量更新时间。
+  \item \textbf{额外计算成本：} probe encode 占完整导出时间的比例、CPU/GPU 占用、内存和临时磁盘开销。
+  \item \textbf{交互稳定性：} 用户调节码率、分辨率、帧率、CRF、滤镜时估计值是否出现无解释跳变。
+  \item \textbf{跨编码器泛化：} 软件编码器、硬件编码器、不同 preset、H.264/H.265/AV1 之间的误差差异。
+\end{itemize}
+
+\section{面向视频编辑器的研究议程}
+
+\subsection{建立可复现实验集}
+
+需要构建一个覆盖真实编辑场景的数据集，而不仅是公开视频压缩测试集。样本应包括屏幕录制、游戏、实拍、低光噪声、快速运动、静态讲解、字幕密集视频、竖屏短视频、多轨叠加、转场、调色、降噪、锐化、变速和裁剪。每个样本应记录源素材、时间线操作、导出配置、编码器版本、硬件环境、真实文件大小和可选质量指标。
+
+\subsection{从三个 baseline 开始}
+
+第一阶段不应直接追求复杂模型，而应建立三个可解释 baseline：
+
+\begin{enumerate}
+  \item \textbf{码率公式 baseline：} 复现产品中常见的即时估计。
+  \item \textbf{全片低成本特征 baseline：} 使用复杂度特征预测码率。
+  \item \textbf{采样编码 baseline：} 用少量 probe encode 外推完整大小。
+\end{enumerate}
+
+只有当这些 baseline 被统一评估后，学习式模型和混合模型的价值才可被清楚度量。
+
+\subsection{把单点估计改成置信区间}
+
+导出前预估天然包含不确定性。产品上更诚实的表达不是 ``预计 8.85 GB''，而是 ``预计 1.8--2.2 GB'' 或 ``约 2.0 GB，误差通常小于 15\%''。研究系统应输出分布或区间，并评估 calibration，而不是只追求一个看似确定的数字。
+
+\subsection{区分估计与控制}
+
+文件大小估计回答 ``会有多大''，目标大小控制回答 ``如何让它接近某个大小''。二者相关但不同。编辑器中应同时存在：
+
+\begin{itemize}
+  \item 即时粗估：低延迟，响应用户滑动参数。
+  \item 后台精估：允许短暂 probe，显示更可信区间。
+  \item 目标大小模式：用户输入上限，系统反推码率或质量参数。
+\end{itemize}
+
+\subsection{把时间线作为一等输入}
+
+未来工作应避免只把编辑器时间线视为已渲染视频。更有价值的方向是直接利用时间线结构：源片段边界、滤镜类型、叠加轨道、字幕密度、变速段、转场段和渲染缓存状态。这样才能解释为什么同一个源素材在不同剪辑项目中会产生不同大小。
+
+\section{结论}
+
+导出前视频文件大小预估尚不存在一个通用、无需编码、跨产品和跨编码器稳定精确的现成解。工业产品中常见的即时估计主要依赖目标码率公式；编码器内部的两遍码率控制能够接近目标大小，但成本较高且属于编码过程；采样编码是当前最具工程可行性的中间路线；内容复杂度特征和机器学习模型则提供了进一步降低成本、提高泛化和解释能力的研究空间。
+
+因此，面向视频编辑器的可靠方案很可能不是单一算法，而是分层系统：公式粗估提供即时反馈，采样编码提供后台校准，内容特征和学习模型降低 probe 成本，时间线建模捕获编辑操作影响，置信区间向用户表达不确定性。围绕这一系统建立公开 benchmark、baseline 和评估协议，是该方向最现实的研究起点。
+
+\begin{thebibliography}{99}
+
+\bibitem{adobe_export_settings}
+Adobe.
+\newblock \textit{Export settings reference for Adobe Media Encoder}.
+\newblock \url{https://helpx.adobe.com/media-encoder/using/export-settings-reference.html}
+
+\bibitem{handbrake_cq_abr}
+HandBrake Documentation.
+\newblock \textit{Constant Quality vs Average Bit Rate}.
+\newblock \url{https://handbrake.fr/docs/en/latest/technical/video-cq-vs-abr.html}
+
+\bibitem{x264_ratecontrol}
+x264 Project.
+\newblock \textit{Ratecontrol in x264}.
+\newblock \url{https://sources.debian.org/src/x264/2%3A0.123.2189%2Bgit35cf912-1/doc/ratecontrol.txt/}
+
+\bibitem{x265_cli}
+x265 Project.
+\newblock \textit{x265 CLI Documentation}.
+\newblock \url{https://x265-repo.readthedocs.io/en/latest/cli.html}
+
+\bibitem{netflix_per_title}
+A. Aaron, Z. Li, M. Manohara, J. Y. Lin, E. C.-H. Wu, and C.-C. J. Kuo.
+\newblock \textit{Per-Title Encode Optimization}.
+\newblock Netflix Technology Blog, 2015.
+\newblock \url{https://www.engineering.fyi/article/per-title-encode-optimization}
+
+\bibitem{netflix_dynamic_optimizer}
+Netflix Technology Blog.
+\newblock \textit{Dynamic Optimizer: A Perceptual Video Encoding Optimization Framework}.
+\newblock \url{https://www.engineering.fyi/article/dynamic-optimizer-a-perceptual-video-encoding-optimization-framework}
+
+\bibitem{google_ml_transcoding}
+M. Covell, M. Arjovsky, Y.-C. Lin, and A. Kokaram.
+\newblock \textit{Optimizing Transcoder Quality Targets Using a Neural Network with an Embedded Bitrate Model}.
+\newblock Google Research Blog, 2016.
+\newblock \url{https://www.googblogs.com/machine-learning-for-video-transcoding/}
+
+\bibitem{cheng2019x265}
+Y. Cheng and X. Zhang.
+\newblock \textit{A Neural Network Approach to GOP-Level Rate Control of x265 Using Lookahead}.
+\newblock arXiv:1908.02939, 2019.
+\newblock \url{https://arxiv.org/abs/1908.02939}
+
+\bibitem{cai2022per_shot}
+Z. Cai, L. Song, G. Lu, and W. Gao.
+\newblock \textit{Quality-Constant Per-Shot Encoding by Two-Pass Learning-Based Rate Factor Prediction}.
+\newblock arXiv:2208.10739, 2022.
+\newblock \url{https://arxiv.org/abs/2208.10739}
+
+\bibitem{ab_av1}
+Alex Heretic.
+\newblock \textit{ab-av1: AV1 Re-encoding Using ffmpeg, ab-av1 crf-search and sample-encode}.
+\newblock \url{https://github.com/alexheretic/ab-av1}
+
+\bibitem{av1an_target_quality}
+Av1an Project.
+\newblock \textit{Target Quality Documentation}.
+\newblock \url{https://rust-av.github.io/Av1an/Cli/target_quality.html}
+
+\bibitem{vca_project}
+ATHENA Project.
+\newblock \textit{VCA: Video Complexity Analyzer}.
+\newblock \url{https://cd-athena.github.io/VCA/}
+
+\bibitem{vmaf}
+Netflix.
+\newblock \textit{VMAF: Video Multi-Method Assessment Fusion}.
+\newblock \url{https://github.com/Netflix/vmaf}
+
+\end{thebibliography}
+
+\end{document}
