@@ -1,0 +1,13 @@
+{
+  "installed_cli_export_exit": 0,
+  "complete_decode": true,
+  "actual_bytes": 853871,
+  "events": [
+    "estimate",
+    "result"
+  ],
+  "limited_cli_exit": 2,
+  "limited_unmet": [
+    "reliability_not_calibrated"
+  ]
+}

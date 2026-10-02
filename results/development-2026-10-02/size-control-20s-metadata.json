@@ -1,0 +1,16 @@
+{
+  "source_code_sha256": "c35eee7d37e80aafc0a7f23314ade359b5b512b28637c53ca53069337064932a",
+  "budget_seconds": 20.0,
+  "fractions": [
+    0.9,
+    0.7,
+    0.5
+  ],
+  "cases": [
+    "motion",
+    "pedestrians",
+    "grain"
+  ],
+  "cold_cache": true,
+  "split": "development"
+}

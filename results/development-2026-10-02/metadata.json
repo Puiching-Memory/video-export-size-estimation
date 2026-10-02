@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "source_code_sha256": "2ceeab7b61b50930a3801f04968932e87ed60ff2b601519b37a7eb8e3c816d66",
+  "budgets_seconds": [
+    1,
+    3,
+    8
+  ],
+  "methods": [
+    "uniform",
+    "visual-residual",
+    "controller",
+    "ab-av1",
+    "full-encode"
+  ],
+  "cold_cache": true,
+  "codec": "libx264",
+  "crf": 23,
+  "preset": "medium",
+  "threads": 2,
+  "audio": "dropped for comparable video-only baselines",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "ab_av1": "ab-av1 0.11.7",
+  "hardware": {
+    "cpu_quota_cores": 4,
+    "memory_limit_gib": 16,
+    "operating_system": "Linux",
+    "python": "3.12.14"
+  },
+  "limitations": [
+    "Single run per operating point; no tail latency claim",
+    "Development set: seven procedural cases, two public sources",
+    "No calibration profile or held-out evaluation",
+    "Size-control follow-up changes only capped requests; prediction run used archived code in artifacts/benchmark-v2/code"
+  ]
+}

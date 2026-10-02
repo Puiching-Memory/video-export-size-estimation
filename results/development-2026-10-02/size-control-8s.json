@@ -1,0 +1,730 @@
+{
+  "split": "development",
+  "budget_seconds": 8.0,
+  "max_crf": 35,
+  "max_candidates": 4,
+  "quality_metric": "PSNR average; pixel error only, not a perceptual quality guarantee",
+  "reference_quality": {
+    "motion": {
+      "psnr_average_db": 42.883411,
+      "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7fca54002fc0] PSNR y:43.025303 u:42.508937 v:42.719252 average:42.883411 min:41.594817 max:47.381793"
+    },
+    "pedestrians": {
+      "psnr_average_db": 44.13395,
+      "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7fa4480036c0] PSNR y:43.037748 u:47.590571 v:48.109679 average:44.133950 min:42.814853 max:47.658410"
+    },
+    "grain": {
+      "psnr_average_db": 33.230883,
+      "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7f9e18002fc0] PSNR y:32.984552 u:33.760503 v:33.779298 average:33.230883 min:32.306402 max:39.686111"
+    }
+  },
+  "rows": [
+    {
+      "case": "motion",
+      "relative_cap": 0.9,
+      "max_bytes": 768483,
+      "reference_bytes": 853871,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 768483,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "constraints_unmet",
+        "estimate": {
+          "estimated_bytes": 720359,
+          "sampled_seconds": 4,
+          "sample_count": 2,
+          "audit_count": 0,
+          "sampling_standard_error_bytes": null,
+          "uncertainty": {
+            "kind": "uncalibrated",
+            "interval_bytes": null,
+            "coverage": null,
+            "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+          },
+          "selected_crf": 25.0,
+          "artifact": null,
+          "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 853871,
+            "evidence": "exact"
+          },
+          {
+            "crf": 24.0,
+            "estimated_bytes": 808521,
+            "evidence": "uncalibrated"
+          },
+          {
+            "crf": 25.0,
+            "estimated_bytes": 720359,
+            "evidence": "uncalibrated"
+          }
+        ],
+        "unmet": [
+          "reliability_not_calibrated",
+          "size_limit_not_verified"
+        ],
+        "elapsed_seconds": 6.632741294999505,
+        "attempted_encode_seconds": 36.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": [
+          "Increase the compute budget to permit further probes or a verified export.",
+          "Explicitly relax the size limit or expand the allowed CRF range."
+        ]
+      }
+    },
+    {
+      "case": "motion",
+      "relative_cap": 0.7,
+      "max_bytes": 597709,
+      "reference_bytes": 853871,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 597709,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "satisfied",
+        "estimate": {
+          "estimated_bytes": 577326,
+          "selected_crf": 27.0,
+          "uncertainty": {
+            "kind": "exact",
+            "interval_bytes": [
+              577326,
+              577326
+            ],
+            "coverage": 1.0
+          },
+          "artifact": "/workspace/video-export-size-estimation/artifacts/size-control-v2/work/motion-0.7/89a33aef6bb2ad0aa2be1dd395b57c834d8f829db9c752262018f5809ab04a12.mp4",
+          "sha256": "d51c23e7f9671e6aae36de2be38b623d05d65f3b9762bc2b091b1709d4fd2ccf",
+          "cache_hit": false,
+          "sample_count": 1,
+          "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 853871,
+            "evidence": "exact"
+          },
+          {
+            "crf": 27.0,
+            "estimated_bytes": 577326,
+            "evidence": "exact"
+          }
+        ],
+        "unmet": [],
+        "elapsed_seconds": 3.7949384879993886,
+        "attempted_encode_seconds": 50.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": []
+      },
+      "published_file": "/workspace/video-export-size-estimation/artifacts/size-control-v2/motion-0.7.mp4",
+      "actual_bytes": 577326,
+      "quality": {
+        "psnr_average_db": 39.383015,
+        "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7f1a58003340] PSNR y:39.342455 u:39.279399 v:39.659494 average:39.383015 min:38.167115 max:43.691731"
+      }
+    },
+    {
+      "case": "motion",
+      "relative_cap": 0.5,
+      "max_bytes": 426935,
+      "reference_bytes": 853871,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 426935,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "satisfied",
+        "estimate": {
+          "estimated_bytes": 415247,
+          "selected_crf": 31.0,
+          "uncertainty": {
+            "kind": "exact",
+            "interval_bytes": [
+              415247,
+              415247
+            ],
+            "coverage": 1.0
+          },
+          "artifact": "/workspace/video-export-size-estimation/artifacts/size-control-v2/work/motion-0.5/7a7e7b4be09777fd2bd700233d96d83c147f95e0e97865b4d95aff3f4759ef0c.mp4",
+          "sha256": "4dc7a4fec8f527e653ffc7dc0db61e81ddc19df2b3ab9cdb4a6c9f22e1732e06",
+          "cache_hit": false,
+          "sample_count": 1,
+          "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 853871,
+            "evidence": "exact"
+          },
+          {
+            "crf": 30.0,
+            "estimated_bytes": 442265,
+            "evidence": "exact"
+          },
+          {
+            "crf": 31.0,
+            "estimated_bytes": 415247,
+            "evidence": "exact"
+          }
+        ],
+        "unmet": [],
+        "elapsed_seconds": 5.1425673910016485,
+        "attempted_encode_seconds": 74.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": []
+      },
+      "published_file": "/workspace/video-export-size-estimation/artifacts/size-control-v2/motion-0.5.mp4",
+      "actual_bytes": 415247,
+      "quality": {
+        "psnr_average_db": 36.627954,
+        "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7f92f0003180] PSNR y:36.575300 u:36.636025 v:36.836730 average:36.627954 min:35.691128 max:40.194609"
+      }
+    },
+    {
+      "case": "pedestrians",
+      "relative_cap": 0.9,
+      "max_bytes": 529143,
+      "reference_bytes": 587937,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 529143,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "satisfied",
+        "estimate": {
+          "estimated_bytes": 513951,
+          "selected_crf": 24.0,
+          "uncertainty": {
+            "kind": "exact",
+            "interval_bytes": [
+              513951,
+              513951
+            ],
+            "coverage": 1.0
+          },
+          "artifact": "/workspace/video-export-size-estimation/artifacts/size-control-v2/work/pedestrians-0.9/d8211d2e3eeea2abdf34835bd59e40ab57d17b37906f87c93475d4c63325b86d.mp4",
+          "sha256": "8cd36b99d6854d437a8b177a89c4295f1110c773afd273001d723a5318b29aea",
+          "cache_hit": false,
+          "sample_count": 1,
+          "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 587937,
+            "evidence": "exact"
+          },
+          {
+            "crf": 24.0,
+            "estimated_bytes": 513951,
+            "evidence": "exact"
+          }
+        ],
+        "unmet": [],
+        "elapsed_seconds": 4.214570391999587,
+        "attempted_encode_seconds": 82.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": []
+      },
+      "published_file": "/workspace/video-export-size-estimation/artifacts/size-control-v2/pedestrians-0.9.mp4",
+      "actual_bytes": 513951,
+      "quality": {
+        "psnr_average_db": 43.319622,
+        "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7fe7e8003b80] PSNR y:42.204431 u:46.842559 v:47.469359 average:43.319622 min:42.120780 max:46.731737"
+      }
+    },
+    {
+      "case": "pedestrians",
+      "relative_cap": 0.7,
+      "max_bytes": 411555,
+      "reference_bytes": 587937,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 411555,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "satisfied",
+        "estimate": {
+          "estimated_bytes": 347521,
+          "selected_crf": 27.0,
+          "uncertainty": {
+            "kind": "exact",
+            "interval_bytes": [
+              347521,
+              347521
+            ],
+            "coverage": 1.0
+          },
+          "artifact": "/workspace/video-export-size-estimation/artifacts/size-control-v2/work/pedestrians-0.7/e90e574486e33275e3e1c9c088a02c3dc00e7182499bebdc5d4c1c5ccce9610a.mp4",
+          "sha256": "a0871673ca631091e900b420e553183b3b88373481186c36c0c02043383a95ae",
+          "cache_hit": false,
+          "sample_count": 1,
+          "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 587937,
+            "evidence": "exact"
+          },
+          {
+            "crf": 27.0,
+            "estimated_bytes": 347521,
+            "evidence": "exact"
+          }
+        ],
+        "unmet": [],
+        "elapsed_seconds": 5.162685302999307,
+        "attempted_encode_seconds": 82.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": []
+      },
+      "published_file": "/workspace/video-export-size-estimation/artifacts/size-control-v2/pedestrians-0.7.mp4",
+      "actual_bytes": 347521,
+      "quality": {
+        "psnr_average_db": 41.134533,
+        "ffmpeg_summary": "[Parsed_psnr_4 @ 0x7f46f0003b80] PSNR y:39.942811 u:45.129065 v:45.840167 average:41.134533 min:40.060574 max:44.424436"
+      }
+    },
+    {
+      "case": "pedestrians",
+      "relative_cap": 0.5,
+      "max_bytes": 293968,
+      "reference_bytes": 587937,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 293968,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "constraints_unmet",
+        "estimate": {
+          "estimated_bytes": 296850,
+          "sampled_seconds": 6,
+          "sample_count": 3,
+          "audit_count": 0,
+          "sampling_standard_error_bytes": null,
+          "uncertainty": {
+            "kind": "uncalibrated",
+            "interval_bytes": null,
+            "coverage": null,
+            "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+          },
+          "selected_crf": 34.0,
+          "artifact": null,
+          "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 964563,
+            "evidence": "uncalibrated"
+          },
+          {
+            "crf": 34.0,
+            "estimated_bytes": 296850,
+            "evidence": "uncalibrated"
+          }
+        ],
+        "unmet": [
+          "reliability_not_calibrated",
+          "size_limit_not_verified"
+        ],
+        "elapsed_seconds": 4.279701584999202,
+        "attempted_encode_seconds": 12.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": [
+          "Increase the compute budget to permit further probes or a verified export.",
+          "Explicitly relax the size limit or expand the allowed CRF range."
+        ]
+      }
+    },
+    {
+      "case": "grain",
+      "relative_cap": 0.9,
+      "max_bytes": 5375630,
+      "reference_bytes": 5972923,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 5375630,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "constraints_unmet",
+        "estimate": {
+          "estimated_bytes": 3590507,
+          "sampled_seconds": 6,
+          "sample_count": 3,
+          "audit_count": 0,
+          "sampling_standard_error_bytes": null,
+          "uncertainty": {
+            "kind": "uncalibrated",
+            "interval_bytes": null,
+            "coverage": null,
+            "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+          },
+          "selected_crf": 24.0,
+          "artifact": null,
+          "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 5920106,
+            "evidence": "uncalibrated"
+          },
+          {
+            "crf": 24.0,
+            "estimated_bytes": 3590507,
+            "evidence": "uncalibrated"
+          }
+        ],
+        "unmet": [
+          "reliability_not_calibrated",
+          "size_limit_not_verified"
+        ],
+        "elapsed_seconds": 5.815893101000256,
+        "attempted_encode_seconds": 12.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": [
+          "Increase the compute budget to permit further probes or a verified export.",
+          "Explicitly relax the size limit or expand the allowed CRF range."
+        ]
+      }
+    },
+    {
+      "case": "grain",
+      "relative_cap": 0.7,
+      "max_bytes": 4181046,
+      "reference_bytes": 5972923,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 4181046,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "constraints_unmet",
+        "estimate": {
+          "estimated_bytes": 981458,
+          "sampled_seconds": 6,
+          "sample_count": 3,
+          "audit_count": 0,
+          "sampling_standard_error_bytes": null,
+          "uncertainty": {
+            "kind": "uncalibrated",
+            "interval_bytes": null,
+            "coverage": null,
+            "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+          },
+          "selected_crf": 27.0,
+          "artifact": null,
+          "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 5920106,
+            "evidence": "uncalibrated"
+          },
+          {
+            "crf": 27.0,
+            "estimated_bytes": 981458,
+            "evidence": "uncalibrated"
+          }
+        ],
+        "unmet": [
+          "reliability_not_calibrated",
+          "size_limit_not_verified"
+        ],
+        "elapsed_seconds": 5.284103623000192,
+        "attempted_encode_seconds": 12.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": [
+          "Increase the compute budget to permit further probes or a verified export.",
+          "Explicitly relax the size limit or expand the allowed CRF range."
+        ]
+      }
+    },
+    {
+      "case": "grain",
+      "relative_cap": 0.5,
+      "max_bytes": 2986461,
+      "reference_bytes": 5972923,
+      "result": {
+        "schema_version": 1,
+        "requested": {
+          "compute": {
+            "wall_seconds": 8.0,
+            "max_probes": 6,
+            "threads": 2,
+            "max_encode_fraction": null
+          },
+          "reliability": {
+            "relative_error": 0.1,
+            "coverage": 0.95
+          },
+          "size": {
+            "max_bytes": 2986461,
+            "max_crf": 35,
+            "max_candidates": 4
+          },
+          "configuration": {
+            "codec": "libx264",
+            "container": "mp4",
+            "crf": 23.0,
+            "preset": "medium",
+            "video_filter": null,
+            "audio_bitrate": 128000,
+            "drop_audio": true
+          },
+          "sample_seconds": 2,
+          "seed": 20261002
+        },
+        "status": "constraints_unmet",
+        "estimate": {
+          "estimated_bytes": 637052,
+          "sampled_seconds": 6,
+          "sample_count": 3,
+          "audit_count": 0,
+          "sampling_standard_error_bytes": null,
+          "uncertainty": {
+            "kind": "uncalibrated",
+            "interval_bytes": null,
+            "coverage": null,
+            "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+          },
+          "selected_crf": 29.0,
+          "artifact": null,
+          "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529"
+        },
+        "candidates": [
+          {
+            "crf": 23.0,
+            "estimated_bytes": 5920106,
+            "evidence": "uncalibrated"
+          },
+          {
+            "crf": 29.0,
+            "estimated_bytes": 637052,
+            "evidence": "uncalibrated"
+          }
+        ],
+        "unmet": [
+          "reliability_not_calibrated",
+          "size_limit_not_verified"
+        ],
+        "elapsed_seconds": 5.014401352000277,
+        "attempted_encode_seconds": 12.0,
+        "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+        "alternatives": [
+          "Increase the compute budget to permit further probes or a verified export.",
+          "Explicitly relax the size limit or expand the allowed CRF range."
+        ]
+      }
+    }
+  ]
+}

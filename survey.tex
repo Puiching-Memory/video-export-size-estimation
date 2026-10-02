@@ -110,7 +110,7 @@ Netflix 的 per-title encode optimization 不再使用固定码率阶梯，而�
 
 \subsection{机器学习预测}
 
-Google/YouTube 的工作将问题表述为：预测在不同质量目标下的转码码率或反推达到目标码率所需的 CRF。其博客报告，在不做预转码时可达到一定比例的目标误差命中，加入快速低质转码特征后命中率进一步提高 \cite{google_ml_transcoding}。Cheng 和 Zhang 使用 x265 lookahead 中的编码成本、运动向量等信息，构建 GOP 级 CRF-bitrate 模型 \cite{cheng2019x265}. Cai 等提出 per-shot 的学习式 rate factor 预测，以实现目标 VMAF 附近的质量一致性 \cite{cai2022per_shot}. 这些工作说明学习式方法可行，但其训练数据、编码器绑定、泛化能力和产品延迟仍需单独评估。
+Google/YouTube 的工作将问题表述为：预测在不同质量目标下的转码码率或反推达到目标码率所需的 CRF。Covell 等的论文报告，在其测试设置下，不做预转码时约 65\% 的输出落在目标码率的 $\pm20\%$ 内，加入快速低质转码特征后约为 80\% \cite{google_ml_transcoding}。Cheng 和 Zhang 使用 x265 lookahead 中的编码成本、运动向量等信息，构建 GOP 级 CRF-bitrate 模型 \cite{cheng2019x265}。Cai 等提出 per-shot 的学习式 rate factor 预测，以实现目标 VMAF 附近的质量一致性 \cite{cai2022per_shot}。这些指标分别针对码率控制和感知质量，不能直接当作任意编辑时间线的完整文件大小误差。其训练数据、编码器绑定、泛化能力和产品延迟仍需单独评估。
 
 \subsection{质量指标与 rate-quality 曲线}
 
@@ -181,6 +181,12 @@ VMAF & 感知质量评估 & 支持 rate-quality 曲线和 per-title 决策 & 需
 
 未来工作应避免只把编辑器时间线视为已渲染视频。更有价值的方向是直接利用时间线结构：源片段边界、滤镜类型、叠加轨道、字幕密度、变速段、转场段和渲染缓存状态。这样才能解释为什么同一个源素材在不同剪辑项目中会产生不同大小。
 
+\subsection{统一的三个控制轴}
+
+将计算预算、可靠性要求和体积约束作为同时可调的输入：计算预算限制分析时间、试编码次数和请求编码量；可靠性指定相对误差与覆盖率；体积约束指定完整文件字节数上限和允许的质量参数范围。系统应返回实际达到的结果及未满足的约束，而非强迫用户选择互斥模式。抽样离散度不包含编码上下文与封装偏差，不能直接作为完整文件大小的置信度。硬体积上限应由实际产物验证；预算内未搜索到可行结果也不等于证明全局不可行。
+
+本仓库新增的可执行研究实现与评测协议位于 \texttt{src/vsize} 和 \texttt{docs/evaluation.md}，当前覆盖单视频 x264/MP4。开发集结果不构成跨时间线、跨编码器的 SOTA 或工业验收证明。
+
 \section{结论}
 
 导出前视频文件大小预估尚不存在一个通用、无需编码、跨产品和跨编码器稳定精确的现成解。工业产品中常见的即时估计主要依赖目标码率公式；编码器内部的两遍码率控制能够接近目标大小，但成本较高且属于编码过程；采样编码是当前最具工程可行性的中间路线；内容复杂度特征和机器学习模型则提供了进一步降低成本、提高泛化和解释能力的研究空间。
@@ -192,7 +198,7 @@ VMAF & 感知质量评估 & 支持 rate-quality 曲线和 per-title 决策 & 需
 \bibitem{adobe_export_settings}
 Adobe.
 \newblock \textit{Export settings reference for Adobe Media Encoder}.
-\newblock \url{https://helpx.adobe.com/media-encoder/using/export-settings-reference.html}
+\newblock \url{https://helpx.adobe.com/media-encoder/desktop/encoding-and-exporting/export-settings-reference.html}
 
 \bibitem{handbrake_cq_abr}
 HandBrake Documentation.
@@ -223,17 +229,17 @@ Netflix Technology Blog.
 \bibitem{google_ml_transcoding}
 M. Covell, M. Arjovsky, Y.-C. Lin, and A. Kokaram.
 \newblock \textit{Optimizing Transcoder Quality Targets Using a Neural Network with an Embedded Bitrate Model}.
-\newblock Google Research Blog, 2016.
-\newblock \url{https://www.googblogs.com/machine-learning-for-video-transcoding/}
+\newblock Electronic Imaging, 28(2), 2016.
+\newblock \url{https://doi.org/10.2352/ISSN.2470-1173.2016.2.VIPC-237}
 
 \bibitem{cheng2019x265}
-Y. Cheng and X. Zhang.
+B. Cheng and Y. Zhang.
 \newblock \textit{A Neural Network Approach to GOP-Level Rate Control of x265 Using Lookahead}.
 \newblock arXiv:1908.02939, 2019.
 \newblock \url{https://arxiv.org/abs/1908.02939}
 
 \bibitem{cai2022per_shot}
-Z. Cai, L. Song, G. Lu, and W. Gao.
+C. Cai, Y. Wang, X. Li, and T. Ye.
 \newblock \textit{Quality-Constant Per-Shot Encoding by Two-Pass Learning-Based Rate Factor Prediction}.
 \newblock arXiv:2208.10739, 2022.
 \newblock \url{https://arxiv.org/abs/2208.10739}
@@ -246,7 +252,7 @@ Alex Heretic.
 \bibitem{av1an_target_quality}
 Av1an Project.
 \newblock \textit{Target Quality Documentation}.
-\newblock \url{https://rust-av.github.io/Av1an/Cli/target_quality.html}
+\newblock \url{https://github.com/rust-av/Av1an/blob/master/site/src/Features/TargetQuality.md}
 
 \bibitem{vca_project}
 ATHENA Project.

@@ -1,0 +1,47 @@
+{
+  "static": {
+    "bytes": 18261,
+    "encode_wall_seconds": 0.514490059000309,
+    "sha256": "fbc3131e25e3884de59d93f6fcb327bbd1a5d4f159a669d62bcd4c42b65a3f77"
+  },
+  "motion": {
+    "bytes": 853871,
+    "encode_wall_seconds": 1.6149801569990814,
+    "sha256": "445c953780f965fc7e6b12ac00bffcd69916a9ad4daee63a9daef7e120ad1f13"
+  },
+  "grain": {
+    "bytes": 5972923,
+    "encode_wall_seconds": 6.263937775998784,
+    "sha256": "56fa408ecee84b871e1f4ff1a092b264138f2d87c97fe779b8a1d8bcc4d0b68c"
+  },
+  "brief-burst": {
+    "bytes": 1422355,
+    "encode_wall_seconds": 1.2617047309995542,
+    "sha256": "cd4d398439f3683b9b4042bdb96466a4a9773f4e6f22a0b5bdb459f4b5b18dea"
+  },
+  "cbr-burst": {
+    "bytes": 652712,
+    "encode_wall_seconds": 0.9716075249998539,
+    "sha256": "c7d2f1f1b590af9781aed26deb23f599d084b65cbc0bad2e8b91deb647f0a807"
+  },
+  "alternating": {
+    "bytes": 4205994,
+    "encode_wall_seconds": 3.5355877189995226,
+    "sha256": "c63849d2de731176513c4f219858117041ba82058db602e0635c1d7b286aa4d8"
+  },
+  "screen": {
+    "bytes": 117325,
+    "encode_wall_seconds": 1.0959077259994956,
+    "sha256": "20f4ec7727eb47ab1836bfdc3e2ed527828761373d3547b5f117dcfcf02fe3d5"
+  },
+  "pedestrians": {
+    "bytes": 587937,
+    "encode_wall_seconds": 1.762004906000584,
+    "sha256": "2a743b2e703040b63aa7fedb4dedeaef4c5fc7964bb1deabb219ecb938066415"
+  },
+  "megamind": {
+    "bytes": 261306,
+    "encode_wall_seconds": 1.2691423579999537,
+    "sha256": "11938e277936d9f8e3364d2dbe40a5a0cd2291db700feefe24245b97518576a5"
+  }
+}
