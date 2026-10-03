@@ -1,0 +1,7 @@
+{
+  "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/meridian-sdr-long/Meridian_3840x2160_5994fps_SDR.mp4",
+  "sha256": "526b5dad800cdbd7f208bd35d717928bda0ee712a2dd21a6326a43a80717e496",
+  "bytes": 1299914020,
+  "ingest_seconds": 2.2250530419987626,
+  "ingest_scope": "sealed full-file immutable snapshot and SHA; outside prepared request budgets"
+}

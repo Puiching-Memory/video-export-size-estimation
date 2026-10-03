@@ -1,0 +1,53 @@
+Input #0, yuv4mpegpipe, from '/workspace/video-export-size-estimation/artifacts/industrial-v1/walking-street/WalkingInStreet_1920x1080_30fps.y4m':
+  Duration: 00:00:04.33, start: 0.000000, bitrate: 746497 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p(progressive), 1080x1920, 30 fps, 30 tbr, 30 tbn
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/walking-street-continuous/89fb81401103a7d0c60f65d24e0eb07df0cc6b8e831e8f65ce948cd1a515c3db.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:04.33, start: 0.000000, bitrate: 21497 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920, 21492 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/walking-street-segmented/40d719ad46632ef3c525a6ace3efc07ac4427d3e4dc813c309307b2e53a42d64.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso6mp41
+  Duration: 00:00:04.33, start: 0.000000, bitrate: 22341 kb/s
+  Stream #2:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1920, 22334 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format:default
+  Stream #1:0 (h264) -> format:default
+  Stream #2:0 (h264) -> format:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+  ssim:default -> Stream #0:1 (wrapped_avframe)
+  psnr:default -> Stream #0:2 (wrapped_avframe)
+  ssim:default -> Stream #0:3 (wrapped_avframe)
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 1080x1920, q=2-31, 200 kb/s, 1000k tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:1: Video: wrapped_avframe, yuv420p(progressive), 1080x1920, q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:2: Video: wrapped_avframe, yuv420p(progressive), 1080x1920, q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:3: Video: wrapped_avframe, yuv420p(progressive), 1080x1920, q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+[ssim@segmented @ 0x7f94bc00bf40] SSIM Y:0.926550 (11.340083) U:0.949854 (12.997647) V:0.930400 (11.573933) All:0.931076 (11.616280)
+[psnr@segmented @ 0x7f94bc00ba80] PSNR y:33.877553 u:38.571910 v:40.322542 average:35.063696 min:33.718335 max:37.672993
+[ssim@continuous @ 0x7f94bc00b6c0] SSIM Y:0.927369 (11.388773) U:0.950283 (13.034992) V:0.930351 (11.570824) All:0.931685 (11.654835)
+[psnr@continuous @ 0x7f94bc00b2c0] PSNR y:33.974391 u:38.628691 v:40.333044 average:35.153220 min:33.738885 max:37.247885
+[out#0/null @ 0x5620f8893ec0] video:223KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  130 fps= 54 q=-0.0 Lq=-0.0 q=-0.0 q=-0.0 size=N/A time=00:00:04.30 bitrate=N/A speed=1.78x    

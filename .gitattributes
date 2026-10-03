@@ -1,2 +1,5 @@
 # Preserve publisher notices/checksum lists byte-for-byte, including CRLF.
 benchmarks/corpora/**/notices/* -text -whitespace
+
+# Preserve verbatim tool output and archived research evidence.
+results/** -text -whitespace

@@ -1,0 +1,94 @@
+{
+  "init_bytes": 734,
+  "payload_bytes": 14064,
+  "fragment_bytes": 9792,
+  "file_bytes": 24590,
+  "moof_count": 6,
+  "mdat_count": 6,
+  "top_level_boxes": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 28,
+      "header_bytes": 8
+    },
+    {
+      "type": "moov",
+      "offset": 28,
+      "bytes": 706,
+      "header_bytes": 8
+    },
+    {
+      "type": "moof",
+      "offset": 734,
+      "bytes": 1624,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 2358,
+      "bytes": 2352,
+      "header_bytes": 8
+    },
+    {
+      "type": "moof",
+      "offset": 4710,
+      "bytes": 1624,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 6334,
+      "bytes": 2352,
+      "header_bytes": 8
+    },
+    {
+      "type": "moof",
+      "offset": 8686,
+      "bytes": 1624,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 10310,
+      "bytes": 2352,
+      "header_bytes": 8
+    },
+    {
+      "type": "moof",
+      "offset": 12662,
+      "bytes": 1624,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 14286,
+      "bytes": 2352,
+      "header_bytes": 8
+    },
+    {
+      "type": "moof",
+      "offset": 16638,
+      "bytes": 1624,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 18262,
+      "bytes": 2352,
+      "header_bytes": 8
+    },
+    {
+      "type": "moof",
+      "offset": 20614,
+      "bytes": 1624,
+      "header_bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 22238,
+      "bytes": 2352,
+      "header_bytes": 8
+    }
+  ]
+}

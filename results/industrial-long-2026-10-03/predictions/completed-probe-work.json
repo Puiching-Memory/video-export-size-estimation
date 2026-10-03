@@ -1,0 +1,113 @@
+{
+  "accounting": "successfully published full padded exports; cancelled partial FFmpeg work is unknown, separately conservatively charged by Engine",
+  "rows": [
+    {
+      "job": "temporal-30s",
+      "completed_probe_exports": 1,
+      "completed_output_video_seconds": 7.25,
+      "completed_output_video_fraction": 0.010084384277672657,
+      "charged_requested_encode_seconds": 14.5,
+      "charged_requested_encode_fraction": 0.020168768555345315,
+      "cancelled_attempt_output_seconds_unknown": true,
+      "records": [
+        {
+          "key": "1e5eb7b7b7ef8f6489f0d5d4c80ac2e1632234c7c81878e573ebdffd63f5cd11",
+          "window": [
+            118.0,
+            7.25
+          ],
+          "duration": 7.25,
+          "video_frames": 87,
+          "file_bytes": 164697,
+          "sha256": "582741b0fc0118d6f7627a17bd2b69a0aba6615b897b2d7966809e2b5ebcc575"
+        }
+      ]
+    },
+    {
+      "job": "content-30s",
+      "completed_probe_exports": 0,
+      "completed_output_video_seconds": 0,
+      "completed_output_video_fraction": 0.0,
+      "charged_requested_encode_seconds": 0.0,
+      "charged_requested_encode_fraction": 0.0,
+      "cancelled_attempt_output_seconds_unknown": false,
+      "records": []
+    },
+    {
+      "job": "temporal-60s",
+      "completed_probe_exports": 5,
+      "completed_output_video_seconds": 36.25,
+      "completed_output_video_fraction": 0.05042192138836328,
+      "charged_requested_encode_seconds": 43.5,
+      "charged_requested_encode_fraction": 0.06050630566603594,
+      "cancelled_attempt_output_seconds_unknown": true,
+      "records": [
+        {
+          "key": "1e5eb7b7b7ef8f6489f0d5d4c80ac2e1632234c7c81878e573ebdffd63f5cd11",
+          "window": [
+            118.0,
+            7.25
+          ],
+          "duration": 7.25,
+          "video_frames": 87,
+          "file_bytes": 164697,
+          "sha256": "582741b0fc0118d6f7627a17bd2b69a0aba6615b897b2d7966809e2b5ebcc575"
+        },
+        {
+          "key": "626335c3dc34683a418a0119a3d4792c92fc4d07613c2aaa680aa737d0cd2c45",
+          "window": [
+            614.0,
+            7.25
+          ],
+          "duration": 7.25,
+          "video_frames": 87,
+          "file_bytes": 8986,
+          "sha256": "e524b78539bc2f0bf576c62cc8ea49d12a8ad248c949d8fdd3005fd0cfdc0441"
+        },
+        {
+          "key": "7645429409d12a42050ea331547635f062c643ead7111ec1475f809c866c1a0a",
+          "window": [
+            358.0,
+            7.25
+          ],
+          "duration": 7.25,
+          "video_frames": 87,
+          "file_bytes": 369871,
+          "sha256": "01ede5d7f42cbbc0a94848c22e79e5edea687a0b77d47aad67e6c55dba751d68"
+        },
+        {
+          "key": "bf899f7f77fe9de9e3f265c516baf858c6db0327ea9d5ce3f566efe60f29c215",
+          "window": [
+            522.0,
+            7.25
+          ],
+          "duration": 7.25,
+          "video_frames": 87,
+          "file_bytes": 165856,
+          "sha256": "c1d0d91b3833fef2861bbb1b4054f08d37cb3057ad2d66abc2dfb37c4726abf7"
+        },
+        {
+          "key": "fa4c5e9507be53d5847897d6fe130de92065b129cb8f2dc68c8274610727a2b6",
+          "window": [
+            598.0,
+            7.25
+          ],
+          "duration": 7.25,
+          "video_frames": 87,
+          "file_bytes": 9427,
+          "sha256": "00a7c447b89b018c326a3e9352fdb08da2466b2d541de0e72b20e5550ffe6fdb"
+        }
+      ]
+    },
+    {
+      "job": "content-60s",
+      "completed_probe_exports": 0,
+      "completed_output_video_seconds": 0,
+      "completed_output_video_fraction": 0.0,
+      "charged_requested_encode_seconds": 0.0,
+      "charged_requested_encode_fraction": 0.0,
+      "cancelled_attempt_output_seconds_unknown": false,
+      "records": []
+    }
+  ]
+}

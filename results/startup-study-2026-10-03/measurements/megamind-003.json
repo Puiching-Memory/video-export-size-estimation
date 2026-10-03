@@ -1,0 +1,433 @@
+{
+  "configuration": {
+    "audio_bitrate": 128000,
+    "codec": "libx264",
+    "container": "mp4",
+    "crf": 23.0,
+    "drop_audio": true,
+    "export_mode": "continuous",
+    "preset": "medium",
+    "segment_seconds": 1.0,
+    "video_filter": null
+  },
+  "crf": 23.0,
+  "duration": 1.001001,
+  "encode_wall_seconds": 0.3352408119972097,
+  "file_bytes": 29315,
+  "height": 282,
+  "key": "2d7212f92729703b5fe74e1490f89ffc0ba861c567b0826cf4250c8077979801",
+  "payload_bytes": 28157,
+  "sha256": "84a9d5efa58c4597d029bab46659103af9c5fbabba6c8d8352b4e3d5d33ca170",
+  "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "transcode_wall_seconds": 0.163,
+  "video_frames": 24,
+  "width": 384,
+  "window": [
+    3.0,
+    1.0
+  ],
+  "artifact": "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/megamind-continuous-prepared-5.0-0.2/2d7212f92729703b5fe74e1490f89ffc0ba861c567b0826cf4250c8077979801.mp4",
+  "cache_hit": true,
+  "avcc_length_bytes": 4,
+  "time_base": "1/11988",
+  "first_packet_nals": [
+    {
+      "nal_type": 6,
+      "avcc_bytes": 690,
+      "sei_messages": [
+        {
+          "payload_type": 5,
+          "payload_bytes": 680,
+          "uuid_hex": "dc45e9bde6d948b7962cd820d923eeef",
+          "user_data_text": "x264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=23 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00"
+        }
+      ]
+    },
+    {
+      "nal_type": 5,
+      "avcc_bytes": 6458,
+      "picture_type": "I"
+    }
+  ],
+  "first_keyframe_bytes": 7148,
+  "startup_user_sei_bytes": 690,
+  "nonkey_count": 23,
+  "nonkey_mean_bytes": 913.4347826086956,
+  "startup_i_excess_bytes": 5544.565217391304,
+  "nonstartup_keyframe_count": 0,
+  "deSEI_payload_bytes": 27467,
+  "deSEI_startupI_payload_bytes": 21922.434782608696,
+  "packets": [
+    {
+      "decode_index": 0,
+      "pts": 0,
+      "dts": -1000,
+      "duration_ticks": 500,
+      "bytes": 7148,
+      "keyframe": true,
+      "nal_types": [
+        6,
+        5
+      ],
+      "picture_type": "I"
+    },
+    {
+      "decode_index": 1,
+      "pts": 1000,
+      "dts": -500,
+      "duration_ticks": 500,
+      "bytes": 2291,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 2,
+      "pts": 500,
+      "dts": 0,
+      "duration_ticks": 500,
+      "bytes": 469,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 3,
+      "pts": 2000,
+      "dts": 500,
+      "duration_ticks": 500,
+      "bytes": 2301,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 4,
+      "pts": 1500,
+      "dts": 1000,
+      "duration_ticks": 500,
+      "bytes": 381,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 5,
+      "pts": 4000,
+      "dts": 1500,
+      "duration_ticks": 500,
+      "bytes": 2056,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 6,
+      "pts": 3000,
+      "dts": 2000,
+      "duration_ticks": 500,
+      "bytes": 554,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 7,
+      "pts": 2500,
+      "dts": 2500,
+      "duration_ticks": 500,
+      "bytes": 240,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 8,
+      "pts": 3500,
+      "dts": 3000,
+      "duration_ticks": 500,
+      "bytes": 254,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 9,
+      "pts": 6000,
+      "dts": 3500,
+      "duration_ticks": 500,
+      "bytes": 2129,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 10,
+      "pts": 5000,
+      "dts": 4000,
+      "duration_ticks": 500,
+      "bytes": 609,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 11,
+      "pts": 4500,
+      "dts": 4500,
+      "duration_ticks": 500,
+      "bytes": 302,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 12,
+      "pts": 5500,
+      "dts": 5000,
+      "duration_ticks": 500,
+      "bytes": 305,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 13,
+      "pts": 8000,
+      "dts": 5500,
+      "duration_ticks": 500,
+      "bytes": 2108,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 14,
+      "pts": 7000,
+      "dts": 6000,
+      "duration_ticks": 500,
+      "bytes": 718,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 15,
+      "pts": 6500,
+      "dts": 6500,
+      "duration_ticks": 500,
+      "bytes": 358,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 16,
+      "pts": 7500,
+      "dts": 7000,
+      "duration_ticks": 500,
+      "bytes": 408,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 17,
+      "pts": 10000,
+      "dts": 7500,
+      "duration_ticks": 500,
+      "bytes": 2089,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 18,
+      "pts": 9000,
+      "dts": 8000,
+      "duration_ticks": 500,
+      "bytes": 916,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 19,
+      "pts": 8500,
+      "dts": 8500,
+      "duration_ticks": 500,
+      "bytes": 439,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 20,
+      "pts": 9500,
+      "dts": 9000,
+      "duration_ticks": 500,
+      "bytes": 422,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 21,
+      "pts": 11500,
+      "dts": 9500,
+      "duration_ticks": 500,
+      "bytes": 872,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "P"
+    },
+    {
+      "decode_index": 22,
+      "pts": 10500,
+      "dts": 10000,
+      "duration_ticks": 500,
+      "bytes": 461,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    },
+    {
+      "decode_index": 23,
+      "pts": 11000,
+      "dts": 10500,
+      "duration_ticks": 500,
+      "bytes": 327,
+      "keyframe": false,
+      "nal_types": [
+        1
+      ],
+      "picture_type": "B"
+    }
+  ],
+  "by_picture_type": {
+    "I": {
+      "count": 1,
+      "payload_bytes": 7148,
+      "mean_bytes": 7148.0
+    },
+    "P": {
+      "count": 7,
+      "payload_bytes": 13846,
+      "mean_bytes": 1978.0
+    },
+    "B": {
+      "count": 16,
+      "payload_bytes": 7163,
+      "mean_bytes": 447.6875
+    },
+    "SP": {
+      "count": 0,
+      "payload_bytes": 0,
+      "mean_bytes": null
+    },
+    "SI": {
+      "count": 0,
+      "payload_bytes": 0,
+      "mean_bytes": null
+    }
+  },
+  "mux_census": {
+    "model_version": "single-video-mp4-tables-v1",
+    "kind": "exact_single_video_census",
+    "file_bytes": 29315,
+    "payload_bytes": 28157,
+    "container_bytes": 1158,
+    "video_frames": 24,
+    "sample_ticks": 500,
+    "constant_bytes": 874,
+    "dynamic_bytes": 284,
+    "dynamic_table_bytes": {
+      "stsz": 96,
+      "ctts": 184,
+      "stss": 4
+    },
+    "table_bytes": {
+      "stsz": 116,
+      "stts": 24,
+      "stsc": 28,
+      "stco": 20,
+      "ctts": 200,
+      "stss": 20
+    },
+    "table_versions": {
+      "stsz": 0,
+      "stts": 0,
+      "stsc": 0,
+      "stco": 0,
+      "ctts": 0,
+      "stss": 0
+    },
+    "table_counts": {
+      "stts": 1,
+      "stsc": 1,
+      "stco": 1,
+      "stsz": 24,
+      "ctts": 23,
+      "stss": 1
+    },
+    "stsz_constant_sample_size": 0,
+    "ctts_present": true,
+    "stss_present": true,
+    "keyframe_count": 1,
+    "ctts_run_count": 23,
+    "video_only": true,
+    "chunks": 1,
+    "estimation_kind": "empirical_point; no bound or confidence interval"
+  },
+  "actual_encoded_media_seconds": 1.001001001001001,
+  "diagnostic_wall_seconds": 0.09165364199725445,
+  "artifact_reused_from_v2": true,
+  "cache_lookup_wall_seconds": 0.0014188380009727553,
+  "block_index": 3,
+  "formula_fingerprint": "3c31f341f6702fbce9a3aab114671261f3823ef0b708c2b35496f5d7582fcf7c"
+}

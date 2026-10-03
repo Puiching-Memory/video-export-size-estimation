@@ -1,0 +1,17 @@
+{
+  "sha256": "88b5e290d353ad1778985f362b0cb70c57c169ce3c16c5f67d89b4b799cd2fee",
+  "file_bytes": 15965193,
+  "full_output_decode_completed": true,
+  "decoded_frames": 8627,
+  "reported_frames": 8627,
+  "output_duration_seconds": 718.916667,
+  "source_video_duration_seconds": 718.933333,
+  "allowed_duration_rounding_seconds": 0.10001666666666667,
+  "output_width": 640,
+  "output_height": 360,
+  "output_frame_rate": "12/1",
+  "output_audio_streams": 0,
+  "decode_wall_seconds": 5.24254449,
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2",
+  "valid": true
+}

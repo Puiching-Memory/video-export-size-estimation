@@ -1,0 +1,646 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "contract": {
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium",
+    "pixel_format": "yuv420p",
+    "threads": 1,
+    "filter_threads": 1,
+    "audio": "dropped",
+    "keyint": "x264 default 250 (verified in encoder log)"
+  },
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "manifest_sha256": "228636910cc161c21569d0c2de3eb5c7143bf320cc446653ce6a7e5078bf78ee",
+  "script_sha256": "90813ca280d2641af7e1165608dd7f6836cfd6cd428f270fff65fc9fa6af0de6",
+  "padding": {
+    "before": 2.0,
+    "after": 1.0
+  },
+  "block_seconds": 2.0,
+  "reference_uses": "scoring only; encoded after candidate measurements",
+  "cases": [
+    {
+      "id": "static",
+      "group_id": "synthetic-static",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+      "reference_file_bytes": 18261,
+      "reference_payload_bytes": 10490,
+      "reference_container_bytes": 7771,
+      "reference_picture_types": {
+        "I": {
+          "frames": 3,
+          "bytes": 905
+        },
+        "P": {
+          "frames": 145,
+          "bytes": 3313
+        },
+        "B": {
+          "frames": 428,
+          "bytes": 6272
+        }
+      },
+      "reference_encode_seconds": 0.41783679999934975,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 35808.0,
+          "target": 18261,
+          "relative_error": 0.9609002792837193
+        },
+        "clip_payload": {
+          "estimate": 18492.0,
+          "target": 10490,
+          "relative_error": 0.7628217349857007
+        },
+        "startup_corrected": {
+          "estimate": 11274.256340425532,
+          "target": 10490,
+          "relative_error": 0.07476228221406411
+        },
+        "context_payload": {
+          "estimate": 10385,
+          "target": 10490,
+          "relative_error": -0.010009532888465178
+        },
+        "context_gop_corrected": {
+          "estimate": 11873.808510638297,
+          "target": 10490,
+          "relative_error": 0.13191692189116266,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 1488.8085106382978
+        },
+        "context_gop_no_sei": {
+          "estimate": 10493.808510638297,
+          "target": 10490,
+          "relative_error": 0.0003630610713343252,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 108.80851063829778
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "motion",
+      "group_id": "synthetic-motion",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+      "reference_file_bytes": 853251,
+      "reference_payload_bytes": 845696,
+      "reference_container_bytes": 7555,
+      "reference_picture_types": {
+        "I": {
+          "frames": 3,
+          "bytes": 17272
+        },
+        "P": {
+          "frames": 181,
+          "bytes": 377236
+        },
+        "B": {
+          "frames": 392,
+          "bytes": 451188
+        }
+      },
+      "reference_encode_seconds": 1.8226726899956702,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 891600.0,
+          "target": 853251,
+          "relative_error": 0.044944570823825636
+        },
+        "clip_payload": {
+          "estimate": 874436.0,
+          "target": 845696,
+          "relative_error": 0.03398384289390033
+        },
+        "startup_corrected": {
+          "estimate": 829370.1610212766,
+          "target": 845696,
+          "relative_error": -0.019304618892277303
+        },
+        "context_payload": {
+          "estimate": 836274,
+          "target": 845696,
+          "relative_error": -0.011141119267443655
+        },
+        "context_gop_corrected": {
+          "estimate": 845569.7588652482,
+          "target": 845696,
+          "relative_error": -0.00014927483960169852,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 9295.758865248226
+        },
+        "context_gop_no_sei": {
+          "estimate": 844189.7588652482,
+          "target": 845696,
+          "relative_error": -0.0017810668783485584,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 7915.758865248226
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "grain",
+      "group_id": "synthetic-grain",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+      "reference_file_bytes": 5987083,
+      "reference_payload_bytes": 5979220,
+      "reference_container_bytes": 7863,
+      "reference_picture_types": {
+        "I": {
+          "frames": 4,
+          "bytes": 101331
+        },
+        "P": {
+          "frames": 144,
+          "bytes": 1950874
+        },
+        "B": {
+          "frames": 428,
+          "bytes": 3927015
+        }
+      },
+      "reference_encode_seconds": 8.288163871999132,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 6022280.0,
+          "target": 5987083,
+          "relative_error": 0.005878822792334759
+        },
+        "clip_payload": {
+          "estimate": 6004956.0,
+          "target": 5979220,
+          "relative_error": 0.004304240352420496
+        },
+        "startup_corrected": {
+          "estimate": 5924207.918297873,
+          "target": 5979220,
+          "relative_error": -0.0092005448373077
+        },
+        "context_payload": {
+          "estimate": 5973695,
+          "target": 5979220,
+          "relative_error": -0.0009240335695960278
+        },
+        "context_gop_corrected": {
+          "estimate": 5990350.957446809,
+          "target": 5979220,
+          "relative_error": 0.001861606939836502,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 16655.957446808512
+        },
+        "context_gop_no_sei": {
+          "estimate": 5988970.957446809,
+          "target": 5979220,
+          "relative_error": 0.0016308076048061615,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 15275.95744680851
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "brief-burst",
+      "group_id": "synthetic-brief-burst",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "99b156b5c96829e8d1ab0acb99d90317f103a3e4edd9b59c94087ac3a8ce825d",
+      "reference_file_bytes": 1422355,
+      "reference_payload_bytes": 1414936,
+      "reference_container_bytes": 7419,
+      "reference_picture_types": {
+        "I": {
+          "frames": 3,
+          "bytes": 38009
+        },
+        "P": {
+          "frames": 180,
+          "bytes": 1344012
+        },
+        "B": {
+          "frames": 393,
+          "bytes": 32915
+        }
+      },
+      "reference_encode_seconds": 1.6348640489959507,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 1431265.0,
+          "target": 1422355,
+          "relative_error": 0.006264258922702215
+        },
+        "clip_payload": {
+          "estimate": 1414293.0,
+          "target": 1414936,
+          "relative_error": -0.0004544375151950275
+        },
+        "startup_corrected": {
+          "estimate": 1407170.3080851063,
+          "target": 1414936,
+          "relative_error": -0.00548836973184208
+        },
+        "context_payload": {
+          "estimate": 1405688,
+          "target": 1414936,
+          "relative_error": -0.006535984666444228
+        },
+        "context_gop_corrected": {
+          "estimate": 1407157.2021276595,
+          "target": 1414936,
+          "relative_error": -0.005497632311525447,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 1469.2021276595744
+        },
+        "context_gop_no_sei": {
+          "estimate": 1405777.2021276595,
+          "target": 1414936,
+          "relative_error": -0.006472941442115077,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 89.20212765957451
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "cbr-burst",
+      "group_id": "synthetic-cbr-burst",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+      "reference_file_bytes": 652210,
+      "reference_payload_bytes": 644491,
+      "reference_container_bytes": 7719,
+      "reference_picture_types": {
+        "I": {
+          "frames": 4,
+          "bytes": 49351
+        },
+        "P": {
+          "frames": 153,
+          "bytes": 299990
+        },
+        "B": {
+          "frames": 419,
+          "bytes": 295150
+        }
+      },
+      "reference_encode_seconds": 1.2447154760011472,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 667809.0,
+          "target": 652210,
+          "relative_error": 0.023917143251406703
+        },
+        "clip_payload": {
+          "estimate": 650525.0,
+          "target": 644491,
+          "relative_error": 0.009362427093629
+        },
+        "startup_corrected": {
+          "estimate": 636540.9783829787,
+          "target": 644491,
+          "relative_error": -0.012335349317556532
+        },
+        "context_payload": {
+          "estimate": 650184,
+          "target": 644491,
+          "relative_error": 0.008833327385487255
+        },
+        "context_gop_corrected": {
+          "estimate": 653068.4929078014,
+          "target": 644491,
+          "relative_error": 0.013308941331688695,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 2884.492907801418
+        },
+        "context_gop_no_sei": {
+          "estimate": 651688.4929078014,
+          "target": 644491,
+          "relative_error": 0.011167716706364184,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 1504.4929078014181
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "alternating",
+      "group_id": "synthetic-alternating",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+      "reference_file_bytes": 4206639,
+      "reference_payload_bytes": 4199684,
+      "reference_container_bytes": 6955,
+      "reference_picture_types": {
+        "I": {
+          "frames": 3,
+          "bytes": 69405
+        },
+        "P": {
+          "frames": 237,
+          "bytes": 2944178
+        },
+        "B": {
+          "frames": 336,
+          "bytes": 1186101
+        }
+      },
+      "reference_encode_seconds": 4.426061759004369,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 4070795.0,
+          "target": 4206639,
+          "relative_error": -0.03229276389060243
+        },
+        "clip_payload": {
+          "estimate": 4053511.0,
+          "target": 4199684,
+          "relative_error": -0.034805713953716566
+        },
+        "startup_corrected": {
+          "estimate": 4009026.697531915,
+          "target": 4199684,
+          "relative_error": -0.04539801148564637
+        },
+        "context_payload": {
+          "estimate": 4035410,
+          "target": 4199684,
+          "relative_error": -0.039115800141153456
+        },
+        "context_gop_corrected": {
+          "estimate": 4044585.804964539,
+          "target": 4199684,
+          "relative_error": -0.03693092028720757,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 9175.804964539007
+        },
+        "context_gop_no_sei": {
+          "estimate": 4043205.804964539,
+          "target": 4199684,
+          "relative_error": -0.03725951643872749,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 7795.8049645390065
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "screen",
+      "group_id": "synthetic-screen",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "ad17d3f642b25e0c8ba2abe0308cfa26c1faea63860a4df949cbf579d10c7ddf",
+      "reference_file_bytes": 117325,
+      "reference_payload_bytes": 109554,
+      "reference_container_bytes": 7771,
+      "reference_picture_types": {
+        "I": {
+          "frames": 3,
+          "bytes": 12071
+        },
+        "P": {
+          "frames": 145,
+          "bytes": 75995
+        },
+        "B": {
+          "frames": 428,
+          "bytes": 21488
+        }
+      },
+      "reference_encode_seconds": 0.9046238949958934,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 155971.0,
+          "target": 117325,
+          "relative_error": 0.3293927125506073
+        },
+        "clip_payload": {
+          "estimate": 138639.0,
+          "target": 109554,
+          "relative_error": 0.2654855139930994
+        },
+        "startup_corrected": {
+          "estimate": 100118.4939574468,
+          "target": 109554,
+          "relative_error": -0.08612653159677597
+        },
+        "context_payload": {
+          "estimate": 102729,
+          "target": 109554,
+          "relative_error": -0.0622980447998247
+        },
+        "context_gop_corrected": {
+          "estimate": 110674.64893617021,
+          "target": 109554,
+          "relative_error": 0.010229192326799641,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 7945.648936170212
+        },
+        "context_gop_no_sei": {
+          "estimate": 109294.64893617021,
+          "target": 109554,
+          "relative_error": -0.002367335412945093,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 6565.648936170212
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "pedestrians",
+      "group_id": "opencv-pedestrians",
+      "duration": 40.0,
+      "frames": 400,
+      "fps": 10.0,
+      "source_sha256": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+      "reference_file_bytes": 587937,
+      "reference_payload_bytes": 582420,
+      "reference_container_bytes": 5517,
+      "reference_picture_types": {
+        "I": {
+          "frames": 2,
+          "bytes": 76577
+        },
+        "P": {
+          "frames": 137,
+          "bytes": 350663
+        },
+        "B": {
+          "frames": 261,
+          "bytes": 155180
+        }
+      },
+      "reference_encode_seconds": 1.8398862100002589,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 992535.0,
+          "target": 587937,
+          "relative_error": 0.6881655687599182
+        },
+        "clip_payload": {
+          "estimate": 970827.0,
+          "target": 582420,
+          "relative_error": 0.6668847223653034
+        },
+        "startup_corrected": {
+          "estimate": 419797.69684210524,
+          "target": 582420,
+          "relative_error": -0.2792182671575405
+        },
+        "context_payload": {
+          "estimate": 475708,
+          "target": 582420,
+          "relative_error": -0.18322173002300746
+        },
+        "context_gop_corrected": {
+          "estimate": 505655.2447368421,
+          "target": 582420,
+          "relative_error": -0.13180308928807027,
+          "guessed_periodic_i_count": 1,
+          "guessed_periodic_i_excess": 29947.244736842105
+        },
+        "context_gop_no_sei": {
+          "estimate": 504965.2447368421,
+          "target": 582420,
+          "relative_error": -0.13298780135152966,
+          "guessed_periodic_i_count": 1,
+          "guessed_periodic_i_excess": 29257.244736842105
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    },
+    {
+      "id": "megamind",
+      "group_id": "opencv-megamind",
+      "duration": 10.927594,
+      "frames": 262,
+      "fps": 23.97600057249565,
+      "source_sha256": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+      "reference_file_bytes": 261306,
+      "reference_payload_bytes": 257304,
+      "reference_container_bytes": 4002,
+      "reference_picture_types": {
+        "I": {
+          "frames": 4,
+          "bytes": 42262
+        },
+        "P": {
+          "frames": 74,
+          "bytes": 146670
+        },
+        "B": {
+          "frames": 184,
+          "bytes": 68372
+        }
+      },
+      "reference_encode_seconds": 1.3773345579975285,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 282410.91960850125,
+          "target": 261306,
+          "relative_error": 0.0807670685269426
+        },
+        "clip_payload": {
+          "estimate": 274057.7627011916,
+          "target": 257304,
+          "relative_error": 0.06511271764602022
+        },
+        "startup_corrected": {
+          "estimate": 244338.99710561967,
+          "target": 257304,
+          "relative_error": -0.050387879296009186
+        },
+        "context_payload": {
+          "estimate": 257513,
+          "target": 257304,
+          "relative_error": 0.000812268756023915
+        },
+        "context_gop_corrected": {
+          "estimate": 263535.30931089673,
+          "target": 257304,
+          "relative_error": 0.024217693121353356,
+          "guessed_periodic_i_count": 1,
+          "guessed_periodic_i_excess": 6022.30931089673
+        },
+        "context_gop_no_sei": {
+          "estimate": 262845.30931089673,
+          "target": 257304,
+          "relative_error": 0.021536040290460745,
+          "guessed_periodic_i_count": 1,
+          "guessed_periodic_i_excess": 5332.30931089673
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    }
+  ]
+}

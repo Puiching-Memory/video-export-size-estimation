@@ -1,0 +1,68 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 768029,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        768029,
+        768029
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-segmented/197ed6883b3bb77a107a1c20436dccaef85a9163645d5279095224a00eed1d28.mp4",
+    "sha256": "8ca025c5ee1eacd12c821abbcfe1794253baf8bad981d90db1b1e948ae54b62f",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 732,
+      "video_payload_bytes": 759937,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 7360,
+      "video_samples": 400,
+      "audio_samples": 0,
+      "video_duration_ticks": 409600,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 10,
+    "elapsed_seconds": 5.056278926000232
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 688664,
+    "selected_crf": 24.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        688664,
+        688664
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-segmented/e5602509f592f2d7d9395a10660e982737d2f1db89e25f9b661ed55f284f6650.mp4",
+    "sha256": "a98f61308335a9a758169bd208640247fd2c991298fd918de26fc3625109a5a9",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 732,
+      "video_payload_bytes": 680572,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 7360,
+      "video_samples": 400,
+      "audio_samples": 0,
+      "video_duration_ticks": 409600,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 10,
+    "elapsed_seconds": 10.19292369500181
+  }
+]

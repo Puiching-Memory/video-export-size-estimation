@@ -1,0 +1,3708 @@
+[
+  {
+    "id": "pedestrians-leading2",
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "geometry": [
+      384,
+      288
+    ],
+    "fps": "10",
+    "sar": "0",
+    "vui": {
+      "env": {
+        "VSIZE_VUI_CHROMA_LOCATION": "0"
+      },
+      "ffmpeg_flags": [
+        "-chroma_sample_location",
+        "left"
+      ],
+      "frame_filter": null
+    },
+    "global_start_frame": 120,
+    "leading_frames": 20,
+    "central_frames": 10,
+    "planned_future_frames": 45,
+    "decoded_raw_frames": 75,
+    "ingest_seconds": 0.0016895380031201057,
+    "decoder_wall_seconds": 0.2462102200006484,
+    "decode_command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "debug",
+      "-nostdin",
+      "-y",
+      "-xerror",
+      "-nostats",
+      "-benchmark",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-ss",
+      "10.0",
+      "-i",
+      "/proc/self/fd/4",
+      "-t",
+      "7.5",
+      "-map",
+      "0:0",
+      "-an",
+      "-sn",
+      "-dn",
+      "-pix_fmt",
+      "yuv420p",
+      "-fps_mode",
+      "passthrough",
+      "-f",
+      "rawvideo",
+      "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2.i420"
+    ],
+    "raw_ffmpeg_command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-nostdin",
+      "-y",
+      "-nostats",
+      "-benchmark",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-f",
+      "rawvideo",
+      "-pixel_format",
+      "yuv420p",
+      "-video_size",
+      "384x288",
+      "-framerate",
+      "10",
+      "-chroma_sample_location",
+      "left",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2.i420",
+      "-vf",
+      "setsar=0:max=65535",
+      "-an",
+      "-sn",
+      "-dn",
+      "-map_metadata",
+      "-1",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "23",
+      "-preset",
+      "medium",
+      "-threads",
+      "1",
+      "-pix_fmt",
+      "yuv420p",
+      "-fps_mode",
+      "passthrough",
+      "-movflags",
+      "+faststart",
+      "-chroma_sample_location",
+      "left",
+      "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2-ffmpeg.mp4"
+    ],
+    "raw_ffmpeg_wall_seconds": 0.4188270789964008,
+    "api_full": {
+      "status": 0,
+      "mode": "full",
+      "fed_frames": 75,
+      "produced_packets": 75,
+      "central_packets": 10,
+      "future_packets": 45,
+      "queued_frames_discarded": 0,
+      "flush_calls": 41,
+      "encoder_seconds": 0.380642638,
+      "stdin_read_seconds": 0.003744498,
+      "encoder_cpu_seconds": 0.380791333,
+      "process_cpu_seconds": 0.388201339,
+      "setup_seconds": 0.002153854,
+      "setup_cpu_seconds": 0.002153812,
+      "process_seconds": 0.388357278,
+      "global_sei_bytes": 690,
+      "lookahead": 40,
+      "bframes": 3,
+      "vfr": 1,
+      "annexb": 0,
+      "repeat_headers": 0,
+      "keyint": 250,
+      "keyint_min": 10,
+      "command": [
+        "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/x264_context",
+        "384",
+        "288",
+        "10",
+        "1",
+        "75",
+        "20",
+        "10",
+        "0",
+        "1",
+        "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2-full"
+      ],
+      "wall_seconds": 0.3932691080044606
+    },
+    "decoder_counts": {
+      "source_packets_parsed": 188,
+      "source_frames_decoded": 177,
+      "raw_frames_emitted": 75,
+      "decoder_cpu_seconds": 0.14,
+      "decoder_internal_wall_seconds": 0.121
+    },
+    "source_raw_frames_match_continuous": true,
+    "full_api_vs_raw_ffmpeg": {
+      "packet_count": true,
+      "pts_dts": true,
+      "avcc_bytes": true,
+      "sps_pps": true,
+      "decoded_frames": true
+    },
+    "full_api_vs_native_padded_ffmpeg": {
+      "packet_count": true,
+      "pts_dts": true,
+      "avcc_bytes": true,
+      "sps_pps": true
+    },
+    "native_padded_artifact": "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians/media-cache/755d5092511a7a5c84dcc63c32bbcfef46dba65a8bfd41ea09783d58124d5851.mp4",
+    "native_padded_packets": [
+      {
+        "pts": 0,
+        "dts": -2,
+        "bytes": 34803,
+        "sha256": "74a3951ea151bc5c53dcd11ba70d4cbf3ed4689586a252e07d6788474ffb1298",
+        "nal_types": [
+          6,
+          5
+        ],
+        "nal_reference_idc": [
+          0,
+          3
+        ]
+      },
+      {
+        "pts": 4,
+        "dts": -1,
+        "bytes": 3134,
+        "sha256": "3da204d982abda91ad52306bcd009d28f6f21eeba90eb133fe01089f0f58b121",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 2,
+        "dts": 0,
+        "bytes": 976,
+        "sha256": "070c857231efc4a9f274d5b215040d70e8268208419ceeb951bfdfd4164064a9",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 1,
+        "dts": 1,
+        "bytes": 553,
+        "sha256": "3779847b5d9a6eca0b65ac40e5cfff0d1c7b2fe44394ace57c9323225ff9840c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 3,
+        "dts": 2,
+        "bytes": 661,
+        "sha256": "db0d1db953e3d6e1123912bce1bd9db7a850d049bfdb3ae87bf4595ed299e217",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 7,
+        "dts": 3,
+        "bytes": 2998,
+        "sha256": "d8db025d0666633017711fb2b0500521af464fc3aa3fb24031fd7682d095d428",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 5,
+        "dts": 4,
+        "bytes": 654,
+        "sha256": "81792547495ed35b2a9fb9fae60406c8dd7cbccb329f803a38de24d27de497dd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 6,
+        "dts": 5,
+        "bytes": 593,
+        "sha256": "c06a7b8c7b577e504cacecbffaf05afeb5c9c269b86b5f5b03e9c30d77c10275",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 9,
+        "dts": 6,
+        "bytes": 2695,
+        "sha256": "5e4051ca1898d1bdc7f739965d325ad60aec1437af27ad16faf4043b34c6ea6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 8,
+        "dts": 7,
+        "bytes": 642,
+        "sha256": "10e10621446663abced186c3838a5ff841343f6ded32c1f29c69469feb11c7dc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 13,
+        "dts": 8,
+        "bytes": 3153,
+        "sha256": "efda68a1d3f036878fefa91076c8246a8112727cb7a1de61b8dd3c7e59d838e2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 11,
+        "dts": 9,
+        "bytes": 978,
+        "sha256": "4276a5fd5185d71d3d774b3886c131506c34e89f7d2767af07ba6023c8a3a6a6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 10,
+        "dts": 10,
+        "bytes": 496,
+        "sha256": "560cf8fd0263a26eeff8c117d39bba6a2ba8aaa032de1d18b749ad218a5bd5fd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 12,
+        "dts": 11,
+        "bytes": 656,
+        "sha256": "394084edb454704375d4e843e2970941a3afd419e1c6babf49d10ac093c56b1f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 17,
+        "dts": 12,
+        "bytes": 3012,
+        "sha256": "380209b4d2c890ec463c4f2a564b537180d99827e26d5d1b022c12f94c5c32ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 15,
+        "dts": 13,
+        "bytes": 997,
+        "sha256": "620550e45d93c6cdf84da0faa66965f426eaf2cf5e3af9bb0498fe39a2fe54d2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 14,
+        "dts": 14,
+        "bytes": 569,
+        "sha256": "88bfdcec8151c1326ffb44a4109907a2b742a026c3293055b17b9e69dc1820fb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 16,
+        "dts": 15,
+        "bytes": 577,
+        "sha256": "1f0220f586e40aa0452b9cb7d4250eb6add603b0acedf214643805631e6b44ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 19,
+        "dts": 16,
+        "bytes": 2840,
+        "sha256": "2d800686f39dadd70e5bbe22bacbc148ee61f3cc092af1473f7df2b22d3c3b45",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 18,
+        "dts": 17,
+        "bytes": 674,
+        "sha256": "c8c462ce9c69c736d7d84e407b655008974517bff8c615b2431afa124c1321a4",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 22,
+        "dts": 18,
+        "bytes": 3110,
+        "sha256": "f11f4f3c37a6dcac4e9237c9016baa33c3620ebed36cbcb41ad0892c720057e7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 20,
+        "dts": 19,
+        "bytes": 688,
+        "sha256": "66c2dee14fc3111c9a2722355999c8ef4663ab757515cc97d961adb0eb7f2d6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 21,
+        "dts": 20,
+        "bytes": 689,
+        "sha256": "b18e9e171024beb075c2f2073ff8db8b4d9acc1cab31a433d8d5358508875f11",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 26,
+        "dts": 21,
+        "bytes": 3534,
+        "sha256": "a82125d4a78b79b2fe80674e66098a6ad493bda02549e4ac7fcdfe1742b67061",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 24,
+        "dts": 22,
+        "bytes": 1030,
+        "sha256": "8ef642ba3bb160f286de57d637687cfb70f0285d9d66e7b454dc8e3cd1e1a0e0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 23,
+        "dts": 23,
+        "bytes": 650,
+        "sha256": "7166f2a6595ae18f66fc177c0bf751e4e33c488cf1976a574e3004ec2853c0b1",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 25,
+        "dts": 24,
+        "bytes": 560,
+        "sha256": "7d79ceb228a6545718ffd5c4ce841279e13df1dd08fb8d4316d2ba4dfbeebcad",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 30,
+        "dts": 25,
+        "bytes": 3374,
+        "sha256": "0924d0d3ea64b22535b82599c8a75664b9c7d57f87d8a8b617e641a6ddc2e2a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 28,
+        "dts": 26,
+        "bytes": 1046,
+        "sha256": "bad2cb5d1657aca90ebc2a5e7419d0b5a0abe7f3b8f5f5f97869e45731e40a0b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 27,
+        "dts": 27,
+        "bytes": 556,
+        "sha256": "c4b72838d4eb87b04cafc8793a1a244310f97293ad6d721dc7d7fa6a7350f8ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 29,
+        "dts": 28,
+        "bytes": 560,
+        "sha256": "86889cfc4db247b08520f38b6c7a631610ac99cdd6dcdf90e7f77b550d41ed9e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 32,
+        "dts": 29,
+        "bytes": 2148,
+        "sha256": "063513ef8745d8fe08fdffc9814091b1b1d6d899566c81b8d341b7647e675ea8",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 31,
+        "dts": 30,
+        "bytes": 430,
+        "sha256": "cb8ccd060e0186a9c07b9d821f716ce6451cf5c63e1b8f1dfb555e387d45d628",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 36,
+        "dts": 31,
+        "bytes": 3290,
+        "sha256": "c2ae6227940f91315cdc92c37bae56b69f05fbfc23e99a7fa4209656f3aec73f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 34,
+        "dts": 32,
+        "bytes": 919,
+        "sha256": "b9cd7b62151b4904cfb78e07dc4d2154835c586cf3dbb81230cab1adec5f5631",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 33,
+        "dts": 33,
+        "bytes": 537,
+        "sha256": "e03f341cc677bddad843eca7b72835c18197ec27657c1349aa4772b863f91539",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 35,
+        "dts": 34,
+        "bytes": 465,
+        "sha256": "283e2daee2151c24f5e493fb238735400569fb479dc97e493aed4183446b33a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 40,
+        "dts": 35,
+        "bytes": 2866,
+        "sha256": "47f6d971243c15645326117cbdf5fb764bd4851e1fdd6f6b74dad0f13dad843e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 38,
+        "dts": 36,
+        "bytes": 856,
+        "sha256": "86941b3b7c69a793a91e7898448a855ce7df9a8f17cfdc4be8db4564309d75ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 37,
+        "dts": 37,
+        "bytes": 587,
+        "sha256": "ea0457814447adcd604c6edce8b2a83bb1406609d7ab8f337fae0e0e934dc9be",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 39,
+        "dts": 38,
+        "bytes": 521,
+        "sha256": "48ead2a1bef3953bcae9c4f5682e9fba324c34efd6514dbfd070bb6ffbe0433d",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 44,
+        "dts": 39,
+        "bytes": 2869,
+        "sha256": "3087dfeb229352f263eeef784de527d16804b65a4509c2df85c471c41e014bbc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 42,
+        "dts": 40,
+        "bytes": 901,
+        "sha256": "615522f4f29d964e1eccc9e84378200c3c3799c69b233b9e8c4104218e93925d",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 41,
+        "dts": 41,
+        "bytes": 630,
+        "sha256": "ae09629cf8534733d527a51595cc2137ac07221029dbf5d15bbad4daa84051fe",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 43,
+        "dts": 42,
+        "bytes": 571,
+        "sha256": "d5eeb5321bdd16a48721718a83e9912eb09bae36409c2140013bcf62061d7807",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 48,
+        "dts": 43,
+        "bytes": 2987,
+        "sha256": "237423e090d55d24a09ba63cc6359b5e0f2d6ba51280c15036d55ffbce0c7fe8",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 46,
+        "dts": 44,
+        "bytes": 951,
+        "sha256": "be02f85a3bc413ee9fb099e6862c4868d484d10672f85a421122f1008e887080",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 45,
+        "dts": 45,
+        "bytes": 639,
+        "sha256": "30162ff524eae5747d7b190e9099ee695a7f1c30e2798b36f106f93296237833",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 47,
+        "dts": 46,
+        "bytes": 628,
+        "sha256": "19e45a76d045ee82045e2745b375918e95e4169c932a0e22b4605fb791c91c66",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 52,
+        "dts": 47,
+        "bytes": 3155,
+        "sha256": "888ad72c2fc88a3a73f1638866185b64640d1e5128fa6607df29edcbfb603c65",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 50,
+        "dts": 48,
+        "bytes": 1125,
+        "sha256": "ed7c9f75b44759f0b2372e742ce44ff3236116105b54943b11f934e4c6588fbe",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 49,
+        "dts": 49,
+        "bytes": 741,
+        "sha256": "d293c45b18f7b83d1946f058bcce88eb6bb801c2ee03c00782c1839531edb888",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 51,
+        "dts": 50,
+        "bytes": 718,
+        "sha256": "bfb1661bcd61edc4065ffea2748a14469e278adba800e33024d59ccee2910247",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 53,
+        "dts": 51,
+        "bytes": 1542,
+        "sha256": "f25c86cb17b626dd817f713389c938536e68e086edb1b91f93c23f7ee55aab2b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 57,
+        "dts": 52,
+        "bytes": 2717,
+        "sha256": "4b5bbcd39731ffd2d0f7aba4803be4ff1faad08637586033ead3d0c5a4499cf5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 55,
+        "dts": 53,
+        "bytes": 837,
+        "sha256": "94cbda33e0c629b424e27a9538587d2c9854e829da1a0fb2c9e66373bb8dba18",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 54,
+        "dts": 54,
+        "bytes": 566,
+        "sha256": "21a4b27c440a80abc8ee7fcfe0b38d6a64f614432cbd48aa283ba3dcdd186607",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 56,
+        "dts": 55,
+        "bytes": 388,
+        "sha256": "8aedd98f8ee14f7fed1389edbd2b0a8334c4a997ec0c207c017ec91e27f33dd7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 61,
+        "dts": 56,
+        "bytes": 2083,
+        "sha256": "a538cc9f8f891fa9a4bceb6e3cef6780811b0725c38c4b5092f3df485cdda658",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 59,
+        "dts": 57,
+        "bytes": 899,
+        "sha256": "ea8a2b403924d802d3fc845be31062204d721a3e27e0598edb56424c842bfe87",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 58,
+        "dts": 58,
+        "bytes": 403,
+        "sha256": "abf9b6930a1ccb39d034e125c1bda141052b07008a42cd5872cec70465889cfc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 60,
+        "dts": 59,
+        "bytes": 483,
+        "sha256": "de3f08d228f96a4012bf474d16a25280cc38df9723e25b79720a5b8a4f7e0c32",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 62,
+        "dts": 60,
+        "bytes": 1182,
+        "sha256": "085a667cdab8316856641eba2b5c6606b1457f4d1d4b8db8b1fa341084822e17",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 63,
+        "dts": 61,
+        "bytes": 1381,
+        "sha256": "7c163931a19fc3a03dbf0a13f03854e6933ebe262b644cf44ee1eaece374f0f0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 67,
+        "dts": 62,
+        "bytes": 1904,
+        "sha256": "31237a1d66288f8bb48bca350289a6fbab5817bc1808e8dba56a1e5f39ed291f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 65,
+        "dts": 63,
+        "bytes": 913,
+        "sha256": "2c7f5abde4570d5be0cc2bd3890b8f1519f8100004402cedcc90d7bf459ec13c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 64,
+        "dts": 64,
+        "bytes": 494,
+        "sha256": "5e5c0fffdd0f94171979c9f3ad9ad057f4b90c3dbf0181a06fc12449618d8660",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 66,
+        "dts": 65,
+        "bytes": 434,
+        "sha256": "e9778ea90b5d4cd903347dccdd47c0578c277522fe907f15159fb9acd165a3af",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 71,
+        "dts": 66,
+        "bytes": 2241,
+        "sha256": "ed273247b67039ff79715b18b35dbcb8d3e1c8827ac3d6b4a13ad0b0fc45dcdd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 69,
+        "dts": 67,
+        "bytes": 873,
+        "sha256": "9964c5e4799ddb00dd9442f1dc0b1a8ed98d9b594723485163cce4ec4fb4b083",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 68,
+        "dts": 68,
+        "bytes": 434,
+        "sha256": "74b1499c2c2ec71828bcf422fb168347bcde5f051376154520e24c26530cd451",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 70,
+        "dts": 69,
+        "bytes": 637,
+        "sha256": "4115c8bfc0777487bc26a27b25a55f3caff2869c8ce2684fbebf588075d583eb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 74,
+        "dts": 70,
+        "bytes": 1039,
+        "sha256": "aded28d1dd90f116f698ddef76819f385651181688a5bfde5afa7173a4803334",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 72,
+        "dts": 71,
+        "bytes": 561,
+        "sha256": "2e2562e02be03260070f7b6e006f84cf4fcf716ceae1ec94cb59570eb8729436",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 73,
+        "dts": 72,
+        "bytes": 533,
+        "sha256": "52e9b9be902b7b80e0a0a50a7e821f32ddc9850a78929e6850ef36c5d26fb9c6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      }
+    ],
+    "raw_frame_md5": [
+      "ae65736ef6430ab3d732386106ed7f9f",
+      "396ca7221c2c5e41507a7bcfb335a457",
+      "854dae728b26fcb8d81741d60f228e53",
+      "440b95607c7da6456dfbd679c0363e0f",
+      "3efacd3535ba9d9ae0c6157c26366546",
+      "fb224b2de48aa8311b3f2b9fb4bbca24",
+      "653d79572fd5181980afcb4b6c9abb98",
+      "a4ca37e72d4f8f7472060971c2f2ae17",
+      "30804a679ab749c24f7444852534d700",
+      "cde89c68bb76f4436405164f54232b7a",
+      "2bf59441a1953f08bc96f2cd43f728bd",
+      "26608ca7a0f5e7d70679e0b1c754e8b5",
+      "f5351c0562f054dd5c2949704369a2a3",
+      "447f456a1d349edd202307230564a7db",
+      "2a89a8c8ec0dac4a459319a0fe2f5ed8",
+      "544a28f03f4f10b17c4fb998b77664f5",
+      "005f7369c0d25ecd08665be24b1ed839",
+      "e15bf675180a135f34c1cc8fc856ebd7",
+      "d4f1dc81ece127c3612e02ef0db6da51",
+      "1d0101e957bd1bce50183481f4598c81",
+      "05782d84917ab93307c078619c4efd01",
+      "22ec6d0dd02f6a968f9557ceae070b06",
+      "a645dd5aae52c79c4497a7a9fb318d43",
+      "63b6403fd19c8a7226417215d93f0dde",
+      "39b2fd591ea441a883d4f76aaf2c4d9b",
+      "5dd1862ba3586e238861000734381f72",
+      "f24b3650eeb9322168ba28c96f15abc5",
+      "f2f08875c70830f61a5fccdaa98ba68a",
+      "07ffcd27c8ee33ef4283ddb937e715ec",
+      "ab25bb27f97201215b6cfbf862fa7b69",
+      "73fdd84d862e6fc3a91b6fdfc4412674",
+      "bdef33c341ef5fcf62927563ee54f44c",
+      "d46be12cd97b0c1e3ad22d8e8ca2cbf0",
+      "d293035e9421a21bf9f4f4fc8e867a09",
+      "a8376059b09fa82b0e6d120acde1f2c8",
+      "47543de3ed50b5fd6053dc6c078d1f89",
+      "171e82d86a5ce68d9b1349ac5537b633",
+      "defa104d534f92db3a61582f2bcd2d53",
+      "b7e67544af9f63b0fa6f7056ab0130bf",
+      "08501cd6762c0c8684d4115488dcf903",
+      "09728cd4e5b5a33744571034f823e80b",
+      "fc858eb8dab5f5b84be440015c80e41c",
+      "cb2a05e81eb91339c07c2078af817c4c",
+      "6465af3828d02bcc8d62ac22501ab08a",
+      "c28054b0534a28fa25cf140adbc729a7",
+      "a467ee5392b3926f130bbdefaf7ae845",
+      "2c4b8b812dc47667ffa1da5db91dde42",
+      "5889c2654d61140477c59c5ae192757c",
+      "02e8386bc9d5ec83bd02c47a4f9878c3",
+      "e05ad4e5e11901d6ba2a094b9967221d",
+      "bf4a34d2623224a903b02f898c6f3e72",
+      "61f563319d3d68c695b60a25b2f102a6",
+      "a597ae80359eca5f1316979e847c287e",
+      "68fe1aa49cd9490fe8c44d372cb1a72a",
+      "8286c45cd35b8edd3ecb87d81ed253f0",
+      "f0aed9e33b21763ba2c017510cb716cc",
+      "1a1b16c3dbfb5010448f70b10ee9a5bb",
+      "e657dc4df1059ba59afe938b6f78b248",
+      "5f68ccc8924d21f05fa25bae21c82934",
+      "f1c8940dc054d9b0c6a9f1beec4d815b",
+      "cd54709d54209f76c5be7f365e6c1433",
+      "68d188f967774db0513a45376bc7dae9",
+      "f1b3b09988c90b93102804d5bf6b81fa",
+      "2f9501c2348d1042053aadec85061719",
+      "578b1c6b493a5acd2eef18ef7063bcd6",
+      "7cf97aad47a6eec34fc400ce55bb80a1",
+      "347e353df3bb92be7310ddd5feb990d5",
+      "e9e7275d4cb9d9c3d77b72dc5b61345f",
+      "8af7c1ea81cbe708031ea467b0896ac2",
+      "200191a7361a8e28eb37400bbb51edad",
+      "b77190e04814aab8c67bf8b3cf159c7d",
+      "48b8f69a789fd433295ed76f68909708",
+      "1b3fd6f5644b7ec34132ed6d8b46a1c6",
+      "bb385352dd5bd220329df686ee9ebb73",
+      "2331b0b8ff3f4894f2971470a188f278"
+    ],
+    "full_packets": [
+      {
+        "pts": 0,
+        "dts": -2,
+        "bytes": 34803,
+        "sha256": "74a3951ea151bc5c53dcd11ba70d4cbf3ed4689586a252e07d6788474ffb1298",
+        "nal_types": [
+          6,
+          5
+        ],
+        "nal_reference_idc": [
+          0,
+          3
+        ],
+        "x264_picture_type": 1
+      },
+      {
+        "pts": 4,
+        "dts": -1,
+        "bytes": 3134,
+        "sha256": "3da204d982abda91ad52306bcd009d28f6f21eeba90eb133fe01089f0f58b121",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 2,
+        "dts": 0,
+        "bytes": 976,
+        "sha256": "070c857231efc4a9f274d5b215040d70e8268208419ceeb951bfdfd4164064a9",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 1,
+        "dts": 1,
+        "bytes": 553,
+        "sha256": "3779847b5d9a6eca0b65ac40e5cfff0d1c7b2fe44394ace57c9323225ff9840c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 3,
+        "dts": 2,
+        "bytes": 661,
+        "sha256": "db0d1db953e3d6e1123912bce1bd9db7a850d049bfdb3ae87bf4595ed299e217",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 7,
+        "dts": 3,
+        "bytes": 2998,
+        "sha256": "d8db025d0666633017711fb2b0500521af464fc3aa3fb24031fd7682d095d428",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 5,
+        "dts": 4,
+        "bytes": 654,
+        "sha256": "81792547495ed35b2a9fb9fae60406c8dd7cbccb329f803a38de24d27de497dd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 6,
+        "dts": 5,
+        "bytes": 593,
+        "sha256": "c06a7b8c7b577e504cacecbffaf05afeb5c9c269b86b5f5b03e9c30d77c10275",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 9,
+        "dts": 6,
+        "bytes": 2695,
+        "sha256": "5e4051ca1898d1bdc7f739965d325ad60aec1437af27ad16faf4043b34c6ea6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 8,
+        "dts": 7,
+        "bytes": 642,
+        "sha256": "10e10621446663abced186c3838a5ff841343f6ded32c1f29c69469feb11c7dc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 13,
+        "dts": 8,
+        "bytes": 3153,
+        "sha256": "efda68a1d3f036878fefa91076c8246a8112727cb7a1de61b8dd3c7e59d838e2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 11,
+        "dts": 9,
+        "bytes": 978,
+        "sha256": "4276a5fd5185d71d3d774b3886c131506c34e89f7d2767af07ba6023c8a3a6a6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 10,
+        "dts": 10,
+        "bytes": 496,
+        "sha256": "560cf8fd0263a26eeff8c117d39bba6a2ba8aaa032de1d18b749ad218a5bd5fd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 12,
+        "dts": 11,
+        "bytes": 656,
+        "sha256": "394084edb454704375d4e843e2970941a3afd419e1c6babf49d10ac093c56b1f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 17,
+        "dts": 12,
+        "bytes": 3012,
+        "sha256": "380209b4d2c890ec463c4f2a564b537180d99827e26d5d1b022c12f94c5c32ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 15,
+        "dts": 13,
+        "bytes": 997,
+        "sha256": "620550e45d93c6cdf84da0faa66965f426eaf2cf5e3af9bb0498fe39a2fe54d2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 14,
+        "dts": 14,
+        "bytes": 569,
+        "sha256": "88bfdcec8151c1326ffb44a4109907a2b742a026c3293055b17b9e69dc1820fb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 16,
+        "dts": 15,
+        "bytes": 577,
+        "sha256": "1f0220f586e40aa0452b9cb7d4250eb6add603b0acedf214643805631e6b44ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 19,
+        "dts": 16,
+        "bytes": 2840,
+        "sha256": "2d800686f39dadd70e5bbe22bacbc148ee61f3cc092af1473f7df2b22d3c3b45",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 18,
+        "dts": 17,
+        "bytes": 674,
+        "sha256": "c8c462ce9c69c736d7d84e407b655008974517bff8c615b2431afa124c1321a4",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 22,
+        "dts": 18,
+        "bytes": 3110,
+        "sha256": "f11f4f3c37a6dcac4e9237c9016baa33c3620ebed36cbcb41ad0892c720057e7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 20,
+        "dts": 19,
+        "bytes": 688,
+        "sha256": "66c2dee14fc3111c9a2722355999c8ef4663ab757515cc97d961adb0eb7f2d6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 21,
+        "dts": 20,
+        "bytes": 689,
+        "sha256": "b18e9e171024beb075c2f2073ff8db8b4d9acc1cab31a433d8d5358508875f11",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 26,
+        "dts": 21,
+        "bytes": 3534,
+        "sha256": "a82125d4a78b79b2fe80674e66098a6ad493bda02549e4ac7fcdfe1742b67061",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 24,
+        "dts": 22,
+        "bytes": 1030,
+        "sha256": "8ef642ba3bb160f286de57d637687cfb70f0285d9d66e7b454dc8e3cd1e1a0e0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 23,
+        "dts": 23,
+        "bytes": 650,
+        "sha256": "7166f2a6595ae18f66fc177c0bf751e4e33c488cf1976a574e3004ec2853c0b1",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 25,
+        "dts": 24,
+        "bytes": 560,
+        "sha256": "7d79ceb228a6545718ffd5c4ce841279e13df1dd08fb8d4316d2ba4dfbeebcad",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 30,
+        "dts": 25,
+        "bytes": 3374,
+        "sha256": "0924d0d3ea64b22535b82599c8a75664b9c7d57f87d8a8b617e641a6ddc2e2a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 28,
+        "dts": 26,
+        "bytes": 1046,
+        "sha256": "bad2cb5d1657aca90ebc2a5e7419d0b5a0abe7f3b8f5f5f97869e45731e40a0b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 27,
+        "dts": 27,
+        "bytes": 556,
+        "sha256": "c4b72838d4eb87b04cafc8793a1a244310f97293ad6d721dc7d7fa6a7350f8ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 29,
+        "dts": 28,
+        "bytes": 560,
+        "sha256": "86889cfc4db247b08520f38b6c7a631610ac99cdd6dcdf90e7f77b550d41ed9e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 32,
+        "dts": 29,
+        "bytes": 2148,
+        "sha256": "063513ef8745d8fe08fdffc9814091b1b1d6d899566c81b8d341b7647e675ea8",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 31,
+        "dts": 30,
+        "bytes": 430,
+        "sha256": "cb8ccd060e0186a9c07b9d821f716ce6451cf5c63e1b8f1dfb555e387d45d628",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 36,
+        "dts": 31,
+        "bytes": 3290,
+        "sha256": "c2ae6227940f91315cdc92c37bae56b69f05fbfc23e99a7fa4209656f3aec73f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 34,
+        "dts": 32,
+        "bytes": 919,
+        "sha256": "b9cd7b62151b4904cfb78e07dc4d2154835c586cf3dbb81230cab1adec5f5631",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 33,
+        "dts": 33,
+        "bytes": 537,
+        "sha256": "e03f341cc677bddad843eca7b72835c18197ec27657c1349aa4772b863f91539",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 35,
+        "dts": 34,
+        "bytes": 465,
+        "sha256": "283e2daee2151c24f5e493fb238735400569fb479dc97e493aed4183446b33a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 40,
+        "dts": 35,
+        "bytes": 2866,
+        "sha256": "47f6d971243c15645326117cbdf5fb764bd4851e1fdd6f6b74dad0f13dad843e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 38,
+        "dts": 36,
+        "bytes": 856,
+        "sha256": "86941b3b7c69a793a91e7898448a855ce7df9a8f17cfdc4be8db4564309d75ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 37,
+        "dts": 37,
+        "bytes": 587,
+        "sha256": "ea0457814447adcd604c6edce8b2a83bb1406609d7ab8f337fae0e0e934dc9be",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 39,
+        "dts": 38,
+        "bytes": 521,
+        "sha256": "48ead2a1bef3953bcae9c4f5682e9fba324c34efd6514dbfd070bb6ffbe0433d",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 44,
+        "dts": 39,
+        "bytes": 2869,
+        "sha256": "3087dfeb229352f263eeef784de527d16804b65a4509c2df85c471c41e014bbc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 42,
+        "dts": 40,
+        "bytes": 901,
+        "sha256": "615522f4f29d964e1eccc9e84378200c3c3799c69b233b9e8c4104218e93925d",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 41,
+        "dts": 41,
+        "bytes": 630,
+        "sha256": "ae09629cf8534733d527a51595cc2137ac07221029dbf5d15bbad4daa84051fe",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 43,
+        "dts": 42,
+        "bytes": 571,
+        "sha256": "d5eeb5321bdd16a48721718a83e9912eb09bae36409c2140013bcf62061d7807",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 48,
+        "dts": 43,
+        "bytes": 2987,
+        "sha256": "237423e090d55d24a09ba63cc6359b5e0f2d6ba51280c15036d55ffbce0c7fe8",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 46,
+        "dts": 44,
+        "bytes": 951,
+        "sha256": "be02f85a3bc413ee9fb099e6862c4868d484d10672f85a421122f1008e887080",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 45,
+        "dts": 45,
+        "bytes": 639,
+        "sha256": "30162ff524eae5747d7b190e9099ee695a7f1c30e2798b36f106f93296237833",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 47,
+        "dts": 46,
+        "bytes": 628,
+        "sha256": "19e45a76d045ee82045e2745b375918e95e4169c932a0e22b4605fb791c91c66",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 52,
+        "dts": 47,
+        "bytes": 3155,
+        "sha256": "888ad72c2fc88a3a73f1638866185b64640d1e5128fa6607df29edcbfb603c65",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 50,
+        "dts": 48,
+        "bytes": 1125,
+        "sha256": "ed7c9f75b44759f0b2372e742ce44ff3236116105b54943b11f934e4c6588fbe",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 49,
+        "dts": 49,
+        "bytes": 741,
+        "sha256": "d293c45b18f7b83d1946f058bcce88eb6bb801c2ee03c00782c1839531edb888",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 51,
+        "dts": 50,
+        "bytes": 718,
+        "sha256": "bfb1661bcd61edc4065ffea2748a14469e278adba800e33024d59ccee2910247",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 53,
+        "dts": 51,
+        "bytes": 1542,
+        "sha256": "f25c86cb17b626dd817f713389c938536e68e086edb1b91f93c23f7ee55aab2b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 57,
+        "dts": 52,
+        "bytes": 2717,
+        "sha256": "4b5bbcd39731ffd2d0f7aba4803be4ff1faad08637586033ead3d0c5a4499cf5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 55,
+        "dts": 53,
+        "bytes": 837,
+        "sha256": "94cbda33e0c629b424e27a9538587d2c9854e829da1a0fb2c9e66373bb8dba18",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 54,
+        "dts": 54,
+        "bytes": 566,
+        "sha256": "21a4b27c440a80abc8ee7fcfe0b38d6a64f614432cbd48aa283ba3dcdd186607",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 56,
+        "dts": 55,
+        "bytes": 388,
+        "sha256": "8aedd98f8ee14f7fed1389edbd2b0a8334c4a997ec0c207c017ec91e27f33dd7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 61,
+        "dts": 56,
+        "bytes": 2083,
+        "sha256": "a538cc9f8f891fa9a4bceb6e3cef6780811b0725c38c4b5092f3df485cdda658",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 59,
+        "dts": 57,
+        "bytes": 899,
+        "sha256": "ea8a2b403924d802d3fc845be31062204d721a3e27e0598edb56424c842bfe87",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 58,
+        "dts": 58,
+        "bytes": 403,
+        "sha256": "abf9b6930a1ccb39d034e125c1bda141052b07008a42cd5872cec70465889cfc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 60,
+        "dts": 59,
+        "bytes": 483,
+        "sha256": "de3f08d228f96a4012bf474d16a25280cc38df9723e25b79720a5b8a4f7e0c32",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 62,
+        "dts": 60,
+        "bytes": 1182,
+        "sha256": "085a667cdab8316856641eba2b5c6606b1457f4d1d4b8db8b1fa341084822e17",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 63,
+        "dts": 61,
+        "bytes": 1381,
+        "sha256": "7c163931a19fc3a03dbf0a13f03854e6933ebe262b644cf44ee1eaece374f0f0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 67,
+        "dts": 62,
+        "bytes": 1904,
+        "sha256": "31237a1d66288f8bb48bca350289a6fbab5817bc1808e8dba56a1e5f39ed291f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 65,
+        "dts": 63,
+        "bytes": 913,
+        "sha256": "2c7f5abde4570d5be0cc2bd3890b8f1519f8100004402cedcc90d7bf459ec13c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 64,
+        "dts": 64,
+        "bytes": 494,
+        "sha256": "5e5c0fffdd0f94171979c9f3ad9ad057f4b90c3dbf0181a06fc12449618d8660",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 66,
+        "dts": 65,
+        "bytes": 434,
+        "sha256": "e9778ea90b5d4cd903347dccdd47c0578c277522fe907f15159fb9acd165a3af",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 71,
+        "dts": 66,
+        "bytes": 2241,
+        "sha256": "ed273247b67039ff79715b18b35dbcb8d3e1c8827ac3d6b4a13ad0b0fc45dcdd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 69,
+        "dts": 67,
+        "bytes": 873,
+        "sha256": "9964c5e4799ddb00dd9442f1dc0b1a8ed98d9b594723485163cce4ec4fb4b083",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 68,
+        "dts": 68,
+        "bytes": 434,
+        "sha256": "74b1499c2c2ec71828bcf422fb168347bcde5f051376154520e24c26530cd451",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 70,
+        "dts": 69,
+        "bytes": 637,
+        "sha256": "4115c8bfc0777487bc26a27b25a55f3caff2869c8ce2684fbebf588075d583eb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 74,
+        "dts": 70,
+        "bytes": 1039,
+        "sha256": "aded28d1dd90f116f698ddef76819f385651181688a5bfde5afa7173a4803334",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 72,
+        "dts": 71,
+        "bytes": 561,
+        "sha256": "2e2562e02be03260070f7b6e006f84cf4fcf716ceae1ec94cb59570eb8729436",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 73,
+        "dts": 72,
+        "bytes": 533,
+        "sha256": "52e9b9be902b7b80e0a0a50a7e821f32ddc9850a78929e6850ef36c5d26fb9c6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      }
+    ],
+    "ffmpeg_packets": [
+      {
+        "pts": 0,
+        "dts": -2,
+        "bytes": 34803,
+        "sha256": "74a3951ea151bc5c53dcd11ba70d4cbf3ed4689586a252e07d6788474ffb1298",
+        "nal_types": [
+          6,
+          5
+        ],
+        "nal_reference_idc": [
+          0,
+          3
+        ]
+      },
+      {
+        "pts": 4,
+        "dts": -1,
+        "bytes": 3134,
+        "sha256": "3da204d982abda91ad52306bcd009d28f6f21eeba90eb133fe01089f0f58b121",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 2,
+        "dts": 0,
+        "bytes": 976,
+        "sha256": "070c857231efc4a9f274d5b215040d70e8268208419ceeb951bfdfd4164064a9",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 1,
+        "dts": 1,
+        "bytes": 553,
+        "sha256": "3779847b5d9a6eca0b65ac40e5cfff0d1c7b2fe44394ace57c9323225ff9840c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 3,
+        "dts": 2,
+        "bytes": 661,
+        "sha256": "db0d1db953e3d6e1123912bce1bd9db7a850d049bfdb3ae87bf4595ed299e217",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 7,
+        "dts": 3,
+        "bytes": 2998,
+        "sha256": "d8db025d0666633017711fb2b0500521af464fc3aa3fb24031fd7682d095d428",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 5,
+        "dts": 4,
+        "bytes": 654,
+        "sha256": "81792547495ed35b2a9fb9fae60406c8dd7cbccb329f803a38de24d27de497dd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 6,
+        "dts": 5,
+        "bytes": 593,
+        "sha256": "c06a7b8c7b577e504cacecbffaf05afeb5c9c269b86b5f5b03e9c30d77c10275",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 9,
+        "dts": 6,
+        "bytes": 2695,
+        "sha256": "5e4051ca1898d1bdc7f739965d325ad60aec1437af27ad16faf4043b34c6ea6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 8,
+        "dts": 7,
+        "bytes": 642,
+        "sha256": "10e10621446663abced186c3838a5ff841343f6ded32c1f29c69469feb11c7dc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 13,
+        "dts": 8,
+        "bytes": 3153,
+        "sha256": "efda68a1d3f036878fefa91076c8246a8112727cb7a1de61b8dd3c7e59d838e2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 11,
+        "dts": 9,
+        "bytes": 978,
+        "sha256": "4276a5fd5185d71d3d774b3886c131506c34e89f7d2767af07ba6023c8a3a6a6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 10,
+        "dts": 10,
+        "bytes": 496,
+        "sha256": "560cf8fd0263a26eeff8c117d39bba6a2ba8aaa032de1d18b749ad218a5bd5fd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 12,
+        "dts": 11,
+        "bytes": 656,
+        "sha256": "394084edb454704375d4e843e2970941a3afd419e1c6babf49d10ac093c56b1f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 17,
+        "dts": 12,
+        "bytes": 3012,
+        "sha256": "380209b4d2c890ec463c4f2a564b537180d99827e26d5d1b022c12f94c5c32ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 15,
+        "dts": 13,
+        "bytes": 997,
+        "sha256": "620550e45d93c6cdf84da0faa66965f426eaf2cf5e3af9bb0498fe39a2fe54d2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 14,
+        "dts": 14,
+        "bytes": 569,
+        "sha256": "88bfdcec8151c1326ffb44a4109907a2b742a026c3293055b17b9e69dc1820fb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 16,
+        "dts": 15,
+        "bytes": 577,
+        "sha256": "1f0220f586e40aa0452b9cb7d4250eb6add603b0acedf214643805631e6b44ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 19,
+        "dts": 16,
+        "bytes": 2840,
+        "sha256": "2d800686f39dadd70e5bbe22bacbc148ee61f3cc092af1473f7df2b22d3c3b45",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 18,
+        "dts": 17,
+        "bytes": 674,
+        "sha256": "c8c462ce9c69c736d7d84e407b655008974517bff8c615b2431afa124c1321a4",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 22,
+        "dts": 18,
+        "bytes": 3110,
+        "sha256": "f11f4f3c37a6dcac4e9237c9016baa33c3620ebed36cbcb41ad0892c720057e7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 20,
+        "dts": 19,
+        "bytes": 688,
+        "sha256": "66c2dee14fc3111c9a2722355999c8ef4663ab757515cc97d961adb0eb7f2d6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 21,
+        "dts": 20,
+        "bytes": 689,
+        "sha256": "b18e9e171024beb075c2f2073ff8db8b4d9acc1cab31a433d8d5358508875f11",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 26,
+        "dts": 21,
+        "bytes": 3534,
+        "sha256": "a82125d4a78b79b2fe80674e66098a6ad493bda02549e4ac7fcdfe1742b67061",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 24,
+        "dts": 22,
+        "bytes": 1030,
+        "sha256": "8ef642ba3bb160f286de57d637687cfb70f0285d9d66e7b454dc8e3cd1e1a0e0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 23,
+        "dts": 23,
+        "bytes": 650,
+        "sha256": "7166f2a6595ae18f66fc177c0bf751e4e33c488cf1976a574e3004ec2853c0b1",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 25,
+        "dts": 24,
+        "bytes": 560,
+        "sha256": "7d79ceb228a6545718ffd5c4ce841279e13df1dd08fb8d4316d2ba4dfbeebcad",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 30,
+        "dts": 25,
+        "bytes": 3374,
+        "sha256": "0924d0d3ea64b22535b82599c8a75664b9c7d57f87d8a8b617e641a6ddc2e2a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 28,
+        "dts": 26,
+        "bytes": 1046,
+        "sha256": "bad2cb5d1657aca90ebc2a5e7419d0b5a0abe7f3b8f5f5f97869e45731e40a0b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 27,
+        "dts": 27,
+        "bytes": 556,
+        "sha256": "c4b72838d4eb87b04cafc8793a1a244310f97293ad6d721dc7d7fa6a7350f8ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 29,
+        "dts": 28,
+        "bytes": 560,
+        "sha256": "86889cfc4db247b08520f38b6c7a631610ac99cdd6dcdf90e7f77b550d41ed9e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 32,
+        "dts": 29,
+        "bytes": 2148,
+        "sha256": "063513ef8745d8fe08fdffc9814091b1b1d6d899566c81b8d341b7647e675ea8",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 31,
+        "dts": 30,
+        "bytes": 430,
+        "sha256": "cb8ccd060e0186a9c07b9d821f716ce6451cf5c63e1b8f1dfb555e387d45d628",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 36,
+        "dts": 31,
+        "bytes": 3290,
+        "sha256": "c2ae6227940f91315cdc92c37bae56b69f05fbfc23e99a7fa4209656f3aec73f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 34,
+        "dts": 32,
+        "bytes": 919,
+        "sha256": "b9cd7b62151b4904cfb78e07dc4d2154835c586cf3dbb81230cab1adec5f5631",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 33,
+        "dts": 33,
+        "bytes": 537,
+        "sha256": "e03f341cc677bddad843eca7b72835c18197ec27657c1349aa4772b863f91539",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 35,
+        "dts": 34,
+        "bytes": 465,
+        "sha256": "283e2daee2151c24f5e493fb238735400569fb479dc97e493aed4183446b33a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 40,
+        "dts": 35,
+        "bytes": 2866,
+        "sha256": "47f6d971243c15645326117cbdf5fb764bd4851e1fdd6f6b74dad0f13dad843e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 38,
+        "dts": 36,
+        "bytes": 856,
+        "sha256": "86941b3b7c69a793a91e7898448a855ce7df9a8f17cfdc4be8db4564309d75ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 37,
+        "dts": 37,
+        "bytes": 587,
+        "sha256": "ea0457814447adcd604c6edce8b2a83bb1406609d7ab8f337fae0e0e934dc9be",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 39,
+        "dts": 38,
+        "bytes": 521,
+        "sha256": "48ead2a1bef3953bcae9c4f5682e9fba324c34efd6514dbfd070bb6ffbe0433d",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 44,
+        "dts": 39,
+        "bytes": 2869,
+        "sha256": "3087dfeb229352f263eeef784de527d16804b65a4509c2df85c471c41e014bbc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 42,
+        "dts": 40,
+        "bytes": 901,
+        "sha256": "615522f4f29d964e1eccc9e84378200c3c3799c69b233b9e8c4104218e93925d",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 41,
+        "dts": 41,
+        "bytes": 630,
+        "sha256": "ae09629cf8534733d527a51595cc2137ac07221029dbf5d15bbad4daa84051fe",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 43,
+        "dts": 42,
+        "bytes": 571,
+        "sha256": "d5eeb5321bdd16a48721718a83e9912eb09bae36409c2140013bcf62061d7807",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 48,
+        "dts": 43,
+        "bytes": 2987,
+        "sha256": "237423e090d55d24a09ba63cc6359b5e0f2d6ba51280c15036d55ffbce0c7fe8",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 46,
+        "dts": 44,
+        "bytes": 951,
+        "sha256": "be02f85a3bc413ee9fb099e6862c4868d484d10672f85a421122f1008e887080",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 45,
+        "dts": 45,
+        "bytes": 639,
+        "sha256": "30162ff524eae5747d7b190e9099ee695a7f1c30e2798b36f106f93296237833",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 47,
+        "dts": 46,
+        "bytes": 628,
+        "sha256": "19e45a76d045ee82045e2745b375918e95e4169c932a0e22b4605fb791c91c66",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 52,
+        "dts": 47,
+        "bytes": 3155,
+        "sha256": "888ad72c2fc88a3a73f1638866185b64640d1e5128fa6607df29edcbfb603c65",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 50,
+        "dts": 48,
+        "bytes": 1125,
+        "sha256": "ed7c9f75b44759f0b2372e742ce44ff3236116105b54943b11f934e4c6588fbe",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 49,
+        "dts": 49,
+        "bytes": 741,
+        "sha256": "d293c45b18f7b83d1946f058bcce88eb6bb801c2ee03c00782c1839531edb888",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 51,
+        "dts": 50,
+        "bytes": 718,
+        "sha256": "bfb1661bcd61edc4065ffea2748a14469e278adba800e33024d59ccee2910247",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 53,
+        "dts": 51,
+        "bytes": 1542,
+        "sha256": "f25c86cb17b626dd817f713389c938536e68e086edb1b91f93c23f7ee55aab2b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 57,
+        "dts": 52,
+        "bytes": 2717,
+        "sha256": "4b5bbcd39731ffd2d0f7aba4803be4ff1faad08637586033ead3d0c5a4499cf5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 55,
+        "dts": 53,
+        "bytes": 837,
+        "sha256": "94cbda33e0c629b424e27a9538587d2c9854e829da1a0fb2c9e66373bb8dba18",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 54,
+        "dts": 54,
+        "bytes": 566,
+        "sha256": "21a4b27c440a80abc8ee7fcfe0b38d6a64f614432cbd48aa283ba3dcdd186607",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 56,
+        "dts": 55,
+        "bytes": 388,
+        "sha256": "8aedd98f8ee14f7fed1389edbd2b0a8334c4a997ec0c207c017ec91e27f33dd7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 61,
+        "dts": 56,
+        "bytes": 2083,
+        "sha256": "a538cc9f8f891fa9a4bceb6e3cef6780811b0725c38c4b5092f3df485cdda658",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 59,
+        "dts": 57,
+        "bytes": 899,
+        "sha256": "ea8a2b403924d802d3fc845be31062204d721a3e27e0598edb56424c842bfe87",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 58,
+        "dts": 58,
+        "bytes": 403,
+        "sha256": "abf9b6930a1ccb39d034e125c1bda141052b07008a42cd5872cec70465889cfc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 60,
+        "dts": 59,
+        "bytes": 483,
+        "sha256": "de3f08d228f96a4012bf474d16a25280cc38df9723e25b79720a5b8a4f7e0c32",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 62,
+        "dts": 60,
+        "bytes": 1182,
+        "sha256": "085a667cdab8316856641eba2b5c6606b1457f4d1d4b8db8b1fa341084822e17",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 63,
+        "dts": 61,
+        "bytes": 1381,
+        "sha256": "7c163931a19fc3a03dbf0a13f03854e6933ebe262b644cf44ee1eaece374f0f0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 67,
+        "dts": 62,
+        "bytes": 1904,
+        "sha256": "31237a1d66288f8bb48bca350289a6fbab5817bc1808e8dba56a1e5f39ed291f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 65,
+        "dts": 63,
+        "bytes": 913,
+        "sha256": "2c7f5abde4570d5be0cc2bd3890b8f1519f8100004402cedcc90d7bf459ec13c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 64,
+        "dts": 64,
+        "bytes": 494,
+        "sha256": "5e5c0fffdd0f94171979c9f3ad9ad057f4b90c3dbf0181a06fc12449618d8660",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 66,
+        "dts": 65,
+        "bytes": 434,
+        "sha256": "e9778ea90b5d4cd903347dccdd47c0578c277522fe907f15159fb9acd165a3af",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 71,
+        "dts": 66,
+        "bytes": 2241,
+        "sha256": "ed273247b67039ff79715b18b35dbcb8d3e1c8827ac3d6b4a13ad0b0fc45dcdd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 69,
+        "dts": 67,
+        "bytes": 873,
+        "sha256": "9964c5e4799ddb00dd9442f1dc0b1a8ed98d9b594723485163cce4ec4fb4b083",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 68,
+        "dts": 68,
+        "bytes": 434,
+        "sha256": "74b1499c2c2ec71828bcf422fb168347bcde5f051376154520e24c26530cd451",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 70,
+        "dts": 69,
+        "bytes": 637,
+        "sha256": "4115c8bfc0777487bc26a27b25a55f3caff2869c8ce2684fbebf588075d583eb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      },
+      {
+        "pts": 74,
+        "dts": 70,
+        "bytes": 1039,
+        "sha256": "aded28d1dd90f116f698ddef76819f385651181688a5bfde5afa7173a4803334",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 72,
+        "dts": 71,
+        "bytes": 561,
+        "sha256": "2e2562e02be03260070f7b6e006f84cf4fcf716ceae1ec94cb59570eb8729436",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ]
+      },
+      {
+        "pts": 73,
+        "dts": 72,
+        "bytes": 533,
+        "sha256": "52e9b9be902b7b80e0a0a50a7e821f32ddc9850a78929e6850ef36c5d26fb9c6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ]
+      }
+    ],
+    "hypothesis": "No-flush may avoid future packet encoding while retaining the same central lookahead decisions; warmup history bias may persist.",
+    "deadline_cancellation": {
+      "timed_out": true,
+      "encoder_returncode": -15,
+      "decoder_returncode": -15,
+      "encoder_pid": 87432,
+      "decoder_pid": 87431,
+      "encoder_reaped": true,
+      "decoder_reaped": true,
+      "cleanup_errors": [],
+      "total_wall_seconds": 0.005141199995705392
+    },
+    "api_stop": {
+      "status": 0,
+      "mode": "stop",
+      "fed_frames": 72,
+      "produced_packets": 31,
+      "central_packets": 10,
+      "future_packets": 1,
+      "queued_frames_discarded": 41,
+      "flush_calls": 0,
+      "encoder_seconds": 0.175592026,
+      "stdin_read_seconds": 0.003582126,
+      "encoder_cpu_seconds": 0.172161669,
+      "process_cpu_seconds": 0.178665492,
+      "setup_seconds": 0.00223905,
+      "setup_cpu_seconds": 0.002238653,
+      "process_seconds": 0.182190125,
+      "global_sei_bytes": 690,
+      "lookahead": 40,
+      "bframes": 3,
+      "vfr": 1,
+      "annexb": 0,
+      "repeat_headers": 0,
+      "keyint": 250,
+      "keyint_min": 10,
+      "command": [
+        "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/x264_context",
+        "384",
+        "288",
+        "10",
+        "1",
+        "75",
+        "20",
+        "10",
+        "0",
+        "1",
+        "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2-stop"
+      ],
+      "wall_seconds": 0.18463671400240855
+    },
+    "stop_central_vs_full": {
+      "packet_count": true,
+      "pts_dts": true,
+      "avcc_bytes": true,
+      "sps_pps": true,
+      "decoded_central_frames": true
+    },
+    "pipeline": {
+      "full": {
+        "status": 0,
+        "mode": "full",
+        "fed_frames": 75,
+        "produced_packets": 75,
+        "central_packets": 10,
+        "future_packets": 45,
+        "queued_frames_discarded": 0,
+        "flush_calls": 41,
+        "encoder_seconds": 0.370827092,
+        "stdin_read_seconds": 0.169535685,
+        "encoder_cpu_seconds": 0.369413094,
+        "process_cpu_seconds": 0.379595769,
+        "setup_seconds": 0.001369769,
+        "setup_cpu_seconds": 0.001369575,
+        "process_seconds": 0.543358934,
+        "global_sei_bytes": 690,
+        "lookahead": 40,
+        "bframes": 3,
+        "vfr": 1,
+        "annexb": 0,
+        "repeat_headers": 0,
+        "keyint": 250,
+        "keyint_min": 10,
+        "timed_out": false,
+        "encoder_returncode": 0,
+        "decoder_returncode": 0,
+        "encoder_pid": 87389,
+        "decoder_pid": 87388,
+        "encoder_reaped": true,
+        "decoder_reaped": true,
+        "cleanup_errors": [],
+        "total_wall_seconds": 0.5497410269963439,
+        "source_packets_parsed": 196,
+        "source_frames_decoded": 185,
+        "raw_frames_emitted": 75,
+        "decoder_cpu_seconds": 0.22932,
+        "decoder_internal_wall_seconds": 0.297,
+        "decoder_user_cpu_seconds": 0.183912,
+        "decoder_system_cpu_seconds": 0.045408,
+        "command": [
+          "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/x264_context",
+          "384",
+          "288",
+          "10",
+          "1",
+          "75",
+          "20",
+          "10",
+          "0",
+          "1",
+          "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2-pipe-full"
+        ],
+        "decoder_command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "debug",
+          "-nostdin",
+          "-y",
+          "-xerror",
+          "-nostats",
+          "-benchmark",
+          "-benchmark_all",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-ss",
+          "10.0",
+          "-i",
+          "/proc/self/fd/4",
+          "-t",
+          "7.5",
+          "-map",
+          "0:0",
+          "-an",
+          "-sn",
+          "-dn",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-f",
+          "rawvideo",
+          "pipe:1"
+        ],
+        "helper_completion_observed_wall_seconds": 0.5488309659995139,
+        "decoder_reap_observed_wall_seconds": 0.549157836001541,
+        "packets_vs_file_mode": {
+          "packet_count": true,
+          "pts_dts": true,
+          "avcc_bytes": true,
+          "sps_pps": true
+        }
+      },
+      "stop": {
+        "status": 0,
+        "mode": "stop",
+        "fed_frames": 72,
+        "produced_packets": 31,
+        "central_packets": 10,
+        "future_packets": 1,
+        "queued_frames_discarded": 41,
+        "flush_calls": 0,
+        "encoder_seconds": 0.158597705,
+        "stdin_read_seconds": 0.230196957,
+        "encoder_cpu_seconds": 0.153876503,
+        "process_cpu_seconds": 0.163406999,
+        "setup_seconds": 0.001480512,
+        "setup_cpu_seconds": 0.001480196,
+        "process_seconds": 0.390859804,
+        "global_sei_bytes": 690,
+        "lookahead": 40,
+        "bframes": 3,
+        "vfr": 1,
+        "annexb": 0,
+        "repeat_headers": 0,
+        "keyint": 250,
+        "keyint_min": 10,
+        "timed_out": false,
+        "encoder_returncode": 0,
+        "decoder_returncode": 224,
+        "encoder_pid": 87405,
+        "decoder_pid": 87404,
+        "encoder_reaped": true,
+        "decoder_reaped": true,
+        "cleanup_errors": [],
+        "total_wall_seconds": 0.40849356100079603,
+        "source_packets_parsed": 195,
+        "source_frames_decoded": 184,
+        "raw_frames_emitted": 75,
+        "decoder_cpu_seconds": 0.276561,
+        "decoder_internal_wall_seconds": null,
+        "decoder_user_cpu_seconds": 0.214973,
+        "decoder_system_cpu_seconds": 0.061588,
+        "command": [
+          "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/x264_context",
+          "384",
+          "288",
+          "10",
+          "1",
+          "75",
+          "20",
+          "10",
+          "0",
+          "1",
+          "/workspace/video-export-size-estimation/artifacts/final-driver-smoke/pedestrians-leading2-pipe-stop"
+        ],
+        "decoder_command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "debug",
+          "-nostdin",
+          "-y",
+          "-xerror",
+          "-nostats",
+          "-benchmark",
+          "-benchmark_all",
+          "-threads",
+          "1",
+          "-filter_threads",
+          "1",
+          "-ss",
+          "10.0",
+          "-i",
+          "/proc/self/fd/4",
+          "-t",
+          "7.5",
+          "-map",
+          "0:0",
+          "-an",
+          "-sn",
+          "-dn",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-f",
+          "rawvideo",
+          "pipe:1"
+        ],
+        "helper_completion_observed_wall_seconds": 0.39440957400074694,
+        "decoder_reap_observed_wall_seconds": 0.4078263799965498,
+        "packets_vs_file_mode": {
+          "packet_count": true,
+          "pts_dts": true,
+          "avcc_bytes": true,
+          "sps_pps": true
+        }
+      }
+    },
+    "stop_packets": [
+      {
+        "pts": 0,
+        "dts": -2,
+        "bytes": 34803,
+        "sha256": "74a3951ea151bc5c53dcd11ba70d4cbf3ed4689586a252e07d6788474ffb1298",
+        "nal_types": [
+          6,
+          5
+        ],
+        "nal_reference_idc": [
+          0,
+          3
+        ],
+        "x264_picture_type": 1
+      },
+      {
+        "pts": 4,
+        "dts": -1,
+        "bytes": 3134,
+        "sha256": "3da204d982abda91ad52306bcd009d28f6f21eeba90eb133fe01089f0f58b121",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 2,
+        "dts": 0,
+        "bytes": 976,
+        "sha256": "070c857231efc4a9f274d5b215040d70e8268208419ceeb951bfdfd4164064a9",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 1,
+        "dts": 1,
+        "bytes": 553,
+        "sha256": "3779847b5d9a6eca0b65ac40e5cfff0d1c7b2fe44394ace57c9323225ff9840c",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 3,
+        "dts": 2,
+        "bytes": 661,
+        "sha256": "db0d1db953e3d6e1123912bce1bd9db7a850d049bfdb3ae87bf4595ed299e217",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 7,
+        "dts": 3,
+        "bytes": 2998,
+        "sha256": "d8db025d0666633017711fb2b0500521af464fc3aa3fb24031fd7682d095d428",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 5,
+        "dts": 4,
+        "bytes": 654,
+        "sha256": "81792547495ed35b2a9fb9fae60406c8dd7cbccb329f803a38de24d27de497dd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 6,
+        "dts": 5,
+        "bytes": 593,
+        "sha256": "c06a7b8c7b577e504cacecbffaf05afeb5c9c269b86b5f5b03e9c30d77c10275",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 9,
+        "dts": 6,
+        "bytes": 2695,
+        "sha256": "5e4051ca1898d1bdc7f739965d325ad60aec1437af27ad16faf4043b34c6ea6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 8,
+        "dts": 7,
+        "bytes": 642,
+        "sha256": "10e10621446663abced186c3838a5ff841343f6ded32c1f29c69469feb11c7dc",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 13,
+        "dts": 8,
+        "bytes": 3153,
+        "sha256": "efda68a1d3f036878fefa91076c8246a8112727cb7a1de61b8dd3c7e59d838e2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 11,
+        "dts": 9,
+        "bytes": 978,
+        "sha256": "4276a5fd5185d71d3d774b3886c131506c34e89f7d2767af07ba6023c8a3a6a6",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 10,
+        "dts": 10,
+        "bytes": 496,
+        "sha256": "560cf8fd0263a26eeff8c117d39bba6a2ba8aaa032de1d18b749ad218a5bd5fd",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 12,
+        "dts": 11,
+        "bytes": 656,
+        "sha256": "394084edb454704375d4e843e2970941a3afd419e1c6babf49d10ac093c56b1f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 17,
+        "dts": 12,
+        "bytes": 3012,
+        "sha256": "380209b4d2c890ec463c4f2a564b537180d99827e26d5d1b022c12f94c5c32ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 15,
+        "dts": 13,
+        "bytes": 997,
+        "sha256": "620550e45d93c6cdf84da0faa66965f426eaf2cf5e3af9bb0498fe39a2fe54d2",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 14,
+        "dts": 14,
+        "bytes": 569,
+        "sha256": "88bfdcec8151c1326ffb44a4109907a2b742a026c3293055b17b9e69dc1820fb",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 16,
+        "dts": 15,
+        "bytes": 577,
+        "sha256": "1f0220f586e40aa0452b9cb7d4250eb6add603b0acedf214643805631e6b44ea",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 19,
+        "dts": 16,
+        "bytes": 2840,
+        "sha256": "2d800686f39dadd70e5bbe22bacbc148ee61f3cc092af1473f7df2b22d3c3b45",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 18,
+        "dts": 17,
+        "bytes": 674,
+        "sha256": "c8c462ce9c69c736d7d84e407b655008974517bff8c615b2431afa124c1321a4",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 22,
+        "dts": 18,
+        "bytes": 3110,
+        "sha256": "f11f4f3c37a6dcac4e9237c9016baa33c3620ebed36cbcb41ad0892c720057e7",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 20,
+        "dts": 19,
+        "bytes": 688,
+        "sha256": "66c2dee14fc3111c9a2722355999c8ef4663ab757515cc97d961adb0eb7f2d6f",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 21,
+        "dts": 20,
+        "bytes": 689,
+        "sha256": "b18e9e171024beb075c2f2073ff8db8b4d9acc1cab31a433d8d5358508875f11",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 26,
+        "dts": 21,
+        "bytes": 3534,
+        "sha256": "a82125d4a78b79b2fe80674e66098a6ad493bda02549e4ac7fcdfe1742b67061",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 24,
+        "dts": 22,
+        "bytes": 1030,
+        "sha256": "8ef642ba3bb160f286de57d637687cfb70f0285d9d66e7b454dc8e3cd1e1a0e0",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 23,
+        "dts": 23,
+        "bytes": 650,
+        "sha256": "7166f2a6595ae18f66fc177c0bf751e4e33c488cf1976a574e3004ec2853c0b1",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 25,
+        "dts": 24,
+        "bytes": 560,
+        "sha256": "7d79ceb228a6545718ffd5c4ce841279e13df1dd08fb8d4316d2ba4dfbeebcad",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 30,
+        "dts": 25,
+        "bytes": 3374,
+        "sha256": "0924d0d3ea64b22535b82599c8a75664b9c7d57f87d8a8b617e641a6ddc2e2a5",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 3
+      },
+      {
+        "pts": 28,
+        "dts": 26,
+        "bytes": 1046,
+        "sha256": "bad2cb5d1657aca90ebc2a5e7419d0b5a0abe7f3b8f5f5f97869e45731e40a0b",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          2
+        ],
+        "x264_picture_type": 4
+      },
+      {
+        "pts": 27,
+        "dts": 27,
+        "bytes": 556,
+        "sha256": "c4b72838d4eb87b04cafc8793a1a244310f97293ad6d721dc7d7fa6a7350f8ba",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      },
+      {
+        "pts": 29,
+        "dts": 28,
+        "bytes": 560,
+        "sha256": "86889cfc4db247b08520f38b6c7a631610ac99cdd6dcdf90e7f77b550d41ed9e",
+        "nal_types": [
+          1
+        ],
+        "nal_reference_idc": [
+          0
+        ],
+        "x264_picture_type": 5
+      }
+    ],
+    "central_content_bytes": 12423,
+    "continuous_central_content_bytes": 12261,
+    "central_error_vs_continuous": 0.013212625397602151,
+    "api_encoder_seconds_ratio": 0.46130414323158414,
+    "api_encoder_cpu_seconds_ratio": 0.4521155133538714,
+    "pipeline_encoder_cpu_ratio": 0.4165431748339706,
+    "pipeline_wall_ratio": 0.7430654452564858,
+    "source_total_frames": 400,
+    "fed_fraction_of_continuous": 0.18,
+    "emitted_fraction_of_continuous": 0.0775,
+    "total_sequential_wall_ratio": 0.6737464608075882
+  }
+]

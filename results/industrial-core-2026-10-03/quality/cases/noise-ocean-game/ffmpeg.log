@@ -1,0 +1,53 @@
+Input #0, yuv4mpegpipe, from '/workspace/video-export-size-estimation/artifacts/industrial-v1/noise-ocean-game/Noise_Ocean_1920x1080_60fps.y4m':
+  Duration: 00:00:02.17, start: 0.000000, bitrate: 1492994 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p(progressive), 1920x1080, SAR 1:1 DAR 16:9, 60 fps, 60 tbr, 60 tbn
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-continuous/6e0ac5af756bfffb0c3a505c02bc7ec7721171c08d4c27ef6a73159ffaeecc9b.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:02.17, start: 0.000000, bitrate: 29075 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 29068 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-segmented/68cfd973426852ac6404582363553c17eb02044b1b8b1e7cdeb48fab9c96f985.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso6mp41
+  Duration: 00:00:02.17, start: 0.000000, bitrate: 26287 kb/s
+  Stream #2:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26275 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+      Metadata:
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format:default
+  Stream #1:0 (h264) -> format:default
+  Stream #2:0 (h264) -> format:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+  ssim:default -> Stream #0:1 (wrapped_avframe)
+  psnr:default -> Stream #0:2 (wrapped_avframe)
+  ssim:default -> Stream #0:3 (wrapped_avframe)
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:1: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:2: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:3: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+[ssim@segmented @ 0x7f6df400bd80] SSIM Y:0.951823 (13.171560) U:0.999701 (35.245768) V:0.999868 (38.791591) All:0.967810 (14.922772)
+[psnr@segmented @ 0x7f6df400b8c0] PSNR y:42.016671 u:62.643872 v:66.836794 average:43.764627 min:40.646510 max:45.800140
+[ssim@continuous @ 0x7f6df400b500] SSIM Y:0.960350 (14.017566) U:0.999734 (35.753791) V:0.999881 (39.257844) All:0.973503 (15.767963)
+[psnr@continuous @ 0x7f6df400b100] PSNR y:42.810962 u:63.324477 v:67.312986 average:44.558398 min:40.705286 max:45.965370
+[out#0/null @ 0x555da491fd00] video:223KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  130 fps= 87 q=-0.0 Lq=-0.0 q=-0.0 q=-0.0 size=N/A time=00:00:02.15 bitrate=N/A speed=1.44x    

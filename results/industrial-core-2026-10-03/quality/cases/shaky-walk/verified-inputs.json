@@ -1,0 +1,126 @@
+{
+  "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-walk/Shaky_Walk_1920x1080_25fps.y4m",
+  "source_sha256": "1401b5031a8b427fe96514691c305654eb196a8219fd7fe0b5ab2a7b3a6b7d22",
+  "source_bytes": 404352842,
+  "source_inspection": {
+    "video": {
+      "codec_name": "rawvideo",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "25/1",
+      "avg_frame_rate": "25/1",
+      "duration": "5.200000"
+    },
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-walk/Shaky_Walk_1920x1080_25fps.y4m"
+    ]
+  },
+  "source_frame_count": {
+    "frames": 130,
+    "source_header": "YUV4MPEG2 W1920 H1080 F25:1 Ip A1:1 C420mpeg2 XYSCSS=420MPEG2",
+    "frame_payload_bytes": 3110400
+  },
+  "frame_rate": "25",
+  "modes": {
+    "continuous": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-continuous/e873b39941fd1e30abe1b5b79fed2eb464aba31ca2b6c12b12cc6228074f922b.mp4",
+      "sha256": "494175b8c9eeec003f5146679f19bafb9be758373ef6545de06b8776dfc74cba",
+      "file_bytes": 10973312,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "duration": "5.200000",
+          "nb_frames": "130",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-continuous/e873b39941fd1e30abe1b5b79fed2eb464aba31ca2b6c12b12cc6228074f922b.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      }
+    },
+    "segmented": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-segmented/c6b2b30ee9ceaf89d2ecbeba650cd793fd07591b7adc068e88f0a5a2d3c82c04.mp4",
+      "sha256": "c91eea2b8afdb06415deb42d7694188263da686e01bbd8e12667d85e539406c7",
+      "file_bytes": 11415050,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "duration": "5.200000",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-segmented/c6b2b30ee9ceaf89d2ecbeba650cd793fd07591b7adc068e88f0a5a2d3c82c04.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "segmented",
+        "segment_seconds": 0.5
+      }
+    }
+  },
+  "verification_wall_seconds": 0.8977259950042935
+}

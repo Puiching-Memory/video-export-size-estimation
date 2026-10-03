@@ -1,0 +1,40 @@
+[
+  {
+    "mode": "continuous",
+    "budget_seconds": 15,
+    "max_encode_fraction": 0.2,
+    "cases": 9,
+    "source_groups": 8,
+    "reference_complete_cases": 9,
+    "estimates": 7,
+    "scored_estimates": 7,
+    "no_estimate_rate": 0.2222222222222222,
+    "within_10_percent_all_cases": 0.2222222222222222,
+    "median_ape_percent": 16.864072931793228,
+    "worst_ape_percent": 325.4404733254431,
+    "median_wall_seconds": 2.4215711309952894,
+    "median_encoded_video_fraction": 0.11538461538461539,
+    "fraction_violations": 0,
+    "exact_outputs": 0,
+    "certified_satisfied": 0
+  },
+  {
+    "mode": "segmented",
+    "budget_seconds": 15,
+    "max_encode_fraction": 0.2,
+    "cases": 9,
+    "source_groups": 8,
+    "reference_complete_cases": 9,
+    "estimates": 7,
+    "scored_estimates": 7,
+    "no_estimate_rate": 0.2222222222222222,
+    "within_10_percent_all_cases": 0.5555555555555556,
+    "median_ape_percent": 8.088416421653722,
+    "worst_ape_percent": 23.315889624000484,
+    "median_wall_seconds": 2.6001983450041735,
+    "median_encoded_video_fraction": 0.11538461538461539,
+    "fraction_violations": 0,
+    "exact_outputs": 0,
+    "certified_satisfied": 0
+  }
+]

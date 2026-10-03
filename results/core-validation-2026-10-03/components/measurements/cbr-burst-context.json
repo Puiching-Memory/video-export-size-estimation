@@ -1,0 +1,614 @@
+[
+  {
+    "block_index": 2,
+    "key": "3b52dce9d91392c1732f08857b7d76a4c9a79037be09f4a3920f432c1621553f",
+    "probe_kind": "x264-central-packet-v1",
+    "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+    "policy": {
+      "version": "x264-central-packet-v1",
+      "preset": "medium",
+      "output_fps": 24.0,
+      "fps_basis": "source_average",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "trailing_guard_frames": 2,
+      "keyint_frames": 250,
+      "audio_assignment": "packet_pts_in_half_open_interval",
+      "initialization_sei": "exclude_from_content_add_once_to_global_total",
+      "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+      "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+    },
+    "crf": 23,
+    "window": [
+      4.0,
+      2.0
+    ],
+    "encoding_window": [
+      2.0,
+      5.875
+    ],
+    "duration": 2.0,
+    "video_frames": 48,
+    "width": 384,
+    "height": 216,
+    "raw_payload_bytes": 804,
+    "payload_bytes": 804,
+    "video_payload_bytes": 804,
+    "raw_video_payload_bytes": 804,
+    "audio_payload_bytes": 0,
+    "audio_packets": 0,
+    "global_init_sei_bytes": 690,
+    "central_init_sei_bytes": 0,
+    "global_audio_priming_bytes": 0,
+    "picture_types": {
+      "I": {
+        "frames": 0,
+        "payload_bytes": 0,
+        "frames_per_second": 0.0,
+        "bytes_per_second": 0.0,
+        "content_payload_bytes": 0,
+        "content_bytes_per_second": 0.0
+      },
+      "P": {
+        "frames": 12,
+        "payload_bytes": 276,
+        "frames_per_second": 6.0,
+        "bytes_per_second": 138.0,
+        "content_payload_bytes": 276,
+        "content_bytes_per_second": 138.0
+      },
+      "B": {
+        "frames": 36,
+        "payload_bytes": 528,
+        "frames_per_second": 18.0,
+        "bytes_per_second": 264.0,
+        "content_payload_bytes": 528,
+        "content_bytes_per_second": 264.0
+      }
+    },
+    "periodic_adjusted_payload_bytes": 814.4283428571429,
+    "periodic_adjustment": {
+      "kind": "unvalidated_model_candidate",
+      "extra_i_frames": 0.192,
+      "first_i_excess_excluding_sei": 54.31428571428572,
+      "payload_bytes": 10.428342857142859,
+      "observed_i_frames_per_second": 0.0,
+      "target_periodic_i_frames_per_second": 0.096
+    },
+    "encoded_media_seconds": 5.875,
+    "requested_encoded_media_seconds": 5.875,
+    "available_future_frames": 45,
+    "future_context_truncated_at_source_end": false,
+    "warmup_artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/context/cbr-burst/e8bde0254932e6103e627a368b7d03aee588f3af88f433794962634751b6673e.mp4",
+    "warmup_record_key": "e8bde0254932e6103e627a368b7d03aee588f3af88f433794962634751b6673e",
+    "cache_hit": false,
+    "encode_wall_seconds": 0.2569675199993071,
+    "transcode_wall_seconds": 0.092,
+    "measurement_wall_seconds": 0.4287114519975148,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "bias_status": "context_approximation_requires_validation"
+  },
+  {
+    "block_index": 6,
+    "key": "5e86ad836cc0c3cb54014f291cb0843b5fe63c10ed2c5de2b01fc6aae3b61bfe",
+    "probe_kind": "x264-central-packet-v1",
+    "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+    "policy": {
+      "version": "x264-central-packet-v1",
+      "preset": "medium",
+      "output_fps": 24.0,
+      "fps_basis": "source_average",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "trailing_guard_frames": 2,
+      "keyint_frames": 250,
+      "audio_assignment": "packet_pts_in_half_open_interval",
+      "initialization_sei": "exclude_from_content_add_once_to_global_total",
+      "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+      "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+    },
+    "crf": 23,
+    "window": [
+      12.0,
+      2.0
+    ],
+    "encoding_window": [
+      10.0,
+      5.875
+    ],
+    "duration": 2.0,
+    "video_frames": 48,
+    "width": 384,
+    "height": 216,
+    "raw_payload_bytes": 804,
+    "payload_bytes": 804,
+    "video_payload_bytes": 804,
+    "raw_video_payload_bytes": 804,
+    "audio_payload_bytes": 0,
+    "audio_packets": 0,
+    "global_init_sei_bytes": 690,
+    "central_init_sei_bytes": 0,
+    "global_audio_priming_bytes": 0,
+    "picture_types": {
+      "I": {
+        "frames": 0,
+        "payload_bytes": 0,
+        "frames_per_second": 0.0,
+        "bytes_per_second": 0.0,
+        "content_payload_bytes": 0,
+        "content_bytes_per_second": 0.0
+      },
+      "P": {
+        "frames": 12,
+        "payload_bytes": 276,
+        "frames_per_second": 6.0,
+        "bytes_per_second": 138.0,
+        "content_payload_bytes": 276,
+        "content_bytes_per_second": 138.0
+      },
+      "B": {
+        "frames": 36,
+        "payload_bytes": 528,
+        "frames_per_second": 18.0,
+        "bytes_per_second": 264.0,
+        "content_payload_bytes": 528,
+        "content_bytes_per_second": 264.0
+      }
+    },
+    "periodic_adjusted_payload_bytes": 814.4283428571429,
+    "periodic_adjustment": {
+      "kind": "unvalidated_model_candidate",
+      "extra_i_frames": 0.192,
+      "first_i_excess_excluding_sei": 54.31428571428572,
+      "payload_bytes": 10.428342857142859,
+      "observed_i_frames_per_second": 0.0,
+      "target_periodic_i_frames_per_second": 0.096
+    },
+    "encoded_media_seconds": 5.875,
+    "requested_encoded_media_seconds": 5.875,
+    "available_future_frames": 45,
+    "future_context_truncated_at_source_end": false,
+    "warmup_artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/context/cbr-burst/7fd99efe2cebeaec10730b055eadca0e70923723c2310146bc9dd3afaf0cdcf0.mp4",
+    "warmup_record_key": "7fd99efe2cebeaec10730b055eadca0e70923723c2310146bc9dd3afaf0cdcf0",
+    "cache_hit": false,
+    "encode_wall_seconds": 0.2620789549982874,
+    "transcode_wall_seconds": 0.094,
+    "measurement_wall_seconds": 0.4307921220024582,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "bias_status": "context_approximation_requires_validation"
+  },
+  {
+    "block_index": 10,
+    "key": "3b7dd338314d654172a1c3fe1f22fa1440a25a8845dcd13496cab2abc20dda0a",
+    "probe_kind": "x264-central-packet-v1",
+    "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+    "policy": {
+      "version": "x264-central-packet-v1",
+      "preset": "medium",
+      "output_fps": 24.0,
+      "fps_basis": "source_average",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "trailing_guard_frames": 2,
+      "keyint_frames": 250,
+      "audio_assignment": "packet_pts_in_half_open_interval",
+      "initialization_sei": "exclude_from_content_add_once_to_global_total",
+      "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+      "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+    },
+    "crf": 23,
+    "window": [
+      20.0,
+      2.0
+    ],
+    "encoding_window": [
+      18.0,
+      5.875
+    ],
+    "duration": 2.0,
+    "video_frames": 48,
+    "width": 384,
+    "height": 216,
+    "raw_payload_bytes": 804,
+    "payload_bytes": 804,
+    "video_payload_bytes": 804,
+    "raw_video_payload_bytes": 804,
+    "audio_payload_bytes": 0,
+    "audio_packets": 0,
+    "global_init_sei_bytes": 690,
+    "central_init_sei_bytes": 0,
+    "global_audio_priming_bytes": 0,
+    "picture_types": {
+      "I": {
+        "frames": 0,
+        "payload_bytes": 0,
+        "frames_per_second": 0.0,
+        "bytes_per_second": 0.0,
+        "content_payload_bytes": 0,
+        "content_bytes_per_second": 0.0
+      },
+      "P": {
+        "frames": 12,
+        "payload_bytes": 276,
+        "frames_per_second": 6.0,
+        "bytes_per_second": 138.0,
+        "content_payload_bytes": 276,
+        "content_bytes_per_second": 138.0
+      },
+      "B": {
+        "frames": 36,
+        "payload_bytes": 528,
+        "frames_per_second": 18.0,
+        "bytes_per_second": 264.0,
+        "content_payload_bytes": 528,
+        "content_bytes_per_second": 264.0
+      }
+    },
+    "periodic_adjusted_payload_bytes": 4569.738514285715,
+    "periodic_adjustment": {
+      "kind": "unvalidated_model_candidate",
+      "extra_i_frames": 0.192,
+      "first_i_excess_excluding_sei": 19613.22142857143,
+      "payload_bytes": 3765.7385142857142,
+      "observed_i_frames_per_second": 0.0,
+      "target_periodic_i_frames_per_second": 0.096
+    },
+    "encoded_media_seconds": 5.875,
+    "requested_encoded_media_seconds": 5.875,
+    "available_future_frames": 45,
+    "future_context_truncated_at_source_end": false,
+    "warmup_artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/context/cbr-burst/9a215a41e809b8ed74febf573ffe5c636e0442d2ecd9cd1af93cb9dcde9877f2.mp4",
+    "warmup_record_key": "9a215a41e809b8ed74febf573ffe5c636e0442d2ecd9cd1af93cb9dcde9877f2",
+    "cache_hit": false,
+    "encode_wall_seconds": 0.6161562589986715,
+    "transcode_wall_seconds": 0.465,
+    "measurement_wall_seconds": 0.8320634370029438,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "bias_status": "context_approximation_requires_validation"
+  },
+  {
+    "block_index": 7,
+    "key": "584a240a20e1cee5b99c9696debc41ad37031b1639057a9373f36f27166a71aa",
+    "probe_kind": "x264-central-packet-v1",
+    "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+    "policy": {
+      "version": "x264-central-packet-v1",
+      "preset": "medium",
+      "output_fps": 24.0,
+      "fps_basis": "source_average",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "trailing_guard_frames": 2,
+      "keyint_frames": 250,
+      "audio_assignment": "packet_pts_in_half_open_interval",
+      "initialization_sei": "exclude_from_content_add_once_to_global_total",
+      "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+      "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+    },
+    "crf": 23,
+    "window": [
+      14.0,
+      2.0
+    ],
+    "encoding_window": [
+      12.0,
+      5.875
+    ],
+    "duration": 2.0,
+    "video_frames": 48,
+    "width": 384,
+    "height": 216,
+    "raw_payload_bytes": 804,
+    "payload_bytes": 804,
+    "video_payload_bytes": 804,
+    "raw_video_payload_bytes": 804,
+    "audio_payload_bytes": 0,
+    "audio_packets": 0,
+    "global_init_sei_bytes": 690,
+    "central_init_sei_bytes": 0,
+    "global_audio_priming_bytes": 0,
+    "picture_types": {
+      "I": {
+        "frames": 0,
+        "payload_bytes": 0,
+        "frames_per_second": 0.0,
+        "bytes_per_second": 0.0,
+        "content_payload_bytes": 0,
+        "content_bytes_per_second": 0.0
+      },
+      "P": {
+        "frames": 12,
+        "payload_bytes": 276,
+        "frames_per_second": 6.0,
+        "bytes_per_second": 138.0,
+        "content_payload_bytes": 276,
+        "content_bytes_per_second": 138.0
+      },
+      "B": {
+        "frames": 36,
+        "payload_bytes": 528,
+        "frames_per_second": 18.0,
+        "bytes_per_second": 264.0,
+        "content_payload_bytes": 528,
+        "content_bytes_per_second": 264.0
+      }
+    },
+    "periodic_adjusted_payload_bytes": 804.0,
+    "periodic_adjustment": {
+      "kind": "unvalidated_model_candidate",
+      "extra_i_frames": 0.192,
+      "first_i_excess_excluding_sei": 0.0,
+      "payload_bytes": 0.0,
+      "observed_i_frames_per_second": 0.0,
+      "target_periodic_i_frames_per_second": 0.096
+    },
+    "encoded_media_seconds": 5.875,
+    "requested_encoded_media_seconds": 5.875,
+    "available_future_frames": 45,
+    "future_context_truncated_at_source_end": false,
+    "warmup_artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/context/cbr-burst/a1eaf006baf4c7504582519852d51e1a63189a0226f8f45220d8a438476ee6c6.mp4",
+    "warmup_record_key": "a1eaf006baf4c7504582519852d51e1a63189a0226f8f45220d8a438476ee6c6",
+    "cache_hit": false,
+    "encode_wall_seconds": 0.6867401509953197,
+    "transcode_wall_seconds": 0.521,
+    "measurement_wall_seconds": 0.9008973569943919,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "bias_status": "context_approximation_requires_validation"
+  },
+  {
+    "block_index": 9,
+    "key": "1b2c475a870e6487d88c976efe9c4f3cea3e963f64dda83fbc772e48a81036ee",
+    "probe_kind": "x264-central-packet-v1",
+    "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+    "policy": {
+      "version": "x264-central-packet-v1",
+      "preset": "medium",
+      "output_fps": 24.0,
+      "fps_basis": "source_average",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "trailing_guard_frames": 2,
+      "keyint_frames": 250,
+      "audio_assignment": "packet_pts_in_half_open_interval",
+      "initialization_sei": "exclude_from_content_add_once_to_global_total",
+      "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+      "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+    },
+    "crf": 23,
+    "window": [
+      18.0,
+      2.0
+    ],
+    "encoding_window": [
+      16.0,
+      5.875
+    ],
+    "duration": 2.0,
+    "video_frames": 48,
+    "width": 384,
+    "height": 216,
+    "raw_payload_bytes": 261996,
+    "payload_bytes": 261996,
+    "video_payload_bytes": 261996,
+    "raw_video_payload_bytes": 261996,
+    "audio_payload_bytes": 0,
+    "audio_packets": 0,
+    "global_init_sei_bytes": 690,
+    "central_init_sei_bytes": 0,
+    "global_audio_priming_bytes": 0,
+    "picture_types": {
+      "I": {
+        "frames": 0,
+        "payload_bytes": 0,
+        "frames_per_second": 0.0,
+        "bytes_per_second": 0.0,
+        "content_payload_bytes": 0,
+        "content_bytes_per_second": 0.0
+      },
+      "P": {
+        "frames": 14,
+        "payload_bytes": 99670,
+        "frames_per_second": 7.0,
+        "bytes_per_second": 49835.0,
+        "content_payload_bytes": 99670,
+        "content_bytes_per_second": 49835.0
+      },
+      "B": {
+        "frames": 34,
+        "payload_bytes": 162326,
+        "frames_per_second": 17.0,
+        "bytes_per_second": 81163.0,
+        "content_payload_bytes": 162326,
+        "content_bytes_per_second": 81163.0
+      }
+    },
+    "periodic_adjusted_payload_bytes": 261996.0,
+    "periodic_adjustment": {
+      "kind": "unvalidated_model_candidate",
+      "extra_i_frames": 0.192,
+      "first_i_excess_excluding_sei": 0.0,
+      "payload_bytes": 0.0,
+      "observed_i_frames_per_second": 0.0,
+      "target_periodic_i_frames_per_second": 0.096
+    },
+    "encoded_media_seconds": 5.875,
+    "requested_encoded_media_seconds": 5.875,
+    "available_future_frames": 45,
+    "future_context_truncated_at_source_end": false,
+    "warmup_artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/context/cbr-burst/d96e34ceff1865a539d11208a385e8cc6b6fbf97b7b8beafdc2158db52724170.mp4",
+    "warmup_record_key": "d96e34ceff1865a539d11208a385e8cc6b6fbf97b7b8beafdc2158db52724170",
+    "cache_hit": false,
+    "encode_wall_seconds": 1.043612749002932,
+    "transcode_wall_seconds": 0.891,
+    "measurement_wall_seconds": 1.2823113889971864,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "bias_status": "context_approximation_requires_validation"
+  },
+  {
+    "block_index": 5,
+    "key": "1d9ff3b69fa11221216ead6eb46ec0d4b73c05b25dde3559dde71fc32a2485c4",
+    "probe_kind": "x264-central-packet-v1",
+    "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+    "policy": {
+      "version": "x264-central-packet-v1",
+      "preset": "medium",
+      "output_fps": 24.0,
+      "fps_basis": "source_average",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "trailing_guard_frames": 2,
+      "keyint_frames": 250,
+      "audio_assignment": "packet_pts_in_half_open_interval",
+      "initialization_sei": "exclude_from_content_add_once_to_global_total",
+      "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+      "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+    },
+    "crf": 23,
+    "window": [
+      10.0,
+      2.0
+    ],
+    "encoding_window": [
+      8.0,
+      5.875
+    ],
+    "duration": 2.0,
+    "video_frames": 48,
+    "width": 384,
+    "height": 216,
+    "raw_payload_bytes": 804,
+    "payload_bytes": 804,
+    "video_payload_bytes": 804,
+    "raw_video_payload_bytes": 804,
+    "audio_payload_bytes": 0,
+    "audio_packets": 0,
+    "global_init_sei_bytes": 690,
+    "central_init_sei_bytes": 0,
+    "global_audio_priming_bytes": 0,
+    "picture_types": {
+      "I": {
+        "frames": 0,
+        "payload_bytes": 0,
+        "frames_per_second": 0.0,
+        "bytes_per_second": 0.0,
+        "content_payload_bytes": 0,
+        "content_bytes_per_second": 0.0
+      },
+      "P": {
+        "frames": 12,
+        "payload_bytes": 276,
+        "frames_per_second": 6.0,
+        "bytes_per_second": 138.0,
+        "content_payload_bytes": 276,
+        "content_bytes_per_second": 138.0
+      },
+      "B": {
+        "frames": 36,
+        "payload_bytes": 528,
+        "frames_per_second": 18.0,
+        "bytes_per_second": 264.0,
+        "content_payload_bytes": 528,
+        "content_bytes_per_second": 264.0
+      }
+    },
+    "periodic_adjusted_payload_bytes": 814.4283428571429,
+    "periodic_adjustment": {
+      "kind": "unvalidated_model_candidate",
+      "extra_i_frames": 0.192,
+      "first_i_excess_excluding_sei": 54.31428571428572,
+      "payload_bytes": 10.428342857142859,
+      "observed_i_frames_per_second": 0.0,
+      "target_periodic_i_frames_per_second": 0.096
+    },
+    "encoded_media_seconds": 5.875,
+    "requested_encoded_media_seconds": 5.875,
+    "available_future_frames": 45,
+    "future_context_truncated_at_source_end": false,
+    "warmup_artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/context/cbr-burst/aa618a632d443f96c8067601fa9dcb34211c1dbbfdd2fc94ac2e1050902de782.mp4",
+    "warmup_record_key": "aa618a632d443f96c8067601fa9dcb34211c1dbbfdd2fc94ac2e1050902de782",
+    "cache_hit": false,
+    "encode_wall_seconds": 0.2363856560041313,
+    "transcode_wall_seconds": 0.086,
+    "measurement_wall_seconds": 0.3957306369993603,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "bias_status": "context_approximation_requires_validation"
+  }
+]

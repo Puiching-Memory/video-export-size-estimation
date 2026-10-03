@@ -1,0 +1,12 @@
+{
+  "kind": "benchmark_postprocessing_bug",
+  "failure_type": "KeyError",
+  "failure": "nb_frames absent from ffprobe fragmented MP4 metadata",
+  "stage": "after CLI succeeded, full decode and independent box accounting saved",
+  "fixed_by": "accept optional metadata nb_frames and require actual full-decode frame count576",
+  "rerun_fingerprints_or_export": false,
+  "original_runner_sha256": "4787f5fb97008918175d077bf469300aecfa3b883e6af146ccf3d5806ae3c06f",
+  "recorded_utc": "2026-10-03T07:41:05.208610+00:00",
+  "lost_outer_subprocess_wall_seconds": true,
+  "lost_complete_decode_wall_seconds": true
+}

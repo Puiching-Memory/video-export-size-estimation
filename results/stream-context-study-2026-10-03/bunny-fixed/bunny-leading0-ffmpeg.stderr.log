@@ -1,0 +1,40 @@
+[rawvideo @ 0x55af2072d580] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0.i420':
+  Duration: 00:00:02.88, start: 0.000000, bitrate: 66355 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 640x360, 66355 kb/s, 24 tbr, 24 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+[libx264 @ 0x55af20736740] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x55af20736740] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x55af20736740] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0-ffmpeg.mp4':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 640x360, q=2-31, 24 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[mp4 @ 0x55af20737dc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x55af20737cc0] video:217KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.533161%
+frame=   69 fps=0.0 q=28.0 Lsize=     218KiB time=00:00:02.79 bitrate= 639.2kbits/s speed=4.95x    
+bench: utime=0.555s stime=0.027s rtime=0.564s
+bench: maxrss=92764KiB
+[libx264 @ 0x55af20736740] frame I:1     Avg QP:22.21  size: 42903
+[libx264 @ 0x55af20736740] frame P:65    Avg QP:24.43  size:  2703
+[libx264 @ 0x55af20736740] frame B:3     Avg QP:30.60  size:   869
+[libx264 @ 0x55af20736740] consecutive B-frames: 94.2%  0.0%  0.0%  5.8%
+[libx264 @ 0x55af20736740] mb I  I16..4:  0.5% 14.8% 84.7%
+[libx264 @ 0x55af20736740] mb P  I16..4:  0.0%  0.1%  0.3%  P16..4: 26.1% 12.7%  4.8%  0.0%  0.0%    skip:56.1%
+[libx264 @ 0x55af20736740] mb B  I16..4:  0.0%  0.0%  0.3%  B16..8: 16.6%  4.8%  1.1%  direct: 1.1%  skip:76.2%  L0:58.2% L1:33.2% BI: 8.6%
+[libx264 @ 0x55af20736740] 8x8 transform intra:16.0% inter:23.6%
+[libx264 @ 0x55af20736740] coded y,uvDC,uvAC intra: 90.5% 92.9% 56.5% inter: 10.6% 8.0% 1.5%
+[libx264 @ 0x55af20736740] i16 v,h,dc,p:  3% 27%  7% 63%
+[libx264 @ 0x55af20736740] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 19% 16%  4% 10%  7% 16%  6%  9%
+[libx264 @ 0x55af20736740] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 14% 12%  8% 11%  9% 10%  9% 10%
+[libx264 @ 0x55af20736740] i8c dc,h,v,p: 43% 30% 12% 15%
+[libx264 @ 0x55af20736740] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x55af20736740] ref P L0: 88.6%  5.9%  3.9%  1.6%
+[libx264 @ 0x55af20736740] ref B L0: 99.4%  0.3%  0.3%
+[libx264 @ 0x55af20736740] ref B L1: 98.1%  1.9%
+[libx264 @ 0x55af20736740] kb/s:615.50

@@ -1,0 +1,54 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 854736,
+    "estimated_payload_bytes": 846483.3633103448,
+    "fixed_bytes": 8253,
+    "sampled_seconds": 1.0,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "context",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "observed_blocks": [
+      11
+    ],
+    "pilot_indices": [
+      11,
+      1,
+      18
+    ],
+    "elapsed_seconds": 1.370898673994816
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 853251,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        853251,
+        853251
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/fallback/.vsize-cache/motion-continuous-prepared-10-None/36584089bcfbedfc13fcca2c489c0af9fa429a202be4d3ba127429074bc355eb.mp4",
+    "sha256": "0462839b35751caf21736e4386c781c51310bc391ba8cf528b0a8ac70c34c55c",
+    "cache_hit": false,
+    "sample_count": 1,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous",
+    "elapsed_seconds": 3.9489568389981287
+  }
+]

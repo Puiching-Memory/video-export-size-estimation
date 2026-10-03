@@ -1,0 +1,60 @@
+{
+  "scope": "phase aliasing diagnostic using real decoded development pixels; not video accuracy",
+  "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+  "source_sha256": "99b156b5c96829e8d1ab0acb99d90317f103a3e4edd9b59c94087ac3a8ce825d",
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-threads",
+    "1",
+    "-filter_threads",
+    "1",
+    "-i",
+    "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+    "-vf",
+    "fps=24,scale=96:54:flags=area,format=gray",
+    "-an",
+    "-f",
+    "rawvideo",
+    "-pix_fmt",
+    "gray",
+    "pipe:1"
+  ],
+  "active_interval": [
+    10,
+    10.5
+  ],
+  "background_texture": 0.0,
+  "threshold_texture": 2.4231021736731764,
+  "diagnostic_prepare_wall_seconds": 0.37405718000081833,
+  "rows": [
+    {
+      "fps": 1,
+      "phase_count": 24,
+      "detected_phases": 12,
+      "missed_phases": 12
+    },
+    {
+      "fps": 2,
+      "phase_count": 24,
+      "detected_phases": 24,
+      "missed_phases": 0
+    },
+    {
+      "fps": 4,
+      "phase_count": 24,
+      "detected_phases": 24,
+      "missed_phases": 0
+    },
+    {
+      "fps": 8,
+      "phase_count": 24,
+      "detected_phases": 24,
+      "missed_phases": 0
+    }
+  ],
+  "limitation": "Any fixed finite FPS can miss shorter events; maxima cannot recover absent frames."
+}

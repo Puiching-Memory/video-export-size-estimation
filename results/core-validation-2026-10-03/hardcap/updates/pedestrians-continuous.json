@@ -1,0 +1,82 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 587937,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        587937,
+        587937
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-continuous/fdd0fcbd22a61c8802e83a5c6c6ee22add570d15213aa177657cad5116895888.mp4",
+    "sha256": "c8c4d045d95020a55fe37e9f636ff911ec2f7ca32d8b71da6c687299636f8547",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "continuous",
+    "elapsed_seconds": 1.9375497910004924
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 513951,
+    "selected_crf": 24.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        513951,
+        513951
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-continuous/3486f042d9b21f242cc3ad1a2cdd2e0bbe54a774981e3914a3192c001fcce714.mp4",
+    "sha256": "f643b572c7e85ae65c929bde7bb39f56fb4774823c1dcf87e8447ffc56b768a3",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "continuous",
+    "elapsed_seconds": 3.539391771002556
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 395181,
+    "selected_crf": 26.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        395181,
+        395181
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-continuous/7dd8a5a959fc88027ed12bbb1cd9e645232ebcd08f6c6487cb5638018666890f.mp4",
+    "sha256": "38fe1f6552111ca48b92e1996a9d290a7a765517047ab26025457adba85588f7",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "continuous",
+    "elapsed_seconds": 5.051704242003325
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 451299,
+    "selected_crf": 25.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        451299,
+        451299
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-continuous/0b3e96975443596b5526bd2935c191c6828122981ea56aaed6344437eb8d11c0.mp4",
+    "sha256": "e036b83714f82f484cc5690cc2fb5a100ff54429de14de517524e58d91ea6a01",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "continuous",
+    "elapsed_seconds": 6.61406904499745
+  }
+]

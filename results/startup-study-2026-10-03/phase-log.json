@@ -1,0 +1,28 @@
+{
+  "timing_basis": "original run had no UTC phase event log; ordering evidenced by code, not reconstructed timestamps",
+  "record_annotation": "phase fields added during archival review without changing candidate estimates or errors",
+  "original_prediction_sha256_before_phase_annotations": "a0e7d0d9e9a7f23f2cc286853b13e84681ed6841f5d5c0ccbd3e5d4d81601249",
+  "archived_predictions_sha256": "c3823133c7d5e8acd0d195d1c5f79eb1b0d394342561bb3c75f82b1fcdbcf96d",
+  "events": [
+    {
+      "phase": "fixed_policy",
+      "evidence": "study() execution order; no UTC timestamp available"
+    },
+    {
+      "phase": "source_and_probe_measurement",
+      "evidence": "study() execution order; no UTC timestamp available"
+    },
+    {
+      "phase": "persist_all_predictions",
+      "evidence": "study() execution order; no UTC timestamp available"
+    },
+    {
+      "phase": "read_development_references",
+      "evidence": "study() execution order; no UTC timestamp available"
+    },
+    {
+      "phase": "assessment_and_diagnostics",
+      "evidence": "study() execution order; no UTC timestamp available"
+    }
+  ]
+}

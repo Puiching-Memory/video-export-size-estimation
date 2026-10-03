@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "stage": "components",
+  "scope": "development_diagnostic_not_independent_validation",
+  "source_code_sha256": "dbdebc2d27ff086a48362e5e800b4f200b7a51ab3bf41fa760c641d52b15f1f2",
+  "cases": [
+    {
+      "id": "static",
+      "group_id": "synthetic-static",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+      "generator": "color=c=0x316a8c:s=384x216:r=24:d=24",
+      "sha256": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+      "kind": "synthetic"
+    },
+    {
+      "id": "motion",
+      "group_id": "synthetic-motion",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/motion.mp4",
+      "generator": "testsrc2=s=384x216:r=24:d=24",
+      "sha256": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+      "kind": "synthetic"
+    },
+    {
+      "id": "grain",
+      "group_id": "synthetic-grain",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/grain.mp4",
+      "generator": "testsrc2=s=384x216:r=24:d=24,noise=alls=22:allf=t+u:all_seed=2701",
+      "sha256": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+      "kind": "synthetic"
+    },
+    {
+      "id": "brief-burst",
+      "group_id": "synthetic-brief-burst",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+      "generator": "color=c=0x316a8c:s=384x216:r=24:d=24,noise=alls=50:allf=t+u:all_seed=2729:enable='between(t,9.5,11.5)'",
+      "sha256": "99b156b5c96829e8d1ab0acb99d90317f103a3e4edd9b59c94087ac3a8ce825d",
+      "kind": "synthetic"
+    },
+    {
+      "id": "cbr-burst",
+      "group_id": "synthetic-cbr-burst",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/cbr-burst.mp4",
+      "generator": "color=c=0x316a8c:s=384x216:r=24:d=24,noise=alls=50:allf=t+u:all_seed=2753:enable='between(t,16.5,19.5)'",
+      "sha256": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+      "kind": "synthetic"
+    },
+    {
+      "id": "alternating",
+      "group_id": "synthetic-alternating",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/alternating.mp4",
+      "generator": "testsrc2=s=384x216:r=24:d=24,noise=alls=40:allf=t+u:all_seed=2767:enable='lt(mod(t,8),2)'",
+      "sha256": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+      "kind": "synthetic"
+    },
+    {
+      "id": "screen",
+      "group_id": "synthetic-screen",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/screen.mp4",
+      "generator": "testsrc=s=384x216:r=24:d=24",
+      "sha256": "ad17d3f642b25e0c8ba2abe0308cfa26c1faea63860a4df949cbf579d10c7ddf",
+      "kind": "synthetic"
+    },
+    {
+      "id": "pedestrians",
+      "group_id": "opencv-pedestrians",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/pedestrians.mp4",
+      "sha256": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+      "kind": "public-video",
+      "original_sha256": "45cddc9490be69345cbdab64ca583be65987e864ca408038e648db99e10516cf"
+    },
+    {
+      "id": "megamind",
+      "group_id": "opencv-megamind",
+      "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4",
+      "sha256": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+      "kind": "public-video",
+      "original_sha256": "0057387cb7e75c8fd1663b62cfdc51fa53f527795d0fe3c1fea2fd159d3130b5"
+    }
+  ],
+  "contract": {
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium",
+    "pixel_format": "yuv420p",
+    "threads": 1,
+    "filter_threads": 1,
+    "audio": "dropped; frozen development corpus has no audio",
+    "continuous_target": "ordinary complete MP4 export",
+    "segmented_target": "explicit independent closed-GOP 4-second fMP4 export"
+  },
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "ordering": "predictions persisted before complete labels are generated/read"
+}

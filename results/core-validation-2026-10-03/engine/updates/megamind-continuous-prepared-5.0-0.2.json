@@ -1,0 +1,25 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 273533,
+    "estimated_payload_bytes": 269911.5718,
+    "fixed_bytes": 3621.573536,
+    "sampled_seconds": 2,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "elapsed_seconds": 0.5666115829953924
+  }
+]

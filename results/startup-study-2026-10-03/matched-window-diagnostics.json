@@ -1,0 +1,2902 @@
+[
+  {
+    "case": "static",
+    "window": [
+      0.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 5,
+        "payload_bytes": 109,
+        "mean_bytes": 21.8
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 262,
+        "mean_bytes": 14.555555555555555
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.130434782608695,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 1132,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "static",
+    "window": [
+      2.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "static",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "static",
+    "window": [
+      6.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "static",
+    "window": [
+      12.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "static",
+    "window": [
+      18.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "motion",
+    "window": [
+      1.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 5834,
+        "mean_bytes": 5834.0
+      },
+      "P": {
+        "count": 9,
+        "payload_bytes": 16048,
+        "mean_bytes": 1783.111111111111
+      },
+      "B": {
+        "count": 14,
+        "payload_bytes": 15545,
+        "mean_bytes": 1110.357142857143
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 9,
+        "payload_bytes": 17332,
+        "mean_bytes": 1925.7777777777778
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 16038,
+        "mean_bytes": 1069.2
+      }
+    },
+    "independent_probe_nonkey_mean": 1373.608695652174,
+    "continuous_window_nonkey_mean": 1390.4166666666667,
+    "independent_probe_cleaned_payload": 32966.608695652176,
+    "continuous_window_payload": 33370,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "motion",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6178,
+        "mean_bytes": 6178.0
+      },
+      "P": {
+        "count": 8,
+        "payload_bytes": 16475,
+        "mean_bytes": 2059.375
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 18999,
+        "mean_bytes": 1266.6
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 16260,
+        "mean_bytes": 2322.8571428571427
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 21038,
+        "mean_bytes": 1237.5294117647059
+      }
+    },
+    "independent_probe_nonkey_mean": 1542.3478260869565,
+    "continuous_window_nonkey_mean": 1554.0833333333333,
+    "independent_probe_cleaned_payload": 37016.34782608696,
+    "continuous_window_payload": 37298,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "motion",
+    "window": [
+      11.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 5944,
+        "mean_bytes": 5944.0
+      },
+      "P": {
+        "count": 8,
+        "payload_bytes": 15379,
+        "mean_bytes": 1922.375
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 16830,
+        "mean_bytes": 1122.0
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 8,
+        "payload_bytes": 16857,
+        "mean_bytes": 2107.125
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 17905,
+        "mean_bytes": 1119.0625
+      }
+    },
+    "independent_probe_nonkey_mean": 1400.391304347826,
+    "continuous_window_nonkey_mean": 1448.4166666666667,
+    "independent_probe_cleaned_payload": 33609.391304347824,
+    "continuous_window_payload": 34762,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "motion",
+    "window": [
+      14.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6240,
+        "mean_bytes": 6240.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 13611,
+        "mean_bytes": 1944.4285714285713
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 18077,
+        "mean_bytes": 1129.8125
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 13323,
+        "mean_bytes": 2220.5
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 21624,
+        "mean_bytes": 1201.3333333333333
+      }
+    },
+    "independent_probe_nonkey_mean": 1377.7391304347825,
+    "continuous_window_nonkey_mean": 1456.125,
+    "independent_probe_cleaned_payload": 33065.739130434784,
+    "continuous_window_payload": 34947,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "motion",
+    "window": [
+      18.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6524,
+        "mean_bytes": 6524.0
+      },
+      "P": {
+        "count": 9,
+        "payload_bytes": 16239,
+        "mean_bytes": 1804.3333333333333
+      },
+      "B": {
+        "count": 14,
+        "payload_bytes": 16283,
+        "mean_bytes": 1163.0714285714287
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 9,
+        "payload_bytes": 17396,
+        "mean_bytes": 1932.888888888889
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 17980,
+        "mean_bytes": 1198.6666666666667
+      }
+    },
+    "independent_probe_nonkey_mean": 1414.0,
+    "continuous_window_nonkey_mean": 1474.0,
+    "independent_probe_cleaned_payload": 33936.0,
+    "continuous_window_payload": 35376,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "motion",
+    "window": [
+      20.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6108,
+        "mean_bytes": 6108.0
+      },
+      "P": {
+        "count": 8,
+        "payload_bytes": 14845,
+        "mean_bytes": 1855.625
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 15808,
+        "mean_bytes": 1053.8666666666666
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 5754,
+        "mean_bytes": 5754.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 12808,
+        "mean_bytes": 2134.6666666666665
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 18827,
+        "mean_bytes": 1107.4705882352941
+      }
+    },
+    "independent_probe_nonkey_mean": 1332.7391304347825,
+    "continuous_window_nonkey_mean": 1375.4347826086957,
+    "independent_probe_cleaned_payload": 31985.739130434784,
+    "continuous_window_payload": 37389,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "grain",
+    "window": [
+      1.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 17622,
+        "mean_bytes": 17622.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 72427,
+        "mean_bytes": 12071.166666666666
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 150681,
+        "mean_bytes": 8863.588235294117
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 77403,
+        "mean_bytes": 12900.5
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 161708,
+        "mean_bytes": 8983.777777777777
+      }
+    },
+    "independent_probe_nonkey_mean": 9700.347826086956,
+    "continuous_window_nonkey_mean": 9962.958333333334,
+    "independent_probe_cleaned_payload": 232808.34782608695,
+    "continuous_window_payload": 239111,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "grain",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 20222,
+        "mean_bytes": 20222.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 77011,
+        "mean_bytes": 12835.166666666666
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 168272,
+        "mean_bytes": 9898.35294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 83659,
+        "mean_bytes": 13943.166666666666
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 178082,
+        "mean_bytes": 9893.444444444445
+      }
+    },
+    "independent_probe_nonkey_mean": 10664.478260869566,
+    "continuous_window_nonkey_mean": 10905.875,
+    "independent_probe_cleaned_payload": 255947.47826086957,
+    "continuous_window_payload": 261741,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "grain",
+    "window": [
+      5.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 19267,
+        "mean_bytes": 19267.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 74568,
+        "mean_bytes": 12428.0
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 154536,
+        "mean_bytes": 9090.35294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 80986,
+        "mean_bytes": 13497.666666666666
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 164646,
+        "mean_bytes": 9147.0
+      }
+    },
+    "independent_probe_nonkey_mean": 9961.04347826087,
+    "continuous_window_nonkey_mean": 10234.666666666666,
+    "independent_probe_cleaned_payload": 239065.04347826086,
+    "continuous_window_payload": 245632,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "grain",
+    "window": [
+      11.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 19569,
+        "mean_bytes": 19569.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 75956,
+        "mean_bytes": 12659.333333333334
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 161670,
+        "mean_bytes": 9510.0
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 76924,
+        "mean_bytes": 12820.666666666666
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 160261,
+        "mean_bytes": 8903.388888888889
+      }
+    },
+    "independent_probe_nonkey_mean": 10331.565217391304,
+    "continuous_window_nonkey_mean": 9882.708333333334,
+    "independent_probe_cleaned_payload": 247957.5652173913,
+    "continuous_window_payload": 237185,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "grain",
+    "window": [
+      15.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 16899,
+        "mean_bytes": 16899.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 74874,
+        "mean_bytes": 12479.0
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 159941,
+        "mean_bytes": 9408.29411764706
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 81692,
+        "mean_bytes": 13615.333333333334
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 160612,
+        "mean_bytes": 8922.888888888889
+      }
+    },
+    "independent_probe_nonkey_mean": 10209.347826086956,
+    "continuous_window_nonkey_mean": 10096.0,
+    "independent_probe_cleaned_payload": 245024.34782608695,
+    "continuous_window_payload": 242304,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "grain",
+    "window": [
+      20.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 19383,
+        "mean_bytes": 19383.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 76053,
+        "mean_bytes": 12675.5
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 161947,
+        "mean_bytes": 9526.29411764706
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 28243,
+        "mean_bytes": 28243.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 78727,
+        "mean_bytes": 13121.166666666666
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 148481,
+        "mean_bytes": 8734.176470588236
+      }
+    },
+    "independent_probe_nonkey_mean": 10347.826086956522,
+    "continuous_window_nonkey_mean": 9878.608695652174,
+    "independent_probe_cleaned_payload": 248347.8260869565,
+    "continuous_window_payload": 255451,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "brief-burst",
+    "window": [
+      0.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 5,
+        "payload_bytes": 109,
+        "mean_bytes": 21.8
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 262,
+        "mean_bytes": 14.555555555555555
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.130434782608695,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 1132,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "brief-burst",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "brief-burst",
+    "window": [
+      9.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 15,
+        "payload_bytes": 343319,
+        "mean_bytes": 22887.933333333334
+      },
+      "B": {
+        "count": 8,
+        "payload_bytes": 116,
+        "mean_bytes": 14.5
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 16,
+        "payload_bytes": 343348,
+        "mean_bytes": 21459.25
+      },
+      "B": {
+        "count": 8,
+        "payload_bytes": 118,
+        "mean_bytes": 14.75
+      }
+    },
+    "independent_probe_nonkey_mean": 14931.95652173913,
+    "continuous_window_nonkey_mean": 14311.083333333334,
+    "independent_probe_cleaned_payload": 343506.0,
+    "continuous_window_payload": 343466,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "brief-burst",
+    "window": [
+      10.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 29725,
+        "mean_bytes": 29725.0
+      },
+      "P": {
+        "count": 23,
+        "payload_bytes": 657402,
+        "mean_bytes": 28582.695652173912
+      },
+      "B": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 37176,
+        "mean_bytes": 37176.0
+      },
+      "P": {
+        "count": 23,
+        "payload_bytes": 657845,
+        "mean_bytes": 28601.956521739132
+      },
+      "B": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "independent_probe_nonkey_mean": 28582.695652173912,
+    "continuous_window_nonkey_mean": 28601.956521739132,
+    "independent_probe_cleaned_payload": 685984.695652174,
+    "continuous_window_payload": 695021,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "brief-burst",
+    "window": [
+      15.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "brief-burst",
+    "window": [
+      20.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 72,
+        "mean_bytes": 72.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 154,
+        "mean_bytes": 22.0
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 232,
+        "mean_bytes": 14.5
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.782608695652176,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 458,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "cbr-burst",
+    "window": [
+      0.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 5,
+        "payload_bytes": 109,
+        "mean_bytes": 21.8
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 262,
+        "mean_bytes": 14.555555555555555
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.130434782608695,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 1132,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "cbr-burst",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "cbr-burst",
+    "window": [
+      13.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "cbr-burst",
+    "window": [
+      16.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 11,
+        "payload_bytes": 134012,
+        "mean_bytes": 12182.90909090909
+      },
+      "B": {
+        "count": 12,
+        "payload_bytes": 38703,
+        "mean_bytes": 3225.25
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 28631,
+        "mean_bytes": 28631.0
+      },
+      "P": {
+        "count": 11,
+        "payload_bytes": 128525,
+        "mean_bytes": 11684.09090909091
+      },
+      "B": {
+        "count": 12,
+        "payload_bytes": 31690,
+        "mean_bytes": 2640.8333333333335
+      }
+    },
+    "independent_probe_nonkey_mean": 7509.347826086957,
+    "continuous_window_nonkey_mean": 6965.869565217391,
+    "independent_probe_cleaned_payload": 172786.0,
+    "continuous_window_payload": 188846,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "cbr-burst",
+    "window": [
+      18.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 22128,
+        "mean_bytes": 22128.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 59683,
+        "mean_bytes": 8526.142857142857
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 101826,
+        "mean_bytes": 6364.125
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 55726,
+        "mean_bytes": 9287.666666666666
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 114744,
+        "mean_bytes": 6374.666666666667
+      }
+    },
+    "independent_probe_nonkey_mean": 7022.130434782609,
+    "continuous_window_nonkey_mean": 7102.916666666667,
+    "independent_probe_cleaned_payload": 168531.1304347826,
+    "continuous_window_payload": 170470,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "cbr-burst",
+    "window": [
+      20.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 761,
+        "mean_bytes": 761.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 130,
+        "mean_bytes": 21.666666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 248,
+        "mean_bytes": 14.588235294117647
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 138,
+        "mean_bytes": 23.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 264,
+        "mean_bytes": 14.666666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 16.434782608695652,
+    "continuous_window_nonkey_mean": 16.75,
+    "independent_probe_cleaned_payload": 394.4347826086956,
+    "continuous_window_payload": 402,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "alternating",
+    "window": [
+      0.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 27123,
+        "mean_bytes": 27123.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 153304,
+        "mean_bytes": 25550.666666666668
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 392017,
+        "mean_bytes": 23059.823529411766
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 27151,
+        "mean_bytes": 27151.0
+      },
+      "P": {
+        "count": 5,
+        "payload_bytes": 132405,
+        "mean_bytes": 26481.0
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 415441,
+        "mean_bytes": 23080.055555555555
+      }
+    },
+    "independent_probe_nonkey_mean": 23709.608695652172,
+    "continuous_window_nonkey_mean": 23819.391304347828,
+    "independent_probe_cleaned_payload": 569030.6086956522,
+    "continuous_window_payload": 574997,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "alternating",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6083,
+        "mean_bytes": 6083.0
+      },
+      "P": {
+        "count": 8,
+        "payload_bytes": 16736,
+        "mean_bytes": 2092.0
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 18837,
+        "mean_bytes": 1255.8
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 9,
+        "payload_bytes": 20082,
+        "mean_bytes": 2231.3333333333335
+      },
+      "B": {
+        "count": 15,
+        "payload_bytes": 18403,
+        "mean_bytes": 1226.8666666666666
+      }
+    },
+    "independent_probe_nonkey_mean": 1546.6521739130435,
+    "continuous_window_nonkey_mean": 1603.5416666666667,
+    "independent_probe_cleaned_payload": 37119.65217391304,
+    "continuous_window_payload": 38485,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "alternating",
+    "window": [
+      10.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6187,
+        "mean_bytes": 6187.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 12096,
+        "mean_bytes": 2016.0
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 19679,
+        "mean_bytes": 1157.5882352941176
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 17607,
+        "mean_bytes": 2934.5
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 21135,
+        "mean_bytes": 1174.1666666666667
+      }
+    },
+    "independent_probe_nonkey_mean": 1381.5217391304348,
+    "continuous_window_nonkey_mean": 1614.25,
+    "independent_probe_cleaned_payload": 33156.52173913043,
+    "continuous_window_payload": 38742,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "alternating",
+    "window": [
+      14.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6231,
+        "mean_bytes": 6231.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 12287,
+        "mean_bytes": 2047.8333333333333
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 19772,
+        "mean_bytes": 1163.0588235294117
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 13096,
+        "mean_bytes": 2182.6666666666665
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 20508,
+        "mean_bytes": 1139.3333333333333
+      }
+    },
+    "independent_probe_nonkey_mean": 1393.8695652173913,
+    "continuous_window_nonkey_mean": 1400.1666666666667,
+    "independent_probe_cleaned_payload": 33452.86956521739,
+    "continuous_window_payload": 33604,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "alternating",
+    "window": [
+      16.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 27379,
+        "mean_bytes": 27379.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 149469,
+        "mean_bytes": 24911.5
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 383554,
+        "mean_bytes": 22562.0
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 24,
+        "payload_bytes": 598985,
+        "mean_bytes": 24957.708333333332
+      },
+      "B": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "independent_probe_nonkey_mean": 23174.91304347826,
+    "continuous_window_nonkey_mean": 24957.708333333332,
+    "independent_probe_cleaned_payload": 556197.9130434783,
+    "continuous_window_payload": 598985,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "alternating",
+    "window": [
+      20.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6147,
+        "mean_bytes": 6147.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 13621,
+        "mean_bytes": 1945.857142857143
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 16964,
+        "mean_bytes": 1060.25
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 6602,
+        "mean_bytes": 6602.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 14265,
+        "mean_bytes": 2037.857142857143
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 16856,
+        "mean_bytes": 1053.5
+      }
+    },
+    "independent_probe_nonkey_mean": 1329.7826086956522,
+    "continuous_window_nonkey_mean": 1353.0869565217392,
+    "independent_probe_cleaned_payload": 31914.782608695652,
+    "continuous_window_payload": 37723,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "screen",
+    "window": [
+      0.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 4014,
+        "mean_bytes": 4014.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2471,
+        "mean_bytes": 411.8333333333333
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 651,
+        "mean_bytes": 38.294117647058826
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 4125,
+        "mean_bytes": 4125.0
+      },
+      "P": {
+        "count": 5,
+        "payload_bytes": 2447,
+        "mean_bytes": 489.4
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 747,
+        "mean_bytes": 41.5
+      }
+    },
+    "independent_probe_nonkey_mean": 135.7391304347826,
+    "continuous_window_nonkey_mean": 138.8695652173913,
+    "independent_probe_cleaned_payload": 3257.7391304347825,
+    "continuous_window_payload": 7319,
+    "continuous_window_keyframe_count": 1,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "screen",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 4032,
+        "mean_bytes": 4032.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2613,
+        "mean_bytes": 435.5
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 921,
+        "mean_bytes": 54.1764705882353
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2995,
+        "mean_bytes": 499.1666666666667
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 1014,
+        "mean_bytes": 56.333333333333336
+      }
+    },
+    "independent_probe_nonkey_mean": 153.65217391304347,
+    "continuous_window_nonkey_mean": 167.04166666666666,
+    "independent_probe_cleaned_payload": 3687.6521739130435,
+    "continuous_window_payload": 4009,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "screen",
+    "window": [
+      4.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 3987,
+        "mean_bytes": 3987.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2686,
+        "mean_bytes": 447.6666666666667
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 850,
+        "mean_bytes": 50.0
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 3296,
+        "mean_bytes": 549.3333333333334
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 981,
+        "mean_bytes": 54.5
+      }
+    },
+    "independent_probe_nonkey_mean": 153.7391304347826,
+    "continuous_window_nonkey_mean": 178.20833333333334,
+    "independent_probe_cleaned_payload": 3689.7391304347825,
+    "continuous_window_payload": 4277,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "screen",
+    "window": [
+      14.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 3998,
+        "mean_bytes": 3998.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2750,
+        "mean_bytes": 458.3333333333333
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 765,
+        "mean_bytes": 45.0
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 3430,
+        "mean_bytes": 571.6666666666666
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 870,
+        "mean_bytes": 48.333333333333336
+      }
+    },
+    "independent_probe_nonkey_mean": 152.82608695652175,
+    "continuous_window_nonkey_mean": 179.16666666666666,
+    "independent_probe_cleaned_payload": 3667.826086956522,
+    "continuous_window_payload": 4300,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "screen",
+    "window": [
+      19.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 4056,
+        "mean_bytes": 4056.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2766,
+        "mean_bytes": 461.0
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 869,
+        "mean_bytes": 51.11764705882353
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 3225,
+        "mean_bytes": 537.5
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 1007,
+        "mean_bytes": 55.94444444444444
+      }
+    },
+    "independent_probe_nonkey_mean": 158.04347826086956,
+    "continuous_window_nonkey_mean": 176.33333333333334,
+    "independent_probe_cleaned_payload": 3793.0434782608695,
+    "continuous_window_payload": 4232,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "screen",
+    "window": [
+      22.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 4070,
+        "mean_bytes": 4070.0
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 2621,
+        "mean_bytes": 436.8333333333333
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 821,
+        "mean_bytes": 48.294117647058826
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 3263,
+        "mean_bytes": 543.8333333333334
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 880,
+        "mean_bytes": 48.888888888888886
+      }
+    },
+    "independent_probe_nonkey_mean": 149.65217391304347,
+    "continuous_window_nonkey_mean": 172.625,
+    "independent_probe_cleaned_payload": 3591.6521739130435,
+    "continuous_window_payload": 4143,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "pedestrians",
+    "window": [
+      2.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 26587,
+        "mean_bytes": 26587.0
+      },
+      "P": {
+        "count": 4,
+        "payload_bytes": 4832,
+        "mean_bytes": 1208.0
+      },
+      "B": {
+        "count": 5,
+        "payload_bytes": 2660,
+        "mean_bytes": 532.0
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 4,
+        "payload_bytes": 10792,
+        "mean_bytes": 2698.0
+      },
+      "B": {
+        "count": 6,
+        "payload_bytes": 2996,
+        "mean_bytes": 499.3333333333333
+      }
+    },
+    "independent_probe_nonkey_mean": 832.4444444444445,
+    "continuous_window_nonkey_mean": 1378.8,
+    "independent_probe_cleaned_payload": 8324.444444444445,
+    "continuous_window_payload": 13788,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "pedestrians",
+    "window": [
+      11.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 26907,
+        "mean_bytes": 26907.0
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 4675,
+        "mean_bytes": 1558.3333333333333
+      },
+      "B": {
+        "count": 6,
+        "payload_bytes": 4615,
+        "mean_bytes": 769.1666666666666
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 9187,
+        "mean_bytes": 3062.3333333333335
+      },
+      "B": {
+        "count": 7,
+        "payload_bytes": 4906,
+        "mean_bytes": 700.8571428571429
+      }
+    },
+    "independent_probe_nonkey_mean": 1032.2222222222222,
+    "continuous_window_nonkey_mean": 1409.3,
+    "independent_probe_cleaned_payload": 10322.222222222223,
+    "continuous_window_payload": 14093,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "pedestrians",
+    "window": [
+      12.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 26882,
+        "mean_bytes": 26882.0
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 4740,
+        "mean_bytes": 1580.0
+      },
+      "B": {
+        "count": 6,
+        "payload_bytes": 4690,
+        "mean_bytes": 781.6666666666666
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 2,
+        "payload_bytes": 6473,
+        "mean_bytes": 3236.5
+      },
+      "B": {
+        "count": 8,
+        "payload_bytes": 5788,
+        "mean_bytes": 723.5
+      }
+    },
+    "independent_probe_nonkey_mean": 1047.7777777777778,
+    "continuous_window_nonkey_mean": 1226.1,
+    "independent_probe_cleaned_payload": 10477.777777777777,
+    "continuous_window_payload": 12261,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "pedestrians",
+    "window": [
+      22.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 27339,
+        "mean_bytes": 27339.0
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 3594,
+        "mean_bytes": 1198.0
+      },
+      "B": {
+        "count": 6,
+        "payload_bytes": 3610,
+        "mean_bytes": 601.6666666666666
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 8703,
+        "mean_bytes": 2901.0
+      },
+      "B": {
+        "count": 7,
+        "payload_bytes": 3899,
+        "mean_bytes": 557.0
+      }
+    },
+    "independent_probe_nonkey_mean": 800.4444444444445,
+    "continuous_window_nonkey_mean": 1260.2,
+    "independent_probe_cleaned_payload": 8004.444444444445,
+    "continuous_window_payload": 12602,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "pedestrians",
+    "window": [
+      27.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 26845,
+        "mean_bytes": 26845.0
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 3948,
+        "mean_bytes": 1316.0
+      },
+      "B": {
+        "count": 6,
+        "payload_bytes": 4273,
+        "mean_bytes": 712.1666666666666
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 3,
+        "payload_bytes": 8117,
+        "mean_bytes": 2705.6666666666665
+      },
+      "B": {
+        "count": 7,
+        "payload_bytes": 4804,
+        "mean_bytes": 686.2857142857143
+      }
+    },
+    "independent_probe_nonkey_mean": 913.4444444444445,
+    "continuous_window_nonkey_mean": 1292.1,
+    "independent_probe_cleaned_payload": 9134.444444444445,
+    "continuous_window_payload": 12921,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "pedestrians",
+    "window": [
+      34.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 27196,
+        "mean_bytes": 27196.0
+      },
+      "P": {
+        "count": 4,
+        "payload_bytes": 2626,
+        "mean_bytes": 656.5
+      },
+      "B": {
+        "count": 5,
+        "payload_bytes": 1351,
+        "mean_bytes": 270.2
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 4,
+        "payload_bytes": 6553,
+        "mean_bytes": 1638.25
+      },
+      "B": {
+        "count": 6,
+        "payload_bytes": 1744,
+        "mean_bytes": 290.6666666666667
+      }
+    },
+    "independent_probe_nonkey_mean": 441.8888888888889,
+    "continuous_window_nonkey_mean": 829.7,
+    "independent_probe_cleaned_payload": 4418.8888888888905,
+    "continuous_window_payload": 8297,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "megamind",
+    "window": [
+      3.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 7148,
+        "mean_bytes": 7148.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 13846,
+        "mean_bytes": 1978.0
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 7163,
+        "mean_bytes": 447.6875
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 15952,
+        "mean_bytes": 2278.8571428571427
+      },
+      "B": {
+        "count": 17,
+        "payload_bytes": 7546,
+        "mean_bytes": 443.88235294117646
+      }
+    },
+    "independent_probe_nonkey_mean": 913.4347826086956,
+    "continuous_window_nonkey_mean": 979.0833333333334,
+    "independent_probe_cleaned_payload": 21922.434782608696,
+    "continuous_window_payload": 23498,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  },
+  {
+    "case": "megamind",
+    "window": [
+      9.0,
+      1.0
+    ],
+    "scoring_only": true,
+    "independent_probe_by_type": {
+      "I": {
+        "count": 1,
+        "payload_bytes": 7634,
+        "mean_bytes": 7634.0
+      },
+      "P": {
+        "count": 7,
+        "payload_bytes": 10740,
+        "mean_bytes": 1534.2857142857142
+      },
+      "B": {
+        "count": 16,
+        "payload_bytes": 6687,
+        "mean_bytes": 417.9375
+      },
+      "SP": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "SI": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      }
+    },
+    "same_source_window_in_continuous_by_type": {
+      "I": {
+        "count": 0,
+        "payload_bytes": 0,
+        "mean_bytes": null
+      },
+      "P": {
+        "count": 6,
+        "payload_bytes": 10850,
+        "mean_bytes": 1808.3333333333333
+      },
+      "B": {
+        "count": 18,
+        "payload_bytes": 7250,
+        "mean_bytes": 402.77777777777777
+      }
+    },
+    "independent_probe_nonkey_mean": 757.695652173913,
+    "continuous_window_nonkey_mean": 754.1666666666666,
+    "independent_probe_cleaned_payload": 18184.695652173912,
+    "continuous_window_payload": 18100,
+    "continuous_window_keyframe_count": 0,
+    "phase": "assessment_diagnostic"
+  }
+]

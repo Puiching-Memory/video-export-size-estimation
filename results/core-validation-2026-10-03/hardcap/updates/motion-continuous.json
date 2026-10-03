@@ -1,0 +1,102 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 853251,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        853251,
+        853251
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-continuous/d896d4aa2dbc2adfc2bfc8e0b84d76df8198bac763060eab3cdf2e1fce572917.mp4",
+    "sha256": "0462839b35751caf21736e4386c781c51310bc391ba8cf528b0a8ac70c34c55c",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous",
+    "elapsed_seconds": 2.2333285749991774
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 777762,
+    "selected_crf": 24.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        777762,
+        777762
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-continuous/a2a825b9484b92a7788e3d1ffcaf2f59ebf67c1427b257d30fb76e80ab5ec741.mp4",
+    "sha256": "b85164f048d29bf78bdf3e05dcff74fd06a7f451407462b2ead23bb820988161",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous",
+    "elapsed_seconds": 4.721545167005388
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 578765,
+    "selected_crf": 27.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        578765,
+        578765
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-continuous/5f2e769e1e86b3eb30409fd698fd562836262313056f8ac3052044c6080295c7.mp4",
+    "sha256": "b46319cf574e05ea0bc1460b02896074568d156680155d227704f8232509769e",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous",
+    "elapsed_seconds": 6.471968599005777
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 639856,
+    "selected_crf": 26.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        639856,
+        639856
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-continuous/fd914dc88bac000de1192b0decdb9b868b28e347d1fed7e49d263e0a4328089e.mp4",
+    "sha256": "a157790e27e784af80459ef69e4896141b2dd3d1e4f5077ab7d2f050ae6b8fe9",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous",
+    "elapsed_seconds": 8.345018732004974
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 704533,
+    "selected_crf": 25.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        704533,
+        704533
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-continuous/7d0d2b51dd8448a9054763d06107b20e31069dcd1e176fd8bf429d38dd6dbccd.mp4",
+    "sha256": "cb675ad60ff95a9cd0e3cf98a6f3a1ed1e2d55ee426a34b1607d045909dab834",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous",
+    "elapsed_seconds": 10.670236828998895
+  }
+]

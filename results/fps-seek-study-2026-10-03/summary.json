@@ -1,0 +1,3956 @@
+{
+  "comparisons": 772,
+  "variants": [
+    {
+      "variant": "fixed_guard",
+      "comparisons": 144,
+      "exact": 126,
+      "failures": [
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 64,
+            "frame_count": 6,
+            "first_pts": 64
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 74
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 2,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 74,
+                "pts": 74,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 77,
+                "pts": 77,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 134
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 147
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 159
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 335
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 64,
+            "frame_count": 6,
+            "first_pts": 64
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 74
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 2,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 74,
+                "pts": 74,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 77,
+                "pts": 77,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 134
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 147
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 159
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 335
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 63,
+            "frame_count": 6,
+            "first_pts": 125
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 136
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 2,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 136,
+                "pts": 136,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 139,
+                "pts": 139,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 196
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 301
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 313
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 489
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        }
+      ],
+      "median_wall_seconds_among_exact": 0.1285394605001784,
+      "median_frames_decoded_among_exact": 32.5
+    },
+    {
+      "variant": "local_reset",
+      "comparisons": 144,
+      "exact": 72,
+      "failures": [
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "12",
+          "window": {
+            "id": "random_0",
+            "start_frame": 29,
+            "frame_count": 5,
+            "first_pts": 29
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 31,
+                "pts": 31,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "70434745732ee167945ea247b9f1e7854c329cc644ae5eca2ba84537dc2225d3"
+              },
+              "actual": {
+                "dts": 31,
+                "pts": 31,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "ceb336636feb0ace092e765cb2111e0b1fbd65f7a97dd200dfd39f6f21cee3b2"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "12",
+          "window": {
+            "id": "random_4",
+            "start_frame": 110,
+            "frame_count": 5,
+            "first_pts": 110
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 112,
+                "pts": 112,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "bc2c662a87a2859372cec3a9b31565229c97b0a295ac0c1ebd87cc0b8f1e7cc8"
+              },
+              "actual": {
+                "dts": 112,
+                "pts": 112,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "911551c5a58856a22cae2b893dace7e52efdb7611a8b1bcf93b927dc0a9b7c3f"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 296,
+            "frame_count": 5,
+            "first_pts": 296
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 298,
+                "pts": 298,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "5ad0a7cc09ec71a6fa44b229271ee26a41c9d13ba41492a060e51829d894b97d"
+              },
+              "actual": {
+                "dts": 298,
+                "pts": 298,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "f144359215ca376a36c0d20764e0fbc58cbdb7e6f6c6d075622e6d35e1c2e524"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "12",
+          "window": {
+            "id": "random_5",
+            "start_frame": 397,
+            "frame_count": 5,
+            "first_pts": 397
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 398,
+                "pts": 398,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "e96eef3e041d9886f6df41b1f7ca2a9bac66efc28ad8c6678a88a461ead2a3b1"
+              },
+              "actual": {
+                "dts": 398,
+                "pts": 398,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "8988431f104a0dac80120b2b38bf82772cf945f29ffcf4987364c7be6d5399e1"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 718,
+            "frame_count": 3,
+            "first_pts": 718
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 3,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 719,
+                "pts": 719,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "50bfe0494b707e2621d89065ab35b8e0b6888171b83ab2f2b604d9427ab98f5d"
+              },
+              "actual": {
+                "dts": 719,
+                "pts": 719,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "38ecc7dabe69b4bdec2a061aa8839cb56da7ccb6d343b5c16745243891b31d2d"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 720,
+            "frame_count": 1,
+            "first_pts": 720
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 58,
+            "frame_count": 5,
+            "first_pts": 58
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 58,
+                "pts": 58,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "9ae750253c63fb776934da59c2abc2d46b0f2f0cdbdbcb25be24cce8203dfbe6"
+              },
+              "actual": {
+                "dts": 58,
+                "pts": 58,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "700dc6a387ed4e7dd1ed7b52c5a1597626335822490501bf154393df83f8c482"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_4",
+            "start_frame": 219,
+            "frame_count": 5,
+            "first_pts": 219
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 219,
+                "pts": 219,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "05d4c16a9876898b664fe7d439d5de2470739e5c1b5eb826dd1235534bc128e0"
+              },
+              "actual": {
+                "dts": 219,
+                "pts": 219,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "c76240256730627854df91d455f82e25699a135680eeb68890b67e9db94116e9"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 294,
+            "frame_count": 4,
+            "first_pts": 294
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 294,
+                "pts": 294,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "6d66a4b85ee6c4e7f73b8fda43e80352b1abbfadf985fc94f7b56ffb60ea692b"
+              },
+              "actual": {
+                "dts": 294,
+                "pts": 294,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "b28bfac8e0c51c7170bc737915498a655cd310c116f6c42bb8be1421faf6dbea"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_3",
+            "start_frame": 591,
+            "frame_count": 5,
+            "first_pts": 591
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 591,
+                "pts": 591,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "0f33e2693e64bc25e0671317331d26c67bf29f043530dbde2e065be788b35aba"
+              },
+              "actual": {
+                "dts": 591,
+                "pts": 591,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "6e8b9fa8ff85fe7e5745afeb362f13d163af5c134e95d6357aa8451957d41e3d"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_6",
+            "start_frame": 611,
+            "frame_count": 1,
+            "first_pts": 611
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 1,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 611,
+                "pts": 611,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "8619c10286393f15b2abce4bfbb193c4c2287169e8cce72e3d369db70083533a"
+              },
+              "actual": {
+                "dts": 611,
+                "pts": 611,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "927e67b8bad39d2dd59a045cd7229ed5bafbfceef70436e4cba36c266bb8e5d5"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 1798,
+            "frame_count": 3,
+            "first_pts": 1798
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-existing-cfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 1800,
+            "frame_count": 1,
+            "first_pts": 1800
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 720,
+            "frame_count": 1,
+            "first_pts": 720
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 58,
+            "frame_count": 5,
+            "first_pts": 58
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 58,
+                "pts": 58,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "32526defd8b07d525cc6c202ddc5a5d27cd93b8a6682afd161a02b7a98e12b08"
+              },
+              "actual": {
+                "dts": 58,
+                "pts": 58,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "608c82e070a29480c1a2024ba278a792a799ea008986e9f790573134dbcf5e74"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_4",
+            "start_frame": 219,
+            "frame_count": 5,
+            "first_pts": 219
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 219,
+                "pts": 219,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "a218741c2011bffb9579d763f05bbd6a628b5e6453721f670057da743828dde6"
+              },
+              "actual": {
+                "dts": 219,
+                "pts": 219,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "800214ba91df0df91d1c7e089880722ac5fa28dd896546aa20ef6c044163de7d"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 294,
+            "frame_count": 4,
+            "first_pts": 294
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 294,
+                "pts": 294,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "79d785d1c7e190eff47adfc2a2c53d6d605f26ec465fe3f557d59b8cffaca241"
+              },
+              "actual": {
+                "dts": 294,
+                "pts": 294,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "49a183930334becc73960f9e1f35e910be55b08b62d0844395cb09b4167162d2"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_3",
+            "start_frame": 591,
+            "frame_count": 5,
+            "first_pts": 591
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 591,
+                "pts": 591,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "5c3e69ca167e3a0273d77447fe469b2ebc4951399b5d24e8a73d88031de40765"
+              },
+              "actual": {
+                "dts": 591,
+                "pts": 591,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "e13c07a8262d854bf13521fe1e397c61d616b165d8cd36c9e266ab9f00b68e38"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_6",
+            "start_frame": 611,
+            "frame_count": 1,
+            "first_pts": 611
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 1,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 611,
+                "pts": 611,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "d83bfccc8e15bdd1e872ffda25c503d66ec49941d58692beee78bdb993d2d11a"
+              },
+              "actual": {
+                "dts": 611,
+                "pts": 611,
+                "duration": 1,
+                "bytes": 345600,
+                "sha256": "2af1dd0d4e24281a8c4b5e967645e5d14adc77945388b4a4c4b9ba95df37731b"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 1798,
+            "frame_count": 3,
+            "first_pts": 1798
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-existing-vfr",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 1800,
+            "frame_count": 1,
+            "first_pts": 1800
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_1",
+            "start_frame": 2,
+            "frame_count": 3,
+            "first_pts": 2
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 3,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 4,
+                "pts": 4,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4184a5e3c6273dd97b28cb4bbb0119fb96b026477f5dd0c29b28f0c58e6c0054"
+              },
+              "actual": {
+                "dts": 4,
+                "pts": 4,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "190d8b93191ec46c6d1200ab6e83ece9077da117cbd0ec97a8a1b67316273cf3"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_0",
+            "start_frame": 8,
+            "frame_count": 5,
+            "first_pts": 8
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 10,
+                "pts": 10,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "97f85cc86f8d84969db54dd701cb9eceb1295a61dfccc3dd81fc2d3ab52744b4"
+              },
+              "actual": {
+                "dts": 10,
+                "pts": 10,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "eb280d63f656231f49605002462fbfc3e343a7b9f849be13a117b3232b189216"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_4",
+            "start_frame": 28,
+            "frame_count": 5,
+            "first_pts": 28
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 4,
+              "expected": {
+                "dts": 32,
+                "pts": 32,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "fffd65145e9ed7d49ecde11bdd9ac54dac6800d28f1e8aa302c370d3e6b71cbf"
+              },
+              "actual": {
+                "dts": 32,
+                "pts": 32,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "be3bc013a712521a940e2599b2e9f5eba0270fcd0e878d11742af0aabde58ea0"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_2",
+            "start_frame": 37,
+            "frame_count": 4,
+            "first_pts": 37
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 38,
+                "pts": 38,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "106c9a03299b8fa57199d601e9343f730227afd8963aaaf3720e66510d495392"
+              },
+              "actual": {
+                "dts": 38,
+                "pts": 38,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "c63a332885feb8e47608823ea287d23662935d581ac45be7da290e9032a150d9"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 64,
+            "frame_count": 6,
+            "first_pts": 64
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 64,
+                "pts": 64,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 64,
+                "pts": 64,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 74
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 74,
+                "pts": 74,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 74,
+                "pts": 74,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "random_5",
+            "start_frame": 100,
+            "frame_count": 5,
+            "first_pts": 100
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 101,
+                "pts": 101,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "04445dc3350cc4a7c75f77172f994910bf7c36d5c9e9a25ed7937a7d95019633"
+              },
+              "actual": {
+                "dts": 101,
+                "pts": 101,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4af670ea841f8bf0d295912714e88a767d8329d37cbd08d5609d5e7ccf7b9573"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 134
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 134,
+                "pts": 134,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 134,
+                "pts": 134,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "518ab3453027d46d16d3d16bb3017eb02887a408ac536e6a43a8e74b5037220a"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 229,
+            "frame_count": 3,
+            "first_pts": 229
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 2,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 229,
+                "pts": 229,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3b3c2df222bf6c16dd49e9f533c9f7e6205af26c8b7b7e13915a574b8d798509"
+              },
+              "actual": {
+                "dts": 229,
+                "pts": 229,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "ebb6d2e7483fbb34b54fcd34163401491afc9947cc89e48de3291cd73ce7ef22"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 29,
+            "frame_count": 5,
+            "first_pts": 29
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 29,
+                "pts": 29,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "1a927d242237269cfca39569f64fa16b35465e684fe32ed5aed5c8e1451a3ef2"
+              },
+              "actual": {
+                "dts": 29,
+                "pts": 29,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5ae42ec541c440d590ec2f7261e6fd67e8bb0c18454f227d365531e1d38ef598"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_4",
+            "start_frame": 110,
+            "frame_count": 5,
+            "first_pts": 110
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 110,
+                "pts": 110,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "019c2580a6a55e4f7ab21ee530c4fb52336a85f673e155e5d9ffedc2530e7840"
+              },
+              "actual": {
+                "dts": 110,
+                "pts": 110,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "72236c25b4f6b09aa2f578a69ae7b13630c2d77c83410e28f0b7f916b219946a"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 147
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 147,
+                "pts": 147,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 147,
+                "pts": 147,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 159
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 159,
+                "pts": 159,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 159,
+                "pts": 159,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "middle",
+            "start_frame": 290,
+            "frame_count": 6,
+            "first_pts": 290
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 290,
+                "pts": 290,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "1fd2704b78fdf7e7c7c89b422922fa1ecfd3cbe1a7dfd38ed5abbccbca877dde"
+              },
+              "actual": {
+                "dts": 290,
+                "pts": 290,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5e0b8a0817bd6438e1eaccb4073bdd97240665020c7b7195ee97e117815e2e10"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_3",
+            "start_frame": 296,
+            "frame_count": 5,
+            "first_pts": 296
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 296,
+                "pts": 296,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 296,
+                "pts": 296,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_6",
+            "start_frame": 306,
+            "frame_count": 1,
+            "first_pts": 306
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 1,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 306,
+                "pts": 306,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 306,
+                "pts": 306,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 335
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 335,
+                "pts": 335,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 335,
+                "pts": 335,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_5",
+            "start_frame": 397,
+            "frame_count": 5,
+            "first_pts": 397
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 397,
+                "pts": 397,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "ce228964cfa1571954918f8bbd4ac15af5b7b9ebc9a6b1561360c76e969aa90d"
+              },
+              "actual": {
+                "dts": 397,
+                "pts": 397,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4143fd81b29304247d9d0d6b9b14d78957c1d061e2daaf9575bca28a5f36eea6"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-gap",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 580,
+            "frame_count": 1,
+            "first_pts": 580
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_1",
+            "start_frame": 2,
+            "frame_count": 3,
+            "first_pts": 2
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 3,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 4,
+                "pts": 4,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4184a5e3c6273dd97b28cb4bbb0119fb96b026477f5dd0c29b28f0c58e6c0054"
+              },
+              "actual": {
+                "dts": 4,
+                "pts": 4,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "190d8b93191ec46c6d1200ab6e83ece9077da117cbd0ec97a8a1b67316273cf3"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_0",
+            "start_frame": 8,
+            "frame_count": 5,
+            "first_pts": 8
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 10,
+                "pts": 10,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "97f85cc86f8d84969db54dd701cb9eceb1295a61dfccc3dd81fc2d3ab52744b4"
+              },
+              "actual": {
+                "dts": 10,
+                "pts": 10,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "eb280d63f656231f49605002462fbfc3e343a7b9f849be13a117b3232b189216"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_4",
+            "start_frame": 28,
+            "frame_count": 5,
+            "first_pts": 28
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 4,
+              "expected": {
+                "dts": 32,
+                "pts": 32,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "fffd65145e9ed7d49ecde11bdd9ac54dac6800d28f1e8aa302c370d3e6b71cbf"
+              },
+              "actual": {
+                "dts": 32,
+                "pts": 32,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "be3bc013a712521a940e2599b2e9f5eba0270fcd0e878d11742af0aabde58ea0"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_2",
+            "start_frame": 37,
+            "frame_count": 4,
+            "first_pts": 37
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 38,
+                "pts": 38,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "106c9a03299b8fa57199d601e9343f730227afd8963aaaf3720e66510d495392"
+              },
+              "actual": {
+                "dts": 38,
+                "pts": 38,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "c63a332885feb8e47608823ea287d23662935d581ac45be7da290e9032a150d9"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 64,
+            "frame_count": 6,
+            "first_pts": 64
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 64,
+                "pts": 64,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 64,
+                "pts": 64,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 74
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 74,
+                "pts": 74,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 74,
+                "pts": 74,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_5",
+            "start_frame": 100,
+            "frame_count": 5,
+            "first_pts": 100
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 101,
+                "pts": 101,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "04445dc3350cc4a7c75f77172f994910bf7c36d5c9e9a25ed7937a7d95019633"
+              },
+              "actual": {
+                "dts": 101,
+                "pts": 101,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4af670ea841f8bf0d295912714e88a767d8329d37cbd08d5609d5e7ccf7b9573"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 134
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 134,
+                "pts": 134,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 134,
+                "pts": 134,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "518ab3453027d46d16d3d16bb3017eb02887a408ac536e6a43a8e74b5037220a"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 229,
+            "frame_count": 3,
+            "first_pts": 229
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 2,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 229,
+                "pts": 229,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3b3c2df222bf6c16dd49e9f533c9f7e6205af26c8b7b7e13915a574b8d798509"
+              },
+              "actual": {
+                "dts": 229,
+                "pts": 229,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "ebb6d2e7483fbb34b54fcd34163401491afc9947cc89e48de3291cd73ce7ef22"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 29,
+            "frame_count": 5,
+            "first_pts": 29
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 29,
+                "pts": 29,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "1a927d242237269cfca39569f64fa16b35465e684fe32ed5aed5c8e1451a3ef2"
+              },
+              "actual": {
+                "dts": 29,
+                "pts": 29,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5ae42ec541c440d590ec2f7261e6fd67e8bb0c18454f227d365531e1d38ef598"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_4",
+            "start_frame": 110,
+            "frame_count": 5,
+            "first_pts": 110
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 110,
+                "pts": 110,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "019c2580a6a55e4f7ab21ee530c4fb52336a85f673e155e5d9ffedc2530e7840"
+              },
+              "actual": {
+                "dts": 110,
+                "pts": 110,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "72236c25b4f6b09aa2f578a69ae7b13630c2d77c83410e28f0b7f916b219946a"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 147
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 147,
+                "pts": 147,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 147,
+                "pts": 147,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 159
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 159,
+                "pts": 159,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 159,
+                "pts": 159,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "middle",
+            "start_frame": 290,
+            "frame_count": 6,
+            "first_pts": 290
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 290,
+                "pts": 290,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "1fd2704b78fdf7e7c7c89b422922fa1ecfd3cbe1a7dfd38ed5abbccbca877dde"
+              },
+              "actual": {
+                "dts": 290,
+                "pts": 290,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5e0b8a0817bd6438e1eaccb4073bdd97240665020c7b7195ee97e117815e2e10"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_3",
+            "start_frame": 296,
+            "frame_count": 5,
+            "first_pts": 296
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 296,
+                "pts": 296,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 296,
+                "pts": 296,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_6",
+            "start_frame": 306,
+            "frame_count": 1,
+            "first_pts": 306
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 1,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 306,
+                "pts": 306,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 306,
+                "pts": 306,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 335
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 335,
+                "pts": 335,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 335,
+                "pts": 335,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_5",
+            "start_frame": 397,
+            "frame_count": 5,
+            "first_pts": 397
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 397,
+                "pts": 397,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "ce228964cfa1571954918f8bbd4ac15af5b7b9ebc9a6b1561360c76e969aa90d"
+              },
+              "actual": {
+                "dts": 397,
+                "pts": 397,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4143fd81b29304247d9d0d6b9b14d78957c1d061e2daaf9575bca28a5f36eea6"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 580,
+            "frame_count": 1,
+            "first_pts": 580
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_0",
+            "start_frame": 8,
+            "frame_count": 5,
+            "first_pts": 70
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 70,
+                "pts": 70,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "f67cc7343095592839e0eb0ca0ca527e011847ee56e30b6c2d8fa7b0844ca41b"
+              },
+              "actual": {
+                "dts": 70,
+                "pts": 70,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "e049de3098a86802aecb793ae2992c21764e95d37e543736307d2871643cd3cc"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 63,
+            "frame_count": 6,
+            "first_pts": 125
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 125,
+                "pts": 125,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 125,
+                "pts": 125,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 136
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 136,
+                "pts": 136,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 136,
+                "pts": 136,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40d6a01bb67cbc696ffc99e86258c0ed8112ba33a1d6d331c1deb5f40276ed19"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 196
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 196,
+                "pts": 196,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 196,
+                "pts": 196,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 29,
+            "frame_count": 5,
+            "first_pts": 183
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 183,
+                "pts": 183,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "1a927d242237269cfca39569f64fa16b35465e684fe32ed5aed5c8e1451a3ef2"
+              },
+              "actual": {
+                "dts": 183,
+                "pts": 183,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5ae42ec541c440d590ec2f7261e6fd67e8bb0c18454f227d365531e1d38ef598"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 301
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 4,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 301,
+                "pts": 301,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 301,
+                "pts": 301,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 313
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 313,
+                "pts": 313,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "3cbceeecce0c172e5764f9a8d5385c9e0e0a2d313f53731cd327ac18f49f1d35"
+              },
+              "actual": {
+                "dts": 313,
+                "pts": 313,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "05afc97ca3741284224d6e0dda601622d70c1467462801c82d8870adc0a7832e"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "middle",
+            "start_frame": 290,
+            "frame_count": 6,
+            "first_pts": 444
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 444,
+                "pts": 444,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "1fd2704b78fdf7e7c7c89b422922fa1ecfd3cbe1a7dfd38ed5abbccbca877dde"
+              },
+              "actual": {
+                "dts": 444,
+                "pts": 444,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5e0b8a0817bd6438e1eaccb4073bdd97240665020c7b7195ee97e117815e2e10"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_3",
+            "start_frame": 296,
+            "frame_count": 5,
+            "first_pts": 450
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 450,
+                "pts": 450,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 450,
+                "pts": 450,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_6",
+            "start_frame": 306,
+            "frame_count": 1,
+            "first_pts": 460
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 1,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 460,
+                "pts": 460,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 460,
+                "pts": 460,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 489
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 489,
+                "pts": 489,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              },
+              "actual": {
+                "dts": 489,
+                "pts": 489,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "40bf1d27a15ca23d48b346561943e21032971c219d9ebe353916ab6a23e06042"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_5",
+            "start_frame": 397,
+            "frame_count": 5,
+            "first_pts": 551
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 551,
+                "pts": 551,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "ce228964cfa1571954918f8bbd4ac15af5b7b9ebc9a6b1561360c76e969aa90d"
+              },
+              "actual": {
+                "dts": 551,
+                "pts": 551,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4143fd81b29304247d9d0d6b9b14d78957c1d061e2daaf9575bca28a5f36eea6"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 580,
+            "frame_count": 1,
+            "first_pts": 734
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        }
+      ],
+      "median_wall_seconds_among_exact": 0.12508325300223078,
+      "median_frames_decoded_among_exact": 27.0
+    },
+    {
+      "variant": "packet_guard",
+      "comparisons": 144,
+      "exact": 144,
+      "failures": [],
+      "median_wall_seconds_among_exact": 0.13710409499981324,
+      "median_frames_decoded_among_exact": 29.0
+    },
+    {
+      "variant": "packet_guard_noaccurate",
+      "comparisons": 144,
+      "exact": 144,
+      "failures": [],
+      "median_wall_seconds_among_exact": 0.13552876399626257,
+      "median_frames_decoded_among_exact": 29.0
+    },
+    {
+      "variant": "packet_guard_without_origin",
+      "comparisons": 52,
+      "exact": 11,
+      "failures": [
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "first",
+            "start_frame": 0,
+            "frame_count": 6,
+            "first_pts": 0
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_1",
+            "start_frame": 2,
+            "frame_count": 3,
+            "first_pts": 2
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_0",
+            "start_frame": 8,
+            "frame_count": 5,
+            "first_pts": 8
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_4",
+            "start_frame": 28,
+            "frame_count": 5,
+            "first_pts": 28
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_2",
+            "start_frame": 37,
+            "frame_count": 4,
+            "first_pts": 37
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 64,
+            "frame_count": 6,
+            "first_pts": 64
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 74
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_6",
+            "start_frame": 77,
+            "frame_count": 1,
+            "first_pts": 77
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "random_5",
+            "start_frame": 100,
+            "frame_count": 5,
+            "first_pts": 100
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "middle",
+            "start_frame": 116,
+            "frame_count": 6,
+            "first_pts": 116
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 134,
+            "frame_count": 6,
+            "first_pts": 134
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 229,
+            "frame_count": 3,
+            "first_pts": 229
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 231,
+            "frame_count": 1,
+            "first_pts": 231
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "first",
+            "start_frame": 0,
+            "frame_count": 6,
+            "first_pts": 0
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_1",
+            "start_frame": 6,
+            "frame_count": 3,
+            "first_pts": 6
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 29,
+            "frame_count": 5,
+            "first_pts": 29
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_4",
+            "start_frame": 110,
+            "frame_count": 5,
+            "first_pts": 110
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_2",
+            "start_frame": 147,
+            "frame_count": 4,
+            "first_pts": 147
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 4,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_11",
+            "start_frame": 159,
+            "frame_count": 6,
+            "first_pts": 159
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "middle",
+            "start_frame": 290,
+            "frame_count": 6,
+            "first_pts": 290
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_3",
+            "start_frame": 296,
+            "frame_count": 5,
+            "first_pts": 296
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_6",
+            "start_frame": 306,
+            "frame_count": 1,
+            "first_pts": 306
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "inside_gap_12",
+            "start_frame": 335,
+            "frame_count": 6,
+            "first_pts": 335
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_5",
+            "start_frame": 397,
+            "frame_count": 5,
+            "first_pts": 397
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 578,
+            "frame_count": 3,
+            "first_pts": 578
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-offset",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 580,
+            "frame_count": 1,
+            "first_pts": 580
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "first",
+            "start_frame": 0,
+            "frame_count": 6,
+            "first_pts": 62
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 62,
+                "pts": 62,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "f25e26d7c149ce37de7198003f25c93a0a440ef69e270698fd3140eec9fa511f"
+              },
+              "actual": {
+                "dts": 62,
+                "pts": 62,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4d114ac4a86789260d0d0b509232d3c64e50d757ad115b64e376f641aa284e34"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_1",
+            "start_frame": 2,
+            "frame_count": 3,
+            "first_pts": 64
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 3,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 65,
+                "pts": 65,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "924d1fe7939a09d73ea018d3feb926f3eb502be775f8535b6a8109b1c6a894c2"
+              },
+              "actual": {
+                "dts": 65,
+                "pts": 65,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4184a5e3c6273dd97b28cb4bbb0119fb96b026477f5dd0c29b28f0c58e6c0054"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_0",
+            "start_frame": 8,
+            "frame_count": 5,
+            "first_pts": 70
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 71,
+                "pts": 71,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "e049de3098a86802aecb793ae2992c21764e95d37e543736307d2871643cd3cc"
+              },
+              "actual": {
+                "dts": 71,
+                "pts": 71,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "97f85cc86f8d84969db54dd701cb9eceb1295a61dfccc3dd81fc2d3ab52744b4"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_4",
+            "start_frame": 28,
+            "frame_count": 5,
+            "first_pts": 90
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 92,
+                "pts": 92,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "543ea67db8d66959ffa0fdd9d332d926d4577637c63d9e71074f6c4f06c27ddf"
+              },
+              "actual": {
+                "dts": 92,
+                "pts": 92,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "2a741f7a06675d68e3b5266972c89849b3697447f5638bdb778cc130999fae34"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "random_3",
+            "start_frame": 74,
+            "frame_count": 5,
+            "first_pts": 136
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 4,
+              "expected": {
+                "dts": 140,
+                "pts": 140,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "b41a9e9e3f259766da5dcf3b27cfe61dee92cd9e72348199ed1974a9c80475d8"
+              },
+              "actual": {
+                "dts": 140,
+                "pts": 140,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "7041eb63b83be0d1dea3fe68fd7d7544b5c204c261831f64997c257f5d98eb40"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 229,
+            "frame_count": 3,
+            "first_pts": 291
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 3,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 293,
+                "pts": 293,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5c4ac010794b831214507a6c4dc18516bcd6bd6924b0007c2259874bdebbc1e3"
+              },
+              "actual": {
+                "dts": 293,
+                "pts": 293,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "74f9d51f6de45455c34d94725b958fe027a2b9a127be767a353176e1916e3c74"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "12",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 231,
+            "frame_count": 1,
+            "first_pts": 293
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 1,
+            "first_difference": {
+              "frame": 0,
+              "expected": {
+                "dts": 293,
+                "pts": 293,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5c4ac010794b831214507a6c4dc18516bcd6bd6924b0007c2259874bdebbc1e3"
+              },
+              "actual": {
+                "dts": 293,
+                "pts": 293,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "74f9d51f6de45455c34d94725b958fe027a2b9a127be767a353176e1916e3c74"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "first",
+            "start_frame": 0,
+            "frame_count": 6,
+            "first_pts": 154
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 156,
+                "pts": 156,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "f25e26d7c149ce37de7198003f25c93a0a440ef69e270698fd3140eec9fa511f"
+              },
+              "actual": {
+                "dts": 156,
+                "pts": 156,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4d114ac4a86789260d0d0b509232d3c64e50d757ad115b64e376f641aa284e34"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_1",
+            "start_frame": 6,
+            "frame_count": 3,
+            "first_pts": 160
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 3,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 161,
+                "pts": 161,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "2b5846313869e546294696b2b71a3d0ae534006b6d0a1976cc4624c47eda938e"
+              },
+              "actual": {
+                "dts": 161,
+                "pts": 161,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "bdbee421312411f537d3e2cd45dc143d72641f54f0ce7f60b9db63bd516688e5"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_0",
+            "start_frame": 29,
+            "frame_count": 5,
+            "first_pts": 183
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 3,
+              "expected": {
+                "dts": 186,
+                "pts": 186,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5ae42ec541c440d590ec2f7261e6fd67e8bb0c18454f227d365531e1d38ef598"
+              },
+              "actual": {
+                "dts": 186,
+                "pts": 186,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "89d2d13e448d8acbd05da03d1c9516dc12a82e95362db9196e28965519d08089"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_4",
+            "start_frame": 110,
+            "frame_count": 5,
+            "first_pts": 264
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 2,
+              "expected": {
+                "dts": 266,
+                "pts": 266,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "72236c25b4f6b09aa2f578a69ae7b13630c2d77c83410e28f0b7f916b219946a"
+              },
+              "actual": {
+                "dts": 266,
+                "pts": 266,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "87a071b77d31b400778ae9d3688f10d0ffa015fccf014675902a6123e168c1d9"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "middle",
+            "start_frame": 290,
+            "frame_count": 6,
+            "first_pts": 444
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 6,
+            "actual_frames": 6,
+            "first_difference": {
+              "frame": 3,
+              "expected": {
+                "dts": 447,
+                "pts": 447,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5e0b8a0817bd6438e1eaccb4073bdd97240665020c7b7195ee97e117815e2e10"
+              },
+              "actual": {
+                "dts": 447,
+                "pts": 447,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "294415a8c4c704705108d8821b3a220bde1c621bf652f497d4d2cba519c6c0d8"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "random_5",
+            "start_frame": 397,
+            "frame_count": 5,
+            "first_pts": 551
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": true,
+            "pixels_equal": false,
+            "pts_equal": true,
+            "time_base_equal": true,
+            "expected_frames": 5,
+            "actual_frames": 5,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 552,
+                "pts": 552,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "ce228964cfa1571954918f8bbd4ac15af5b7b9ebc9a6b1561360c76e969aa90d"
+              },
+              "actual": {
+                "dts": 552,
+                "pts": 552,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "4143fd81b29304247d9d0d6b9b14d78957c1d061e2daaf9575bca28a5f36eea6"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_three",
+            "start_frame": 578,
+            "frame_count": 3,
+            "first_pts": 732
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 3,
+            "actual_frames": 2,
+            "first_difference": {
+              "frame": 1,
+              "expected": {
+                "dts": 733,
+                "pts": 733,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "5c4ac010794b831214507a6c4dc18516bcd6bd6924b0007c2259874bdebbc1e3"
+              },
+              "actual": {
+                "dts": 733,
+                "pts": 733,
+                "duration": 1,
+                "bytes": 55296,
+                "sha256": "74f9d51f6de45455c34d94725b958fe027a2b9a127be767a353176e1916e3c74"
+              }
+            }
+          }
+        },
+        {
+          "profile": "bunny-derived-vfr-delayed-video",
+          "rate": "30000/1001",
+          "window": {
+            "id": "short_tail_one",
+            "start_frame": 580,
+            "frame_count": 1,
+            "first_pts": 734
+          },
+          "comparison": {
+            "exact": false,
+            "frame_count_equal": false,
+            "pixels_equal": false,
+            "pts_equal": false,
+            "time_base_equal": true,
+            "expected_frames": 1,
+            "actual_frames": 0,
+            "first_difference": null
+          }
+        }
+      ],
+      "median_wall_seconds_among_exact": 0.1379486609948799,
+      "median_frames_decoded_among_exact": 29
+    },
+    {
+      "variant": "prefix_frames",
+      "comparisons": 144,
+      "exact": 144,
+      "failures": [],
+      "median_wall_seconds_among_exact": 0.24965773550138692,
+      "median_frames_decoded_among_exact": 159.0
+    }
+  ]
+}

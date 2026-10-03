@@ -1,0 +1,740 @@
+{
+  "1": {
+    "fps": 1,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=1,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 10.927594,
+    "output_preview_frames": 11,
+    "output_bytes": 57024,
+    "preview_process_wall_seconds": 0.21247153500007698,
+    "preview_prepare_wall_seconds": 0.21369260400388157,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.191575407333847,
+        "change_mean": 7.216531635802469,
+        "texture_max": 14.448650189414836,
+        "change_max": 14.433063271604938,
+        "preview_frames": 2,
+        "features": [
+          0.14386282460283975,
+          -1.8244342070298847
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.868514150943398,
+        "change_mean": 15.586323302469136,
+        "texture_max": 15.013526150281365,
+        "change_max": 15.68846450617284,
+        "preview_frames": 2,
+        "features": [
+          0.6279557929945975,
+          -0.3078992463550774
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.976304065982568,
+        "change_mean": 25.769386574074076,
+        "texture_max": 15.159399481407924,
+        "change_max": 42.05073302469136,
+        "preview_frames": 2,
+        "features": [
+          0.7031274881233126,
+          0.7255637315487358
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.669557196844313,
+        "change_mean": 27.722318672839506,
+        "texture_max": 15.475429861340984,
+        "change_max": 43.06944444444444,
+        "preview_frames": 2,
+        "features": [
+          0.48785419685637255,
+          0.877589660847254
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 11.566337566049995,
+        "change_mean": 23.44187242798354,
+        "texture_max": 12.65422597373938,
+        "change_max": 45.01350308641975,
+        "preview_frames": 3,
+        "features": [
+          -1.9628003025771223,
+          0.5291800609889675
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.191575407333847,
+        "change_mean": 7.216531635802469,
+        "texture_max": 14.448650189414836,
+        "change_max": 14.433063271604938,
+        "preview_frames": 2,
+        "features": [
+          0.14386282460283975,
+          -1.8244342070298847,
+          -0.06475071614115623,
+          -1.3004535345193908
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.868514150943398,
+        "change_mean": 15.586323302469136,
+        "texture_max": 15.013526150281365,
+        "change_max": 15.68846450617284,
+        "preview_frames": 2,
+        "features": [
+          0.6279557929945975,
+          -0.3078992463550774,
+          0.46935851630027176,
+          -1.1437829657696694
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.976304065982568,
+        "change_mean": 25.769386574074076,
+        "texture_max": 15.159399481407924,
+        "change_max": 42.05073302469136,
+        "preview_frames": 2,
+        "features": [
+          0.7031274881233126,
+          0.7255637315487358,
+          0.6042260459856366,
+          0.7546839996926159
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.669557196844313,
+        "change_mean": 27.722318672839506,
+        "texture_max": 15.475429861340984,
+        "change_max": 43.06944444444444,
+        "preview_frames": 2,
+        "features": [
+          0.48785419685637255,
+          0.877589660847254,
+          0.8922841810878157,
+          0.8015364177171771
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 11.566337566049995,
+        "change_mean": 23.44187242798354,
+        "texture_max": 12.65422597373938,
+        "change_max": 45.01350308641975,
+        "preview_frames": 3,
+        "features": [
+          -1.9628003025771223,
+          0.5291800609889675,
+          -1.9011180272325612,
+          0.8880160828792655
+        ]
+      }
+    ]
+  },
+  "2": {
+    "fps": 2,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=2,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 10.927594,
+    "output_preview_frames": 22,
+    "output_bytes": 114048,
+    "preview_process_wall_seconds": 0.22772958999848925,
+    "preview_prepare_wall_seconds": 0.2298958089959342,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.17893788618559,
+        "change_mean": 7.659239969135802,
+        "texture_max": 14.517092390304903,
+        "change_max": 11.529899691358025,
+        "preview_frames": 4,
+        "features": [
+          0.08432360184362153,
+          -1.7222096805476836
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.799637031520101,
+        "change_mean": 11.763792438271604,
+        "texture_max": 15.03996790981647,
+        "change_max": 14.766203703703704,
+        "preview_frames": 4,
+        "features": [
+          0.6134744540270811,
+          -0.47035751675450815
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.733267015153187,
+        "change_mean": 16.996190200617285,
+        "texture_max": 14.875308258854684,
+        "change_max": 41.81520061728395,
+        "preview_frames": 4,
+        "features": [
+          0.5578955142840835,
+          0.6381139530590351
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.901376303376365,
+        "change_mean": 19.710599922839506,
+        "texture_max": 15.40381473206076,
+        "change_max": 43.93769290123457,
+        "preview_frames": 4,
+        "features": [
+          0.6982203415240215,
+          1.0913967681433732
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 12.007571536283054,
+        "change_mean": 16.045814043209877,
+        "texture_max": 14.67532848762367,
+        "change_max": 45.7037037037037,
+        "preview_frames": 6,
+        "features": [
+          -1.953913911678831,
+          0.46305647609978356
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.17893788618559,
+        "change_mean": 7.659239969135802,
+        "texture_max": 14.517092390304903,
+        "change_max": 11.529899691358025,
+        "preview_frames": 4,
+        "features": [
+          0.08432360184362153,
+          -1.7222096805476836,
+          -1.265496642439099,
+          -1.413886089849866
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.799637031520101,
+        "change_mean": 11.763792438271604,
+        "texture_max": 15.03996790981647,
+        "change_max": 14.766203703703704,
+        "preview_frames": 4,
+        "features": [
+          0.6134744540270811,
+          -0.47035751675450815,
+          0.4578652209563285,
+          -1.0129848213317718
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.733267015153187,
+        "change_mean": 16.996190200617285,
+        "texture_max": 14.875308258854684,
+        "change_max": 41.81520061728395,
+        "preview_frames": 4,
+        "features": [
+          0.5578955142840835,
+          0.6381139530590351,
+          -0.07870602717982561,
+          0.7302520730555263
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.901376303376365,
+        "change_mean": 19.710599922839506,
+        "texture_max": 15.40381473206076,
+        "change_max": 43.93769290123457,
+        "preview_frames": 4,
+        "features": [
+          0.6982203415240215,
+          1.0913967681433732,
+          1.6242457777551398,
+          0.8146787371162865
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 12.007571536283054,
+        "change_mean": 16.045814043209877,
+        "texture_max": 14.67532848762367,
+        "change_max": 45.7037037037037,
+        "preview_frames": 6,
+        "features": [
+          -1.953913911678831,
+          0.46305647609978356,
+          -0.7379083290925438,
+          0.8819401010098211
+        ]
+      }
+    ]
+  },
+  "4": {
+    "fps": 4,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 10.927594,
+    "output_preview_frames": 44,
+    "output_bytes": 228096,
+    "preview_process_wall_seconds": 0.2404259470058605,
+    "preview_prepare_wall_seconds": 0.25119284899847116,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.236732513608445,
+        "change_mean": 5.641251929012346,
+        "texture_max": 14.676850012872853,
+        "change_max": 10.005401234567902,
+        "preview_frames": 8,
+        "features": [
+          0.1376992674544295,
+          -1.607377585871986
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.699206164487476,
+        "change_mean": 7.319685570987654,
+        "texture_max": 15.105848872705874,
+        "change_max": 11.011766975308642,
+        "preview_frames": 8,
+        "features": [
+          0.5261106047774975,
+          -0.611778575972431
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.820207362122549,
+        "change_mean": 9.881245177469136,
+        "texture_max": 15.092127330905882,
+        "change_max": 41.63348765432099,
+        "preview_frames": 8,
+        "features": [
+          0.6258460476533959,
+          0.5742244869564159
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.879504952600316,
+        "change_mean": 11.669102044753085,
+        "texture_max": 15.463550286880723,
+        "change_max": 43.87770061728395,
+        "preview_frames": 8,
+        "features": [
+          0.6744440120313149,
+          1.2463941341359104
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 11.960503903232926,
+        "change_mean": 9.45707947530864,
+        "texture_max": 14.686857046967525,
+        "change_max": 45.260416666666664,
+        "preview_frames": 12,
+        "features": [
+          -1.9640999319166261,
+          0.39853754075209263
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.236732513608445,
+        "change_mean": 5.641251929012346,
+        "texture_max": 14.676850012872853,
+        "change_max": 10.005401234567902,
+        "preview_frames": 8,
+        "features": [
+          0.1376992674544295,
+          -1.607377585871986,
+          -1.1147465972673745,
+          -1.288546988670384
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.699206164487476,
+        "change_mean": 7.319685570987654,
+        "texture_max": 15.105848872705874,
+        "change_max": 11.011766975308642,
+        "preview_frames": 8,
+        "features": [
+          0.5261106047774975,
+          -0.611778575972431,
+          0.3498229083703614,
+          -1.156930034747678
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.820207362122549,
+        "change_mean": 9.881245177469136,
+        "texture_max": 15.092127330905882,
+        "change_max": 41.63348765432099,
+        "preview_frames": 8,
+        "features": [
+          0.6258460476533959,
+          0.5742244869564159,
+          0.30358559305010235,
+          0.7484997920709944
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.879504952600316,
+        "change_mean": 11.669102044753085,
+        "texture_max": 15.463550286880723,
+        "change_max": 43.87770061728395,
+        "preview_frames": 8,
+        "features": [
+          0.6744440120313149,
+          1.2463941341359104,
+          1.5414671492748435,
+          0.8256659065692198
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 11.960503903232926,
+        "change_mean": 9.45707947530864,
+        "texture_max": 14.686857046967525,
+        "change_max": 45.260416666666664,
+        "preview_frames": 12,
+        "features": [
+          -1.9640999319166261,
+          0.39853754075209263,
+          -1.0801290534278845,
+          0.8713113247778473
+        ]
+      }
+    ]
+  },
+  "8": {
+    "fps": 8,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=8,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 10.927594,
+    "output_preview_frames": 87,
+    "output_bytes": 451008,
+    "preview_process_wall_seconds": 0.24129906899906928,
+    "preview_prepare_wall_seconds": 0.2521927859997959,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 14.204055034894626,
+        "visual_change": 3.626314139660494,
+        "features": [
+          0.0,
+          0.1255941693227269,
+          -1.5927823046754428
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 14.726434719693625,
+        "visual_change": 4.6017071759259265,
+        "features": [
+          0.0,
+          0.5665685180499876,
+          -0.5422345385709311
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 14.842468389675052,
+        "visual_change": 5.783383969907408,
+        "features": [
+          0.0,
+          0.6625304627707438,
+          0.5088280307629041
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 14.777003625087353,
+        "visual_change": 6.913857542438272,
+        "features": [
+          0.0,
+          0.6084766708226362,
+          1.355254550147713
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "visual_texture": 11.955912967120653,
+        "visual_change": 5.4957897208803015,
+        "features": [
+          0.0,
+          -1.9631698209661235,
+          0.2709342623357557
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.204055034894626,
+        "change_mean": 3.6263141396604937,
+        "texture_max": 14.670338418110266,
+        "change_max": 6.491126543209877,
+        "preview_frames": 16,
+        "features": [
+          0.1255941693227269,
+          -1.592782304675443,
+          -1.1844087782783177,
+          -1.2675441843021988
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.726434719693627,
+        "change_mean": 4.601707175925926,
+        "texture_max": 15.15019585126338,
+        "change_max": 7.073688271604938,
+        "preview_frames": 16,
+        "features": [
+          0.5665685180499876,
+          -0.542234538570932,
+          0.43668119467999983,
+          -1.1799158002819157
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.842468389675052,
+        "change_mean": 5.783383969907407,
+        "texture_max": 15.21117685461032,
+        "change_max": 41.689043209876544,
+        "preview_frames": 16,
+        "features": [
+          0.6625304627707438,
+          0.5088280307629037,
+          0.6392336819268167,
+          0.7686482717795697
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 14.777003625087351,
+        "change_mean": 6.913857542438271,
+        "texture_max": 15.404800424804149,
+        "change_max": 43.447916666666664,
+        "preview_frames": 16,
+        "features": [
+          0.6084766708226362,
+          1.3552545501477122,
+          1.2773536952964495,
+          0.8158910115996726
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2.927593999999999,
+        "input_bytes": 0,
+        "texture_mean": 11.955912967120653,
+        "change_mean": 5.495789720880301,
+        "texture_max": 14.67487265070433,
+        "change_max": 45.270833333333336,
+        "preview_frames": 23,
+        "features": [
+          -1.9631698209661235,
+          0.2709342623357543,
+          -1.1688597936249243,
+          0.8629207012048696
+        ]
+      }
+    ]
+  }
+}

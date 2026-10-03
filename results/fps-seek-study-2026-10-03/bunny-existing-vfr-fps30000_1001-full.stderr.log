@@ -1,0 +1,78 @@
+[h264 @ 0x55f8df21df00] Reinit context to 640x368, pix_fmt: yuv420p
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/video-estimation-research/bunny.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    creation_time   : 2010-02-09T01:55:39.000000Z
+  Duration: 00:01:00.10, start: 0.000000, bitrate: 733 kb/s
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, stereo, fltp, 65 kb/s (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 612 kb/s, 23.96 fps, 24 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: none (rtp  / 0x20707472), 45 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+  Stream #0:3[0x4](eng): Data: none (rtp  / 0x20707472), 5 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+[out#0/framehash @ 0x55f8df244300] Adding streams from explicit maps...
+[vost#0:0/rawvideo @ 0x55f8df23d440] Created video stream from input stream 0:1
+[Parsed_fps_0 @ 0x55f8df2ebcc0] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x55f8df23d440] Starting thread...
+[vf#0:0 @ 0x55f8df2eb1c0] Starting thread...
+[vist#0:1/h264 @ 0x55f8df231200] [dec:h264 @ 0x55f8df2e63c0] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55f8df21b240] Starting thread...
+[h264 @ 0x55f8df2e6840] Reinit context to 640x368, pix_fmt: yuv420p
+[graph -1 input from stream 0:1 @ 0x7f45d4001940] w:640 h:360 pixfmt:yuv420p tb:1/600 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[Parsed_fps_0 @ 0x7f45d4001580] fps=30000/1001
+[graph -1 input from stream 0:1 @ 0x7f45d4001940] video frame properties congruent with link at pts_time: 0
+[Parsed_fps_0 @ 0x7f45d4001580] Set first pts to 0
+Output #0, framehash, to 'pipe:1':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, q=2-31, 82861 kb/s, 29.97 fps, 29.97 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/framehash @ 0x55f8df244300] Starting thread...
+frame=  176 fps=0.0 q=-0.0 size=      19KiB time=00:00:06.13 bitrate=  25.8kbits/s speed=12.3x    frame=  354 fps=354 q=-0.0 size=      39KiB time=00:00:12.07 bitrate=  26.3kbits/s speed=12.1x    frame=  527 fps=351 q=-0.0 size=      58KiB time=00:00:17.85 bitrate=  26.5kbits/s speed=11.9x    frame=  705 fps=352 q=-0.0 size=      77KiB time=00:00:23.79 bitrate=  26.6kbits/s speed=11.9x    frame=  877 fps=351 q=-0.0 size=      96KiB time=00:00:29.52 bitrate=  26.6kbits/s speed=11.8x    frame= 1051 fps=350 q=-0.0 size=     115KiB time=00:00:35.33 bitrate=  26.7kbits/s speed=11.8x    frame= 1229 fps=351 q=-0.0 size=     135KiB time=00:00:41.27 bitrate=  26.7kbits/s speed=11.8x    frame= 1410 fps=352 q=-0.0 size=     154KiB time=00:00:47.31 bitrate=  26.7kbits/s speed=11.8x    frame= 1571 fps=349 q=-0.0 size=     172KiB time=00:00:52.68 bitrate=  26.7kbits/s speed=11.7x    frame= 1740 fps=348 q=-0.0 size=     190KiB time=00:00:58.32 bitrate=  26.7kbits/s speed=11.7x    [in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55f8df21b240] EOF while reading input
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55f8df21b240] Terminating thread with return code 0 (success)
+[vist#0:1/h264 @ 0x55f8df231200] [dec:h264 @ 0x55f8df2e63c0] Decoder thread received EOF packet
+[vist#0:1/h264 @ 0x55f8df231200] [dec:h264 @ 0x55f8df2e63c0] Decoder returned EOF, finishing
+[vist#0:1/h264 @ 0x55f8df231200] [dec:h264 @ 0x55f8df2e63c0] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x55f8df2eb1c0] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x55f8df2eb1c0] All consumers returned EOF
+[Parsed_fps_0 @ 0x7f45d4001580] 1440 frames in, 1801 frames out; 0 frames dropped, 361 frames duplicated.
+[vf#0:0 @ 0x55f8df2eb1c0] Terminating thread with return code 0 (success)
+[vost#0:0/rawvideo @ 0x55f8df23d440] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x55f8df23d440] Terminating thread with return code 0 (success)
+[out#0/framehash @ 0x55f8df244300] All streams finished
+[out#0/framehash @ 0x55f8df244300] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x55f8df2eabc0] Statistics: 201935 bytes written, 0 seeks, 1802 writeouts
+[out#0/framehash @ 0x55f8df244300] Output file #0 (pipe:1):
+[out#0/framehash @ 0x55f8df244300]   Output stream #0:0 (video): 1801 frames encoded; 1801 packets muxed (622425600 bytes); 
+[out#0/framehash @ 0x55f8df244300]   Total: 1801 packets (622425600 bytes) muxed
+[out#0/framehash @ 0x55f8df244300] video:607838KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 1801 fps=348 q=-0.0 Lsize=     197KiB time=00:01:00.09 bitrate=  26.9kbits/s speed=11.6x    
+bench: utime=5.990s stime=0.148s rtime=5.172s
+bench: maxrss=48144KiB
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55f8df21b240] Input file #0 (/tmp/video-estimation-research/bunny.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55f8df21b240]   Input stream #0:1 (video): 1440 packets read (4598601 bytes); 1440 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55f8df21b240]   Total: 1440 packets (4598601 bytes) demuxed
+[AVIOContext @ 0x55f8df223c80] Statistics: 5510872 bytes read, 0 seeks

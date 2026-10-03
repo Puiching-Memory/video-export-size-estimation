@@ -1,0 +1,229 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 15,
+      "max_probes": 0,
+      "threads": 1,
+      "max_encode_fraction": null
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": 537620,
+      "max_crf": 35,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "segmented",
+      "segment_seconds": 4
+    },
+    "sample_seconds": 4,
+    "seed": 20261003,
+    "probe_mode": "auto"
+  },
+  "status": "budget_exhausted",
+  "estimate": {
+    "estimated_bytes": 688664,
+    "selected_crf": 24.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        688664,
+        688664
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-segmented/e5602509f592f2d7d9395a10660e982737d2f1db89e25f9b661ed55f284f6650.mp4",
+    "sha256": "a98f61308335a9a758169bd208640247fd2c991298fd918de26fc3625109a5a9",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 732,
+      "video_payload_bytes": 680572,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 7360,
+      "video_samples": 400,
+      "audio_samples": 0,
+      "video_duration_ticks": 409600,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 10
+  },
+  "candidates": [
+    {
+      "crf": 23.0,
+      "estimated_bytes": 768029,
+      "evidence": "exact"
+    },
+    {
+      "crf": 24.0,
+      "estimated_bytes": 688664,
+      "evidence": "exact"
+    }
+  ],
+  "unmet": [
+    "size_limit_exceeded_at_tested_setting"
+  ],
+  "elapsed_seconds": 15.000858649000293,
+  "first_estimate_seconds": 5.056277660005435,
+  "attempted_encode_seconds": 120.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 0,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "bytes": 1097614,
+    "ingest_seconds": 0.0022432919940911233,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "stop_reason": "subprocess exceeded wall-clock budget",
+  "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "segment_plan": {
+    "pipeline": "independent-cfr-x264-v1",
+    "semantics": "independent_segments",
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "plan_hash": "17668673998048cae589f4c0c849ee71603fbf426d75d5662b6cd90a9704b24b",
+    "source_frames": 400,
+    "source_geometry": [
+      384,
+      288
+    ],
+    "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+    "output_rate": "10",
+    "total_frames": 400,
+    "duration": 40.0,
+    "segment_frames": 40,
+    "segments": [
+      {
+        "index": 0,
+        "start_frame": 0,
+        "frame_count": 40,
+        "start_tick": 0,
+        "end_tick": 40960
+      },
+      {
+        "index": 1,
+        "start_frame": 40,
+        "frame_count": 40,
+        "start_tick": 40960,
+        "end_tick": 81920
+      },
+      {
+        "index": 2,
+        "start_frame": 80,
+        "frame_count": 40,
+        "start_tick": 81920,
+        "end_tick": 122880
+      },
+      {
+        "index": 3,
+        "start_frame": 120,
+        "frame_count": 40,
+        "start_tick": 122880,
+        "end_tick": 163840
+      },
+      {
+        "index": 4,
+        "start_frame": 160,
+        "frame_count": 40,
+        "start_tick": 163840,
+        "end_tick": 204800
+      },
+      {
+        "index": 5,
+        "start_frame": 200,
+        "frame_count": 40,
+        "start_tick": 204800,
+        "end_tick": 245760
+      },
+      {
+        "index": 6,
+        "start_frame": 240,
+        "frame_count": 40,
+        "start_tick": 245760,
+        "end_tick": 286720
+      },
+      {
+        "index": 7,
+        "start_frame": 280,
+        "frame_count": 40,
+        "start_tick": 286720,
+        "end_tick": 327680
+      },
+      {
+        "index": 8,
+        "start_frame": 320,
+        "frame_count": 40,
+        "start_tick": 327680,
+        "end_tick": 368640
+      },
+      {
+        "index": 9,
+        "start_frame": 360,
+        "frame_count": 40,
+        "start_tick": 368640,
+        "end_tick": 409600
+      }
+    ],
+    "prepare_seconds": 0.09551820199703798,
+    "prepare_cache_hit": false,
+    "source_identity_verified_at_publication": true,
+    "fps_conversion_access": "timestamp_seek"
+  },
+  "quality_search": {
+    "objective": "lowest_verified_feasible_crf",
+    "allowed_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0
+    ],
+    "attempted_crfs": [
+      23.0,
+      24.0,
+      26.0
+    ],
+    "actual_crfs": [
+      23.0,
+      24.0
+    ],
+    "unverified_lower_crfs": [],
+    "best_crf": null,
+    "best_bytes": null,
+    "feasibility": "no_verified_feasible",
+    "optimality": "unknown",
+    "warnings": []
+  },
+  "alternatives": [
+    "Increase the compute budget to permit further probes or a verified export.",
+    "Relax the size limit or expand the allowed CRF range."
+  ]
+}

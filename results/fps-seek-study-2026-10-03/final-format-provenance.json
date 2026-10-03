@@ -1,0 +1,6 @@
+{
+  "formatted_runner_sha256": "131ea8c109127c58ceae356a88c872f5de53038f54696e9a3181e4822a432b98",
+  "executed_plan_cost_runner_sha256": "307a82b4cb30819b53a749f051f3a554545019d37173deb4a7f9d6d083569a12",
+  "ast_identical_to_executed_plan_cost_runner": true,
+  "note": "Only formatting followed executed stages; original runner snapshots and stage SHA records are retained. Frozen study source hashes refer to the original v2 study, maintenance is separate."
+}

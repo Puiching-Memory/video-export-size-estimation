@@ -1,0 +1,10 @@
+{
+  "rows": 36,
+  "sha256": "73b90f2f36feb9de0e384cee286c42ee3c7d4eec8f234af579f47e3f6a2b707b",
+  "completed_at_utc": "2026-10-03T06:26:54.855168+00:00",
+  "reference_labels_read": false,
+  "baseline_rows": 9,
+  "temporal_rows": 18,
+  "temporal_predictions_sha256": "39cd86e636048827fe647617d48853da37e071c9bb471b6a4ec7ed2f15ceb87d",
+  "baseline_predictions_sha256": "b1560a535372bdc1c40f39da550e360da960fa32310d00be04b4868e45a225eb"
+}

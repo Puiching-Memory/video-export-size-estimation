@@ -1,0 +1,19 @@
+[
+  {
+    "method": "segmented",
+    "prefix": null,
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "lifecycle": "prepared",
+    "cases": 9,
+    "estimates": 9,
+    "no_estimate_rate": 0.0,
+    "within_10_percent_of_all_cases": 0.8888888888888888,
+    "median_ape_percent": 0.31267284211983215,
+    "worst_ape_percent": 13.77530443663626,
+    "median_encoded_media_fraction": 0.25,
+    "median_wall_seconds": 3.0212451980041806,
+    "exact_estimates": 1,
+    "certified_satisfied": 1
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 5988249,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        5988249,
+        5988249
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/grain-segmented/a9870e3303a573d7e059c417534520df89d6152021659e1e86f1c261c6d117ad.mp4",
+    "sha256": "9aa546c271f596cac2f2f2bcfc2ef256e277183d6579b1e35b9bbb73be67d94e",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 5977723,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 6,
+    "elapsed_seconds": 11.96215399599896
+  }
+]

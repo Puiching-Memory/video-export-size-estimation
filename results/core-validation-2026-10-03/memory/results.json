@@ -1,0 +1,74 @@
+[
+  {
+    "case": "motion",
+    "method": "continuous",
+    "state": "satisfied",
+    "wall_seconds": 2.3540980129982927,
+    "sampled_process_tree_peak_rss_bytes": 94232576,
+    "rss_sampling_period_seconds": 0.05,
+    "rss_samples": 45,
+    "prepared_snapshot_storage_bytes": 1368858,
+    "snapshot_pages_are_not_process_rss": true,
+    "host_and_cgroup_memory_not_measured": true
+  },
+  {
+    "case": "motion",
+    "method": "segmented",
+    "state": "satisfied",
+    "wall_seconds": 5.686353995995887,
+    "sampled_process_tree_peak_rss_bytes": 95154176,
+    "rss_sampling_period_seconds": 0.05,
+    "rss_samples": 108,
+    "prepared_snapshot_storage_bytes": 1368858,
+    "snapshot_pages_are_not_process_rss": true,
+    "host_and_cgroup_memory_not_measured": true
+  },
+  {
+    "case": "grain",
+    "method": "continuous",
+    "state": "satisfied",
+    "wall_seconds": 9.127942876002635,
+    "sampled_process_tree_peak_rss_bytes": 95715328,
+    "rss_sampling_period_seconds": 0.05,
+    "rss_samples": 176,
+    "prepared_snapshot_storage_bytes": 16081831,
+    "snapshot_pages_are_not_process_rss": true,
+    "host_and_cgroup_memory_not_measured": true
+  },
+  {
+    "case": "grain",
+    "method": "segmented",
+    "state": "satisfied",
+    "wall_seconds": 14.618274331995053,
+    "sampled_process_tree_peak_rss_bytes": 95752192,
+    "rss_sampling_period_seconds": 0.05,
+    "rss_samples": 281,
+    "prepared_snapshot_storage_bytes": 16081831,
+    "snapshot_pages_are_not_process_rss": true,
+    "host_and_cgroup_memory_not_measured": true
+  },
+  {
+    "case": "pedestrians",
+    "method": "continuous",
+    "state": "satisfied",
+    "wall_seconds": 2.142605396998988,
+    "sampled_process_tree_peak_rss_bytes": 105205760,
+    "rss_sampling_period_seconds": 0.05,
+    "rss_samples": 41,
+    "prepared_snapshot_storage_bytes": 1097614,
+    "snapshot_pages_are_not_process_rss": true,
+    "host_and_cgroup_memory_not_measured": true
+  },
+  {
+    "case": "pedestrians",
+    "method": "segmented",
+    "state": "satisfied",
+    "wall_seconds": 5.797696166002424,
+    "sampled_process_tree_peak_rss_bytes": 101138432,
+    "rss_sampling_period_seconds": 0.05,
+    "rss_samples": 111,
+    "prepared_snapshot_storage_bytes": 1097614,
+    "snapshot_pages_are_not_process_rss": true,
+    "host_and_cgroup_memory_not_measured": true
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "created_at_utc": "2026-10-03T07:05:00.000217+00:00",
+    "policy": {
+      "version": "post-score-native-130-frame-psnr-ssim-v1",
+      "purpose": "characterize export semantics after scoring; no prediction or tuning",
+      "reference": "same verified source, native dimensions, original frame rate, yuv420p 8 bit",
+      "pairing": "all source and output frames in presentation order, normalized equal frame-index clocks",
+      "frames": 130,
+      "metrics": [
+        "FFmpeg_psnr_full_yuv",
+        "FFmpeg_ssim_full_yuv"
+      ],
+      "threads_per_decoder": 1,
+      "filter_complex_threads": 1,
+      "filter_threads": 1,
+      "vmaf_policy": "record filter availability; do not substitute PSNR/SSIM for perceptual acceptance",
+      "quality_analysis_in_controller_budget": false,
+      "resource_policy": "serial metric jobs, nice=10, wait for other active FFmpeg processes",
+      "parameter_policy": "read completed CRF23 medium native references; no encoding or parameter changes"
+    },
+    "policy_fingerprint": "51a58702adb06417881e104a1292f8529581bd2ef2097674d1d36a3f707dc62f",
+    "case_ids": [
+      "scene-composition",
+      "mobile-sharing",
+      "artistic-intro",
+      "noise-ocean-game",
+      "shaky-baseball-4k",
+      "shaky-fireworks-4k",
+      "shaky-walk",
+      "trees-grass",
+      "walking-street"
+    ],
+    "reference_index": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/references.json",
+    "reference_index_sha256": "f42a32df43c53dedc6a59e680e0863bcfb5f37e707f052ceebbcce8e2dd838dd",
+    "source_manifest": "/workspace/video-export-size-estimation/artifacts/industrial-v1/manifest-test_reserved-sdr_8bit.json",
+    "source_manifest_sha256": "557e63ca6662c26fd021c09af3ce74f1b2fe0864aaab558a0fce5ede944b0318",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with gcc 14 (Debian 14.2.0-19)\nconfiguration: --prefix=/usr --extra-version=0+deb13u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\nlibavutil      59. 39.100 / 59. 39.100\nlibavcodec     61. 19.101 / 61. 19.101\nlibavformat    61.  7.103 / 61.  7.103\nlibavdevice    61.  3.100 / 61.  3.100\nlibavfilter    10.  5.100 / 10.  5.100\nlibswscale      8.  3.100 /  8.  3.100\nlibswresample   5.  3.100 /  5.  3.100\nlibpostproc    58.  3.100 / 58.  3.100\n",
+    "libvmaf_available": false,
+    "vmaf_measured": false,
+    "vmaf_note": "filter unavailable in this build",
+    "quality_analysis_in_controller_budget": false,
+    "cpu_quota": "400000 100000",
+    "memory_limit_bytes": 17179869184,
+    "timing_scope": "shared cloud host with other API/development work; not isolated latency"
+  },
+  "cases": 9,
+  "segmented_file_relative_median": 0.04565566112231201,
+  "segmented_file_relative_min": -0.0959068533703531,
+  "segmented_file_relative_max": 2.3684167201573088,
+  "segmented_psnr_average_db_delta_median": -0.13782300000000447,
+  "segmented_psnr_average_db_delta_min": -2.6870949999999993,
+  "segmented_psnr_average_db_delta_max": 0.15229200000000276,
+  "segmented_ssim_all_delta_median": -0.0006089999999999707,
+  "segmented_ssim_all_delta_min": -0.005693000000000059,
+  "segmented_ssim_all_delta_max": 0.00020700000000006824,
+  "metric_compute_seconds_total": 25.47023606899893,
+  "source_artifact_verification_seconds_total": 13.466126106002775,
+  "perceptual_acceptance": "not established; PSNR/SSIM are objective signal metrics, not subjective review"
+}

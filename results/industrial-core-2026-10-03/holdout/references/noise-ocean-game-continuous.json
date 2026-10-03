@@ -1,0 +1,106 @@
+{
+  "case": "noise-ocean-game",
+  "mode": "continuous",
+  "answer": {
+    "schema_version": 2,
+    "requested": {
+      "compute": {
+        "wall_seconds": 120,
+        "max_probes": 0,
+        "threads": 1,
+        "max_encode_fraction": 1.0
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      },
+      "sample_seconds": 0.5,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "content"
+    },
+    "status": "satisfied",
+    "estimate": {
+      "estimated_bytes": 7874724,
+      "selected_crf": 23,
+      "uncertainty": {
+        "kind": "exact",
+        "interval_bytes": [
+          7874724,
+          7874724
+        ],
+        "coverage": 1.0
+      },
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-continuous/6e0ac5af756bfffb0c3a505c02bc7ec7721171c08d4c27ef6a73159ffaeecc9b.mp4",
+      "sha256": "a566a392df7ea7ddc67a3b0662d57b2970809139efa7c41b4fb4a1ffc0757a22",
+      "cache_hit": false,
+      "sample_count": 0,
+      "source_hash": "4476c6f068d5e29551cca2fdcdb6a02ca0b9f8943a2e083ce2d129c2726e0803",
+      "export_mode": "continuous"
+    },
+    "candidates": [
+      {
+        "crf": 23,
+        "estimated_bytes": 7874724,
+        "evidence": "exact"
+      }
+    ],
+    "unmet": [],
+    "elapsed_seconds": 13.731399935997615,
+    "first_estimate_seconds": 13.731395021997741,
+    "attempted_encode_seconds": 2.166667,
+    "attempted_audio_seconds": 0.0,
+    "audio_preparation_seconds": 0.0,
+    "total_probe_count": 0,
+    "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+    "prepared_asset": {
+      "source_hash": "4476c6f068d5e29551cca2fdcdb6a02ca0b9f8943a2e083ce2d129c2726e0803",
+      "bytes": 404352842,
+      "ingest_seconds": 0.9837612730043475,
+      "ingest_in_request_budget": false,
+      "identity": "linux_sealed_memfd"
+    },
+    "calibration_note": null,
+    "content_discovery": null,
+    "stop_reason": "exact_export_complete",
+    "source_hash": "4476c6f068d5e29551cca2fdcdb6a02ca0b9f8943a2e083ce2d129c2726e0803",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "pilot_count": 1,
+    "alternatives": []
+  },
+  "reference_wall_seconds": 13.731399935997615,
+  "source_ingest_seconds": 0.9837612730043475,
+  "file_bytes": 7874724,
+  "inspection": {
+    "passed": true,
+    "mode": "continuous",
+    "frames": 130,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "60/1",
+    "video_duration": "2.166667",
+    "format_duration": "2.166667",
+    "audio_streams": 0,
+    "file_bytes": 7874724,
+    "inspection_seconds": 2.8325744190005935,
+    "byte_accounting": null,
+    "native_dimensions": true,
+    "validation_kind": "full_decode_metadata_and_exact_container_identity_not_prediction_accuracy"
+  }
+}

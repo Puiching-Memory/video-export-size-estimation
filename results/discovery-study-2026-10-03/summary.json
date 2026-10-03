@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "scope": "development_only_costed_replay",
+    "manifest_sha256": "228636910cc161c21569d0c2de3eb5c7143bf320cc446653ce6a7e5078bf78ee",
+    "script_sha256": "6258c068753166649384406c4a041ef205622309c954c90eddbc658370636adc",
+    "threads": 1,
+    "crf": 23,
+    "preset": "medium",
+    "audio": "dropped; corpus has no audio",
+    "rates": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "preview_resolution": [
+      96,
+      54
+    ],
+    "block_seconds": 2,
+    "pilots": 3,
+    "audits": 3,
+    "seed": 20261003,
+    "cost_accounting": "per-method cold probe times are charged even if experiments reuse measurements",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "methods": [
+    {
+      "method": "uniform3",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.06953648429085202,
+      "raw_payload_max_absolute_relative_error": 0.9926682196226543,
+      "periodic_payload_median_absolute_relative_error": 0.01572246245210196,
+      "median_total_wall_seconds": 2.9738059070077725,
+      "median_encoded_fraction": 0.734375
+    },
+    {
+      "method": "uniform3",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.07011154316592727,
+      "raw_payload_max_absolute_relative_error": 0.9927254660281455,
+      "periodic_payload_median_absolute_relative_error": 0.03192721450113489,
+      "median_total_wall_seconds": 3.618187324005703,
+      "median_encoded_fraction": 0.9791666666666666
+    },
+    {
+      "method": "uniform3",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.07853204812238712,
+      "raw_payload_max_absolute_relative_error": 0.9926968428253998,
+      "periodic_payload_median_absolute_relative_error": 0.010126630833065975,
+      "median_total_wall_seconds": 4.617969332008215,
+      "median_encoded_fraction": 1.2239583333333333
+    },
+    {
+      "method": "uniform3",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.08836850775422378,
+      "raw_payload_max_absolute_relative_error": 1.2382708475860391,
+      "periodic_payload_median_absolute_relative_error": 0.009389316755185506,
+      "median_total_wall_seconds": 5.406504909999057,
+      "median_encoded_fraction": 1.46875
+    },
+    {
+      "method": "mean-4fps",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.01604256073534671,
+      "raw_payload_max_absolute_relative_error": 0.05561640834656878,
+      "periodic_payload_median_absolute_relative_error": 0.011165859204921524,
+      "median_total_wall_seconds": 3.438553623011103,
+      "median_encoded_fraction": 0.6510416666666666
+    },
+    {
+      "method": "mean-4fps",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.015031057562692185,
+      "raw_payload_max_absolute_relative_error": 0.1011452216613441,
+      "periodic_payload_median_absolute_relative_error": 0.01186084005380128,
+      "median_total_wall_seconds": 4.481558304003556,
+      "median_encoded_fraction": 0.8958333333333334
+    },
+    {
+      "method": "mean-4fps",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.00882246610115578,
+      "raw_payload_max_absolute_relative_error": 0.1338801895539301,
+      "periodic_payload_median_absolute_relative_error": 0.006480960915748679,
+      "median_total_wall_seconds": 5.33548820901342,
+      "median_encoded_fraction": 1.140625
+    },
+    {
+      "method": "mean-4fps",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.013541582490565807,
+      "raw_payload_max_absolute_relative_error": 0.10030848299623418,
+      "periodic_payload_median_absolute_relative_error": 0.0066200896187708635,
+      "median_total_wall_seconds": 6.004840083001909,
+      "median_encoded_fraction": 1.3854166666666667
+    },
+    {
+      "method": "mean-8fps",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.009381046438196927,
+      "raw_payload_max_absolute_relative_error": 0.05561640834656878,
+      "periodic_payload_median_absolute_relative_error": 0.009381046438196927,
+      "median_total_wall_seconds": 3.2259986930075684,
+      "median_encoded_fraction": 0.6510416666666666
+    },
+    {
+      "method": "mean-8fps",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.03138953004389289,
+      "raw_payload_max_absolute_relative_error": 0.1011452216613441,
+      "periodic_payload_median_absolute_relative_error": 0.012670748671887888,
+      "median_total_wall_seconds": 4.289804026011552,
+      "median_encoded_fraction": 0.8958333333333334
+    },
+    {
+      "method": "mean-8fps",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.00882246610115578,
+      "raw_payload_max_absolute_relative_error": 0.1338801895539301,
+      "periodic_payload_median_absolute_relative_error": 0.006480960915748679,
+      "median_total_wall_seconds": 5.336488146014744,
+      "median_encoded_fraction": 1.140625
+    },
+    {
+      "method": "mean-8fps",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.013541582490565807,
+      "raw_payload_max_absolute_relative_error": 0.10030848299623418,
+      "periodic_payload_median_absolute_relative_error": 0.0066200896187708635,
+      "median_total_wall_seconds": 5.986433196500002,
+      "median_encoded_fraction": 1.3854166666666667
+    },
+    {
+      "method": "mean-max-1fps",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.03736822224511516,
+      "raw_payload_max_absolute_relative_error": 0.2487455262994227,
+      "periodic_payload_median_absolute_relative_error": 0.010858867218750623,
+      "median_total_wall_seconds": 3.187498511011654,
+      "median_encoded_fraction": 0.6510416666666666
+    },
+    {
+      "method": "mean-max-1fps",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.06435508004887991,
+      "raw_payload_max_absolute_relative_error": 0.2489999547682722,
+      "periodic_payload_median_absolute_relative_error": 0.030867633083958568,
+      "median_total_wall_seconds": 3.908983175002504,
+      "median_encoded_fraction": 0.8958333333333334
+    },
+    {
+      "method": "mean-max-1fps",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.05554191696327626,
+      "raw_payload_max_absolute_relative_error": 0.6466785416708689,
+      "periodic_payload_median_absolute_relative_error": 0.03066409489934918,
+      "median_total_wall_seconds": 5.29798796401883,
+      "median_encoded_fraction": 1.140625
+    },
+    {
+      "method": "mean-max-1fps",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.052819146946947226,
+      "raw_payload_max_absolute_relative_error": 0.3733116521409918,
+      "periodic_payload_median_absolute_relative_error": 0.02174330403694219,
+      "median_total_wall_seconds": 5.9868681025000114,
+      "median_encoded_fraction": 1.3854166666666667
+    },
+    {
+      "method": "mean-max-2fps",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.015085412478550664,
+      "raw_payload_max_absolute_relative_error": 0.05561640834656878,
+      "periodic_payload_median_absolute_relative_error": 0.009381046438196927,
+      "median_total_wall_seconds": 3.2037017160037067,
+      "median_encoded_fraction": 0.6510416666666666
+    },
+    {
+      "method": "mean-max-2fps",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.025362994745514955,
+      "raw_payload_max_absolute_relative_error": 0.07557916643846874,
+      "periodic_payload_median_absolute_relative_error": 0.01494583272447847,
+      "median_total_wall_seconds": 4.2675070490076905,
+      "median_encoded_fraction": 0.8958333333333334
+    },
+    {
+      "method": "mean-max-2fps",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.00882246610115578,
+      "raw_payload_max_absolute_relative_error": 0.12480512345043093,
+      "periodic_payload_median_absolute_relative_error": 0.006480960915748679,
+      "median_total_wall_seconds": 5.314191169010883,
+      "median_encoded_fraction": 1.140625
+    },
+    {
+      "method": "mean-max-2fps",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.013777482861384582,
+      "raw_payload_max_absolute_relative_error": 0.09218204503050487,
+      "periodic_payload_median_absolute_relative_error": 0.006506016827414196,
+      "median_total_wall_seconds": 6.099802361000911,
+      "median_encoded_fraction": 1.3854166666666667
+    },
+    {
+      "method": "mean-max-4fps",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.009381046438196927,
+      "raw_payload_max_absolute_relative_error": 0.30373880511009876,
+      "periodic_payload_median_absolute_relative_error": 0.011165859204921524,
+      "median_total_wall_seconds": 3.438553623011103,
+      "median_encoded_fraction": 0.6510416666666666
+    },
+    {
+      "method": "mean-max-4fps",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.00882246610115578,
+      "raw_payload_max_absolute_relative_error": 0.29435238460798474,
+      "periodic_payload_median_absolute_relative_error": 0.009300569309553364,
+      "median_total_wall_seconds": 4.481558304003556,
+      "median_encoded_fraction": 0.8958333333333334
+    },
+    {
+      "method": "mean-max-4fps",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.00882246610115578,
+      "raw_payload_max_absolute_relative_error": 0.2997045730107313,
+      "periodic_payload_median_absolute_relative_error": 0.011709044733257401,
+      "median_total_wall_seconds": 5.33548820901342,
+      "median_encoded_fraction": 1.140625
+    },
+    {
+      "method": "mean-max-4fps",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.013541582490565807,
+      "raw_payload_max_absolute_relative_error": 0.2975240518096124,
+      "periodic_payload_median_absolute_relative_error": 0.006595033707105347,
+      "median_total_wall_seconds": 6.004840083001909,
+      "median_encoded_fraction": 1.3854166666666667
+    },
+    {
+      "method": "mean-max-8fps",
+      "sample_count": 3,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.009381046438196927,
+      "raw_payload_max_absolute_relative_error": 0.0897365682677036,
+      "periodic_payload_median_absolute_relative_error": 0.011165859204921524,
+      "median_total_wall_seconds": 3.2259986930075684,
+      "median_encoded_fraction": 0.6510416666666666
+    },
+    {
+      "method": "mean-max-8fps",
+      "sample_count": 4,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.03138953004389289,
+      "raw_payload_max_absolute_relative_error": 0.1102743852346788,
+      "periodic_payload_median_absolute_relative_error": 0.020003623528937142,
+      "median_total_wall_seconds": 4.289804026011552,
+      "median_encoded_fraction": 0.8958333333333334
+    },
+    {
+      "method": "mean-max-8fps",
+      "sample_count": 5,
+      "cases": 9,
+      "raw_payload_median_absolute_relative_error": 0.00882246610115578,
+      "raw_payload_max_absolute_relative_error": 0.12321348854778336,
+      "periodic_payload_median_absolute_relative_error": 0.011709044733257401,
+      "median_total_wall_seconds": 5.336488146014744,
+      "median_encoded_fraction": 1.140625
+    },
+    {
+      "method": "mean-max-8fps",
+      "sample_count": 6,
+      "cases": 8,
+      "raw_payload_median_absolute_relative_error": 0.013541582490565807,
+      "raw_payload_max_absolute_relative_error": 0.09148912864888548,
+      "periodic_payload_median_absolute_relative_error": 0.0074239560869655,
+      "median_total_wall_seconds": 5.986433196500002,
+      "median_encoded_fraction": 1.3854166666666667
+    }
+  ],
+  "phase_diagnostic": {
+    "scope": "phase aliasing diagnostic using real decoded development pixels; not video accuracy",
+    "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+    "source_sha256": "99b156b5c96829e8d1ab0acb99d90317f103a3e4edd9b59c94087ac3a8ce825d",
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+      "-vf",
+      "fps=24,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "active_interval": [
+      10,
+      10.5
+    ],
+    "background_texture": 0.0,
+    "threshold_texture": 2.4231021736731764,
+    "diagnostic_prepare_wall_seconds": 0.37405718000081833,
+    "rows": [
+      {
+        "fps": 1,
+        "phase_count": 24,
+        "detected_phases": 12,
+        "missed_phases": 12
+      },
+      {
+        "fps": 2,
+        "phase_count": 24,
+        "detected_phases": 24,
+        "missed_phases": 0
+      },
+      {
+        "fps": 4,
+        "phase_count": 24,
+        "detected_phases": 24,
+        "missed_phases": 0
+      },
+      {
+        "fps": 8,
+        "phase_count": 24,
+        "detected_phases": 24,
+        "missed_phases": 0
+      }
+    ],
+    "limitation": "Any fixed finite FPS can miss shorter events; maxima cannot recover absent frames."
+  }
+}

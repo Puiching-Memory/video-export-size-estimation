@@ -1,0 +1,26 @@
+[
+  {
+    "path": "benchmarks/decoder_cost_study.py",
+    "before_sha256": "2f4205c8d52fd251bf10b691c9a428b5d532446d754527932974fa2a8a02ffd8",
+    "after_sha256": "3f4cf152d6f1935c97fb48e398edef7bad6d0cc8a384c1cffa002e8938f25d67",
+    "same_python_ast": true
+  },
+  {
+    "path": "benchmarks/fps_seek_study.py",
+    "before_sha256": "131ea8c109127c58ceae356a88c872f5de53038f54696e9a3181e4822a432b98",
+    "after_sha256": "131ea8c109127c58ceae356a88c872f5de53038f54696e9a3181e4822a432b98",
+    "same_python_ast": true
+  },
+  {
+    "path": "benchmarks/stream_context_study/study.py",
+    "before_sha256": "ada705d80b9c3b4f2f4147a3db441d83e950f8dd1580184472d63faca5556e0b",
+    "after_sha256": "34a4c10246ed62a918ebabf34b25f0058967358061bc764a50bb494678919850",
+    "same_python_ast": true
+  },
+  {
+    "path": "benchmarks/stream_context_study/verify_decoded.py",
+    "before_sha256": "d0d3e020d367ca6d4a838066e376d6d21984d8eb28435333144d77d56b431317",
+    "after_sha256": "38facb92d891a4412751205ec32255a85a00c2948574110f7f0c1c0c360c7a2a",
+    "same_python_ast": true
+  }
+]

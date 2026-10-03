@@ -1,0 +1,190 @@
+{
+  "case": "shaky-baseball-4k",
+  "analysis_kind": "post-score_quality_not_prediction_tuning",
+  "verified_inputs": {
+    "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-baseball-4k/Shaky_Baseball_3840x2160_5994fps.canonical.y4m",
+    "source_sha256": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+    "source_bytes": 1617408848,
+    "source_inspection": {
+      "video": {
+        "codec_name": "rawvideo",
+        "width": 3840,
+        "height": 2160,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60000/1001",
+        "avg_frame_rate": "60000/1001",
+        "duration": "2.168833"
+      },
+      "command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+        "-of",
+        "json",
+        "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-baseball-4k/Shaky_Baseball_3840x2160_5994fps.canonical.y4m"
+      ]
+    },
+    "source_frame_count": {
+      "frames": 130,
+      "source_header": "YUV4MPEG2 W3840 H2160 F60000:1001 Ip A1:1 C420mpeg2 XYSCSS=420MPEG2",
+      "frame_payload_bytes": 12441600
+    },
+    "frame_rate": "60000/1001",
+    "modes": {
+      "continuous": {
+        "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-continuous/bea7b090485c5e91596f1173eabdd52e0748c3b5664cce967a012c7cc93cff94.mp4",
+        "sha256": "09ac1d9576071135428d78e46a879477ec2dc5cb6f8d1cb02b2ce0485f2eb76d",
+        "file_bytes": 6212486,
+        "inspection": {
+          "video": {
+            "codec_name": "h264",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "60000/1001",
+            "avg_frame_rate": "60000/1001",
+            "duration": "2.168833",
+            "nb_frames": "130",
+            "nb_read_packets": "130"
+          },
+          "command": [
+            "ffprobe",
+            "-v",
+            "error",
+            "-threads",
+            "1",
+            "-select_streams",
+            "v:0",
+            "-count_packets",
+            "-show_entries",
+            "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+            "-of",
+            "json",
+            "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-continuous/bea7b090485c5e91596f1173eabdd52e0748c3b5664cce967a012c7cc93cff94.mp4"
+          ]
+        },
+        "export_configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "continuous",
+          "segment_seconds": 0.5
+        }
+      },
+      "segmented": {
+        "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-segmented/27ac01f8e8eac051f36d0efbc99e5886ee7f59f95ba6a526af03643b491a1e55.mp4",
+        "sha256": "aa419ca59f200d5494be81ab5185392cd8f80ca29b157ebc67fa213f5a64288a",
+        "file_bytes": 6626579,
+        "inspection": {
+          "video": {
+            "codec_name": "h264",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "60000/1001",
+            "avg_frame_rate": "60000/1001",
+            "duration": "2.168833",
+            "nb_read_packets": "130"
+          },
+          "command": [
+            "ffprobe",
+            "-v",
+            "error",
+            "-threads",
+            "1",
+            "-select_streams",
+            "v:0",
+            "-count_packets",
+            "-show_entries",
+            "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+            "-of",
+            "json",
+            "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-segmented/27ac01f8e8eac051f36d0efbc99e5886ee7f59f95ba6a526af03643b491a1e55.mp4"
+          ]
+        },
+        "export_configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "segmented",
+          "segment_seconds": 0.5
+        }
+      }
+    },
+    "verification_wall_seconds": 4.45862756799761
+  },
+  "metrics_against_source": {
+    "continuous": {
+      "psnr": {
+        "y_db": 41.960442,
+        "u_db": 45.578443,
+        "v_db": 45.745558,
+        "average_db": 42.881842,
+        "min_frame_db": 37.433407,
+        "max_frame_db": 48.78249,
+        "stats_frames": 130
+      },
+      "ssim": {
+        "y": 0.970511,
+        "u": 0.981473,
+        "v": 0.982154,
+        "all": 0.974279,
+        "all_db": 15.897092,
+        "stats_frames": 130,
+        "min_frame_all": 0.952967,
+        "max_frame_all": 0.990988
+      }
+    },
+    "segmented": {
+      "psnr": {
+        "y_db": 41.884212,
+        "u_db": 45.578471,
+        "v_db": 45.766784,
+        "average_db": 42.820716,
+        "min_frame_db": 37.26183,
+        "max_frame_db": 48.750293,
+        "stats_frames": 130
+      },
+      "ssim": {
+        "y": 0.970388,
+        "u": 0.98165,
+        "v": 0.982361,
+        "all": 0.97426,
+        "all_db": 15.893969,
+        "stats_frames": 130,
+        "min_frame_all": 0.950307,
+        "max_frame_all": 0.991028
+      }
+    }
+  },
+  "segmented_minus_continuous": {
+    "file_bytes": 414093,
+    "file_relative": 0.06665495906147711,
+    "psnr_average_db": -0.06112600000000157,
+    "psnr_y_db": -0.07623000000000246,
+    "ssim_all": -1.8999999999991246e-05,
+    "ssim_y": -0.00012299999999998423
+  },
+  "decoded_source_frames": 130,
+  "decoded_continuous_frames": 130,
+  "decoded_segmented_frames": 130,
+  "metrics_wall_seconds": 6.788794301995949,
+  "resource_wait_seconds": 0.0008568550038035028,
+  "quality_analysis_in_controller_budget": false,
+  "timing_scope": "shared cloud host with other API/development work; not isolated latency",
+  "policy_fingerprint": "51a58702adb06417881e104a1292f8529581bd2ef2097674d1d36a3f707dc62f"
+}

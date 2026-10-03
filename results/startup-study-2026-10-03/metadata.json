@@ -1,0 +1,61 @@
+{
+  "split": "original-development-nine-only",
+  "case_ids": [
+    "static",
+    "motion",
+    "grain",
+    "brief-burst",
+    "cbr-burst",
+    "alternating",
+    "screen",
+    "pedestrians",
+    "megamind"
+  ],
+  "formula": {
+    "version": "development-startup-packet-candidate-v1",
+    "selection": "frozen_v2_content_4fps_mean_features_and_seeded_random_audits",
+    "block_seconds": 1.0,
+    "pilot_count": "min(3, blocks, 6, max(1, floor(fraction * duration / mean_block_duration)))",
+    "max_probes": 6,
+    "seed": 20261003,
+    "fractions": [
+      0.2,
+      0.25
+    ],
+    "sei": "whole first-packet AVCC NAL only if NAL=6 and all SEI messages have type=5",
+    "nonkey_mean": "arithmetic mean of bytes of all non-keyframe packets in that probe",
+    "startup_excess": "E_i=max(0, first_keyframe_bytes - first_packet_user_SEI_bytes - nonkey_mean_i)",
+    "uncorrected": "Sampler(raw_payload)",
+    "deSEI_only": "Sampler(raw_payload - user_SEI) + max(observed_user_SEI)",
+    "deSEI_startupI_periodic": "Sampler(raw_payload - user_SEI - E_i) + max(observed_user_SEI) + max(1, ceil(metadata_frames / 250) - max(0, Sampler(nonstartup_keyframe_count))) * mean(observed_E_i)",
+    "metadata_frames": "max(1, round(source_video_duration * source_average_fps))",
+    "keyframe_container_count": "min(metadata_frames, max(ceil(metadata_frames/250), 1 + round(max(0, Sampler(nonstartup_keyframe_count)))))",
+    "container": "mean(mux_model.estimate_video_container(each_observed_census, metadata_frames, keyframe_container_count))",
+    "container_comparison": "all three candidates use the same predicted container; frozen_v2_default_container also recorded",
+    "cost": "actual source metadata/hash setup + cold whole-source preview + sum(original cold encode_wall_seconds + current packet/census diagnostic and cache lookup wall_seconds) + candidate inference CPU; reused artifacts are costed replay; benchmark JSON/log writes and final verification excluded",
+    "limitations": [
+      "Independent x264 initial QP, B decisions, reference state and lookahead remain different.",
+      "Startup I excess estimates periodic I cost approximately; sampled scene-cut keyframes can differ.",
+      "A global periodic count and unweighted observed excess mean need not match content at true keyframe times.",
+      "Cold timing replay is approximate, not a hard deadline outcome or calibrated confidence interval.",
+      "Only the original nine development cases are permitted; no SOTA or heldout claim."
+    ]
+  },
+  "formula_fingerprint": "3c31f341f6702fbce9a3aab114671261f3823ef0b708c2b35496f5d7582fcf7c",
+  "pipeline": "x264-mp4-v3-passthrough",
+  "threads": 1,
+  "preset": "medium",
+  "crf": 23,
+  "audio": "dropped; these development sources have no audio",
+  "reference_access": "prediction code cannot access references; scores computed after all predictions are written",
+  "study_kind": "development candidate; costed artifact replay",
+  "ordered_phases": [
+    "fixed_policy",
+    "source_and_probe_measurement",
+    "persist_all_predictions",
+    "read_development_references",
+    "assessment_and_diagnostics"
+  ],
+  "label_separation_scope": "algorithmic inference only; familiar development set, not a blinded evaluation",
+  "v2_artifact_reuse_enabled": true
+}

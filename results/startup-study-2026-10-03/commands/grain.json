@@ -1,0 +1,282 @@
+[
+  {
+    "command": [
+      "ffmpeg",
+      "-version"
+    ],
+    "wall_seconds": 0.07302268799685407
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/grain.mp4"
+    ],
+    "wall_seconds": 0.08960221999586793
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/grain.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "wall_seconds": 1.765155713997956
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/grain-continuous-prepared-5.0-0.2/9e7022e6cc403ee2386a558c0736753bfe0d3b6adfb5b9d749f96e38a9ff875e.mp4"
+    ],
+    "wall_seconds": 0.1075995920036803
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-nostdin",
+      "-y",
+      "-xerror",
+      "-benchmark",
+      "-nostats",
+      "-ss",
+      "3.0",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/grain.mp4",
+      "-t",
+      "1.0",
+      "-map",
+      "0:0",
+      "-an",
+      "-sn",
+      "-dn",
+      "-map_metadata",
+      "-1",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "23.0",
+      "-preset",
+      "medium",
+      "-threads",
+      "1",
+      "-pix_fmt",
+      "yuv420p",
+      "-fps_mode",
+      "passthrough",
+      "-movflags",
+      "+faststart",
+      "/workspace/video-export-size-estimation/results/startup-study-2026-10-03/.vsize-cache/grain/partial-2thu9y5e.mp4"
+    ],
+    "wall_seconds": 0.5600301219965331
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-show_packets",
+      "-show_entries",
+      "packet=stream_index,size:stream=codec_type,duration,nb_frames,width,height:format=duration,size",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/startup-study-2026-10-03/.vsize-cache/grain/partial-2thu9y5e.mp4"
+    ],
+    "wall_seconds": 0.07916786299756495
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/startup-study-2026-10-03/.vsize-cache/grain/af6da266162895c35c895d3a75719a2fb4c5d03be8f9eededc1aa045e31beafe.mp4"
+    ],
+    "wall_seconds": 0.0971841749997111
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/grain-continuous-prepared-5.0-0.2/3dee5ae64d7497196a3dcce5c9015d26df2a7f29c35354f37fae54abe8626e0c.mp4"
+    ],
+    "wall_seconds": 0.0960218670006725
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/grain-continuous-prepared-5.0-0.2/616ee6e34649129c6f9d535311e5b956f2d6a8642e324b2f5784c709f01b3922.mp4"
+    ],
+    "wall_seconds": 0.0940005239972379
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/grain-continuous-prepared-5.0-0.2/fcd67fde1e3984d84653ec1d0f957123816963e36a79e91b0762ca8205c31bed.mp4"
+    ],
+    "wall_seconds": 0.09899562999635236
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "info",
+      "-nostdin",
+      "-y",
+      "-xerror",
+      "-benchmark",
+      "-nostats",
+      "-ss",
+      "20.0",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/grain.mp4",
+      "-t",
+      "1.0",
+      "-map",
+      "0:0",
+      "-an",
+      "-sn",
+      "-dn",
+      "-map_metadata",
+      "-1",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "23.0",
+      "-preset",
+      "medium",
+      "-threads",
+      "1",
+      "-pix_fmt",
+      "yuv420p",
+      "-fps_mode",
+      "passthrough",
+      "-movflags",
+      "+faststart",
+      "/workspace/video-export-size-estimation/results/startup-study-2026-10-03/.vsize-cache/grain/partial-st2x1tnd.mp4"
+    ],
+    "wall_seconds": 0.5393516219992307
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-show_packets",
+      "-show_entries",
+      "packet=stream_index,size:stream=codec_type,duration,nb_frames,width,height:format=duration,size",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/startup-study-2026-10-03/.vsize-cache/grain/partial-st2x1tnd.mp4"
+    ],
+    "wall_seconds": 0.07954790100484388
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/startup-study-2026-10-03/.vsize-cache/grain/e80982601c1327a777a10722a428929ec6c55c1b5bae28e66a832e0c77338442.mp4"
+    ],
+    "wall_seconds": 0.0980861849966459
+  }
+]

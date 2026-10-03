@@ -1,0 +1,54 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 118735,
+    "estimated_payload_bytes": 110241.51393103448,
+    "fixed_bytes": 8493,
+    "sampled_seconds": 1.0,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "context",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "ad17d3f642b25e0c8ba2abe0308cfa26c1faea63860a4df949cbf579d10c7ddf",
+    "observed_blocks": [
+      4
+    ],
+    "pilot_indices": [
+      4,
+      0,
+      22
+    ],
+    "elapsed_seconds": 0.9435479259991553
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 117325,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        117325,
+        117325
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/fallback/.vsize-cache/screen-continuous-prepared-10-None/c3c14cd1150db8cd95a7c739c41b865b8007518dfc0e8dd2591a6e6c6c54da83.mp4",
+    "sha256": "f47638e13cdf73a5261139cdb8c53aeff77169d4e4ae56138eb76404d5baef85",
+    "cache_hit": false,
+    "sample_count": 1,
+    "source_hash": "ad17d3f642b25e0c8ba2abe0308cfa26c1faea63860a4df949cbf579d10c7ddf",
+    "export_mode": "continuous",
+    "elapsed_seconds": 2.5369354030044633
+  }
+]

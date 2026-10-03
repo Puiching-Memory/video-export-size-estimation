@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-03T07:39:07.285908+00:00",
+  "source_sha256": "b4440e98a293e38ffb1356a51068e1a75677ac0ba7e2e7417ec469d286f0ca3a",
+  "runner_sha256": "4787f5fb97008918175d077bf469300aecfa3b883e6af146ccf3d5806ae3c06f",
+  "source_snapshot_zip_sha256": "24a6a19ae2088249f32425967d41216dc0ad35e8f7ee7f579637522277d9649f",
+  "cpu_max": "400000 100000",
+  "scope": "maintenance native-identity/runtime and publication, not prediction accuracy",
+  "latency_scope": "shared machine with concurrent full suite; OS cache not cleared",
+  "processes": []
+}

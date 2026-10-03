@@ -1,0 +1,304 @@
+{
+  "source_hash": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+  "blocks": [
+    {
+      "start": 0.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 1.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 2.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 3.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 4.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 5.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 6.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 7.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 8.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 9.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 10.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 11.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 12.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 13.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 14.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 15.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 16.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 17.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 18.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 19.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 20.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 21.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 22.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "start": 23.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "discovery": {
+    "cache_hit": false,
+    "elapsed_seconds": 0.20665555999585195,
+    "key": "d4760af3ddca5837175f778343e3adcdc9c4f61b8244a5ccf208e35df8a12b46",
+    "preview_fps": 4,
+    "resolution": [
+      96,
+      54
+    ],
+    "cold_elapsed_seconds": 0.20665555999585195
+  }
+}

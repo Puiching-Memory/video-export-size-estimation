@@ -1,0 +1,101 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 865262,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        865262,
+        865262
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-segmented/e1cd6101e8cefe3cb51493c2f50947e49b8df59a68e3efc1da0a3a4687e38eb8.mp4",
+    "sha256": "3ceaaba6519756616702f470bca24b41a73a80b25201b41a12d2017daee92098",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 854736,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 6,
+    "elapsed_seconds": 5.089435758003674
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 789928,
+    "selected_crf": 24.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        789928,
+        789928
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-segmented/1490cbde747811d6365b1f04d928bdbb2949620fa2930413a94c19edb301129c.mp4",
+    "sha256": "e242900f7a7ea4e6161c952526f5ecc710426eb1e5e0927a25ec9ee6ebc3cfb9",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 779402,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 6,
+    "elapsed_seconds": 9.167784089004272
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 588774,
+    "selected_crf": 27.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        588774,
+        588774
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-segmented/b4e2348491122c682a4c7f267b4915a9e6b9af6c353e57e73b08010471ade163.mp4",
+    "sha256": "47d1bbe5cf1c1ca291086eb2e9bfd160c9061ace108642ea9f1274a449f27246",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 733,
+      "video_payload_bytes": 578249,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 6,
+    "elapsed_seconds": 12.862188669001625
+  }
+]

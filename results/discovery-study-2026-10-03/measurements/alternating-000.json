@@ -1,0 +1,103 @@
+{
+  "key": "289a81f2c762baf9590a5f4b583cf16c5d2c46c1300ee76164fd59806a26a55e",
+  "probe_kind": "x264-central-packet-v1",
+  "policy_fingerprint": "723fe688c5a189831bd0ebd2b7b0cfe399c855476a8ff02e0a873aba713a2b8e",
+  "policy": {
+    "version": "x264-central-packet-v1",
+    "preset": "medium",
+    "output_fps": 24.0,
+    "fps_basis": "source_average",
+    "leading_seconds": 2.0,
+    "lookahead_frames": 40,
+    "b_delay_frames": 3,
+    "trailing_guard_frames": 2,
+    "keyint_frames": 250,
+    "audio_assignment": "packet_pts_in_half_open_interval",
+    "initialization_sei": "exclude_from_content_add_once_to_global_total",
+    "periodic_adjustment": "optional_max_zero_periodic_minus_observed_i_rate",
+    "frame_rate_limitation": "average source fps does not guarantee VFR frame coverage"
+  },
+  "crf": 23,
+  "window": [
+    0.0,
+    2.0
+  ],
+  "encoding_window": [
+    0.0,
+    3.875
+  ],
+  "duration": 2.0,
+  "video_frames": 48,
+  "width": 384,
+  "height": 216,
+  "raw_payload_bytes": 1135488,
+  "payload_bytes": 1134798,
+  "video_payload_bytes": 1134798,
+  "raw_video_payload_bytes": 1135488,
+  "audio_payload_bytes": 0,
+  "audio_packets": 0,
+  "global_init_sei_bytes": 690,
+  "central_init_sei_bytes": 690,
+  "global_audio_priming_bytes": 0,
+  "picture_types": {
+    "I": {
+      "frames": 1,
+      "payload_bytes": 27151,
+      "frames_per_second": 0.5,
+      "bytes_per_second": 13575.5,
+      "content_payload_bytes": 26461,
+      "content_bytes_per_second": 13230.5
+    },
+    "P": {
+      "frames": 11,
+      "payload_bytes": 287284,
+      "frames_per_second": 5.5,
+      "bytes_per_second": 143642.0,
+      "content_payload_bytes": 287284,
+      "content_bytes_per_second": 143642.0
+    },
+    "B": {
+      "frames": 36,
+      "payload_bytes": 821053,
+      "frames_per_second": 18.0,
+      "bytes_per_second": 410526.5,
+      "content_payload_bytes": 821053,
+      "content_bytes_per_second": 410526.5
+    }
+  },
+  "periodic_adjusted_payload_bytes": 1134798.0,
+  "periodic_adjustment": {
+    "kind": "unvalidated_model_candidate",
+    "extra_i_frames": 0.0,
+    "first_i_excess_excluding_sei": 13643.869565217392,
+    "payload_bytes": 0.0,
+    "observed_i_frames_per_second": 0.5,
+    "target_periodic_i_frames_per_second": 0.096
+  },
+  "encoded_media_seconds": 3.875,
+  "requested_encoded_media_seconds": 3.875,
+  "available_future_frames": 45,
+  "future_context_truncated_at_source_end": false,
+  "warmup_artifact": "/workspace/video-export-size-estimation/results/discovery-study-2026-10-03/.vsize-cache/alternating/5660eab2f21b2a47ebf90fdd5c2d0bd383538f3a79c4f01801feecc4c7ee7bbd.mp4",
+  "warmup_record_key": "5660eab2f21b2a47ebf90fdd5c2d0bd383538f3a79c4f01801feecc4c7ee7bbd",
+  "cache_hit": false,
+  "encode_wall_seconds": 1.5461979879983119,
+  "transcode_wall_seconds": 1.377,
+  "measurement_wall_seconds": 1.850270841998281,
+  "source_hash": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "configuration": {
+    "codec": "libx264",
+    "container": "mp4",
+    "crf": 23,
+    "preset": "medium",
+    "video_filter": null,
+    "audio_bitrate": 128000,
+    "drop_audio": true,
+    "export_mode": "continuous",
+    "segment_seconds": 4.0
+  },
+  "bias_status": "context_approximation_requires_validation",
+  "cold_measurement_wall_seconds": 1.8503012389992364,
+  "block_index": 0
+}

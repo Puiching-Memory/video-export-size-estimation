@@ -1,0 +1,190 @@
+{
+  "case": "shaky-walk",
+  "analysis_kind": "post-score_quality_not_prediction_tuning",
+  "verified_inputs": {
+    "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-walk/Shaky_Walk_1920x1080_25fps.y4m",
+    "source_sha256": "1401b5031a8b427fe96514691c305654eb196a8219fd7fe0b5ab2a7b3a6b7d22",
+    "source_bytes": 404352842,
+    "source_inspection": {
+      "video": {
+        "codec_name": "rawvideo",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "duration": "5.200000"
+      },
+      "command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+        "-of",
+        "json",
+        "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-walk/Shaky_Walk_1920x1080_25fps.y4m"
+      ]
+    },
+    "source_frame_count": {
+      "frames": 130,
+      "source_header": "YUV4MPEG2 W1920 H1080 F25:1 Ip A1:1 C420mpeg2 XYSCSS=420MPEG2",
+      "frame_payload_bytes": 3110400
+    },
+    "frame_rate": "25",
+    "modes": {
+      "continuous": {
+        "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-continuous/e873b39941fd1e30abe1b5b79fed2eb464aba31ca2b6c12b12cc6228074f922b.mp4",
+        "sha256": "494175b8c9eeec003f5146679f19bafb9be758373ef6545de06b8776dfc74cba",
+        "file_bytes": 10973312,
+        "inspection": {
+          "video": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "25/1",
+            "avg_frame_rate": "25/1",
+            "duration": "5.200000",
+            "nb_frames": "130",
+            "nb_read_packets": "130"
+          },
+          "command": [
+            "ffprobe",
+            "-v",
+            "error",
+            "-threads",
+            "1",
+            "-select_streams",
+            "v:0",
+            "-count_packets",
+            "-show_entries",
+            "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+            "-of",
+            "json",
+            "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-continuous/e873b39941fd1e30abe1b5b79fed2eb464aba31ca2b6c12b12cc6228074f922b.mp4"
+          ]
+        },
+        "export_configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "continuous",
+          "segment_seconds": 0.5
+        }
+      },
+      "segmented": {
+        "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-segmented/c6b2b30ee9ceaf89d2ecbeba650cd793fd07591b7adc068e88f0a5a2d3c82c04.mp4",
+        "sha256": "c91eea2b8afdb06415deb42d7694188263da686e01bbd8e12667d85e539406c7",
+        "file_bytes": 11415050,
+        "inspection": {
+          "video": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "25/1",
+            "avg_frame_rate": "25/1",
+            "duration": "5.200000",
+            "nb_read_packets": "130"
+          },
+          "command": [
+            "ffprobe",
+            "-v",
+            "error",
+            "-threads",
+            "1",
+            "-select_streams",
+            "v:0",
+            "-count_packets",
+            "-show_entries",
+            "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+            "-of",
+            "json",
+            "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-segmented/c6b2b30ee9ceaf89d2ecbeba650cd793fd07591b7adc068e88f0a5a2d3c82c04.mp4"
+          ]
+        },
+        "export_configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "segmented",
+          "segment_seconds": 0.5
+        }
+      }
+    },
+    "verification_wall_seconds": 0.8977259950042935
+  },
+  "metrics_against_source": {
+    "continuous": {
+      "psnr": {
+        "y_db": 38.573042,
+        "u_db": 50.981799,
+        "v_db": 51.397655,
+        "average_db": 40.216546,
+        "min_frame_db": 36.0893,
+        "max_frame_db": 46.898688,
+        "stats_frames": 130
+      },
+      "ssim": {
+        "y": 0.971174,
+        "u": 0.994387,
+        "v": 0.994867,
+        "all": 0.978992,
+        "all_db": 16.77611,
+        "stats_frames": 130,
+        "min_frame_all": 0.964086,
+        "max_frame_all": 0.992661
+      }
+    },
+    "segmented": {
+      "psnr": {
+        "y_db": 38.623503,
+        "u_db": 50.944878,
+        "v_db": 51.361707,
+        "average_db": 40.264666,
+        "min_frame_db": 37.3917,
+        "max_frame_db": 46.554961,
+        "stats_frames": 130
+      },
+      "ssim": {
+        "y": 0.971153,
+        "u": 0.99438,
+        "v": 0.994865,
+        "all": 0.978976,
+        "all_db": 16.772935,
+        "stats_frames": 130,
+        "min_frame_all": 0.967701,
+        "max_frame_all": 0.990568
+      }
+    }
+  },
+  "segmented_minus_continuous": {
+    "file_bytes": 441738,
+    "file_relative": 0.040255667568734,
+    "psnr_average_db": 0.048119999999997276,
+    "psnr_y_db": 0.050460999999998535,
+    "ssim_all": -1.6000000000016e-05,
+    "ssim_y": -2.0999999999937735e-05
+  },
+  "decoded_source_frames": 130,
+  "decoded_continuous_frames": 130,
+  "decoded_segmented_frames": 130,
+  "metrics_wall_seconds": 3.0935024790014722,
+  "resource_wait_seconds": 0.0012632620055228472,
+  "quality_analysis_in_controller_budget": false,
+  "timing_scope": "shared cloud host with other API/development work; not isolated latency",
+  "policy_fingerprint": "51a58702adb06417881e104a1292f8529581bd2ef2097674d1d36a3f707dc62f"
+}

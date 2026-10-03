@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "registered_at_utc": "2026-10-03T06:23:52.213381+00:00",
+  "authorization": "Parent requested a preregistered temporal same-target baseline before any full labels were generated/read.",
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2",
+  "original_benchmark_script_sha256": "77efad8c20cfe159a3b264583c0844cc194be02e700e808ceaaa8c713d0eeb51",
+  "original_content_predictions_completed": 36,
+  "official_baseline_predictions_completed": 7,
+  "references_started": false,
+  "complete_label_marker_exists": false,
+  "new_jobs": 18,
+  "sampling_plan": "temporal",
+  "budgets_seconds": [
+    15
+  ],
+  "fractions": [
+    0.2
+  ],
+  "modes": [
+    "continuous",
+    "segmented"
+  ],
+  "sample_seconds": 0.5,
+  "segment_seconds": 0.5,
+  "crf": 23,
+  "preset": "medium",
+  "threads": 1,
+  "source_policy_changed": false,
+  "amended_benchmark_script_sha256": "5d449dc321c06e5e3a9f4820a9a2bd86850a8bffd09b00abe9d7a410ec0efd58"
+}

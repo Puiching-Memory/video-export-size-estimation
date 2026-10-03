@@ -1,0 +1,172 @@
+[
+  {
+    "block_index": 0,
+    "key": "ee09aa92d71f13512df3d235590c69ba8f24e4045f9bdee739e77b47ae9f7fee",
+    "crf": 23,
+    "window": [
+      0,
+      2
+    ],
+    "duration": 2.002002,
+    "video_frames": 48,
+    "width": 384,
+    "height": 282,
+    "payload_bytes": 49400,
+    "encode_wall_seconds": 0.4152971199946478,
+    "transcode_wall_seconds": 0.258,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "file_bytes": 50854,
+    "sha256": "e6802097ce6d2d35da5924ab66d1c6d02a84fb598e4a82acb6867163ac98a0d7",
+    "record_checksum": "a22dbe9a97b46243bc6144687b89f1fddfa158bdbb1cc355ff32cf940b23e0a1",
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/bare/megamind/ee09aa92d71f13512df3d235590c69ba8f24e4045f9bdee739e77b47ae9f7fee.mp4",
+    "cache_hit": false
+  },
+  {
+    "block_index": 2,
+    "key": "1a0413cb8f8216a5bf62d9e9c47347e14cf196039d9afe523a21e7334c5d68e7",
+    "crf": 23,
+    "window": [
+      4,
+      2
+    ],
+    "duration": 2.002002,
+    "video_frames": 48,
+    "width": 384,
+    "height": 282,
+    "payload_bytes": 47762,
+    "encode_wall_seconds": 0.44280935999995563,
+    "transcode_wall_seconds": 0.282,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "file_bytes": 49208,
+    "sha256": "6acb2a0c9c52f9658eece6fb56aa61ec4486cfea7166e9c2a46ed35bcb15ce5f",
+    "record_checksum": "6e50f9298a333bc2cf1134255b8c29f1edc85ce7c6916b317aa08bb421002b5c",
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/bare/megamind/1a0413cb8f8216a5bf62d9e9c47347e14cf196039d9afe523a21e7334c5d68e7.mp4",
+    "cache_hit": false
+  },
+  {
+    "block_index": 4,
+    "key": "e8fde770b90380b4581dcef840c71e4dbd01c171ef119a6d9c3331099a5d72ca",
+    "crf": 23,
+    "window": [
+      8,
+      2.927593999999999
+    ],
+    "duration": 2.919586,
+    "video_frames": 70,
+    "width": 384,
+    "height": 282,
+    "payload_bytes": 64562,
+    "encode_wall_seconds": 0.49336906200187514,
+    "transcode_wall_seconds": 0.32,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "file_bytes": 66264,
+    "sha256": "bbf9ab81eae69770179528ba9325fa27bf9aa936b43ab994ce91b9fc9a69fd65",
+    "record_checksum": "4c2b02b947f071ca17b8e9ba0389f5315e49503d4fac64175238a88428aba635",
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/bare/megamind/e8fde770b90380b4581dcef840c71e4dbd01c171ef119a6d9c3331099a5d72ca.mp4",
+    "cache_hit": false
+  },
+  {
+    "block_index": 3,
+    "key": "5493e0811ce3663b0f3eca764dafc322bee66e969c6d2aa94c2329f969cc760e",
+    "crf": 23,
+    "window": [
+      6,
+      2
+    ],
+    "duration": 2.002002,
+    "video_frames": 48,
+    "width": 384,
+    "height": 282,
+    "payload_bytes": 56359,
+    "encode_wall_seconds": 0.4226133400006802,
+    "transcode_wall_seconds": 0.262,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "file_bytes": 57789,
+    "sha256": "ac4ca55f5d3c8f6f16edf5594ac2f6a554a98b3760222dcf8f315dbe6bcebf91",
+    "record_checksum": "f7e935e95a008c7bbe13fe2444f377e6d31e98c0ff01d5445ad17af70608cc11",
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/bare/megamind/5493e0811ce3663b0f3eca764dafc322bee66e969c6d2aa94c2329f969cc760e.mp4",
+    "cache_hit": false
+  },
+  {
+    "block_index": 1,
+    "key": "c5bf93e90454894ebcd014880d2918e7fe02d2729e5c9584e47366e487a80738",
+    "crf": 23,
+    "window": [
+      2,
+      2
+    ],
+    "duration": 2.002002,
+    "video_frames": 48,
+    "width": 384,
+    "height": 282,
+    "payload_bytes": 52290,
+    "encode_wall_seconds": 0.42197623800166184,
+    "transcode_wall_seconds": 0.263,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "file_bytes": 53736,
+    "sha256": "bd3cbed1b1ab80d7cf83a78f92544f5c8f3facd43505c969f1c96c382eb2b09a",
+    "record_checksum": "2db3e481e3501e45ce7e21a89a4be811b1a92437f28cbe102b2c94af83373ee8",
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/components/.vsize-cache/bare/megamind/c5bf93e90454894ebcd014880d2918e7fe02d2729e5c9584e47366e487a80738.mp4",
+    "cache_hit": false
+  }
+]

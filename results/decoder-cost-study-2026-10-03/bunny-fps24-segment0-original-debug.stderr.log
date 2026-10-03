@@ -1,0 +1,757 @@
+Splitting the commandline.
+Reading option '-hide_banner' ... matched as option 'hide_banner' (do not show program banner) with argument '1'.
+Reading option '-loglevel' ... matched as option 'loglevel' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '-xerror' ... matched as option 'xerror' (exit on error) with argument '1'.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Reading option '-nostats' ... matched as option 'stats' (print progress report during encoding) with argument 0.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-filter_threads' ... matched as option 'filter_threads' (number of non-complex filter threads) with argument '1'.
+Reading option '-filter_complex_threads' ... matched as option 'filter_complex_threads' (number of threads for -filter_complex) with argument '1'.
+Reading option '-i' ... matched as input url with argument '/tmp/video-estimation-research/bunny.mp4'.
+Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '0:1'.
+Reading option '-an' ... matched as option 'an' (disable audio) with argument '1'.
+Reading option '-sn' ... matched as option 'sn' (disable subtitle) with argument '1'.
+Reading option '-dn' ... matched as option 'dn' (disable data) with argument '1'.
+Reading option '-map_metadata' ... matched as option 'map_metadata' (set metadata information of outfile from infile) with argument '-1'.
+Reading option '-vf' ... matched as option 'vf' (alias for -filter:v (apply filters to video streams)) with argument 'fps=24,trim=start_frame=0:end_frame=48,setpts=PTS-STARTPTS'.
+Reading option '-fps_mode' ... matched as option 'fps_mode' (set framerate mode for matching video streams; overrides vsync) with argument 'cfr'.
+Reading option '-r' ... matched as option 'r' (override input framerate/convert to given output framerate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-c:v' ... matched as option 'c' (select encoder/decoder ('copy' to copy stream without reencoding)) with argument 'libx264'.
+Reading option '-crf' ... matched as AVOption 'crf' with argument '23'.
+Reading option '-preset' ... matched as AVOption 'preset' with argument 'medium'.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-x264-params' ... matched as AVOption 'x264-params' with argument 'open-gop=0:keyint=250:min-keyint=1'.
+Reading option '-movflags' ... matched as AVOption 'movflags' with argument '+faststart'.
+Reading option '-benchmark_all' ... matched as option 'benchmark_all' (add timings for each task) with argument '1'.
+Reading option '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-debug.mp4' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option hide_banner (do not show program banner) with argument 1.
+Applying option loglevel (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option y (overwrite output files) with argument 1.
+Applying option xerror (exit on error) with argument 1.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Applying option nostats (print progress report during encoding) with argument 0.
+Applying option filter_threads (number of non-complex filter threads) with argument 1.
+Applying option filter_complex_threads (number of threads for -filter_complex) with argument 1.
+Applying option benchmark_all (add timings for each task) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /tmp/video-estimation-research/bunny.mp4.
+Successfully parsed a group of options.
+Opening an input file: /tmp/video-estimation-research/bunny.mp4.
+[AVFormatContext @ 0x556954fc6780] Opening '/tmp/video-estimation-research/bunny.mp4' for reading
+[file @ 0x556954fc6d80] Setting default whitelist 'file,crypto,data'
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] ISO: File Type Major Brand: mp42
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Processing st: 0, edit list 0 - media time: 0, duration: 1325095
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Processing st: 1, edit list 0 - media time: 0, duration: 36057
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Processing st: 2, edit list 0 - media time: 0, duration: 5408550
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Processing st: 3, edit list 0 - media time: 0, duration: 1325095
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] Before avformat_find_stream_info() pos: 37114 bytes read:65536 seeks:0 nb_streams:4
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 64, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft32_asm_float_fma3 - type: fft_float, len: 32, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 64, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft32_asm_float_fma3 - type: fft_float, len: 32, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 96, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+        fft16_ns_float_fma3 - type: fft_float, len: 16, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 120, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_pfa_15xM_asm_float_avx2 - type: fft_float, len: 60, factors[2]: [15, 2], flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+            fft4_fwd_asm_float_sse2 - type: fft_float, len: 4, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 128, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_sr_asm_float_avx2 - type: fft_float, len: 64, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 480, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_pfa_15xM_asm_float_avx2 - type: fft_float, len: 240, factors[2]: [15, 2], flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+            fft16_asm_float_fma3 - type: fft_float, len: 16, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 512, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_sr_asm_float_avx2 - type: fft_float, len: 256, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 768, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+        fft_sr_ns_float_avx2 - type: fft_float, len: 128, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 960, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_pfa_15xM_asm_float_avx2 - type: fft_float, len: 480, factors[2]: [15, 2], flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+            fft32_asm_float_fma3 - type: fft_float, len: 32, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_sr_asm_float_avx2 - type: fft_float, len: 512, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_fwd_float_c - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [unaligned, out_of_place, fwd_only]
+        fft_sr_ns_float_avx2 - type: fft_float, len: 512, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+[h264 @ 0x556954fc9240] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x556954fc9240] Decoding VUI
+[h264 @ 0x556954fc9240] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[h264 @ 0x556954fc9240] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x556954fc9240] Decoding VUI
+[h264 @ 0x556954fc9240] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[h264 @ 0x556954fc9240] nal_unit_type: 6(SEI), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x556954fc9240] nal_unit_type: 5(IDR), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x556954fc9240] Format yuv420p chosen by get_format().
+[h264 @ 0x556954fc9240] Reinit context to 640x368, pix_fmt: yuv420p
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] All info found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6780] After avformat_find_stream_info() pos: 73594 bytes read:98304 seeks:0 frames:12
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/video-estimation-research/bunny.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    creation_time   : 2010-02-09T01:55:39.000000Z
+  Duration: 00:01:00.10, start: 0.000000, bitrate: 733 kb/s
+  Stream #0:0[0x1](eng), 11, 1/22050: Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, stereo, fltp, 65 kb/s (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng), 1, 1/600: Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, 612 kb/s, 23.96 fps, 24 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng), 0, 1/90000: Data: none (rtp  / 0x20707472), 0/1, 45 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+  Stream #0:3[0x4](eng), 0, 1/22050: Data: none (rtp  / 0x20707472), 0/1, 5 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+Successfully opened the file.
+Parsing a group of options: output url /workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-debug.mp4.
+Applying option map (set input stream mapping) with argument 0:1.
+Applying option an (disable audio) with argument 1.
+Applying option sn (disable subtitle) with argument 1.
+Applying option dn (disable data) with argument 1.
+Applying option map_metadata (set metadata information of outfile from infile) with argument -1.
+Applying option vf (alias for -filter:v (apply filters to video streams)) with argument fps=24,trim=start_frame=0:end_frame=48,setpts=PTS-STARTPTS.
+Applying option fps_mode (set framerate mode for matching video streams; overrides vsync) with argument cfr.
+Applying option r (override input framerate/convert to given output framerate (Hz value, fraction or abbreviation)) with argument 24.
+Applying option c:v (select encoder/decoder ('copy' to copy stream without reencoding)) with argument libx264.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Successfully parsed a group of options.
+Opening an output file: /workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-debug.mp4.
+[out#0/mp4 @ 0x556954fdc600] Adding streams from explicit maps...
+[vost#0:0/libx264 @ 0x556954fe8640] Created video stream from input stream 0:1
+[AVFilterGraph @ 0x556955017640] Setting 'fps' to value '24'
+[AVFilterGraph @ 0x556955017640] Setting 'start_frame' to value '0'
+[AVFilterGraph @ 0x556955017640] Setting 'end_frame' to value '48'
+[AVFilterGraph @ 0x556955017640] Setting 'expr' to value 'PTS-STARTPTS'
+[Parsed_fps_0 @ 0x556955097040] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+[h264 @ 0x556955095180] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x556955095180] Decoding VUI
+[h264 @ 0x556955095180] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[file @ 0x556954fc61c0] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+[vost#0:0/libx264 @ 0x556954fe8640] Starting thread...
+[vf#0:0 @ 0x556955017580] Starting thread...
+[vist#0:1/h264 @ 0x556954fdc480] [dec:h264 @ 0x556955092200] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6580] Starting thread...
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x556955095180] nal_unit_type: 5(IDR), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x556955095180] Format yuv420p chosen by get_format().
+[h264 @ 0x556955095180] Reinit context to 640x368, pix_fmt: yuv420p
+bench:        0 user        2 sys        4 real decode_video 0:1 
+bench:        0 user        1 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[AVFilterGraph @ 0x7f7180001000] Setting 'fps' to value '24'
+[AVFilterGraph @ 0x7f7180001000] Setting 'start_frame' to value '0'
+[AVFilterGraph @ 0x7f7180001000] Setting 'end_frame' to value '48'
+[AVFilterGraph @ 0x7f7180001000] Setting 'expr' to value 'PTS-STARTPTS'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'video_size' to value '640x360'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'pix_fmt' to value '0'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'time_base' to value '1/600'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'pixel_aspect' to value '0/1'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'colorspace' to value '6'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'range' to value '1'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] Setting 'frame_rate' to value '24/1'
+[graph -1 input from stream 0:1 @ 0x7f7180002740] w:640 h:360 pixfmt:yuv420p tb:1/600 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[format @ 0x7f7180002bc0] Setting 'pix_fmts' to value 'yuv420p'
+[format @ 0x7f7180002bc0] Setting 'color_ranges' to value 'tv|pc'
+[AVFilterGraph @ 0x7f7180001000] query_formats: 6 queried, 15 merged, 0 already done, 0 delayed
+[Parsed_fps_0 @ 0x7f7180001940] fps=24/1
+[Parsed_trim_1 @ 0x7f7180001bc0] TB:0.041667 FRAME_RATE:24.000000 SAMPLE_RATE:nan
+[graph -1 input from stream 0:1 @ 0x7f7180002740] video frame properties congruent with link at pts_time: 0
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 0, out pts 0
+bench:        1 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 25, out pts 1
+[Parsed_fps_0 @ 0x7f7180001940] Set first pts to 0
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 0 to pts 0
+bench:        1 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        1 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[libx264 @ 0x556954fc9240] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+bench:        1 user        0 sys        2 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+bench:        2 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[libx264 @ 0x556954fc9240] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x556954fc9240] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-debug.mp4':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0, 0, 1/12288: Video: h264, 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, q=2-31, 24 fps, 12288 tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x556954fdc600] Starting thread...
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 50, out pts 2
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 1 to pts 1
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 75, out pts 3
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 2 to pts 2
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 100, out pts 4
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 3 to pts 3
+bench:        1 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 125, out pts 5
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 4 to pts 4
+bench:      594 user        0 sys      546 real encode_video 0.0 
+bench:      452 user        0 sys      451 real encode_video 0.0 
+bench:      539 user        0 sys      537 real encode_video 0.0 
+bench:      450 user        0 sys      449 real encode_video 0.0 
+bench:     2264 user        0 sys     2216 real decode_video 0:1 
+bench:        2 user        0 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 150, out pts 6
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 5 to pts 5
+bench:        1 user        0 sys        2 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 175, out pts 7
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 6 to pts 6
+bench:        1 user        0 sys        2 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 200, out pts 8
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 7 to pts 7
+bench:        1 user        0 sys        1 real decode_video 0:1 
+    Last message repeated 1 times
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 225, out pts 9
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 8 to pts 8
+bench:        1 user        0 sys        2 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 250, out pts 10
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 9 to pts 9
+bench:      907 user        0 sys      850 real encode_video 0.0 
+bench:      557 user        0 sys      556 real encode_video 0.0 
+bench:      488 user        0 sys      487 real encode_video 0.0 
+bench:     1491 user      638 sys     2130 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 275, out pts 11
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 10 to pts 10
+bench:        0 user        1 sys        2 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 300, out pts 12
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 11 to pts 11
+bench:        0 user        1 sys        1 real decode_video 0:1 
+    Last message repeated 1 times
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 325, out pts 13
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 12 to pts 12
+bench:        0 user        1 sys        3 real decode_video 0:1 
+bench:        0 user        2 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 350, out pts 14
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 13 to pts 13
+bench:        0 user        1 sys        2 real decode_video 0:1 
+bench:        0 user        2 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 1 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 375, out pts 15
+bench:        0 user 18446744073709549393 sys 18446744073709549613 real encode_video 0.0 
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 14 to pts 14
+bench:      121 user      388 sys      445 real encode_video 0.0 
+bench:      280 user      158 sys      438 real encode_video 0.0 
+bench:      345 user      196 sys      540 real encode_video 0.0 
+bench:        0 user      543 sys      543 real encode_video 0.0 
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 2 times
+bench:        0 user        2 sys        3 real decode_video 0:1 
+    Last message repeated 1 times
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 400, out pts 16
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 15 to pts 15
+bench:        0 user        1 sys        2 real decode_video 0:1 
+bench:        0 user        3 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 425, out pts 17
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 16 to pts 16
+bench:        0 user        1 sys        2 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 450, out pts 18
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 17 to pts 17
+bench:        0 user        3 sys        5 real decode_video 0:1 
+bench:        0 user        4 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 475, out pts 19
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 18 to pts 18
+bench:        0 user 18446744073709549465 sys 18446744073709549652 real encode_video 0.0 
+bench:        0 user      499 sys      499 real encode_video 0.0 
+bench:        0 user      608 sys      606 real encode_video 0.0 
+bench:        0 user      465 sys      466 real encode_video 0.0 
+bench:        0 user     2150 sys     2150 real decode_video 0:1 
+bench:        0 user        3 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 500, out pts 20
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 19 to pts 19
+bench:        0 user        2 sys        3 real decode_video 0:1 
+bench:        0 user        3 sys        4 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 525, out pts 21
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 20 to pts 20
+bench:        0 user        2 sys        3 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 550, out pts 22
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 21 to pts 21
+bench:        0 user        1 sys        2 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 575, out pts 23
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 22 to pts 22
+bench:        0 user 18446744073709549893 sys 18446744073709550068 real encode_video 0.0 
+bench:        0 user      464 sys      463 real encode_video 0.0 
+bench:      515 user        0 sys      514 real encode_video 0.0 
+bench:      428 user        0 sys      428 real encode_video 0.0 
+bench:      473 user        0 sys      473 real encode_video 0.0 
+bench:     2291 user      489 sys     2781 real decode_video 0:1 
+bench:        2 user        0 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 600, out pts 24
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 23 to pts 23
+bench:        3 user        0 sys        6 real decode_video 0:1 
+bench:        2 user        0 sys        4 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 625, out pts 25
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 24 to pts 24
+bench:        4 user        0 sys        7 real decode_video 0:1 
+bench:        1 user        0 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 650, out pts 26
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 25 to pts 25
+bench:        3 user        0 sys        3 real decode_video 0:1 
+bench:        2 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 675, out pts 27
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 26 to pts 26
+bench: 18446744073709549133 user        0 sys 18446744073709549336 real encode_video 0.0 
+bench:      492 user        0 sys      492 real encode_video 0.0 
+bench:      468 user        0 sys      466 real encode_video 0.0 
+bench:      477 user        0 sys      477 real encode_video 0.0 
+bench:      443 user        0 sys      443 real encode_video 0.0 
+bench:     1967 user     1158 sys     3124 real decode_video 0:1 
+bench:        0 user        1 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 700, out pts 28
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 27 to pts 27
+bench:        0 user        2 sys        3 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 725, out pts 29
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 28 to pts 28
+bench:        0 user        2 sys        2 real decode_video 0:1 
+bench:        0 user        1 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 750, out pts 30
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 29 to pts 29
+bench:        0 user        3 sys        6 real decode_video 0:1 
+bench:        0 user        1 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 2 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 775, out pts 31
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 30 to pts 30
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 1 times
+bench:        1 user        0 sys        3 real decode_video 0:1 
+bench:        0 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 800, out pts 32
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 31 to pts 31
+bench:        1 user        1 sys        3 real decode_video 0:1 
+bench:        1 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 825, out pts 33
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 32 to pts 32
+bench:        1 user        1 sys        1 real decode_video 0:1 
+bench:        0 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 850, out pts 34
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 33 to pts 33
+bench:      510 user        0 sys      447 real encode_video 0.0 
+bench:      481 user        0 sys      481 real encode_video 0.0 
+bench:      445 user        0 sys      445 real encode_video 0.0 
+bench:      473 user        0 sys      473 real encode_video 0.0 
+bench:      476 user        0 sys      475 real encode_video 0.0 
+bench:        1 user        0 sys        3 real decode_video 0:1 
+bench:        3 user        0 sys        4 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 875, out pts 35
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 34 to pts 34
+bench:        2 user        0 sys        4 real decode_video 0:1 
+bench:        4 user        0 sys        3 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 900, out pts 36
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 35 to pts 35
+bench:        1 user        0 sys        2 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 925, out pts 37
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 36 to pts 36
+bench:        2 user        0 sys        3 real decode_video 0:1 
+bench:       31 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+bench:      676 user        0 sys      242 real encode_video 0.0 
+bench:        2 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+bench:      615 user        0 sys       94 real encode_video 0.0 
+bench:      692 user        0 sys      582 real encode_video 0.0 
+bench:        1 user        0 sys        2 real decode_video 0:1 
+bench:        1 user        1 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 950, out pts 38
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 37 to pts 37
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 975, out pts 39
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 38 to pts 38
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1000, out pts 40
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 39 to pts 39
+bench:      390 user      236 sys      567 real encode_video 0.0 
+bench:        1 user        1 sys        3 real decode_video 0:1 
+bench:        1 user        1 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1025, out pts 41
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 40 to pts 40
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+bench:      467 user      282 sys      467 real encode_video 0.0 
+bench:        2 user        1 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 1 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1050, out pts 42
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 41 to pts 41
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 2 times
+bench:        0 user      931 sys      405 real encode_video 0.0 
+bench:        1 user        1 sys        4 real decode_video 0:1 
+bench:        1 user        1 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1075, out pts 43
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 42 to pts 42
+bench:      414 user      258 sys      174 real encode_video 0.0 
+bench:        2 user        1 sys        3 real decode_video 0:1 
+bench:      375 user      234 sys       14 real encode_video 0.0 
+bench:        1 user        0 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1100, out pts 44
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 43 to pts 43
+bench:      488 user      305 sys      729 real encode_video 0.0 
+bench:        2 user        1 sys        4 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 1 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1125, out pts 45
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 44 to pts 44
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 2 times
+bench:      411 user      257 sys      435 real encode_video 0.0 
+bench:        1 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        2 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1150, out pts 46
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 45 to pts 45
+bench:        2 user        0 sys        3 real decode_video 0:1 
+bench:        2 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1175, out pts 47
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 46 to pts 46
+bench:        2 user        0 sys        4 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1200, out pts 48
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 47 to pts 47
+bench:        2 user        0 sys        3 real decode_video 0:1 
+bench:        1 user        0 sys        1 real decode_video 0:1 
+[h264 @ 0x556955095180] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x556955095180] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_fps_0 @ 0x7f7180001940] Read frame with in pts 1225, out pts 49
+[Parsed_fps_0 @ 0x7f7180001940] Writing frame with pts 48 to pts 48
+[out_#0:0 @ 0x7f7180002a40] EOF on sink link out_#0:0:default.
+[vf#0:0 @ 0x556955017580] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x556955017580] All consumers returned EOF
+[Parsed_fps_0 @ 0x7f7180001940] Dropping frame with pts 49
+[Parsed_fps_0 @ 0x7f7180001940] 50 frames in, 49 frames out; 1 frames dropped, 0 frames duplicated.
+[vf#0:0 @ 0x556955017580] Terminating thread with return code 0 (success)
+bench:        3 user        0 sys        6 real decode_video 0:1 
+[vist#0:1/h264 @ 0x556954fdc480] [dec:h264 @ 0x556955092200] Decoder returned EOF, finishing
+[vist#0:1/h264 @ 0x556954fdc480] [dec:h264 @ 0x556955092200] Terminating thread with return code 0 (success)
+[vist#0:1/h264 @ 0x556954fdc480] All consumers of this stream are done
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6580] All consumers are done
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6580] Terminating thread with return code 0 (success)
+[libx264 @ 0x556954fc9240] frame=   0 QP=29.25 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=25925 bytes
+bench:    70615 user        0 sys    69952 real encode_video 0.0 
+bench:       89 user        0 sys       90 real encode_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   1 QP=14.98 NAL=2 Slice:P Poc:6   I:79   P:2    SKIP:839  size=89 bytes
+bench:     4108 user        0 sys     4018 real encode_video 0.0 
+bench:       18 user        0 sys       19 real encode_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   2 QP=18.00 NAL=2 Slice:B Poc:2   I:10   P:1    SKIP:909  size=61 bytes
+bench:     1829 user        0 sys     1807 real encode_video 0.0 
+bench:       31 user        0 sys       32 real encode_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   3 QP=18.00 NAL=0 Slice:B Poc:4   I:0    P:28   SKIP:892  size=43 bytes
+bench:     1492 user        0 sys     1483 real encode_video 0.0 
+bench:       16 user        0 sys       17 real encode_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   4 QP=18.11 NAL=2 Slice:P Poc:10  I:694  P:6    SKIP:220  size=299 bytes
+bench:    15398 user        0 sys    15384 real encode_video 0.0 
+bench:       17 user        0 sys       17 real encode_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   5 QP=18.00 NAL=0 Slice:B Poc:8   I:17   P:133  SKIP:770  size=174 bytes
+bench:     2261 user        0 sys     2234 real encode_video 0.0 
+bench:       15 user        0 sys       16 real encode_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   6 QP=18.48 NAL=2 Slice:P Poc:12  I:389  P:88   SKIP:443  size=466 bytes
+bench:     8043 user        0 sys     8056 real encode_video 0.0 
+bench:       16 user        0 sys       17 real encode_video 0.0 
+[vost#0:0/libx264 @ 0x556954fe8640] Encoder thread received EOF
+[libx264 @ 0x556954fc9240] frame=   7 QP=17.18 NAL=2 Slice:P Poc:14  I:681  P:38   SKIP:201  size=475 bytes
+bench:    10618 user        0 sys    10595 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] scene cut at 8 Icost:14067 Pcost:13289 ratio:0.0553 bias:0.1084 gop:8 (imb:740 pmb:58)
+[libx264 @ 0x556954fc9240] frame=   8 QP=13.46 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=802 bytes
+bench:     3017 user        0 sys     2987 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=   9 QP=17.80 NAL=2 Slice:P Poc:2   I:592  P:49   SKIP:279  size=437 bytes
+bench:     4115 user        0 sys     4101 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] scene cut at 10 Icost:12052 Pcost:10952 ratio:0.0913 bias:0.1012 gop:2 (imb:756 pmb:42)
+[libx264 @ 0x556954fc9240] frame=  10 QP=14.52 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=638 bytes
+bench:     2731 user        0 sys     2719 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  11 QP=17.31 NAL=2 Slice:P Poc:2   I:443  P:42   SKIP:435  size=495 bytes
+bench:     3313 user        0 sys     3308 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] scene cut at 12 Icost:12228 Pcost:11669 ratio:0.0457 bias:0.1012 gop:2 (imb:769 pmb:29)
+[libx264 @ 0x556954fc9240] frame=  12 QP=10.53 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=649 bytes
+bench:     3182 user        0 sys     3164 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  13 QP=17.11 NAL=2 Slice:P Poc:4   I:562  P:24   SKIP:334  size=606 bytes
+bench:     4588 user        0 sys     4574 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  14 QP=16.96 NAL=0 Slice:B Poc:2   I:168  P:187  SKIP:565  size=636 bytes
+bench:     4419 user        0 sys     4398 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  15 QP=17.46 NAL=2 Slice:P Poc:8   I:784  P:65   SKIP:71   size=943 bytes
+bench:    11084 user        0 sys    11070 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  16 QP=18.06 NAL=0 Slice:B Poc:6   I:277  P:234  SKIP:409  size=868 bytes
+bench:     5644 user        0 sys     5625 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  17 QP=16.00 NAL=2 Slice:P Poc:10  I:762  P:28   SKIP:130  size=838 bytes
+bench:     8658 user        0 sys     8642 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  18 QP=15.49 NAL=2 Slice:P Poc:16  I:684  P:98   SKIP:138  size=1037 bytes
+bench:    13516 user        0 sys    13495 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  19 QP=15.07 NAL=2 Slice:B Poc:12  I:330  P:237  SKIP:353  size=997 bytes
+bench:     8230 user        0 sys     8164 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  20 QP=15.53 NAL=0 Slice:B Poc:14  I:361  P:270  SKIP:289  size=981 bytes
+bench:     7307 user        0 sys     7286 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  21 QP=16.21 NAL=2 Slice:P Poc:24  I:819  P:82   SKIP:19   size=1588 bytes
+bench:    14931 user        0 sys    14914 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  22 QP=14.69 NAL=2 Slice:B Poc:20  I:388  P:347  SKIP:185  size=1337 bytes
+bench:     9502 user        0 sys     9478 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  23 QP=16.72 NAL=0 Slice:B Poc:18  I:372  P:315  SKIP:233  size=1248 bytes
+bench:     7588 user        0 sys     7559 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  24 QP=16.06 NAL=0 Slice:B Poc:22  I:482  P:222  SKIP:216  size=1243 bytes
+bench:     8464 user        0 sys     8453 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  25 QP=16.25 NAL=2 Slice:P Poc:32  I:775  P:136  SKIP:9    size=1924 bytes
+bench:    16443 user        0 sys    16426 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  26 QP=15.74 NAL=2 Slice:B Poc:28  I:481  P:268  SKIP:171  size=1573 bytes
+bench:    10138 user        0 sys    10104 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  27 QP=16.22 NAL=0 Slice:B Poc:26  I:388  P:238  SKIP:294  size=1181 bytes
+bench:     8659 user        0 sys     8690 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  28 QP=16.20 NAL=0 Slice:B Poc:30  I:322  P:304  SKIP:294  size=1288 bytes
+bench:     7614 user        0 sys     7594 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  29 QP=17.00 NAL=2 Slice:P Poc:40  I:724  P:159  SKIP:37   size=2215 bytes
+bench:    17015 user        0 sys    16982 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  30 QP=15.91 NAL=2 Slice:B Poc:36  I:463  P:256  SKIP:201  size=1749 bytes
+bench:    10371 user        0 sys    10571 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  31 QP=17.57 NAL=0 Slice:B Poc:34  I:307  P:335  SKIP:278  size=1264 bytes
+bench:     7080 user        0 sys     7056 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  32 QP=17.43 NAL=0 Slice:B Poc:38  I:343  P:300  SKIP:277  size=1354 bytes
+bench:     7551 user        0 sys     7537 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  33 QP=17.05 NAL=2 Slice:P Poc:48  I:787  P:123  SKIP:10   size=2746 bytes
+bench:    16051 user        0 sys    16030 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  34 QP=16.76 NAL=2 Slice:B Poc:44  I:345  P:359  SKIP:216  size=1860 bytes
+bench:    10302 user        0 sys    10271 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  35 QP=17.55 NAL=0 Slice:B Poc:42  I:257  P:407  SKIP:256  size=1375 bytes
+bench:     7449 user        0 sys     7417 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  36 QP=18.50 NAL=0 Slice:B Poc:46  I:276  P:414  SKIP:230  size=1545 bytes
+bench:     7800 user        0 sys     7781 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  37 QP=17.92 NAL=2 Slice:P Poc:56  I:716  P:183  SKIP:21   size=3153 bytes
+bench:    16794 user        0 sys    16772 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  38 QP=17.82 NAL=2 Slice:B Poc:52  I:347  P:334  SKIP:239  size=1977 bytes
+bench:    10918 user        0 sys    10883 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  39 QP=18.06 NAL=0 Slice:B Poc:50  I:371  P:271  SKIP:278  size=1433 bytes
+bench:     9981 user        0 sys     9955 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  40 QP=18.73 NAL=0 Slice:B Poc:54  I:340  P:327  SKIP:253  size=1705 bytes
+bench:     8511 user        0 sys     8486 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  41 QP=18.82 NAL=2 Slice:P Poc:64  I:701  P:197  SKIP:22   size=3305 bytes
+bench:    17761 user        0 sys    17742 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  42 QP=17.99 NAL=2 Slice:B Poc:60  I:348  P:385  SKIP:187  size=2354 bytes
+bench:    12132 user        0 sys    12096 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  43 QP=19.03 NAL=0 Slice:B Poc:58  I:336  P:343  SKIP:241  size=1801 bytes
+bench:     9364 user        0 sys     9325 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  44 QP=19.39 NAL=0 Slice:B Poc:62  I:239  P:468  SKIP:213  size=1775 bytes
+bench:     9578 user        0 sys     9528 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  45 QP=20.46 NAL=2 Slice:P Poc:70  I:591  P:269  SKIP:60   size=2994 bytes
+bench:    16358 user        0 sys    16326 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  46 QP=19.12 NAL=2 Slice:B Poc:66  I:225  P:455  SKIP:240  size=2234 bytes
+bench:    11419 user        0 sys    11394 real flush_video 0.0 
+[libx264 @ 0x556954fc9240] frame=  47 QP=20.00 NAL=0 Slice:B Poc:68  I:155  P:442  SKIP:323  size=1722 bytes
+bench:     8531 user        0 sys     8493 real flush_video 0.0 
+bench:       20 user        0 sys       21 real flush_video 0.0 
+[vost#0:0/libx264 @ 0x556954fe8640] Terminating thread with return code 0 (success)
+[out#0/mp4 @ 0x556954fdc600] All streams finished
+[out#0/mp4 @ 0x556954fdc600] Terminating thread with return code 0 (success)
+[mp4 @ 0x556954fe9380] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x556954fe9380] Opening '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-debug.mp4' for reading
+[file @ 0x556955091300] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x556955090100] Statistics: 88139 bytes read, 0 seeks
+[AVIOContext @ 0x556955095f80] Statistics: 177599 bytes written, 4 seeks, 5 writeouts
+[out#0/mp4 @ 0x556954fdc600] Output file #0 (/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-debug.mp4):
+[out#0/mp4 @ 0x556954fdc600]   Output stream #0:0 (video): 48 frames encoded; 48 packets muxed (88090 bytes); 
+[out#0/mp4 @ 0x556954fdc600]   Total: 48 packets (88090 bytes) muxed
+[out#0/mp4 @ 0x556954fdc600] video:86KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.587013%
+frame=   48 fps=0.0 q=28.0 Lsize=      87KiB time=00:00:01.91 bitrate= 373.5kbits/s speed=3.53x    
+bench: utime=0.535s stime=0.026s rtime=0.544s
+bench: maxrss=93456KiB
+[libx264 @ 0x556954fc9240] frame I:4     Avg QP:16.94  size:  7004
+[libx264 @ 0x556954fc9240] frame P:17    Avg QP:17.27  size:  1389
+[libx264 @ 0x556954fc9240] frame B:27    Avg QP:17.37  size:  1325
+[libx264 @ 0x556954fc9240] consecutive B-frames: 18.8% 12.5% 18.8% 50.0%
+[libx264 @ 0x556954fc9240] mb I  I16..4: 44.0% 35.3% 20.7%
+[libx264 @ 0x556954fc9240] mb P  I16..4: 17.1% 51.6%  0.2%  P16..4:  8.3%  1.5%  0.4%  0.0%  0.0%    skip:20.9%
+[libx264 @ 0x556954fc9240] mb B  I16..4: 16.6% 15.4%  0.0%  B16..8:  6.2%  0.8%  0.5%  direct:24.2%  skip:36.3%  L0:51.1% L1:36.8% BI:12.1%
+[libx264 @ 0x556954fc9240] 8x8 transform intra:58.9% inter:88.4%
+[libx264 @ 0x556954fc9240] coded y,uvDC,uvAC intra: 8.8% 13.4% 2.4% inter: 7.6% 33.8% 0.0%
+[libx264 @ 0x556954fc9240] i16 v,h,dc,p: 52% 29% 14%  4%
+[libx264 @ 0x556954fc9240] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 21% 40%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x556954fc9240] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 18% 17%  7%  7%  7%  8%  5%  8%
+[libx264 @ 0x556954fc9240] i8c dc,h,v,p: 78% 16%  6%  1%
+[libx264 @ 0x556954fc9240] Weighted P-Frames: Y:64.7% UV:52.9%
+[libx264 @ 0x556954fc9240] ref P L0: 70.7% 26.2%  2.8%  0.3%  0.0%
+[libx264 @ 0x556954fc9240] ref B L0: 95.1%  4.4%  0.5%
+[libx264 @ 0x556954fc9240] ref B L1: 98.4%  1.6%
+[libx264 @ 0x556954fc9240] kb/s:349.61
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6580] Input file #0 (/tmp/video-estimation-research/bunny.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6580]   Input stream #0:1 (video): 60 packets read (134813 bytes); 51 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x556954fc6580]   Total: 60 packets (134813 bytes) demuxed
+[AVIOContext @ 0x556954fcef00] Statistics: 229376 bytes read, 0 seeks

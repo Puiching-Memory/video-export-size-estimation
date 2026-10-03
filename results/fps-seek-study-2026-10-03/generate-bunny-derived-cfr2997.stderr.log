@@ -1,0 +1,100 @@
+[h264 @ 0x55957603f080] Reinit context to 640x368, pix_fmt: yuv420p
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/video-estimation-research/bunny.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    creation_time   : 2010-02-09T01:55:39.000000Z
+  Duration: 00:01:00.10, start: 0.000000, bitrate: 733 kb/s
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, stereo, fltp, 65 kb/s (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 612 kb/s, 23.96 fps, 24 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: none (rtp  / 0x20707472), 45 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+  Stream #0:3[0x4](eng): Data: none (rtp  / 0x20707472), 5 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+[out#0/matroska @ 0x559576065480] Adding streams from explicit maps...
+[vost#0:0/libx264 @ 0x55957605e5c0] Created video stream from input stream 0:1
+[Parsed_scale_1 @ 0x559575fe8b00] w:256 h:144 flags:'' interl:0
+[Parsed_fps_0 @ 0x55957610ce40] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+[vost#0:0/libx264 @ 0x55957605e5c0] Starting thread...
+[vf#0:0 @ 0x559576054740] Starting thread...
+[vist#0:1/h264 @ 0x559576052380] [dec:h264 @ 0x559576107c40] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55957603c380] Starting thread...
+[h264 @ 0x5595761080c0] Reinit context to 640x368, pix_fmt: yuv420p
+[Parsed_scale_1 @ 0x7fb9d0001a80] w:256 h:144 flags:'' interl:0
+[graph -1 input from stream 0:1 @ 0x7fb9d000f380] w:640 h:360 pixfmt:yuv420p tb:1/600 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[Parsed_fps_0 @ 0x7fb9d00017c0] fps=30000/1001
+[Parsed_scale_1 @ 0x7fb9d0001a80] w:640 h:360 fmt:yuv420p csp:smpte170m range:tv sar:0/1 -> w:256 h:144 fmt:yuv420p csp:smpte170m range:tv sar:0/1 flags:0x00000004
+[Parsed_scale_1 @ 0x7fb9d0001a80] [framesync @ 0x7fb9d0001ba8] Selected 1001/30000 time base
+[Parsed_scale_1 @ 0x7fb9d0001a80] [framesync @ 0x7fb9d0001ba8] Sync level 1
+[graph -1 input from stream 0:1 @ 0x7fb9d000f380] video frame properties congruent with link at pts_time: 0
+[Parsed_fps_0 @ 0x7fb9d00017c0] Set first pts to 0
+[libx264 @ 0x55957603f080] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x55957603f080] profile High 4:4:4 Predictive, level 1.2, 4:2:0, 8-bit
+[libx264 @ 0x55957603f080] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=0 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=0 chroma_qp_offset=0 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=1 keyint=48 keyint_min=4 scenecut=40 intra_refresh=0 rc=cqp mbtree=0 qp=0
+Output #0, matroska, to '/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-cfr2997.mkv':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: h264, 1 reference frame (H264 / 0x34363248), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, q=2-31, 29.97 fps, 1k tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/matroska @ 0x559576065480] Starting thread...
+frame=  303 fps=0.0 q=0.0 size=    1792KiB time=00:00:10.11 bitrate=1452.0kbits/s speed=20.2x    [vf#0:0 @ 0x559576054740] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x559576054740] All consumers returned EOF
+[Parsed_fps_0 @ 0x7fb9d00017c0] 467 frames in, 582 frames out; 1 frames dropped, 116 frames duplicated.
+[vf#0:0 @ 0x559576054740] Terminating thread with return code 0 (success)
+[vist#0:1/h264 @ 0x559576052380] [dec:h264 @ 0x559576107c40] Decoder returned EOF, finishing
+[vist#0:1/h264 @ 0x559576052380] [dec:h264 @ 0x559576107c40] Terminating thread with return code 0 (success)
+[vist#0:1/h264 @ 0x559576052380] All consumers of this stream are done
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55957603c380] All consumers are done
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55957603c380] Terminating thread with return code 0 (success)
+[vost#0:0/libx264 @ 0x55957605e5c0] Encoder thread received EOF
+[vost#0:0/libx264 @ 0x55957605e5c0] Terminating thread with return code 0 (success)
+[out#0/matroska @ 0x559576065480] All streams finished
+[out#0/matroska @ 0x559576065480] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x559576109600] Statistics: 4150838 bytes written, 2 seeks, 17 writeouts
+[out#0/matroska @ 0x559576065480] Output file #0 (/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-cfr2997.mkv):
+[out#0/matroska @ 0x559576065480]   Output stream #0:0 (video): 581 frames encoded; 581 packets muxed (4144806 bytes); 
+[out#0/matroska @ 0x559576065480]   Total: 581 packets (4144806 bytes) muxed
+[out#0/matroska @ 0x559576065480] video:4048KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.128160%
+frame=  581 fps=0.0 q=0.0 Lsize=    4053KiB time=00:00:19.38 bitrate=1712.6kbits/s speed=  23x    
+bench: utime=1.439s stime=0.057s rtime=0.843s
+bench: maxrss=45844KiB
+[libx264 @ 0x55957603f080] frame I:20    Avg QP: 0.00  size: 16770
+[libx264 @ 0x55957603f080] frame P:561   Avg QP: 0.00  size:  6789
+[libx264 @ 0x55957603f080] mb I  I16..4: 50.6% 10.4% 39.0%
+[libx264 @ 0x55957603f080] mb P  I16..4:  9.3%  1.4%  0.3%  P16..4: 49.5%  5.5%  3.7%  0.0%  0.0%    skip:30.3%
+[libx264 @ 0x55957603f080] 8x8 transform intra:12.3% inter:0.0%
+[libx264 @ 0x55957603f080] coded y,uvDC,uvAC intra: 80.3% 68.3% 68.2% inter: 54.2% 60.9% 60.7%
+[libx264 @ 0x55957603f080] i16 v,h,dc,p: 44% 55%  1%  0%
+[libx264 @ 0x55957603f080] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 45% 50%  4%  0%  1%  0%  0%  0%  0%
+[libx264 @ 0x55957603f080] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 38%  6%  4%  6%  4%  5%  4%  5%
+[libx264 @ 0x55957603f080] i8c dc,h,v,p: 26% 54% 20%  0%
+[libx264 @ 0x55957603f080] Weighted P-Frames: Y:7.1% UV:3.2%
+[libx264 @ 0x55957603f080] kb/s:1710.21
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55957603c380] Input file #0 (/tmp/video-estimation-research/bunny.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55957603c380]   Input stream #0:1 (video): 484 packets read (1530211 bytes); 475 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55957603c380]   Total: 484 packets (1530211 bytes) demuxed
+[AVIOContext @ 0x559576044e00] Statistics: 1880746 bytes read, 0 seeks

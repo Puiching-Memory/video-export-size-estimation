@@ -1,0 +1,12 @@
+{
+  "sampling_plan": "content",
+  "sample_seconds": 1.0,
+  "segment_seconds": 1.0,
+  "probe_mode": "auto",
+  "budgets": [
+    10
+  ],
+  "fractions": [
+    null
+  ]
+}

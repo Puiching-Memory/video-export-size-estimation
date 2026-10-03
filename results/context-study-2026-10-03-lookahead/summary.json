@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "contract": {
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium",
+    "pixel_format": "yuv420p",
+    "threads": 1,
+    "filter_threads": 1,
+    "audio": "dropped",
+    "keyint": "x264 default 250 (verified in encoder log)"
+  },
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "manifest_sha256": "228636910cc161c21569d0c2de3eb5c7143bf320cc446653ce6a7e5078bf78ee",
+  "script_sha256": "90813ca280d2641af7e1165608dd7f6836cfd6cd428f270fff65fc9fa6af0de6",
+  "padding": {
+    "before": 2.0,
+    "after": 5.0
+  },
+  "block_seconds": 2.0,
+  "reference_uses": "scoring only; encoded after candidate measurements",
+  "cases": [
+    {
+      "id": "pedestrians",
+      "group_id": "opencv-pedestrians",
+      "duration": 40.0,
+      "frames": 400,
+      "fps": 10.0,
+      "source_sha256": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+      "reference_file_bytes": 587937,
+      "reference_payload_bytes": 582420,
+      "reference_container_bytes": 5517,
+      "reference_picture_types": {
+        "I": {
+          "frames": 2,
+          "bytes": 76577
+        },
+        "P": {
+          "frames": 137,
+          "bytes": 350663
+        },
+        "B": {
+          "frames": 261,
+          "bytes": 155180
+        }
+      },
+      "reference_encode_seconds": 1.8398862100002589,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 992535.0,
+          "target": 587937,
+          "relative_error": 0.6881655687599182
+        },
+        "clip_payload": {
+          "estimate": 970827.0,
+          "target": 582420,
+          "relative_error": 0.6668847223653034
+        },
+        "startup_corrected": {
+          "estimate": 419797.69684210524,
+          "target": 582420,
+          "relative_error": -0.2792182671575405
+        },
+        "context_payload": {
+          "estimate": 553568,
+          "target": 582420,
+          "relative_error": -0.04953813399265139
+        },
+        "context_gop_corrected": {
+          "estimate": 583515.2447368421,
+          "target": 582420,
+          "relative_error": 0.0018805067422857924,
+          "guessed_periodic_i_count": 1,
+          "guessed_periodic_i_excess": 29947.244736842105
+        },
+        "context_gop_no_sei": {
+          "estimate": 582825.2447368421,
+          "target": 582420,
+          "relative_error": 0.0006957946788264113,
+          "guessed_periodic_i_count": 1,
+          "guessed_periodic_i_excess": 29257.244736842105
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    }
+  ]
+}

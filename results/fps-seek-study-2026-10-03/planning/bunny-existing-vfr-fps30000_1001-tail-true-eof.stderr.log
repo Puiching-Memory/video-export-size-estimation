@@ -1,0 +1,350 @@
+Splitting the commandline.
+Reading option '-hide_banner' ... matched as option 'hide_banner' (do not show program banner) with argument '1'.
+Reading option '-loglevel' ... matched as option 'loglevel' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-xerror' ... matched as option 'xerror' (exit on error) with argument '1'.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-filter_threads' ... matched as option 'filter_threads' (number of non-complex filter threads) with argument '1'.
+Reading option '-filter_complex_threads' ... matched as option 'filter_complex_threads' (number of threads for -filter_complex) with argument '1'.
+Reading option '-ss' ... matched as option 'ss' (start transcoding at specified time) with argument '59.833333'.
+Reading option '-copyts' ... matched as option 'copyts' (copy timestamps) with argument '1'.
+Reading option '-start_at_zero' ... matched as option 'start_at_zero' (shift input timestamps to start at 0 when using copyts) with argument '1'.
+Reading option '-i' ... matched as input url with argument '/tmp/video-estimation-research/bunny.mp4'.
+Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '0:v:0'.
+Reading option '-an' ... matched as option 'an' (disable audio) with argument '1'.
+Reading option '-sn' ... matched as option 'sn' (disable subtitle) with argument '1'.
+Reading option '-dn' ... matched as option 'dn' (disable data) with argument '1'.
+Reading option '-vf' ... matched as option 'vf' (alias for -filter:v (apply filters to video streams)) with argument 'showinfo,fps=30000/1001'.
+Reading option '-fps_mode' ... matched as option 'fps_mode' (set framerate mode for matching video streams; overrides vsync) with argument 'passthrough'.
+Reading option '-c:v' ... matched as option 'c' (select encoder/decoder ('copy' to copy stream without reencoding)) with argument 'rawvideo'.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-enc_time_base' ... matched as option 'enc_time_base' (set the desired time base for the encoder (1:24, 1:48000 or 0.04166, 2.0833e-5). two special values are defined - 0 = use frame rate (video) or sample rate (audio),-1 = match source time base) with argument '1001/30000'.
+Reading option '-f' ... matched as option 'f' (force container format (auto-detected otherwise)) with argument 'framehash'.
+Reading option '-hash' ... matched as AVOption 'hash' with argument 'sha256'.
+Reading option 'pipe:1' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option hide_banner (do not show program banner) with argument 1.
+Applying option loglevel (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option xerror (exit on error) with argument 1.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Applying option filter_threads (number of non-complex filter threads) with argument 1.
+Applying option filter_complex_threads (number of threads for -filter_complex) with argument 1.
+Applying option copyts (copy timestamps) with argument 1.
+Applying option start_at_zero (shift input timestamps to start at 0 when using copyts) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /tmp/video-estimation-research/bunny.mp4.
+Applying option ss (start transcoding at specified time) with argument 59.833333.
+Successfully parsed a group of options.
+Opening an input file: /tmp/video-estimation-research/bunny.mp4.
+[AVFormatContext @ 0x564c5c2a1540] Opening '/tmp/video-estimation-research/bunny.mp4' for reading
+[file @ 0x564c5c2a1b40] Setting default whitelist 'file,crypto,data'
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] ISO: File Type Major Brand: mp42
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Processing st: 0, edit list 0 - media time: 0, duration: 1325095
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Processing st: 1, edit list 0 - media time: 0, duration: 36057
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Processing st: 2, edit list 0 - media time: 0, duration: 5408550
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Processing st: 3, edit list 0 - media time: 0, duration: 1325095
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] Before avformat_find_stream_info() pos: 37114 bytes read:65536 seeks:0 nb_streams:4
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 64, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft32_asm_float_fma3 - type: fft_float, len: 32, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 64, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft32_asm_float_fma3 - type: fft_float, len: 32, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 96, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+        fft16_ns_float_fma3 - type: fft_float, len: 16, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 120, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_pfa_15xM_asm_float_avx2 - type: fft_float, len: 60, factors[2]: [15, 2], flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+            fft4_fwd_asm_float_sse2 - type: fft_float, len: 4, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 128, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_sr_asm_float_avx2 - type: fft_float, len: 64, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 480, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_pfa_15xM_asm_float_avx2 - type: fft_float, len: 240, factors[2]: [15, 2], flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+            fft16_asm_float_fma3 - type: fft_float, len: 16, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 512, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_sr_asm_float_avx2 - type: fft_float, len: 256, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 768, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+        fft_sr_ns_float_avx2 - type: fft_float, len: 128, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 960, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_pfa_15xM_asm_float_avx2 - type: fft_float, len: 480, factors[2]: [15, 2], flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+            fft32_asm_float_fma3 - type: fft_float, len: 32, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_inv_float_avx2 - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [aligned, out_of_place, inv_only]
+        fft_sr_asm_float_avx2 - type: fft_float, len: 512, factor: 2, flags: [aligned, inplace, out_of_place, preshuf, asm_call]
+Transform tree:
+    mdct_fwd_float_c - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [unaligned, out_of_place, fwd_only]
+        fft_sr_ns_float_avx2 - type: fft_float, len: 512, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+[h264 @ 0x564c5c2a3f40] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2a3f40] Decoding VUI
+[h264 @ 0x564c5c2a3f40] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2a3f40] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2a3f40] Decoding VUI
+[h264 @ 0x564c5c2a3f40] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2a3f40] nal_unit_type: 6(SEI), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x564c5c2a3f40] nal_unit_type: 5(IDR), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2a3f40] Format yuv420p chosen by get_format().
+[h264 @ 0x564c5c2a3f40] Reinit context to 640x368, pix_fmt: yuv420p
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] All info found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1540] After avformat_find_stream_info() pos: 73594 bytes read:98304 seeks:0 frames:12
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/video-estimation-research/bunny.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    creation_time   : 2010-02-09T01:55:39.000000Z
+  Duration: 00:01:00.10, start: 0.000000, bitrate: 733 kb/s
+  Stream #0:0[0x1](eng), 11, 1/22050: Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, stereo, fltp, 65 kb/s (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng), 1, 1/600: Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, 612 kb/s, 23.96 fps, 24 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng), 0, 1/90000: Data: none (rtp  / 0x20707472), 0/1, 45 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+  Stream #0:3[0x4](eng), 0, 1/22050: Data: none (rtp  / 0x20707472), 0/1, 5 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+Successfully opened the file.
+Parsing a group of options: output url pipe:1.
+Applying option map (set input stream mapping) with argument 0:v:0.
+Applying option an (disable audio) with argument 1.
+Applying option sn (disable subtitle) with argument 1.
+Applying option dn (disable data) with argument 1.
+Applying option vf (alias for -filter:v (apply filters to video streams)) with argument showinfo,fps=30000/1001.
+Applying option fps_mode (set framerate mode for matching video streams; overrides vsync) with argument passthrough.
+Applying option c:v (select encoder/decoder ('copy' to copy stream without reencoding)) with argument rawvideo.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Applying option enc_time_base (set the desired time base for the encoder (1:24, 1:48000 or 0.04166, 2.0833e-5). two special values are defined - 0 = use frame rate (video) or sample rate (audio),-1 = match source time base) with argument 1001/30000.
+Applying option f (force container format (auto-detected otherwise)) with argument framehash.
+Successfully parsed a group of options.
+Opening an output file: pipe:1.
+[out#0/framehash @ 0x564c5c3e1e40] Adding streams from explicit maps...
+[vost#0:0/rawvideo @ 0x564c5c2c3480] Created video stream from input stream 0:1
+[AVFilterGraph @ 0x564c5c3345c0] Setting 'fps' to value '30000/1001'
+[Parsed_fps_1 @ 0x564c5c24db00] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+[h264 @ 0x564c5c2f1380] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2f1380] Decoding VUI
+[h264 @ 0x564c5c2f1380] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[pipe @ 0x564c5c370c00] Setting default whitelist 'crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x564c5c2c3480] Starting thread...
+[vf#0:0 @ 0x564c5c334500] Starting thread...
+[vist#0:1/h264 @ 0x564c5c334200] [dec:h264 @ 0x564c5c2b73c0] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1280] Starting thread...
+[h264 @ 0x564c5c2a23c0] nal_unit_type: 7(SPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2a23c0] Decoding VUI
+[h264 @ 0x564c5c2a23c0] nal_unit_type: 8(PPS), nal_ref_idc: 1
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 5(IDR), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] Format yuv420p chosen by get_format().
+[h264 @ 0x564c5c2f1380] Reinit context to 640x368, pix_fmt: yuv420p
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[AVFilterGraph @ 0x7fdf08001000] Setting 'fps' to value '30000/1001'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'video_size' to value '640x360'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'pix_fmt' to value '0'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'time_base' to value '1/600'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'pixel_aspect' to value '0/1'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'colorspace' to value '6'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'range' to value '1'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] Setting 'frame_rate' to value '24/1'
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] w:640 h:360 pixfmt:yuv420p tb:1/600 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[format @ 0x7fdf08002bc0] Setting 'pix_fmts' to value 'yuv420p'
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[AVFilterGraph @ 0x7fdf08001000] query_formats: 6 queried, 15 merged, 0 already done, 0 delayed
+[Parsed_showinfo_0 @ 0x7fdf08001640] config in time_base: 1/600, frame_rate: 24/1
+[Parsed_showinfo_0 @ 0x7fdf08001640] config out time_base: 0/0, frame_rate: 0/0
+[Parsed_fps_1 @ 0x7fdf08001880] fps=30000/1001
+[graph -1 input from stream 0:1 @ 0x7fdf08001e00] video frame properties congruent with link at pts_time: 58.666667
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1280] EOF while reading input
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1280] Terminating thread with return code 0 (success)
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_showinfo_0 @ 0x7fdf08001640] n:   0 pts:  35900 pts_time:59.833333 duration:     25 duration_time:0.0416667 fmt:yuv420p cl:topleft sar:0/1 s:640x360 i:P iskey:0 type:P checksum:F9E7C52A plane_checksum:[F13DCDFF A40EAEFD 8D42481F] mean:[176 144 117] stdev:[24.4 9.9 5.7]
+[Parsed_showinfo_0 @ 0x7fdf08001640]   side data - H.26[45] User Data Unregistered SEI message: UUID=0387f44e-cd0a-4bdc-a194-3ac3d49b171f
+[Parsed_showinfo_0 @ 0x7fdf08001640] User Data=00
+[Parsed_showinfo_0 @ 0x7fdf08001640] 
+[Parsed_showinfo_0 @ 0x7fdf08001640] color_range:tv color_space:smpte170m color_primaries:smpte170m color_trc:bt709
+[Parsed_fps_1 @ 0x7fdf08001880] Read frame with in pts 35900, out pts 1793
+[h264 @ 0x564c5c2f1380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564c5c2f1380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 1
+    Last message repeated 4 times
+[Parsed_showinfo_0 @ 0x7fdf08001640] n:   1 pts:  35925 pts_time:59.875  duration:     25 duration_time:0.0416667 fmt:yuv420p cl:topleft sar:0/1 s:640x360 i:P iskey:0 type:P checksum:E9E5D6A7 plane_checksum:[808BDF62 979EAC54 D5ED4AE2] mean:[176 144 117] stdev:[24.4 9.9 5.7]
+[Parsed_showinfo_0 @ 0x7fdf08001640]   side data - H.26[45] User Data Unregistered SEI message: UUID=0387f44e-cd0a-4bdc-a194-3ac3d49b171f
+[Parsed_showinfo_0 @ 0x7fdf08001640] User Data=00
+[Parsed_showinfo_0 @ 0x7fdf08001640] 
+[Parsed_showinfo_0 @ 0x7fdf08001640] color_range:tv color_space:smpte170m color_primaries:smpte170m color_trc:bt709
+[Parsed_fps_1 @ 0x7fdf08001880] Read frame with in pts 35925, out pts 1794
+[Parsed_fps_1 @ 0x7fdf08001880] Set first pts to 1793
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1793 to pts 1793
+Output #0, framehash, to 'pipe:1':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng), 0, 1001/30000: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, q=2-31, 82861 kb/s, 29.97 fps, 29.97 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/framehash @ 0x564c5c3e1e40] Starting thread...
+[vist#0:1/h264 @ 0x564c5c334200] [dec:h264 @ 0x564c5c2b73c0] Decoder thread received EOF packet
+[vist#0:1/h264 @ 0x564c5c334200] [dec:h264 @ 0x564c5c2b73c0] Decoder returned EOF, finishing
+[vist#0:1/h264 @ 0x564c5c334200] [dec:h264 @ 0x564c5c2b73c0] Terminating thread with return code 0 (success)
+[Parsed_showinfo_0 @ 0x7fdf08001640] n:   2 pts:  35950 pts_time:59.916667 duration:     25 duration_time:0.0416667 fmt:yuv420p cl:topleft sar:0/1 s:640x360 i:P iskey:0 type:P checksum:46A6DB8C plane_checksum:[F9B2ECCB DFF3A5CE 997B48E4] mean:[176 144 117] stdev:[24.4 10.0 5.7]
+[Parsed_showinfo_0 @ 0x7fdf08001640]   side data - H.26[45] User Data Unregistered SEI message: UUID=0387f44e-cd0a-4bdc-a194-3ac3d49b171f
+[Parsed_showinfo_0 @ 0x7fdf08001640] User Data=00
+[Parsed_showinfo_0 @ 0x7fdf08001640] 
+[Parsed_showinfo_0 @ 0x7fdf08001640] color_range:tv color_space:smpte170m color_primaries:smpte170m color_trc:bt709
+[Parsed_fps_1 @ 0x7fdf08001880] Read frame with in pts 35950, out pts 1796
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1794 to pts 1794
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1794 to pts 1795
+[Parsed_fps_1 @ 0x7fdf08001880] Duplicated frame with pts 1794 1 times
+[Parsed_showinfo_0 @ 0x7fdf08001640] n:   3 pts:  35975 pts_time:59.958333 duration:     82 duration_time:0.136667 fmt:yuv420p cl:topleft sar:0/1 s:640x360 i:P iskey:0 type:P checksum:3902E326 plane_checksum:[0FE6F226 A82EA4BC 0A604C35] mean:[176 144 118] stdev:[24.4 10.0 5.7]
+[Parsed_showinfo_0 @ 0x7fdf08001640]   side data - H.26[45] User Data Unregistered SEI message: UUID=0387f44e-cd0a-4bdc-a194-3ac3d49b171f
+[Parsed_showinfo_0 @ 0x7fdf08001640] User Data=00
+[Parsed_showinfo_0 @ 0x7fdf08001640] 
+[Parsed_showinfo_0 @ 0x7fdf08001640] color_range:tv color_space:smpte170m color_primaries:smpte170m color_trc:bt709
+[Parsed_fps_1 @ 0x7fdf08001880] Read frame with in pts 35975, out pts 1797
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1796 to pts 1796
+[Parsed_fps_1 @ 0x7fdf08001880] EOF is at pts 1801
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1797 to pts 1797
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1797 to pts 1798
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1797 to pts 1799
+[Parsed_fps_1 @ 0x7fdf08001880] Writing frame with pts 1797 to pts 1800
+[Parsed_fps_1 @ 0x7fdf08001880] Duplicated frame with pts 1797 3 times
+[out_#0:0 @ 0x7fdf08002a00] EOF on sink link out_#0:0:default.
+[vf#0:0 @ 0x564c5c334500] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x564c5c334500] All consumers returned EOF
+[Parsed_fps_1 @ 0x7fdf08001880] 4 frames in, 8 frames out; 0 frames dropped, 4 frames duplicated.
+[vf#0:0 @ 0x564c5c334500] Terminating thread with return code 0 (success)
+[vost#0:0/rawvideo @ 0x564c5c2c3480] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x564c5c2c3480] Terminating thread with return code 0 (success)
+[out#0/framehash @ 0x564c5c3e1e40] All streams finished
+[out#0/framehash @ 0x564c5c3e1e40] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x564c5c370cc0] Statistics: 1119 bytes written, 0 seeks, 9 writeouts
+[out#0/framehash @ 0x564c5c3e1e40] Output file #0 (pipe:1):
+[out#0/framehash @ 0x564c5c3e1e40]   Output stream #0:0 (video): 8 frames encoded; 8 packets muxed (2764800 bytes); 
+[out#0/framehash @ 0x564c5c3e1e40]   Total: 8 packets (2764800 bytes) muxed
+[out#0/framehash @ 0x564c5c3e1e40] video:2700KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    8 fps=0.0 q=-0.0 Lsize=       1KiB time=00:00:00.00 bitrate=N/A speed=   0x    
+bench: utime=0.016s stime=0.010s rtime=0.027s
+bench: maxrss=41360KiB
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1280] Input file #0 (/tmp/video-estimation-research/bunny.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1280]   Input stream #0:1 (video): 32 packets read (124593 bytes); 32 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x564c5c2a1280]   Total: 32 packets (124593 bytes) demuxed
+[AVIOContext @ 0x564c5c2a9cc0] Statistics: 240427 bytes read, 1 seeks

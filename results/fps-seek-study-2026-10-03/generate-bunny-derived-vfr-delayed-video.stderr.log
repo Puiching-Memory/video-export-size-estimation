@@ -1,0 +1,78 @@
+[h264 @ 0x5561811d09c0] Reinit context to 256x144, pix_fmt: yuv420p
+Input #0, matroska,webm, from '/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-gap.mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: mp42avc1
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    ENCODER         : Lavf61.7.103
+  Duration: 00:00:19.38, start: 0.000000, bitrate: 1043 kb/s
+  Stream #0:0(eng): Video: h264 (High 4:4:4 Predictive), 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:00:19.375000000
+Input #1, lavfi, from 'anullsrc=r=48000:cl=mono':
+  Duration: N/A, start: 0.000000, bitrate: 384 kb/s
+  Stream #1:0: Audio: pcm_u8, 48000 Hz, mono, u8, 384 kb/s
+[out#0/matroska @ 0x55618124d740] Adding streams from explicit maps...
+[vost#0:0/copy @ 0x55618124e080] Created video stream from input stream 0:0
+[aost#0:1/aac @ 0x55618124e6c0] Created audio stream from input stream 1:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (pcm_u8 (native) -> aac (native))
+[aost#0:1/aac @ 0x55618124e6c0] Starting thread...
+[af#0:1 @ 0x55618124ebc0] Starting thread...
+[aist#1:0/pcm_u8 @ 0x55618124d5c0] [dec:pcm_u8 @ 0x5561812826c0] Starting thread...
+[in#0/matroska,webm @ 0x5561811ce340] Starting thread...
+[in#1/lavfi @ 0x5561811d1f40] Starting thread...
+[graph_-1_in_1:0 @ 0x7f1e640017c0] tb:1/48000 samplefmt:u8 samplerate:48000 chlayout:mono
+[format_out_#0:1 @ 0x7f1e64001f40] auto-inserting filter 'auto_aresample_0' between the filter 'Parsed_anull_0' and the filter 'format_out_#0:1'
+[auto_aresample_0 @ 0x7f1e640031c0] ch:1 chl:mono fmt:u8 r:48000Hz -> ch:1 chl:mono fmt:fltp r:48000Hz
+Output #0, matroska, to '/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-delayed-video.mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: mp42avc1
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: h264 (High 4:4:4 Predictive), 1 reference frame (H264 / 0x34363248), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, q=2-31, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:00:19.375000000
+  Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, mono, fltp, delay 1024, 69 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 aac
+[out#0/matroska @ 0x55618124d740] Starting thread...
+[in#0/matroska,webm @ 0x5561811ce340] EOF while reading input
+[in#0/matroska,webm @ 0x5561811ce340] Terminating thread with return code 0 (success)
+[af#0:1 @ 0x55618124ebc0] Filtergraph returned EOF, finishing
+[af#0:1 @ 0x55618124ebc0] All consumers returned EOF
+[aist#1:0/pcm_u8 @ 0x55618124d5c0] [dec:pcm_u8 @ 0x5561812826c0] Decoder returned EOF, finishing
+[af#0:1 @ 0x55618124ebc0] Terminating thread with return code 0 (success)
+[aist#1:0/pcm_u8 @ 0x55618124d5c0] [dec:pcm_u8 @ 0x5561812826c0] Terminating thread with return code 0 (success)
+[aist#1:0/pcm_u8 @ 0x55618124d5c0] All consumers of this stream are done
+[in#1/lavfi @ 0x5561811d1f40] All consumers are done
+[in#1/lavfi @ 0x5561811d1f40] Terminating thread with return code 0 (success)
+[aost#0:1/aac @ 0x55618124e6c0] Encoder thread received EOF
+[aost#0:1/aac @ 0x55618124e6c0] Terminating thread with return code 0 (success)
+[out#0/matroska @ 0x55618124d740] Muxer returned EOF
+[out#0/matroska @ 0x55618124d740] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x55618124d0c0] Statistics: 2541080 bytes written, 2 seeks, 11 writeouts
+[out#0/matroska @ 0x55618124d740] Output file #0 (/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-delayed-video.mkv):
+[out#0/matroska @ 0x55618124d740]   Output stream #0:0 (video): 298 packets muxed (2524884 bytes); 
+[out#0/matroska @ 0x55618124d740]   Output stream #0:1 (audio): 1172 frames encoded (1200000 samples); 1173 packets muxed (4777 bytes); 
+[out#0/matroska @ 0x55618124d740]   Total: 1471 packets (2529661 bytes) muxed
+[out#0/matroska @ 0x55618124d740] video:2466KiB audio:5KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.416143%
+frame=  298 fps=0.0 q=-1.0 Lsize=    2481KiB time=00:00:00.00 bitrate=N/A speed=   0x    
+bench: utime=0.073s stime=0.066s rtime=0.113s
+bench: maxrss=36764KiB
+[aac @ 0x5561811d09c0] Qavg: 65504.820
+[in#0/matroska,webm @ 0x5561811ce340] Input file #0 (/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-gap.mkv):
+[in#0/matroska,webm @ 0x5561811ce340]   Input stream #0:0 (video): 298 packets read (2524884 bytes); 
+[in#0/matroska,webm @ 0x5561811ce340]   Total: 298 packets (2524884 bytes) demuxed
+[AVIOContext @ 0x5561811d6d80] Statistics: 2528110 bytes read, 0 seeks
+[in#1/lavfi @ 0x5561811d1f40] Input file #1 (anullsrc=r=48000:cl=mono):
+[in#1/lavfi @ 0x5561811d1f40]   Input stream #1:0 (audio): 1191 packets read (1219584 bytes); 1182 frames decoded; 0 decode errors (1210368 samples); 
+[in#1/lavfi @ 0x5561811d1f40]   Total: 1191 packets (1219584 bytes) demuxed

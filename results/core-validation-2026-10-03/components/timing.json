@@ -1,0 +1,47 @@
+{
+  "static": {
+    "source_bytes": 18154,
+    "prepared_ingest_seconds": 0.0002481280025676824,
+    "cold_metadata_with_digest_seconds": 0.17009817300277064
+  },
+  "motion": {
+    "source_bytes": 1368858,
+    "prepared_ingest_seconds": 0.003132967001874931,
+    "cold_metadata_with_digest_seconds": 0.1607225500047207
+  },
+  "grain": {
+    "source_bytes": 16081831,
+    "prepared_ingest_seconds": 0.022014734997355845,
+    "cold_metadata_with_digest_seconds": 0.17241006500262301
+  },
+  "brief-burst": {
+    "source_bytes": 2109757,
+    "prepared_ingest_seconds": 0.004533723003987689,
+    "cold_metadata_with_digest_seconds": 0.21639735200005816
+  },
+  "cbr-burst": {
+    "source_bytes": 2091401,
+    "prepared_ingest_seconds": 0.0046711229952052236,
+    "cold_metadata_with_digest_seconds": 0.1516673710066243
+  },
+  "alternating": {
+    "source_bytes": 6751303,
+    "prepared_ingest_seconds": 0.010287483004503883,
+    "cold_metadata_with_digest_seconds": 0.153451161000703
+  },
+  "screen": {
+    "source_bytes": 189890,
+    "prepared_ingest_seconds": 0.00042761900112964213,
+    "cold_metadata_with_digest_seconds": 0.15402814299886813
+  },
+  "pedestrians": {
+    "source_bytes": 1097614,
+    "prepared_ingest_seconds": 0.00191877599718282,
+    "cold_metadata_with_digest_seconds": 0.15596509700117167
+  },
+  "megamind": {
+    "source_bytes": 507750,
+    "prepared_ingest_seconds": 0.0008377609992749058,
+    "cold_metadata_with_digest_seconds": 0.14970691799680935
+  }
+}

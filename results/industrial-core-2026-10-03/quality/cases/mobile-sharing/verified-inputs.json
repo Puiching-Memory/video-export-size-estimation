@@ -1,0 +1,126 @@
+{
+  "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/mobile-sharing/MobileDeviceScreenSharing.y4m",
+  "source_sha256": "a446b655410e8bec834ec9790d5ac6a2b07e72395f48ea5806697b327a309ada",
+  "source_bytes": 466667040,
+  "source_inspection": {
+    "video": {
+      "codec_name": "rawvideo",
+      "width": 1078,
+      "height": 2220,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "15/1",
+      "avg_frame_rate": "15/1",
+      "duration": "8.666667"
+    },
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/industrial-v1/mobile-sharing/MobileDeviceScreenSharing.y4m"
+    ]
+  },
+  "source_frame_count": {
+    "frames": 130,
+    "source_header": "YUV4MPEG2 W1078 H2220 F15:1 Ip A0:0 C420jpeg XYSCSS=420JPEG",
+    "frame_payload_bytes": 3589740
+  },
+  "frame_rate": "15",
+  "modes": {
+    "continuous": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/mobile-sharing-continuous/29083e3753b22066fd72612100f53e22ca58e143849f09c664b62533a61a705c.mp4",
+      "sha256": "c2f6393e3173ce0c30a22b88f994bc11aefb5b899b533f918436fc65292f3c7a",
+      "file_bytes": 909987,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1078,
+          "height": 2220,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "15/1",
+          "avg_frame_rate": "15/1",
+          "duration": "8.666667",
+          "nb_frames": "130",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/mobile-sharing-continuous/29083e3753b22066fd72612100f53e22ca58e143849f09c664b62533a61a705c.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      }
+    },
+    "segmented": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/mobile-sharing-segmented/5580f6e4683179a64e2a6f74ca5da810f5225b854ab3fc1ed8971d6e9fd2b789.mp4",
+      "sha256": "9deb7df742005f67f31040b86cf2cc1a61513a5971487662e412512c690749af",
+      "file_bytes": 2776724,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1078,
+          "height": 2220,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "15/1",
+          "avg_frame_rate": "15/1",
+          "duration": "8.666667",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/mobile-sharing-segmented/5580f6e4683179a64e2a6f74ca5da810f5225b854ab3fc1ed8971d6e9fd2b789.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "segmented",
+        "segment_seconds": 0.5
+      }
+    }
+  },
+  "verification_wall_seconds": 1.2027274840002065
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 5.0,
+      "max_probes": 6,
+      "threads": 1,
+      "max_encode_fraction": 0.2
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": null,
+      "max_crf": 35.0,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4
+    },
+    "sample_seconds": 2,
+    "seed": 20261003,
+    "probe_mode": "auto"
+  },
+  "status": "constraints_unmet",
+  "estimate": {
+    "estimated_bytes": 858665,
+    "estimated_payload_bytes": 853161.0,
+    "fixed_bytes": 5504.0,
+    "sampled_seconds": 4,
+    "sample_count": 2,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94"
+  },
+  "candidates": [
+    {
+      "crf": 23.0,
+      "estimated_bytes": 858665,
+      "evidence": "uncalibrated"
+    }
+  ],
+  "unmet": [
+    "reliability_not_calibrated"
+  ],
+  "elapsed_seconds": 0.815129403003084,
+  "first_estimate_seconds": 0.4731377300049644,
+  "attempted_encode_seconds": 4.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 2,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+    "bytes": 6751303,
+    "ingest_seconds": 0.00932605100388173,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "stop_reason": "no_more_admissible_work",
+  "source_hash": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "prediction_family": {
+    "family_schema": 1,
+    "model_policy": "temporal-pilots-random-residual-v1",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4
+    },
+    "crf_grid": [
+      23.0
+    ],
+    "sample_seconds": 2.0,
+    "probe_policy": {
+      "kind": "independent-short-encode",
+      "version": 2
+    },
+    "seed_strategy": {
+      "kind": "fixed",
+      "seed": 20261003
+    },
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "threads": 1,
+    "variants": [
+      "original"
+    ],
+    "prefix_policy": {
+      "kind": "all_registered_prefixes",
+      "minimum_prefix": 1
+    }
+  },
+  "prediction_family_key": "0658699afc6e58dff217ed4150bfd020f7af8dfc851b89854c71ba755e4ded0a",
+  "alternatives": [
+    "Increase the compute budget to permit further probes or a verified export."
+  ]
+}

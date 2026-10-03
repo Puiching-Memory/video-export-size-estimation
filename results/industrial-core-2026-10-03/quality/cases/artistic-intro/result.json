@@ -1,0 +1,190 @@
+{
+  "case": "artistic-intro",
+  "analysis_kind": "post-score_quality_not_prediction_tuning",
+  "verified_inputs": {
+    "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/artistic-intro/Artistic_Intro_1920x1080_2997fps.y4m",
+    "source_sha256": "99d9894e4455bf93eeb931070b0eb55c9efbfc0addb6d79e34321c0bf616f598",
+    "source_bytes": 404352848,
+    "source_inspection": {
+      "video": {
+        "codec_name": "rawvideo",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "4.337667"
+      },
+      "command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+        "-of",
+        "json",
+        "/workspace/video-export-size-estimation/artifacts/industrial-v1/artistic-intro/Artistic_Intro_1920x1080_2997fps.y4m"
+      ]
+    },
+    "source_frame_count": {
+      "frames": 130,
+      "source_header": "YUV4MPEG2 W1920 H1080 F30000:1001 Ip A1:1 C420mpeg2 XYSCSS=420MPEG2",
+      "frame_payload_bytes": 3110400
+    },
+    "frame_rate": "30000/1001",
+    "modes": {
+      "continuous": {
+        "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/artistic-intro-continuous/c6bc3e6da9970737b40408e769444a6d6efcb95a92107a69403db6eff0facdae.mp4",
+        "sha256": "f153d30f6a479993ec1cb9e92564ff091e2ffaa93a4ec3d63034e183bc605655",
+        "file_bytes": 5198501,
+        "inspection": {
+          "video": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30000/1001",
+            "avg_frame_rate": "30000/1001",
+            "duration": "4.337667",
+            "nb_frames": "130",
+            "nb_read_packets": "130"
+          },
+          "command": [
+            "ffprobe",
+            "-v",
+            "error",
+            "-threads",
+            "1",
+            "-select_streams",
+            "v:0",
+            "-count_packets",
+            "-show_entries",
+            "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+            "-of",
+            "json",
+            "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/artistic-intro-continuous/c6bc3e6da9970737b40408e769444a6d6efcb95a92107a69403db6eff0facdae.mp4"
+          ]
+        },
+        "export_configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "continuous",
+          "segment_seconds": 0.5
+        }
+      },
+      "segmented": {
+        "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/artistic-intro-segmented/310d5210e89db18630ff43f90aba53ad3f335c585d0b6242e90eb669f77e19a3.mp4",
+        "sha256": "3decb8fc061143c92524c161cfd03fca7e2ed21c9b6e6b00a9807384fa3b8e7d",
+        "file_bytes": 5435842,
+        "inspection": {
+          "video": {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30000/1001",
+            "avg_frame_rate": "30000/1001",
+            "duration": "4.337667",
+            "nb_read_packets": "130"
+          },
+          "command": [
+            "ffprobe",
+            "-v",
+            "error",
+            "-threads",
+            "1",
+            "-select_streams",
+            "v:0",
+            "-count_packets",
+            "-show_entries",
+            "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+            "-of",
+            "json",
+            "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/artistic-intro-segmented/310d5210e89db18630ff43f90aba53ad3f335c585d0b6242e90eb669f77e19a3.mp4"
+          ]
+        },
+        "export_configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "segmented",
+          "segment_seconds": 0.5
+        }
+      }
+    },
+    "verification_wall_seconds": 0.7751529509987449
+  },
+  "metrics_against_source": {
+    "continuous": {
+      "psnr": {
+        "y_db": 38.646336,
+        "u_db": 41.194739,
+        "v_db": 42.824014,
+        "average_db": 39.492111,
+        "min_frame_db": 36.392456,
+        "max_frame_db": 41.390945,
+        "stats_frames": 130
+      },
+      "ssim": {
+        "y": 0.977176,
+        "u": 0.964208,
+        "v": 0.970477,
+        "all": 0.973898,
+        "all_db": 15.833236,
+        "stats_frames": 130,
+        "min_frame_all": 0.949148,
+        "max_frame_all": 0.983704
+      }
+    },
+    "segmented": {
+      "psnr": {
+        "y_db": 38.466312,
+        "u_db": 41.087096,
+        "v_db": 42.791704,
+        "average_db": 39.331453,
+        "min_frame_db": 36.38442,
+        "max_frame_db": 41.396593,
+        "stats_frames": 130
+      },
+      "ssim": {
+        "y": 0.976401,
+        "u": 0.963734,
+        "v": 0.970387,
+        "all": 0.973288,
+        "all_db": 15.732861,
+        "stats_frames": 130,
+        "min_frame_all": 0.949272,
+        "max_frame_all": 0.982621
+      }
+    }
+  },
+  "segmented_minus_continuous": {
+    "file_bytes": 237341,
+    "file_relative": 0.04565566112231201,
+    "psnr_average_db": -0.16065799999999797,
+    "psnr_y_db": -0.18002399999999597,
+    "ssim_all": -0.0006099999999999994,
+    "ssim_y": -0.0007750000000000812
+  },
+  "decoded_source_frames": 130,
+  "decoded_continuous_frames": 130,
+  "decoded_segmented_frames": 130,
+  "metrics_wall_seconds": 1.512986670997634,
+  "resource_wait_seconds": 0.000820714994915761,
+  "quality_analysis_in_controller_budget": false,
+  "timing_scope": "shared cloud host with other API/development work; not isolated latency",
+  "policy_fingerprint": "51a58702adb06417881e104a1292f8529581bd2ef2097674d1d36a3f707dc62f"
+}

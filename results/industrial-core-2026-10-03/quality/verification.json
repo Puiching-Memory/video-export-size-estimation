@@ -1,0 +1,135 @@
+{
+  "all_output_sha_verified_before_measurement": true,
+  "all_source_sha_verified_before_measurement": true,
+  "all_source_frame_records_exactly_130": true,
+  "all_metric_frame_numbers_exact_1_to_130": true,
+  "aggregation_checks": [
+    {
+      "case": "scene-composition",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 2.9230769238441923e-07
+    },
+    {
+      "case": "scene-composition",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 1.8461538464631388e-07
+    },
+    {
+      "case": "mobile-sharing",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 1.230769229865203e-07
+    },
+    {
+      "case": "mobile-sharing",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 3.461538461424496e-07
+    },
+    {
+      "case": "artistic-intro",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 1.7692307696659526e-07
+    },
+    {
+      "case": "artistic-intro",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 4.769230769197108e-07
+    },
+    {
+      "case": "noise-ocean-game",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 4.384615384100954e-07
+    },
+    {
+      "case": "noise-ocean-game",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 9.230769226764579e-08
+    },
+    {
+      "case": "shaky-baseball-4k",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 1.923076923260325e-07
+    },
+    {
+      "case": "shaky-baseball-4k",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 3.538461538221682e-07
+    },
+    {
+      "case": "shaky-fireworks-4k",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 3.0769230752181187e-07
+    },
+    {
+      "case": "shaky-fireworks-4k",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 3.0769230763283417e-07
+    },
+    {
+      "case": "shaky-walk",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 2.0769230768546976e-07
+    },
+    {
+      "case": "shaky-walk",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 4.153846154819618e-07
+    },
+    {
+      "case": "trees-grass",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 1.4615384613669846e-07
+    },
+    {
+      "case": "trees-grass",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 1.6923076928687664e-07
+    },
+    {
+      "case": "walking-street",
+      "mode": "continuous",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 5.384615375803037e-08
+    },
+    {
+      "case": "walking-street",
+      "mode": "segmented",
+      "metric_frames": 130,
+      "logged_psnr_within_frame_mse_quantization_bounds": true,
+      "ssim_frame_mean_difference": 2.3846153840434425e-07
+    }
+  ],
+  "no_new_encodes_or_parameter_changes": true
+}

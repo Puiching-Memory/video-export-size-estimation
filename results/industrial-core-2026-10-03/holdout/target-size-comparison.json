@@ -1,0 +1,92 @@
+[
+  {
+    "case": "artistic-intro",
+    "continuous_bytes": 5198501,
+    "segmented_bytes": 5435842,
+    "segmented_change_percent": 4.565566112231201,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "mobile-sharing",
+    "continuous_bytes": 909987,
+    "segmented_bytes": 2776724,
+    "segmented_change_percent": 205.13886462114294,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "noise-ocean-game",
+    "continuous_bytes": 7874724,
+    "segmented_bytes": 7119484,
+    "segmented_change_percent": -9.59068533703531,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "scene-composition",
+    "continuous_bytes": 1081186,
+    "segmented_bytes": 3641885,
+    "segmented_change_percent": 236.84167201573086,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "shaky-baseball-4k",
+    "continuous_bytes": 6212486,
+    "segmented_bytes": 6626579,
+    "segmented_change_percent": 6.6654959061477115,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "shaky-fireworks-4k",
+    "continuous_bytes": 12753861,
+    "segmented_bytes": 13213022,
+    "segmented_change_percent": 3.6001725281465724,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "shaky-walk",
+    "continuous_bytes": 10973312,
+    "segmented_bytes": 11415050,
+    "segmented_change_percent": 4.0255667568734,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "trees-grass",
+    "continuous_bytes": 13164537,
+    "segmented_bytes": 14491375,
+    "segmented_change_percent": 10.078880859995309,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  },
+  {
+    "case": "walking-street",
+    "continuous_bytes": 11644351,
+    "segmented_bytes": 12101437,
+    "segmented_change_percent": 3.925388370721561,
+    "same_crf": 23,
+    "same_native_dimensions": true,
+    "gop_policy_differs": true,
+    "quality_not_measured": true
+  }
+]

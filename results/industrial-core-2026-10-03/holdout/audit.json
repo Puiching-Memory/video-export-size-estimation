@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "predictions.jsonl": true,
+    "temporal-predictions.jsonl": true,
+    "baseline-predictions.jsonl": true,
+    "source_freeze": true,
+    "original_runner_snapshot": true,
+    "amended_runner_snapshot": true
+  },
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2",
+  "all_references_full_decode_passed": true,
+  "all_predictions_remain_uncalibrated": true
+}

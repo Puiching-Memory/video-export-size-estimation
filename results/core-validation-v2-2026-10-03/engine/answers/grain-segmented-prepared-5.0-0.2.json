@@ -1,0 +1,350 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 5.0,
+      "max_probes": 6,
+      "threads": 1,
+      "max_encode_fraction": 0.2
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": null,
+      "max_crf": 35.0,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "segmented",
+      "segment_seconds": 1.0
+    },
+    "sample_seconds": 1.0,
+    "seed": 20261003,
+    "probe_mode": "auto",
+    "sampling_plan": "content"
+  },
+  "status": "budget_exhausted",
+  "estimate": {
+    "estimated_bytes": 6033176,
+    "estimated_payload_bytes": 6020922.0,
+    "fixed_bytes": 12254,
+    "sampled_seconds": 3.0,
+    "sample_count": 3,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Fixed-prefix sampling variance is not an anytime coverage certificate."
+    },
+    "export_mode": "segmented",
+    "probe_mode": "actual_export_segments",
+    "bias_status": "sampled_segments_are_reused_unchanged",
+    "known_byte_accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 0,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 11520,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reusable_sample_count": 3,
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "observed_blocks": [
+      1,
+      5,
+      11
+    ],
+    "pilot_indices": [
+      11,
+      1,
+      5
+    ]
+  },
+  "candidates": [],
+  "unmet": [
+    "reliability_not_calibrated"
+  ],
+  "elapsed_seconds": 5.0115160229979665,
+  "first_estimate_seconds": 2.956049552994955,
+  "attempted_encode_seconds": 4.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 4,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "bytes": 16081831,
+    "ingest_seconds": 0.03885868400539039,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "content_discovery": {
+    "cache_hit": false,
+    "elapsed_seconds": 1.8673698940037866,
+    "key": "91e79d71c9107fa7f1e2fd544daa0a5fc50e46ed68b3efa5f762cdf16fcb53a1",
+    "preview_fps": 4,
+    "resolution": [
+      96,
+      54
+    ]
+  },
+  "stop_reason": "subprocess exceeded wall-clock budget",
+  "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "segment_plan": {
+    "pipeline": "independent-cfr-x264-v1",
+    "semantics": "independent_segments",
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "plan_hash": "590dc050b6164c2e7465e1d0396003b703e5edb270e38a4618311403f6ad56c9",
+    "source_frames": 576,
+    "source_geometry": [
+      384,
+      216
+    ],
+    "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+    "output_rate": "24",
+    "total_frames": 576,
+    "duration": 24.0,
+    "segment_frames": 24,
+    "segments": [
+      {
+        "index": 0,
+        "start_frame": 0,
+        "frame_count": 24,
+        "start_tick": 0,
+        "end_tick": 12288
+      },
+      {
+        "index": 1,
+        "start_frame": 24,
+        "frame_count": 24,
+        "start_tick": 12288,
+        "end_tick": 24576
+      },
+      {
+        "index": 2,
+        "start_frame": 48,
+        "frame_count": 24,
+        "start_tick": 24576,
+        "end_tick": 36864
+      },
+      {
+        "index": 3,
+        "start_frame": 72,
+        "frame_count": 24,
+        "start_tick": 36864,
+        "end_tick": 49152
+      },
+      {
+        "index": 4,
+        "start_frame": 96,
+        "frame_count": 24,
+        "start_tick": 49152,
+        "end_tick": 61440
+      },
+      {
+        "index": 5,
+        "start_frame": 120,
+        "frame_count": 24,
+        "start_tick": 61440,
+        "end_tick": 73728
+      },
+      {
+        "index": 6,
+        "start_frame": 144,
+        "frame_count": 24,
+        "start_tick": 73728,
+        "end_tick": 86016
+      },
+      {
+        "index": 7,
+        "start_frame": 168,
+        "frame_count": 24,
+        "start_tick": 86016,
+        "end_tick": 98304
+      },
+      {
+        "index": 8,
+        "start_frame": 192,
+        "frame_count": 24,
+        "start_tick": 98304,
+        "end_tick": 110592
+      },
+      {
+        "index": 9,
+        "start_frame": 216,
+        "frame_count": 24,
+        "start_tick": 110592,
+        "end_tick": 122880
+      },
+      {
+        "index": 10,
+        "start_frame": 240,
+        "frame_count": 24,
+        "start_tick": 122880,
+        "end_tick": 135168
+      },
+      {
+        "index": 11,
+        "start_frame": 264,
+        "frame_count": 24,
+        "start_tick": 135168,
+        "end_tick": 147456
+      },
+      {
+        "index": 12,
+        "start_frame": 288,
+        "frame_count": 24,
+        "start_tick": 147456,
+        "end_tick": 159744
+      },
+      {
+        "index": 13,
+        "start_frame": 312,
+        "frame_count": 24,
+        "start_tick": 159744,
+        "end_tick": 172032
+      },
+      {
+        "index": 14,
+        "start_frame": 336,
+        "frame_count": 24,
+        "start_tick": 172032,
+        "end_tick": 184320
+      },
+      {
+        "index": 15,
+        "start_frame": 360,
+        "frame_count": 24,
+        "start_tick": 184320,
+        "end_tick": 196608
+      },
+      {
+        "index": 16,
+        "start_frame": 384,
+        "frame_count": 24,
+        "start_tick": 196608,
+        "end_tick": 208896
+      },
+      {
+        "index": 17,
+        "start_frame": 408,
+        "frame_count": 24,
+        "start_tick": 208896,
+        "end_tick": 221184
+      },
+      {
+        "index": 18,
+        "start_frame": 432,
+        "frame_count": 24,
+        "start_tick": 221184,
+        "end_tick": 233472
+      },
+      {
+        "index": 19,
+        "start_frame": 456,
+        "frame_count": 24,
+        "start_tick": 233472,
+        "end_tick": 245760
+      },
+      {
+        "index": 20,
+        "start_frame": 480,
+        "frame_count": 24,
+        "start_tick": 245760,
+        "end_tick": 258048
+      },
+      {
+        "index": 21,
+        "start_frame": 504,
+        "frame_count": 24,
+        "start_tick": 258048,
+        "end_tick": 270336
+      },
+      {
+        "index": 22,
+        "start_frame": 528,
+        "frame_count": 24,
+        "start_tick": 270336,
+        "end_tick": 282624
+      },
+      {
+        "index": 23,
+        "start_frame": 552,
+        "frame_count": 24,
+        "start_tick": 282624,
+        "end_tick": 294912
+      }
+    ],
+    "prepare_seconds": 0.10319436100689927,
+    "prepare_cache_hit": false,
+    "source_identity_verified_at_publication": false,
+    "fps_conversion_access": "timestamp_seek"
+  },
+  "pilot_count": 3,
+  "prediction_family": {
+    "family_schema": 1,
+    "model_policy": "budgeted-content-or-temporal-residual-v2",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "segmented",
+      "segment_seconds": 1.0
+    },
+    "crf_grid": [
+      23.0
+    ],
+    "sample_seconds": 1.0,
+    "probe_policy": {
+      "kind": "actual-independent-cfr-segments",
+      "pipeline": "independent-cfr-x264-v1",
+      "segment_seconds": 1.0,
+      "container": "fixed-fragment-mp4-v1",
+      "audio": "whole_first_aac_track_once",
+      "sampling_plan": "content",
+      "preview_rule": "4fps_96x54_mean_gradient_and_frame_difference",
+      "pilot_count_rule": "min_3_blocks_probe_limit_and_video_fraction",
+      "max_encode_fraction": 0.2
+    },
+    "seed_strategy": {
+      "kind": "fixed",
+      "seed": 20261003
+    },
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "threads": 1,
+    "variants": [
+      "original"
+    ],
+    "prefix_policy": {
+      "kind": "all_prefixes_up_to_maximum",
+      "minimum_prefix": 1,
+      "maximum_prefix": 6
+    }
+  },
+  "prediction_family_key": "e6b23e46cfd2df70e8a060d2dc947b22c0926b0f99f2dedbec6c511b5c0ca1a4",
+  "alternatives": [
+    "Increase the compute budget to permit further probes or a verified export."
+  ]
+}

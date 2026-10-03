@@ -1,0 +1,304 @@
+{
+  "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+  "blocks": [
+    {
+      "start": 0.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 1.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 2.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 3.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 4.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 5.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 6.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 7.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 8.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 9.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 10.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 11.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 12.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 13.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 14.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 15.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 16.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 4.246270435654124,
+      "visual_change": 1.986834490740741,
+      "features": [
+        0.0,
+        2.210319675852688,
+        1.8300782059041463
+      ]
+    },
+    {
+      "start": 17.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 5.496152453657729,
+      "visual_change": 3.385271990740741,
+      "features": [
+        0.0,
+        2.551889277586472,
+        2.6272785689979115
+      ]
+    },
+    {
+      "start": 18.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 5.644174976553018,
+      "visual_change": 3.279369212962963,
+      "features": [
+        0.0,
+        2.587902304817025,
+        2.5765325218844164
+      ]
+    },
+    {
+      "start": 19.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 2.2229155173047923,
+      "visual_change": 1.9336902006172838,
+      "features": [
+        0.0,
+        1.4315220897012133,
+        1.7928105650788222
+      ]
+    },
+    {
+      "start": 20.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 21.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 22.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    },
+    {
+      "start": 23.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 0.0,
+      "visual_change": 0.0,
+      "features": [
+        0.0,
+        -0.43908166739786997,
+        -0.44133499309326485
+      ]
+    }
+  ],
+  "discovery": {
+    "cache_hit": false,
+    "elapsed_seconds": 0.20188454000162892,
+    "key": "cb30402c267313da0d0e8ef4a02e277c7d67ab1af283076c6cb188fade305a3f",
+    "preview_fps": 4,
+    "resolution": [
+      96,
+      54
+    ],
+    "cold_elapsed_seconds": 0.20188454000162892
+  }
+}

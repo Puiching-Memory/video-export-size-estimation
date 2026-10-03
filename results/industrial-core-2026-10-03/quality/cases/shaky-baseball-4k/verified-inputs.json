@@ -1,0 +1,126 @@
+{
+  "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-baseball-4k/Shaky_Baseball_3840x2160_5994fps.canonical.y4m",
+  "source_sha256": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+  "source_bytes": 1617408848,
+  "source_inspection": {
+    "video": {
+      "codec_name": "rawvideo",
+      "width": 3840,
+      "height": 2160,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "60000/1001",
+      "avg_frame_rate": "60000/1001",
+      "duration": "2.168833"
+    },
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-baseball-4k/Shaky_Baseball_3840x2160_5994fps.canonical.y4m"
+    ]
+  },
+  "source_frame_count": {
+    "frames": 130,
+    "source_header": "YUV4MPEG2 W3840 H2160 F60000:1001 Ip A1:1 C420mpeg2 XYSCSS=420MPEG2",
+    "frame_payload_bytes": 12441600
+  },
+  "frame_rate": "60000/1001",
+  "modes": {
+    "continuous": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-continuous/bea7b090485c5e91596f1173eabdd52e0748c3b5664cce967a012c7cc93cff94.mp4",
+      "sha256": "09ac1d9576071135428d78e46a879477ec2dc5cb6f8d1cb02b2ce0485f2eb76d",
+      "file_bytes": 6212486,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 3840,
+          "height": 2160,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "60000/1001",
+          "avg_frame_rate": "60000/1001",
+          "duration": "2.168833",
+          "nb_frames": "130",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-continuous/bea7b090485c5e91596f1173eabdd52e0748c3b5664cce967a012c7cc93cff94.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      }
+    },
+    "segmented": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-segmented/27ac01f8e8eac051f36d0efbc99e5886ee7f59f95ba6a526af03643b491a1e55.mp4",
+      "sha256": "aa419ca59f200d5494be81ab5185392cd8f80ca29b157ebc67fa213f5a64288a",
+      "file_bytes": 6626579,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 3840,
+          "height": 2160,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "60000/1001",
+          "avg_frame_rate": "60000/1001",
+          "duration": "2.168833",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-segmented/27ac01f8e8eac051f36d0efbc99e5886ee7f59f95ba6a526af03643b491a1e55.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "segmented",
+        "segment_seconds": 0.5
+      }
+    }
+  },
+  "verification_wall_seconds": 4.45862756799761
+}

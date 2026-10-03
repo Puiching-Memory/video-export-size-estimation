@@ -1,0 +1,426 @@
+{
+  "script_checks": [
+    "ruff check passed",
+    "ruff format --check passed",
+    "py_compile passed"
+  ],
+  "consistency_checks": {
+    "formula_fingerprint_unchanged": true,
+    "prediction_records": 258,
+    "prediction_rows_without_reference_fields": true,
+    "all_scored_predictions_match_persisted_values": true,
+    "all_file_errors_recompute_exactly": true
+  },
+  "phase_log_timestamps": "not retrospectively reconstructed; future runs log UTC phases",
+  "reviewable_text_files": [
+    {
+      "path": "results/startup-study-2026-10-03/README.md",
+      "bytes": 14509,
+      "sha256": "2bfaddc8c8c95d486627d302ffd47c190c4e3f079aa2774c1e1ec25144fef86f"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/alternating.json",
+      "bytes": 4773,
+      "sha256": "a27b6b18f074f2742c413e02e196a9b9bbc73557961003998345aeeace054bbc"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/brief-burst.json",
+      "bytes": 4770,
+      "sha256": "f94ac21777d2c85b6a2564ae50bd591bbe72e2492e5e081f9bd7fdc736adc1b8"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/cbr-burst.json",
+      "bytes": 4758,
+      "sha256": "011d15e0b2c20cf65d15ec9194089de7200cfc0f1587028848d15d929507f338"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/grain.json",
+      "bytes": 7347,
+      "sha256": "7cf77015c8781c74b4947f53e886988d06e71ea6e74dd209493f25d8cc0c646a"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/megamind.json",
+      "bytes": 2190,
+      "sha256": "6e0db98781f8e10a401c8c7dd4380f41c6f21828158bc0a1b1d801a18a19b13b"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/motion.json",
+      "bytes": 4735,
+      "sha256": "956d93a6a232ef7293c6242f326ba8577f14e214862df613caa62d97696f4b5a"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/pedestrians.json",
+      "bytes": 4773,
+      "sha256": "17007c2de83217e600fe88c1d127ea081692734908cf2fa06dee01fd19e42689"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/screen.json",
+      "bytes": 4732,
+      "sha256": "6ec7d69604c217d9127279b096bef1b5c9a05f11a4b9ffb584caf7cf401301fc"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/commands/static.json",
+      "bytes": 4735,
+      "sha256": "f70550fcb106c81c494afe1009f1cf4f7eaf768f702911f1d94cce589be88a0a"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/comparison.csv",
+      "bytes": 11122,
+      "sha256": "9bb3e215e479b933003e9417aaadf3feda9f16c5a6f2aebda7f04c2a2b47294e"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/evaluated.json",
+      "bytes": 675822,
+      "sha256": "1e1882e022d8fc36d1621406e913f19032d62aa0bce7fdec2884a150de373537"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/alternating.json",
+      "bytes": 6730,
+      "sha256": "977719dead3d6a38ce08266ef47ca8a89260dde801de5452f9429915e91d819f"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/brief-burst.json",
+      "bytes": 6137,
+      "sha256": "1e2cffe4bace9baddda995d521e31434c9cbf5998e895e8c1248c8c137ef8e54"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/cbr-burst.json",
+      "bytes": 6188,
+      "sha256": "17388cd7db5186fe043ed02b53f51d0e3fe71405ae871a91f2f43e0b5c79066f"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/grain.json",
+      "bytes": 6728,
+      "sha256": "0fc8cfa18a3617585e046ecb89820cdfde22a8f8bd5835c583ccb925b46f89d8"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/megamind.json",
+      "bytes": 3287,
+      "sha256": "9644420f979eb6bf4e94a024ca993f266e1d12232d18fd5607fabe9995b9291c"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/motion.json",
+      "bytes": 6729,
+      "sha256": "79a38e52ad84053b63f8b8e6a36a97ba46d4802e60c27f08a1493952fb54e71d"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/pedestrians.json",
+      "bytes": 10952,
+      "sha256": "9b50f8a0440e21c7ba568e0879706432117195e04ac536f3a31f2483af58c3f5"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/screen.json",
+      "bytes": 6732,
+      "sha256": "d2e0d460a2537afc4c865b186d0ca617294203265eaa22132bdb8e1f779f5f67"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/features/static.json",
+      "bytes": 5277,
+      "sha256": "81e2fbed69b7fe0b9d5215ce6fa09b3635a5271917232671ea926aa134b7032b"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/final-prefixes.json",
+      "bytes": 142156,
+      "sha256": "8e9984042c36c534e31832609cb3605e026f5a18553e10064ab8c3754d5628cc"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/matched-window-diagnostics.json",
+      "bytes": 66201,
+      "sha256": "ed61cb0f0b4f5b80ea2ed7f2dd5122da9e5f5951915c8031572898bb8c7fbfec"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/alternating-000.json",
+      "bytes": 9596,
+      "sha256": "a460bcf019778d8b4fea23b63b7f1a2753307529e021681b1dcb1d9d028d2a53"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/alternating-003.json",
+      "bytes": 9539,
+      "sha256": "b3f881776e29900f49c7ac2f7635f681a02136d6596332d7fc1615c49b867ba6"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/alternating-010.json",
+      "bytes": 9551,
+      "sha256": "80e2cb4eb276308a76e231f0f34ade5e2e8f676e5692e98d90b99b53fb081752"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/alternating-014.json",
+      "bytes": 9562,
+      "sha256": "2670853c1fd67f1bda33f2c404cec322224fbf4670d5a6a9d488766fc884d387"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/alternating-016.json",
+      "bytes": 9574,
+      "sha256": "f7105abcd30f9fd41222325a1f5946a24d1268c7efa3fab7a7298f787191bb7e"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/alternating-020.json",
+      "bytes": 9546,
+      "sha256": "7baad01d233e4d2acdfdcb4d774e7f35e70db793f28f9a3f812e4e8a0ee0840c"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/brief-burst-000.json",
+      "bytes": 9501,
+      "sha256": "58484b3877184608a75b2c6ef71cf9787b061c82edde1ee92b10510b98705633"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/brief-burst-003.json",
+      "bytes": 9502,
+      "sha256": "54ae422173efe9a4a07b7d183a46eff1480fb62aaa5fb28a776788e5462b716a"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/brief-burst-009.json",
+      "bytes": 9509,
+      "sha256": "78191445622e7f94ab8ac811b13df29b45294d48b63d7fe0e9645dcce6b5648c"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/brief-burst-010.json",
+      "bytes": 9571,
+      "sha256": "31bbbe92b3124964482646890f84bb0668bfe53fc37fd6838909a5eea41d1f20"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/brief-burst-015.json",
+      "bytes": 9502,
+      "sha256": "9f5c95234514c0f81c4ee2f393cc4bf9a5cd066d8243c7dcff4d805a83de8c7c"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/brief-burst-020.json",
+      "bytes": 9502,
+      "sha256": "fb5fa3d7df21ff1d0ab4792b11e28583071926843c932f3b0fee158f1832ce62"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/cbr-burst-000.json",
+      "bytes": 9500,
+      "sha256": "9bbf57282899f46447add5828c55663fc86f8da8afcbdb49707cf9b49a9a86a0"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/cbr-burst-003.json",
+      "bytes": 9498,
+      "sha256": "fadad0922c87fa4a989bc8784cf6325fa8b3e49af125804ad795b07d000cc3eb"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/cbr-burst-013.json",
+      "bytes": 9502,
+      "sha256": "2c7eb454a98bbe5736687bc15431cf9ec27c2f2348b22690d585901a75ad1fb9"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/cbr-burst-016.json",
+      "bytes": 9514,
+      "sha256": "9b69322d8fceda1361ddeafe5202f9b2b4b6e0e7b566257c49061102d482ea86"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/cbr-burst-018.json",
+      "bytes": 9565,
+      "sha256": "36e0b775398cb601620d691b07b252f6d9cb7862525b1cebb95cd78a12ea1af8"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/cbr-burst-020.json",
+      "bytes": 9502,
+      "sha256": "8e5ad7743721af2d7502710279f0cecb2674eae39205a9951e1e1829dbd1bf35"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/grain-001.json",
+      "bytes": 9577,
+      "sha256": "089c76f7babb889665f18db8f1986494d1249ec92076f623e52b96854e67c40e"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/grain-003.json",
+      "bytes": 9629,
+      "sha256": "680fd171931782163c796cafc264b3c0cc3b17d60f2a221b82b821581b89a6a5"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/grain-005.json",
+      "bytes": 9562,
+      "sha256": "8f56ab24fb5adac44bc87a5aacef329273e656b7f2719a2d42b35940775000ee"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/grain-011.json",
+      "bytes": 9567,
+      "sha256": "b6251d41414676186c1f47f499e15e22a02e036317ee2ff80da677f3cf956f09"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/grain-015.json",
+      "bytes": 9568,
+      "sha256": "728c4970f19752a68a636ff8fcd7c85d452db286667ab9ad1c1e05ba4f841552"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/grain-020.json",
+      "bytes": 9618,
+      "sha256": "aa7345f5e79bb3a7fd3e761dbfb8cd6401f7bd6bc220c6330781d1e680291961"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/megamind-003.json",
+      "bytes": 9538,
+      "sha256": "4c7abd6bcf1e998a3651255c4dabd39d527cf32e8461a323e45019401f5432d7"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/megamind-009.json",
+      "bytes": 9545,
+      "sha256": "2aa072a7bbb063f60dc202381b07f74783cd6dd27d5e354b752cbb9b24fe6c1b"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/motion-001.json",
+      "bytes": 9551,
+      "sha256": "e501efb1f3b69c7174d97e1feb1e4fdddfd06bd05079e18c3bab4abd58bb64e7"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/motion-003.json",
+      "bytes": 9536,
+      "sha256": "140be198a2cdf7f3268b0b5bb0fab2c8db2a3f155edc963fffdb0c542f42bd16"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/motion-011.json",
+      "bytes": 9536,
+      "sha256": "cabdc1ecb9adff085282827ad0819b81e39780195d3d4189d6a70bf18cbf312e"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/motion-014.json",
+      "bytes": 9544,
+      "sha256": "d37a1a0c891e803d991839b59162bc3a73e9139d6c1ffe30f1aea2eaffcf81c5"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/motion-018.json",
+      "bytes": 9524,
+      "sha256": "d52259378ca1f002c24eb78fb9934ae31831e66b1cd125d25da3d6fc5eea9bdb"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/motion-020.json",
+      "bytes": 9544,
+      "sha256": "225635da5c5101983bf364100563b884206729487005d9639aeffec642a773d5"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/pedestrians-002.json",
+      "bytes": 6483,
+      "sha256": "58e5cb0136b8b15a281844767810decc5ffaa6efd041d887b473d456171c41be"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/pedestrians-011.json",
+      "bytes": 6510,
+      "sha256": "0e669463cbf2f2d499c6af3e8028deca35ff1e0565e3229ffd5e3cddf3977f31"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/pedestrians-012.json",
+      "bytes": 6501,
+      "sha256": "2ea5a3987a097df344ec9a454fffb23a01785c01dac8f0608198223c22b0d87f"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/pedestrians-022.json",
+      "bytes": 6494,
+      "sha256": "de19f173d045e19b3dea9041e699a7aaf134c3d5fa48547c237e5427b7df7a08"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/pedestrians-027.json",
+      "bytes": 6498,
+      "sha256": "40465b62db434c5a209378c8c194ab3b72be256d601524b8b94c2fbf32a7073a"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/pedestrians-034.json",
+      "bytes": 6479,
+      "sha256": "11aa69e09a21c1beb914bc13c3cd53e2bce1eab0ad8f3a9bf5b8d5b23a48865a"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/screen-000.json",
+      "bytes": 9510,
+      "sha256": "33806656a5368b1b58ee7574fe9443af3532d4585a86c9b3b2974857f6292dec"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/screen-003.json",
+      "bytes": 9497,
+      "sha256": "924900c78b57b3c0e31b5bf12cf4e20c07edd01a1b0826ef41425e67de12b3e3"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/screen-004.json",
+      "bytes": 9496,
+      "sha256": "03604d4149255a8a29be77b797f5588d9b67b9f6d9bf5f86f888c9ec69371870"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/screen-014.json",
+      "bytes": 9496,
+      "sha256": "5d7b9d1051f5f63df65d3b4670abc8cda29b6b121cf668671ef2b20fb7239654"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/screen-019.json",
+      "bytes": 9499,
+      "sha256": "eb7e7a3529dfaf284ee0c715ac72809d45af993d8fe81d0f98392c18454e97c3"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/screen-022.json",
+      "bytes": 9512,
+      "sha256": "e720b908afb96eced7bb6e19c66c9f09fcc54a453cede52f99f71298ce6d11c3"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/static-000.json",
+      "bytes": 9496,
+      "sha256": "b024456400aa3d2273c006d0a5892a505b8c17b0c59b801171e311771e02a0c3"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/static-002.json",
+      "bytes": 9497,
+      "sha256": "3cdaed76ba6b044146b96b0d0d3a7c7577e7b374c8bd77ee2597e9d3357cf3e0"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/static-003.json",
+      "bytes": 9497,
+      "sha256": "795cd1ea0ba7461d5c8a74e20287b5b7ef54b716497d1ff43fcb9cb60186cad7"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/static-006.json",
+      "bytes": 9497,
+      "sha256": "a985c1b12dcd077edeaa61402ac30863d84fb6f75935ff78599597601a3e8fb5"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/static-012.json",
+      "bytes": 9499,
+      "sha256": "e8257418f6ba154ef3abcbf4e1eeb0afaa112e2a803861567fbceeb8a071a022"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/measurements/static-018.json",
+      "bytes": 9499,
+      "sha256": "6664d89a65b91186ce4024631541bdc44bc60d7e11ae854134beca6595a2a8b1"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/metadata.json",
+      "bytes": 3282,
+      "sha256": "9cc9ffd7a0a23a04c7c90f8f6f2969e6e8c15d44d4ac61169136b65a23d524e6"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/parser-verification.json",
+      "bytes": 1951,
+      "sha256": "bd9c4d47f361a1d01899b9183fa6d71862637bd3bd2984997a15278b5d87c75f"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/phase-log.json",
+      "bytes": 1117,
+      "sha256": "b3384478bb0a1aced0ca36ed75be7c6a3d1b1532978db6933f01db180174a593"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/predictions.json",
+      "bytes": 571985,
+      "sha256": "c3823133c7d5e8acd0d195d1c5f79eb1b0d394342561bb3c75f82b1fcdbcf96d"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/reference-diagnostics.json",
+      "bytes": 1192485,
+      "sha256": "ff240c920a19e1b6d258e08d3e583bf947266bb233347a38c687c6ae367eae37"
+    },
+    {
+      "path": "results/startup-study-2026-10-03/summary.json",
+      "bytes": 6536,
+      "sha256": "e4d0de42e978d62c8444e0e69b24c19f1f143d000710b758ed6c04093b4a8afd"
+    }
+  ],
+  "reviewable_text_bytes": 3247074,
+  "binary_files_on_disk_but_git_ignored": [
+    {
+      "path": "results/startup-study-2026-10-03/.vsize-cache/grain/e80982601c1327a777a10722a428929ec6c55c1b5bae28e66a832e0c77338442.mp4",
+      "bytes": 258538,
+      "git_ignored": true
+    },
+    {
+      "path": "results/startup-study-2026-10-03/.vsize-cache/grain/af6da266162895c35c895d3a75719a2fb4c5d03be8f9eededc1aa045e31beafe.mp4",
+      "bytes": 266660,
+      "git_ignored": true
+    }
+  ],
+  "binary_git_candidates": []
+}

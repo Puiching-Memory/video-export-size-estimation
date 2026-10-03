@@ -1,0 +1,183 @@
+Splitting the commandline.
+Reading option '-hide_banner' ... matched as option 'hide_banner' (do not show program banner) with argument '1'.
+Reading option '-loglevel' ... matched as option 'loglevel' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '-nostats' ... matched as option 'stats' (print progress report during encoding) with argument 0.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-filter_threads' ... matched as option 'filter_threads' (number of non-complex filter threads) with argument '1'.
+Reading option '-ss' ... matched as option 'ss' (start transcoding at specified time) with argument '12.0'.
+Reading option '-i' ... matched as input url with argument '/proc/self/fd/4'.
+Reading option '-t' ... matched as option 't' (stop transcoding after specified duration) with argument '2.875'.
+Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '0:0'.
+Reading option '-an' ... matched as option 'an' (disable audio) with argument '1'.
+Reading option '-sn' ... matched as option 'sn' (disable subtitle) with argument '1'.
+Reading option '-dn' ... matched as option 'dn' (disable data) with argument '1'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-fps_mode' ... matched as option 'fps_mode' (set framerate mode for matching video streams; overrides vsync) with argument 'passthrough'.
+Reading option '-f' ... matched as option 'f' (force container format (auto-detected otherwise)) with argument 'rawvideo'.
+Reading option '/workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0.i420' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option hide_banner (do not show program banner) with argument 1.
+Applying option loglevel (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option y (overwrite output files) with argument 1.
+Applying option nostats (print progress report during encoding) with argument 0.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Applying option filter_threads (number of non-complex filter threads) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /proc/self/fd/4.
+Applying option ss (start transcoding at specified time) with argument 12.0.
+Successfully parsed a group of options.
+Opening an input file: /proc/self/fd/4.
+[AVFormatContext @ 0x564bb7817480] Opening '/proc/self/fd/4' for reading
+[file @ 0x564bb7817ac0] Setting default whitelist 'file,crypto,data'
+[matroska,webm @ 0x564bb7817480] Format matroska,webm probed with size=2048 and score=100
+st:0 removing common factor 1000000 from timebase
+[matroska,webm @ 0x564bb7817480] Before avformat_find_stream_info() pos: 1018 bytes read:32768 seeks:0 nb_streams:1
+[h264 @ 0x564bb7819e80] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x564bb7819e80] Decoding VUI
+[h264 @ 0x564bb7819e80] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x564bb7819e80] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x564bb7819e80] Decoding VUI
+[h264 @ 0x564bb7819e80] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x564bb7819e80] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x564bb7819e80] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x564bb7819e80] Format yuv420p chosen by get_format().
+[h264 @ 0x564bb7819e80] Reinit context to 640x368, pix_fmt: yuv420p
+[h264 @ 0x564bb7819e80] no picture 
+[matroska,webm @ 0x564bb7817480] All info found
+[matroska,webm @ 0x564bb7817480] After avformat_find_stream_info() pos: 27864 bytes read:32768 seeks:0 frames:4
+Input #0, matroska,webm, from '/proc/self/fd/4':
+  Metadata:
+    AB_AV1_FFMPEG_ARGS: -c:v libx264 -crf 23 -preset medium
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    ENCODER         : Lavf61.7.103
+  Duration: 00:01:00.08, start: 0.000000, bitrate: 588 kb/s
+  Stream #0:0(eng), 4, 1/1000: Video: h264 (High), 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:01:00.083000000
+Successfully opened the file.
+Parsing a group of options: output url /workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0.i420.
+Applying option t (stop transcoding after specified duration) with argument 2.875.
+Applying option map (set input stream mapping) with argument 0:0.
+Applying option an (disable audio) with argument 1.
+Applying option sn (disable subtitle) with argument 1.
+Applying option dn (disable data) with argument 1.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Applying option fps_mode (set framerate mode for matching video streams; overrides vsync) with argument passthrough.
+Applying option f (force container format (auto-detected otherwise)) with argument rawvideo.
+Successfully parsed a group of options.
+Opening an output file: /workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0.i420.
+[out#0/rawvideo @ 0x564bb79076c0] Adding streams from explicit maps...
+[vost#0:0/rawvideo @ 0x564bb781af00] Created video stream from input stream 0:0
+[h264 @ 0x564bb78961c0] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x564bb78961c0] Decoding VUI
+[h264 @ 0x564bb78961c0] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[file @ 0x564bb78ccc40] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x564bb781af00] Starting thread...
+[vf#0:0 @ 0x564bb78ae500] Starting thread...
+[vist#0:0/h264 @ 0x564bb781b700] [dec:h264 @ 0x564bb7895e40] Starting thread...
+[in#0/matroska,webm @ 0x564bb78171c0] Starting thread...
+[h264 @ 0x564bb7907ac0] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x564bb7907ac0] Decoding VUI
+[h264 @ 0x564bb7907ac0] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x564bb78961c0] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x564bb78961c0] Format yuv420p chosen by get_format().
+[h264 @ 0x564bb78961c0] Reinit context to 640x368, pix_fmt: yuv420p
+[h264 @ 0x564bb78961c0] no picture 
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[h264 @ 0x564bb78961c0] no picture 
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'video_size' to value '640x360'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'pix_fmt' to value '0'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'time_base' to value '1/1000'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'pixel_aspect' to value '0/1'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'colorspace' to value '6'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'range' to value '1'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] Setting 'frame_rate' to value '24/1'
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] w:640 h:360 pixfmt:yuv420p tb:1/1000 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[format @ 0x7fdb68002640] Setting 'pix_fmts' to value 'yuv420p'
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[AVFilterGraph @ 0x7fdb68001000] query_formats: 6 queried, 15 merged, 0 already done, 0 delayed
+[graph -1 input from stream 0:0 @ 0x7fdb680017c0] video frame properties congruent with link at pts_time: -1.583
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 12 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 5 times
+detected 5 logical cores
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Output #0, rawvideo, to '/workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0.i420':
+  Metadata:
+    AB_AV1_FFMPEG_ARGS: -c:v libx264 -crf 23 -preset medium
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng), 0, 1/24: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, q=2-31, 66355 kb/s, 24 fps, 24 tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        DURATION        : 00:01:00.083000000
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/rawvideo @ 0x564bb79076c0] Starting thread...
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 27 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x564bb78961c0] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 37 times
+[out_#0:0 @ 0x7fdb68002480] EOF on sink link out_#0:0:default.
+[vf#0:0 @ 0x564bb78ae500] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x564bb78ae500] All consumers returned EOF
+[vf#0:0 @ 0x564bb78ae500] Terminating thread with return code 0 (success)
+[vost#0:0/rawvideo @ 0x564bb781af00] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x564bb781af00] Terminating thread with return code 0 (success)
+[out#0/rawvideo @ 0x564bb79076c0] All streams finished
+[vist#0:0/h264 @ 0x564bb781b700] [dec:h264 @ 0x564bb7895e40] Decoder returned EOF, finishing
+[out#0/rawvideo @ 0x564bb79076c0] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x564bb781b700] [dec:h264 @ 0x564bb7895e40] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x564bb781b700] All consumers of this stream are done
+[in#0/matroska,webm @ 0x564bb78171c0] All consumers are done
+[in#0/matroska,webm @ 0x564bb78171c0] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x564bb78a6040] Statistics: 23846400 bytes written, 0 seeks, 91 writeouts
+[out#0/rawvideo @ 0x564bb79076c0] Output file #0 (/workspace/video-export-size-estimation/artifacts/bunny-fixed/bunny-leading0.i420):
+[out#0/rawvideo @ 0x564bb79076c0]   Output stream #0:0 (video): 69 frames encoded; 69 packets muxed (23846400 bytes); 
+[out#0/rawvideo @ 0x564bb79076c0]   Total: 69 packets (23846400 bytes) muxed
+[out#0/rawvideo @ 0x564bb79076c0] video:23288KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=   69 fps=0.0 q=-0.0 Lsize=   23288KiB time=00:00:02.87 bitrate=66355.2kbits/s speed=23.1x    
+bench: utime=0.132s stime=0.033s rtime=0.125s
+bench: maxrss=40768KiB
+[in#0/matroska,webm @ 0x564bb78171c0] Input file #0 (/proc/self/fd/4):
+[in#0/matroska,webm @ 0x564bb78171c0]   Input stream #0:0 (video): 120 packets read (470448 bytes); 109 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x564bb78171c0]   Total: 120 packets (470448 bytes) demuxed
+[AVIOContext @ 0x564bb781fc00] Statistics: 534598 bytes read, 1 seeks

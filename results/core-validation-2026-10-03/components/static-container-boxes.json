@@ -1,0 +1,242 @@
+{
+  "reference": {
+    "file_bytes": 18261,
+    "payload_bytes": 10490,
+    "container_bytes": 7771,
+    "duration": 24.0,
+    "frames": 576,
+    "boxes": [
+      {
+        "box": "ftyp",
+        "bytes": 32
+      },
+      {
+        "box": "moov",
+        "bytes": 7723
+      },
+      {
+        "box": "moov/mvhd",
+        "bytes": 108
+      },
+      {
+        "box": "moov/trak",
+        "bytes": 7510
+      },
+      {
+        "box": "moov/trak/tkhd",
+        "bytes": 92
+      },
+      {
+        "box": "moov/trak/edts",
+        "bytes": 36
+      },
+      {
+        "box": "moov/trak/edts/elst",
+        "bytes": 28
+      },
+      {
+        "box": "moov/trak/mdia",
+        "bytes": 7374
+      },
+      {
+        "box": "moov/trak/mdia/mdhd",
+        "bytes": 32
+      },
+      {
+        "box": "moov/trak/mdia/hdlr",
+        "bytes": 45
+      },
+      {
+        "box": "moov/trak/mdia/minf",
+        "bytes": 7289
+      },
+      {
+        "box": "moov/trak/mdia/minf/vmhd",
+        "bytes": 20
+      },
+      {
+        "box": "moov/trak/mdia/minf/dinf",
+        "bytes": 36
+      },
+      {
+        "box": "moov/trak/mdia/minf/dinf/dref",
+        "bytes": 28
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl",
+        "bytes": 7225
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stsd",
+        "bytes": 193
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stts",
+        "bytes": 24,
+        "entries": 1
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stss",
+        "bytes": 28,
+        "entries": 3
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/ctts",
+        "bytes": 4600,
+        "entries": 573
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stsc",
+        "bytes": 28,
+        "entries": 1
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stsz",
+        "bytes": 2324,
+        "sample_size": 0,
+        "samples": 576
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stco",
+        "bytes": 20,
+        "entries": 1
+      },
+      {
+        "box": "moov/udta",
+        "bytes": 97
+      },
+      {
+        "box": "moov/udta/meta",
+        "bytes": 89
+      },
+      {
+        "box": "free",
+        "bytes": 8
+      },
+      {
+        "box": "mdat",
+        "bytes": 10498
+      }
+    ]
+  },
+  "probe": {
+    "file_bytes": 2984,
+    "payload_bytes": 1541,
+    "container_bytes": 1443,
+    "duration": 2.0,
+    "frames": 48,
+    "boxes": [
+      {
+        "box": "ftyp",
+        "bytes": 32
+      },
+      {
+        "box": "moov",
+        "bytes": 1395
+      },
+      {
+        "box": "moov/mvhd",
+        "bytes": 108
+      },
+      {
+        "box": "moov/trak",
+        "bytes": 1182
+      },
+      {
+        "box": "moov/trak/tkhd",
+        "bytes": 92
+      },
+      {
+        "box": "moov/trak/edts",
+        "bytes": 36
+      },
+      {
+        "box": "moov/trak/edts/elst",
+        "bytes": 28
+      },
+      {
+        "box": "moov/trak/mdia",
+        "bytes": 1046
+      },
+      {
+        "box": "moov/trak/mdia/mdhd",
+        "bytes": 32
+      },
+      {
+        "box": "moov/trak/mdia/hdlr",
+        "bytes": 45
+      },
+      {
+        "box": "moov/trak/mdia/minf",
+        "bytes": 961
+      },
+      {
+        "box": "moov/trak/mdia/minf/vmhd",
+        "bytes": 20
+      },
+      {
+        "box": "moov/trak/mdia/minf/dinf",
+        "bytes": 36
+      },
+      {
+        "box": "moov/trak/mdia/minf/dinf/dref",
+        "bytes": 28
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl",
+        "bytes": 897
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stsd",
+        "bytes": 193
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stts",
+        "bytes": 24,
+        "entries": 1
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stss",
+        "bytes": 20,
+        "entries": 1
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/ctts",
+        "bytes": 392,
+        "entries": 47
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stsc",
+        "bytes": 28,
+        "entries": 1
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stsz",
+        "bytes": 212,
+        "sample_size": 0,
+        "samples": 48
+      },
+      {
+        "box": "moov/trak/mdia/minf/stbl/stco",
+        "bytes": 20,
+        "entries": 1
+      },
+      {
+        "box": "moov/udta",
+        "bytes": 97
+      },
+      {
+        "box": "moov/udta/meta",
+        "bytes": 89
+      },
+      {
+        "box": "free",
+        "bytes": 8
+      },
+      {
+        "box": "mdat",
+        "bytes": 1549
+      }
+    ]
+  }
+}
