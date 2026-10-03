@@ -278,7 +278,7 @@ class RealContentDiscovery(unittest.TestCase):
 
         def expire_after_actual_preview_launch(command, **kwargs):
             process = original_launch(command, **kwargs)
-            if "rawvideo" in command:
+            if "rawvideo" in command and str(self.source) in command:
                 processes.append(process)
                 # Real FFmpeg was started; only interruption scheduling is controlled.
                 deadlines[0].ends = time.monotonic() + 0.001

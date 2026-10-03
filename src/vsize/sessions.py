@@ -175,6 +175,8 @@ class SegmentedSession:
         return canonical_key(
             {
                 "pipeline": "fixed-fragment-mp4-v1",
+                "segment_pipeline": self.plan["pipeline"],
+                "segment_plan": self.plan["plan_hash"],
                 "source": self.media.source_hash,
                 "toolchain": self.media.toolchain_key,
                 "threads": self.media.threads,

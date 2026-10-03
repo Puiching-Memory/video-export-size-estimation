@@ -9,3 +9,9 @@ __pycache__/
 artifacts/
 build/
 dist/
+/results/**/*.mp4
+/results/**/*.mkv
+/results/**/*.h264
+/results/**/*.y4m
+/results/**/*.avcc
+/results/**/*.raw

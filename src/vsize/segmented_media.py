@@ -19,7 +19,7 @@ from .media import Media
 from .runtime import canonical_key
 
 
-SEGMENTED_PIPELINE_VERSION = "independent-cfr-x264-v1"
+SEGMENTED_PIPELINE_VERSION = "independent-cfr-x264-v2-source-starts"
 
 # Static, conservative 8-bit component formats.  Storage size (rgb24/rgba) is
 # not component precision; formats outside this list need an explicit review.
@@ -162,6 +162,8 @@ class SegmentedMedia:
         self.segments = ()
         self.video_signature = None
         self.video_signatures = {}
+        self.video_presentation_start = None
+        self.audio_presentation_start = None
         self.fps_filter = None
         for part in (self.spec.video_filter or "").split(","):
             if part.startswith("fps="):
@@ -185,6 +187,19 @@ class SegmentedMedia:
             ):
                 raise ValueError(
                     "independent-segment MP4 currently requires aligned video/audio starts"
+                )
+            # Some demuxers report the format origin as every stream's start
+            # even when the first video picture occurs seconds after audio.
+            # Inspect actual decoded presentation frames before cache reuse or
+            # any independent encode can erase that delay by resetting PTS.
+            self.video_presentation_start = self._presentation_start(media.video)
+            self.audio_presentation_start = self._presentation_start(media.audio)
+            if abs(self.audio_presentation_start - self.video_presentation_start) > Fraction(
+                1, sample_rate
+            ):
+                raise ValueError(
+                    "independent-segment MP4 currently requires aligned video/audio starts "
+                    "in decoded presentation frames"
                 )
 
     def _stat(self):
@@ -211,6 +226,49 @@ class SegmentedMedia:
         result = self.deadline.run(command)
         self._guard_source()
         return result
+
+    def _presentation_start(self, stream):
+        """Read the first presented frame after decoder priming/skip handling.
+
+        Count selected-stream packets rather than a short time interval: a
+        delayed stream may not have any packet in the format's first seconds.
+        Eight packets include ordinary AAC priming and B-frame decoder delay.
+        Unsupported longer startup delays fail closed within the same budget.
+        """
+        info = json.loads(
+            self._run(
+                [
+                    "ffprobe",
+                    "-v",
+                    "error",
+                    "-threads",
+                    str(self.threads),
+                    "-select_streams",
+                    str(stream["index"]),
+                    "-read_intervals",
+                    "%+#8",
+                    "-show_frames",
+                    "-show_entries",
+                    "frame=pts,best_effort_timestamp,nb_samples",
+                    "-of",
+                    "json",
+                    self.media.input_path,
+                ]
+            ).stdout
+        )
+        for frame in info.get("frames", []):
+            if stream["codec_type"] == "audio" and not int(frame.get("nb_samples", 0)):
+                continue
+            tick = _optional_integer(frame.get("pts"), "frame pts")
+            if tick is None:
+                tick = _optional_integer(
+                    frame.get("best_effort_timestamp"), "frame best_effort_timestamp"
+                )
+            if tick is not None:
+                return tick * _fraction(stream["time_base"])
+            # A later frame cannot establish the missing first frame's start.
+            raise ValueError("explicit decoded video/audio presentation starts required")
+        raise ValueError("explicit decoded video/audio presentation starts required")
 
     def verify_source(self):
         """Verify the immutable asset or full source at the publication boundary."""
@@ -434,6 +492,17 @@ class SegmentedMedia:
             "plan_hash": self.plan_hash,
             "source_frames": self.source_frames,
             "source_geometry": [self.media.video["width"], self.media.video["height"]],
+            "source_presentation_starts": {
+                "video": str(self.video_presentation_start)
+                if self.video_presentation_start is not None
+                else None,
+                "audio": str(self.audio_presentation_start)
+                if self.audio_presentation_start is not None
+                else None,
+                "method": "first_decoded_frame_after_priming"
+                if self.media.audio is not None
+                else "not_required_without_audio",
+            },
             "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
             "output_rate": str(self.output_rate),
             "total_frames": self.total_frames,

@@ -4,6 +4,7 @@ import shutil
 import subprocess
 import tempfile
 import unittest
+from fractions import Fraction
 from pathlib import Path
 from unittest.mock import patch
 
@@ -59,6 +60,28 @@ class IndependentSegments(unittest.TestCase):
                 "-threads",
                 "1",
                 str(cls.vfr),
+            ]
+        )
+        cls.aligned_audio = cls.root / "aligned-with-aac-priming.mp4"
+        cls.run_ffmpeg(
+            [
+                "-f",
+                "lavfi",
+                "-i",
+                "testsrc2=s=160x96:r=24:d=2",
+                "-f",
+                "lavfi",
+                "-i",
+                "sine=frequency=523:sample_rate=48000:duration=2",
+                "-c:v",
+                "libx264",
+                "-preset",
+                "ultrafast",
+                "-threads",
+                "1",
+                "-c:a",
+                "aac",
+                str(cls.aligned_audio),
             ]
         )
 
@@ -321,6 +344,195 @@ class IndependentSegments(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "aligned video/audio starts"):
             self.adapter("delayed-audio-cache", source=source)
 
+    def test_matroska_delayed_video_is_rejected_despite_matching_stream_starts(self):
+        # Reproduce the actual Bunny-derived Matroska failure using a tiny
+        # source whose rawvideo format is known from its header before the
+        # first picture: stream.start_pts equals the format start for BOTH
+        # streams, although video actually starts over five seconds later.
+        source = self.root / "misleading-start-delayed-video.mkv"
+        self.run_ffmpeg(
+            [
+                "-copyts",
+                "-f",
+                "lavfi",
+                "-i",
+                "testsrc2=s=128x96:r=24:d=1",
+                "-f",
+                "lavfi",
+                "-i",
+                "anullsrc=r=48000:cl=mono",
+                "-map",
+                "0:v:0",
+                "-map",
+                "1:a:0",
+                "-vf",
+                "setpts=PTS+5.125/TB",
+                "-c:v",
+                "rawvideo",
+                "-pix_fmt",
+                "bgr24",
+                "-allow_raw_vfw",
+                "1",
+                "-threads",
+                "1",
+                "-c:a",
+                "aac",
+                "-t",
+                "7",
+                str(source),
+            ]
+        )
+        media = Media(
+            EncodeSpec(source, video_filter="fps=12"),
+            1,
+            Cache(self.root / "misleading-start"),
+            Deadline(60),
+        )
+        self.assertEqual(media.video["pix_fmt"], "bgr24")
+        self.assertEqual(media.video["start_pts"], media.audio["start_pts"])
+        first_packets = json.loads(
+            media.deadline.run(
+                [
+                    "ffprobe",
+                    "-v",
+                    "error",
+                    "-threads",
+                    "1",
+                    "-select_streams",
+                    "v:0",
+                    "-read_intervals",
+                    "%+#1",
+                    "-show_packets",
+                    "-show_entries",
+                    "packet=pts",
+                    "-of",
+                    "json",
+                    str(source),
+                ]
+            ).stdout
+        )["packets"]
+        self.assertEqual(
+            int(first_packets[0]["pts"]) * Fraction(media.video["time_base"]), Fraction(41, 8)
+        )
+        with self.assertRaisesRegex(ValueError, "aligned video/audio starts.*decoded"):
+            SegmentedMedia(media)
+        self.assertFalse(list(media.cache.root.glob("*.mp4")))
+
+    def test_actual_audio_start_applies_priming_once_and_checks_before_cached_plan(self):
+        adapter = self.adapter("actual-aac-start", source=self.aligned_audio)
+        plan = adapter.prepare()
+        self.assertEqual(
+            plan["source_presentation_starts"],
+            {
+                "video": "0",
+                "audio": "0",
+                "method": "first_decoded_frame_after_priming",
+            },
+        )
+        # First AAC packet is priming.  Decoder has already skipped it, so the
+        # start check must not add the skip count to the first decoded frame.
+        packets = json.loads(
+            adapter.deadline.run(
+                [
+                    "ffprobe",
+                    "-v",
+                    "error",
+                    "-threads",
+                    "1",
+                    "-select_streams",
+                    "a:0",
+                    "-read_intervals",
+                    "%+#1",
+                    "-show_packets",
+                    "-show_entries",
+                    "packet=pts,side_data_list",
+                    "-of",
+                    "json",
+                    str(self.aligned_audio),
+                ]
+            ).stdout
+        )["packets"]
+        self.assertLess(int(packets[0]["pts"]), 0)
+        self.assertTrue(
+            any(side.get("skip_samples", 0) > 0 for side in packets[0]["side_data_list"])
+        )
+        media = Media(
+            EncodeSpec(self.aligned_audio, preset="veryfast"),
+            1,
+            Cache(self.root / "actual-aac-start"),
+            Deadline(60),
+        )
+        with patch.object(media.deadline, "run", wraps=media.deadline.run) as processes:
+            another = SegmentedMedia(media, 0.7)
+            self.assertTrue(another.prepare()["prepare_cache_hit"])
+        commands = [call.args[0] for call in processes.call_args_list]
+        self.assertEqual(sum("-show_frames" in command for command in commands), 2)
+
+    def test_aligned_nonzero_origin_uses_actual_presentation_frames(self):
+        source = self.root / "aligned-common-origin.mkv"
+        self.run_ffmpeg(
+            [
+                "-copyts",
+                "-itsoffset",
+                "5.125",
+                "-i",
+                str(self.source),
+                "-f",
+                "lavfi",
+                "-i",
+                "sine=frequency=523:sample_rate=48000:duration=4.8",
+                "-map",
+                "0:v:0",
+                "-map",
+                "1:a:0",
+                "-af",
+                "asetpts=PTS+5.125/TB",
+                "-c:v",
+                "copy",
+                "-c:a",
+                "pcm_s16le",
+                str(source),
+            ]
+        )
+        adapter = self.adapter("aligned-common-origin", source=source)
+        self.assertEqual(adapter.video_presentation_start, Fraction(41, 8))
+        self.assertEqual(adapter.audio_presentation_start, Fraction(41, 8))
+        self.assertEqual(adapter.prepare()["total_frames"], 143)
+        self.assertEqual(adapter.encode_audio()["presentation_start"], 0)
+
+    def test_missing_decoded_start_fails_closed_without_encoding(self):
+        media = Media(
+            EncodeSpec(self.aligned_audio),
+            1,
+            Cache(self.root / "empty-decoded-start"),
+            Deadline(60),
+        )
+        missing = subprocess.CompletedProcess([], 0, b'{"frames": []}', b"")
+        with patch.object(media.deadline, "run", return_value=missing) as processes:
+            with self.assertRaisesRegex(
+                ValueError, "explicit decoded video/audio presentation starts"
+            ):
+                SegmentedMedia(media)
+        self.assertEqual(processes.call_count, 1)
+        self.assertFalse(list(media.cache.root.glob("*.mp4")))
+        # A valid timestamp on a later frame must never substitute for an
+        # unknown first presentation timestamp, on either video or audio.
+        for selector in ("video", "audio"):
+            with self.subTest(selector=selector):
+                unknown_first = subprocess.CompletedProcess(
+                    [],
+                    0,
+                    b'{"frames": [{"nb_samples": 1024}, {"pts": 0, "nb_samples": 1024}]}',
+                    b"",
+                )
+                video_ok = subprocess.CompletedProcess([], 0, b'{"frames": [{"pts": 0}]}', b"")
+                responses = [unknown_first] if selector == "video" else [video_ok, unknown_first]
+                with patch.object(media.deadline, "run", side_effect=responses):
+                    with self.assertRaisesRegex(
+                        ValueError, "explicit decoded video/audio presentation starts"
+                    ):
+                        SegmentedMedia(media)
+
     @unittest.skipUnless(hasattr(os, "memfd_create"), "Linux sealed assets required")
     def test_prepared_asset_uses_immutable_fd_after_original_changes(self):
         source = self.root / "mutable-prepared.mp4"
@@ -412,17 +624,14 @@ class IndependentSegments(unittest.TestCase):
                     SegmentedMedia(media)
 
     def test_optional_na_metadata_never_implies_an_audio_alignment(self):
-        media = Media(EncodeSpec(self.source), 1, Cache(self.root / "na-metadata"), Deadline(60))
+        media = Media(
+            EncodeSpec(self.aligned_audio), 1, Cache(self.root / "na-metadata"), Deadline(60)
+        )
         media.video["bits_per_raw_sample"] = "N/A"
         media.video["start_pts"] = "N/A"
         media.video["start_time"] = "0.0"
-        media.audio = {
-            "sample_rate": "48000",
-            "channels": 1,
-            "start_pts": "N/A",
-            "start_time": "0.0",
-            "time_base": "1/48000",
-        }
+        media.audio["start_pts"] = "N/A"
+        media.audio["start_time"] = "0.0"
         self.assertIsInstance(SegmentedMedia(media), SegmentedMedia)
         media.audio["start_time"] = "N/A"
         with self.assertRaisesRegex(ValueError, "explicit video/audio presentation starts"):

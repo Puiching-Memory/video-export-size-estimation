@@ -16,6 +16,7 @@ import numpy as np
 from .contracts import EncodeSpec
 from .assets import PreparedAsset
 from .runtime import Cache, Deadline, canonical_key, digest
+from .toolchain import native_pipeline_fingerprint
 
 
 PIPELINE_VERSION = "x264-mp4-v3-passthrough"
@@ -39,9 +40,14 @@ class Media:
             self.source_hash = asset.sha256
         else:
             self.input_path = str(spec.source)
+            self.source_signature = self._source_signature()
             self.source_hash = digest(spec.source, deadline)
+            self.guard_source()
         self.toolchain = deadline.run(["ffmpeg", "-version"]).stdout.decode()
-        self.toolchain_key = canonical_key({"ffmpeg": self.toolchain})
+        self.native_pipeline = native_pipeline_fingerprint(deadline)
+        self.toolchain_key = canonical_key(
+            {"ffmpeg": self.toolchain, "native_pipeline": self.native_pipeline}
+        )
         raw = deadline.run(
             [
                 "ffprobe",
@@ -55,6 +61,7 @@ class Media:
             ]
         ).stdout
         self.info = json.loads(raw)
+        self.guard_source()
         videos = [
             s
             for s in self.info["streams"]
@@ -88,12 +95,30 @@ class Media:
             self.blocks[-2]["duration"] += self.blocks.pop()["duration"]
         return self.blocks
 
+    def _source_signature(self):
+        stat = self.spec.source.stat()
+        return stat.st_dev, stat.st_ino, stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns
+
+    def guard_source(self):
+        """Detect ordinary replacement and change/restore between hash checks."""
+        if self.asset is not None:
+            self.asset.fileno()
+            return
+        try:
+            unchanged = self._source_signature() == self.source_signature
+        except OSError:
+            unchanged = False
+        if not unchanged:
+            raise RuntimeError("input changed during analysis; result was discarded")
+
     def verify_source(self):
+        self.guard_source()
         if self.asset is not None:
             # Linux seals prohibit writes, growth, and truncation of these bytes.
-            self.asset.fileno()
-        elif digest(self.spec.source, self.deadline) != self.source_hash:
+            return
+        if digest(self.spec.source, self.deadline) != self.source_hash:
             raise RuntimeError("input changed during analysis; result was discarded")
+        self.guard_source()
 
     def key(self, crf: float, window: tuple[float, float] | None):
         return canonical_key(
@@ -109,6 +134,7 @@ class Media:
 
     def scan(self, block_seconds: float, visual: bool = True):
         started = time.monotonic()
+        self.guard_source()
         data = json.loads(
             self.deadline.run(
                 [
@@ -126,6 +152,7 @@ class Media:
                 ]
             ).stdout
         )["packets"]
+        self.guard_source()
         data = [p for p in data if "pts_time" in p]
         if not data:
             raise ValueError("video packet timestamps are required")
@@ -159,6 +186,7 @@ class Media:
         rates can miss short events, so calibration or an exact file is needed.
         """
         started = time.monotonic()
+        self.guard_source()
         self.blocks = blocks
         key = canonical_key(
             {
@@ -216,6 +244,7 @@ class Media:
                 os.replace(name, path)
             finally:
                 Path(name).unlink(missing_ok=True)
+        self.guard_source()
         return self.blocks, {
             "cache_hit": hit,
             "elapsed_seconds": time.monotonic() - started,
@@ -229,6 +258,7 @@ class Media:
         # input bitrate and export filters need not erase the complexity signal.
         filters = [self.spec.video_filter] if self.spec.video_filter else []
         filters += [f"fps={preview_fps}", "scale=96:54:flags=area", "format=gray"]
+        self.guard_source()
         raw = self.deadline.run(
             [
                 "ffmpeg",
@@ -256,6 +286,7 @@ class Media:
                 "pipe:1",
             ]
         ).stdout
+        self.guard_source()
         if len(raw) % (96 * 54):
             raise RuntimeError("incomplete raw preview frame")
         frames = np.frombuffer(raw, dtype=np.uint8).reshape(-1, 54, 96)
@@ -298,11 +329,16 @@ class Media:
             block["features"] = vector.tolist()
 
     def lookup(self, crf: float, window=None):
-        return self.cache.lookup(self.key(crf, window), self.deadline)
+        self.guard_source()
+        record = self.cache.lookup(self.key(crf, window), self.deadline)
+        self.guard_source()
+        return record
 
     def encode(self, crf: float, window=None):
+        self.guard_source()
         key = self.key(crf, window)
         if record := self.cache.lookup(key, self.deadline):
+            self.guard_source()
             return record
         temporary = self.cache.temporary()
         started = time.monotonic()
@@ -364,6 +400,7 @@ class Media:
         command += ["-movflags", "+faststart", str(temporary)]
         try:
             encoded = self.deadline.run(command)
+            self.guard_source()
             process_seconds = time.monotonic() - started
             measured = re.search(
                 rb"bench: utime=[\d.]+s stime=[\d.]+s rtime=([\d.]+)s",

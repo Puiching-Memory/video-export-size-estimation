@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from vsize.assets import PreparedAsset
 from vsize.contracts import ComputeBudget, EncodeSpec, Request
@@ -362,6 +363,31 @@ class SegmentedEngineIntegration(unittest.TestCase):
                 self.assertTrue(cached["estimate"]["cache_hit"])
                 self.assertEqual(cached["estimate"]["artifact"], expected["estimate"]["artifact"])
                 self.assertEqual(cached["attempted_encode_seconds"], 0)
+
+    def test_pipeline_version_invalidates_complete_artifact_cache(self):
+        request = self.request(self.fractional)
+        with PreparedAsset.from_path(self.fractional) as asset:
+            first = self.engine.run(request, asset=asset)
+            first_artifact = self.assert_exact_byte_identity(first)
+            cached = Engine(self.cache_dir).run(request, asset=asset)
+            self.assertTrue(cached["estimate"]["cache_hit"])
+            self.assertEqual(cached["estimate"]["artifact"], str(first_artifact))
+            with patch(
+                "vsize.segmented_media.SEGMENTED_PIPELINE_VERSION",
+                "independent-cfr-x264-next-regression-version",
+            ):
+                # Same source, configuration and cache directory; only the
+                # pipeline version changes.  A fresh engine must rebuild.
+                changed = Engine(self.cache_dir).run(request, asset=asset)
+                changed_artifact = self.assert_exact_byte_identity(changed)
+                self.assertFalse(changed["estimate"]["cache_hit"])
+                self.assertNotEqual(changed_artifact, first_artifact)
+                self.assertGreater(changed["attempted_encode_seconds"], 0)
+                again = Engine(self.cache_dir).run(request, asset=asset)
+                self.assertTrue(again["estimate"]["cache_hit"])
+                self.assertEqual(again["estimate"]["artifact"], str(changed_artifact))
+        self.assertEqual(int(_probe(changed_artifact)["streams"][0]["nb_read_frames"]), 123)
+        self.assertEqual(len(_video(changed_artifact)), 123 * 128 * 96 * 3 // 2)
 
     def test_vfr_requires_explicit_fps_and_converted_export_preserves_all_frames(self):
         request = self.request(self.vfr)
