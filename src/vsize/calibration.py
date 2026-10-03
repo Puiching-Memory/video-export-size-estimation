@@ -86,4 +86,4 @@ def risk_multiplier(sample_count: int, configurations: int):
 
 def relative_error_bound(prediction: int, interval: list[int]):
     low, high = interval
-    return max(prediction / low - 1, 1 - prediction / high)
+    return max((prediction - low) / low, (high - prediction) / high)

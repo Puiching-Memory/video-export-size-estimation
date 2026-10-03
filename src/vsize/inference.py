@@ -50,9 +50,23 @@ def representatives(blocks: list[dict], count: int):
 
 
 class Sampler:
-    def __init__(self, blocks: list[dict], seed: int, count: int = 3):
+    def __init__(self, blocks: list[dict], seed: int, count: int = 3, *, uniform=False):
         self.blocks = blocks
-        self.groups, self.pilots = representatives(blocks, min(count, len(blocks)))
+        if uniform:
+            count = min(count, len(blocks))
+            self.pilots = sorted(
+                {min(len(blocks) - 1, int((i + 0.5) * len(blocks) / count)) for i in range(count)}
+            )
+            self.groups = [
+                [
+                    i
+                    for i in range(len(blocks))
+                    if min(self.pilots, key=lambda p: (abs(i - p), p)) == pilot
+                ]
+                for pilot in self.pilots
+            ]
+        else:
+            self.groups, self.pilots = representatives(blocks, min(count, len(blocks)))
         remaining = [i for i in range(len(blocks)) if i not in self.pilots]
         random.Random(seed).shuffle(remaining)
         self.audit_order = remaining
@@ -62,7 +76,7 @@ class Sampler:
     def add(self, index: int, record: dict):
         self.observed[index] = record
 
-    def estimate(self):
+    def estimate(self, *, fixed_bytes=None):
         if not self.observed:
             return None
         observed_rates = [
@@ -93,7 +107,11 @@ class Sampler:
         sampled_duration = sum(self.blocks[i]["duration"] for i in self.observed)
         sampled_frames = sum(r["video_frames"] for r in self.observed.values())
         duration = sum(b["duration"] for b in self.blocks)
-        overhead = 2048 + 6 * sampled_frames / sampled_duration * duration
+        overhead = (
+            2048 + 6 * sampled_frames / sampled_duration * duration
+            if fixed_bytes is None
+            else fixed_bytes
+        )
         variance = None
         if len(residuals) >= 2:
             variance = (
@@ -104,6 +122,8 @@ class Sampler:
             )
         return {
             "estimated_bytes": max(1, round(total + overhead)),
+            "estimated_payload_bytes": total,
+            "fixed_bytes": overhead,
             "sampled_seconds": sampled_duration,
             "sample_count": len(self.observed),
             "audit_count": len(audits),
@@ -114,6 +134,10 @@ class Sampler:
                 "kind": "uncalibrated",
                 "interval_bytes": None,
                 "coverage": None,
-                "reason": "Sampling variance excludes encoder-context and muxing-model bias.",
+                "reason": (
+                    "Sampling variance excludes encoder-context and muxing-model bias."
+                    if fixed_bytes is None
+                    else "Fixed-prefix sampling variance is not an anytime coverage certificate."
+                ),
             },
         }

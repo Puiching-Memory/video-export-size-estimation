@@ -1,38 +1,48 @@
-"""One controller for compute budget, reliability target, and output-size limit."""
+"""Budgeted prediction, reusable segmented export, and verified CRF refinement."""
 
-import math
+import json
 import os
 import shutil
 import tempfile
 from dataclasses import asdict, replace
 from pathlib import Path
 
-from .calibration import Calibration, policy_key, relative_error_bound, risk_multiplier
+from .calibration import relative_error_bound
 from .contracts import Request
 from .inference import Sampler
 from .media import Media
 from .runtime import BudgetExhausted, Cache, Deadline, digest
+from .search import CRFSearch
+from .sessions import ContinuousSession, SegmentedSession
+from .trajectory import TrajectoryCalibration, family_key, harmonic_point, make_family
 
 
 class Engine:
     def __init__(self, cache_dir: Path, calibration: Path | None = None):
         self.cache = Cache(cache_dir)
-        self.calibration = Calibration(calibration)
-
-    def run(self, request: Request, on_update=None):
-        deadline = Deadline(request.compute.wall_seconds)
-        crf_grid = [request.encode.crf]
-        if request.size.max_bytes is not None:
-            crf_grid += [
-                float(q)
-                for q in range(
-                    math.floor(request.encode.crf) + 1, math.floor(request.size.max_crf) + 1
+        self.calibration = TrajectoryCalibration()
+        self.calibration_note = None
+        if calibration:
+            schema = json.loads(Path(calibration).read_text()).get("schema_version")
+            if schema == 2:
+                self.calibration = TrajectoryCalibration(calibration)
+            elif schema == 1:
+                self.calibration_note = (
+                    "Legacy profiles do not calibrate the current prediction policy."
                 )
-            ]
-            if request.size.max_crf not in crf_grid:
-                crf_grid.append(request.size.max_crf)
+            else:
+                raise ValueError("unsupported calibration schema")
+
+    def run(self, request: Request, on_update=None, *, asset=None):
+        deadline = Deadline(request.compute.wall_seconds)
+        search = (
+            CRFSearch(request.encode.crf, request.size.max_crf, request.size.max_bytes)
+            if request.size.max_bytes is not None
+            else None
+        )
+        crf_grid = list(search.grid) if search else [request.encode.crf]
         result = {
-            "schema_version": 1,
+            "schema_version": 2,
             "requested": {
                 "compute": asdict(request.compute),
                 "reliability": asdict(request.reliability),
@@ -40,48 +50,67 @@ class Engine:
                 "configuration": request.encode.configuration(),
                 "sample_seconds": request.sample_seconds,
                 "seed": request.seed,
+                "probe_mode": request.probe_mode,
+                "sampling_plan": request.sampling_plan,
             },
             "status": "in_progress",
             "estimate": None,
             "candidates": [],
             "unmet": [],
             "elapsed_seconds": 0.0,
+            "first_estimate_seconds": None,
             "attempted_encode_seconds": 0.0,
+            "attempted_audio_seconds": 0.0,
+            "audio_preparation_seconds": 0.0,
+            "total_probe_count": 0,
+            "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+            "prepared_asset": None,
+            "calibration_note": self.calibration_note,
+            "content_discovery": None,
+            "stop_reason": None,
         }
+        if asset is not None:
+            result["prepared_asset"] = {
+                "source_hash": asset.sha256,
+                "bytes": asset.bytes,
+                "ingest_seconds": asset.ingest_seconds,
+                "ingest_in_request_budget": False,
+                "identity": "linux_sealed_memfd",
+            }
         media = None
+        session = None
         probe_count = 0
-        tried = []
-        crf = request.encode.crf
         last_full = None
+        best = None
+        crf = request.encode.crf
 
         def can_encode(seconds):
             fraction = request.compute.max_encode_fraction
-            return (
-                fraction is None
-                or result["attempted_encode_seconds"] + seconds <= fraction * media.duration + 1e-7
+            duration = session.duration if session is not None else media.duration
+            return fraction is None or (
+                result["attempted_encode_seconds"] + seconds <= fraction * duration + 1e-7
             )
 
-        def perform(crf, window=None):
-            seconds = window[1] if window else media.duration
+        def charge(seconds):
+            deadline.check()
             if not can_encode(seconds):
-                raise BudgetExhausted("encoded-media budget exhausted")
+                raise BudgetExhausted("encoded-video budget exhausted")
             result["attempted_encode_seconds"] += seconds
-            return media.encode(crf, window)
 
         def emit(snapshot):
             result["estimate"] = snapshot
             result["elapsed_seconds"] = deadline.elapsed
+            if result["first_estimate_seconds"] is None:
+                result["first_estimate_seconds"] = deadline.elapsed
             if on_update:
                 on_update({"type": "estimate", **snapshot, "elapsed_seconds": deadline.elapsed})
 
         def qualifies(snapshot):
             interval = snapshot["uncertainty"].get("interval_bytes")
-            precise = (
-                interval is not None
-                and relative_error_bound(snapshot["estimated_bytes"], interval)
+            precise = interval is not None and (
+                relative_error_bound(snapshot["estimated_bytes"], interval)
                 <= request.reliability.relative_error
             )
-            # A file-size hard limit is satisfied only by an actual completed file.
             size_ok = request.size.max_bytes is None or (
                 snapshot["uncertainty"]["kind"] == "exact"
                 and snapshot["estimated_bytes"] <= request.size.max_bytes
@@ -89,9 +118,14 @@ class Engine:
             return precise and size_ok
 
         def exact(record):
-            nonlocal last_full
+            nonlocal last_full, best
+            if record["cache_hit"]:
+                media.verify_source()
+                if isinstance(session, SegmentedSession):
+                    session.adapter.source_verified = True
+                    result["segment_plan"] = session.adapter.plan()
             last_full = record
-            return {
+            snapshot = {
                 "estimated_bytes": record["file_bytes"],
                 "selected_crf": record["crf"],
                 "uncertainty": {
@@ -104,112 +138,157 @@ class Engine:
                 "cache_hit": record["cache_hit"],
                 "sample_count": probe_count,
                 "source_hash": record["source_hash"],
+                "export_mode": request.encode.export_mode,
             }
+            for name in ("byte_accounting", "reused_segments", "segment_count"):
+                if name in record:
+                    snapshot[name] = record[name]
+            # Register the verified artifact before progress callbacks or
+            # further work can stop the controller.
+            if search:
+                search.observe(record["crf"], record["file_bytes"], actual=True, record=snapshot)
+                verified = search.best_actual()
+                if verified is not None:
+                    best = verified.record
+            return snapshot
 
         try:
-            media = Media(request.encode, request.compute.threads, self.cache, deadline)
+            media = Media(
+                request.encode, request.compute.threads, self.cache, deadline, asset=asset
+            )
+            result["source_hash"] = media.source_hash
             result["toolchain_key"] = media.toolchain_key
-            while len(tried) < request.size.max_candidates:
+            session = (
+                SegmentedSession(media, request, charge, result)
+                if request.encode.export_mode == "segmented"
+                else ContinuousSession(media, request, charge, result)
+            )
+            pilot_count = min(3, len(session.blocks), max(1, request.compute.max_probes))
+            if request.compute.max_encode_fraction is not None:
+                nominal = sum(b["duration"] for b in session.blocks) / len(session.blocks)
+                pilot_count = min(
+                    pilot_count,
+                    max(1, int(request.compute.max_encode_fraction * session.duration / nominal)),
+                )
+            result["pilot_count"] = pilot_count
+            initial_sampler = Sampler(session.blocks, request.seed, count=pilot_count, uniform=True)
+            session.choose_probe_mode(initial_sampler.order[0], can_encode)
+            for _ in range(request.size.max_candidates):
                 deadline.check()
-                tried.append(crf)
-                full = media.lookup(crf)
-                if (
-                    full is None
-                    and last_full is not None
-                    and last_full["encode_wall_seconds"] * 1.5 < deadline.remaining
-                    and can_encode(media.duration)
-                ):
-                    # Same source/preset/filter, a different CRF: reuse the
-                    # measured whole-job cost instead of spending another probe.
-                    # Cost is a proposal; the deadline remains authoritative.
-                    full = perform(crf)
-                if full is None and request.compute.max_probes == 0 and can_encode(media.duration):
-                    # A zero probe limit does not prohibit an actual export.
-                    full = perform(crf)
-                if full:
+                if search:
+                    search.mark_attempted(crf)
+                full = session.lookup_full(crf)
+                if full is None and last_full is not None:
+                    if can_encode(session.remaining_seconds(crf)) and (
+                        last_full["encode_wall_seconds"] * 1.5 + 0.2 < deadline.remaining
+                    ):
+                        full = session.complete(crf)
+                if full is None and request.compute.max_probes == 0:
+                    if can_encode(session.remaining_seconds(crf)):
+                        full = session.complete(crf)
+                snapshot = None
+                if full is not None:
                     snapshot = exact(full)
                     emit(snapshot)
                 else:
-                    if not media.blocks:
-                        media.scan(request.sample_seconds)
-                    sampler = Sampler(media.blocks, request.seed)
-                    recent = []
-                    snapshot = None
-                    for index in sampler.order:
-                        block = media.blocks[index]
-                        window = (block["start"], block["duration"])
-                        cached = media.lookup(crf, window)
-                        if cached is None and probe_count >= request.compute.max_probes:
-                            break
-                        if cached is None and not can_encode(window[1]):
-                            break
-                        deadline.check()
-                        record = cached or perform(crf, window)
-                        if not cached:
-                            probe_count += 1
-                        sampler.add(index, record)
-                        recent.append(record)
-                        estimate = sampler.estimate()
-                        configuration = replace(request.encode, crf=crf).configuration()
-                        key = policy_key(
-                            configuration,
-                            request.sample_seconds,
-                            estimate["sample_count"],
-                            request.seed,
-                            media.toolchain_key,
-                            request.compute.threads,
+                    if request.sampling_plan == "content" and result["content_discovery"] is None:
+                        session.blocks, result["content_discovery"] = media.preview_features(
+                            session.blocks, 4
                         )
+                    sampler = Sampler(
+                        session.blocks,
+                        request.seed,
+                        count=pilot_count,
+                        uniform=request.sampling_plan == "temporal",
+                    )
+                    session.choose_probe_mode(sampler.order[0], can_encode)
+                    family = make_family(
+                        request.encode.configuration(),
+                        crf_grid,
+                        request.encode.segment_seconds
+                        if request.encode.export_mode == "segmented"
+                        else request.sample_seconds,
+                        {
+                            **session.probe_policy(),
+                            "sampling_plan": request.sampling_plan,
+                            "preview_rule": "4fps_96x54_mean_gradient_and_frame_difference",
+                            "pilot_count_rule": "min_3_blocks_probe_limit_and_video_fraction",
+                            "max_encode_fraction": request.compute.max_encode_fraction,
+                        },
+                        {"kind": "fixed", "seed": request.seed},
+                        media.toolchain_key,
+                        request.compute.threads,
+                        model_policy="budgeted-content-or-temporal-residual-v2",
+                        prefix_policy={
+                            "kind": "all_prefixes_up_to_maximum",
+                            "minimum_prefix": 1,
+                            "maximum_prefix": request.compute.max_probes,
+                        },
+                    )
+                    key = family_key(family)
+                    result["prediction_family"] = family
+                    result["prediction_family_key"] = key
+                    for index in sampler.order:
+                        deadline.check()
+                        cost, cached = session.probe_plan(index, crf)
+                        if cached is None:
+                            if probe_count >= request.compute.max_probes or not can_encode(cost):
+                                break
+                            charge(cost)
+                            probe_count += 1
+                            result["total_probe_count"] = probe_count
+                        record = session.probe(index, crf, cached)
+                        sampler.add(index, record)
+                        estimate = session.estimate(sampler)
+                        configuration = replace(request.encode, crf=crf).configuration()
                         envelope = self.calibration.interval(
                             key,
                             estimate["estimated_bytes"],
                             request.reliability.coverage,
-                            risk_multiplier(estimate["sample_count"], len(crf_grid)),
+                            configuration=configuration,
+                            sample_count=estimate["sample_count"],
                         )
                         if envelope:
                             estimate["uncertainty"] = envelope
+                            estimate["raw_prediction_bytes"] = estimate["estimated_bytes"]
+                            estimate["estimated_bytes"] = round(
+                                harmonic_point(envelope["interval_bytes"])
+                            )
                         snapshot = {
                             **estimate,
                             "selected_crf": crf,
                             "artifact": None,
                             "source_hash": media.source_hash,
+                            "observed_blocks": sorted(sampler.observed),
+                            "pilot_indices": sampler.pilots,
                         }
                         emit(snapshot)
-                        if qualifies(snapshot):
+                        if qualifies(snapshot) and search is None:
+                            media.verify_source()
+                            if isinstance(session, SegmentedSession):
+                                session.adapter.source_verified = True
+                                result["segment_plan"] = session.adapter.plan()
                             result["status"] = "satisfied"
+                            result["stop_reason"] = "reliability_target_met"
                             return self._finish(result, request, deadline)
-                        if (
-                            request.size.max_bytes is not None
-                            and all(i in sampler.observed for i in sampler.pilots)
-                            and estimate["estimated_bytes"] > request.size.max_bytes
-                            and any(q not in tried for q in crf_grid)
+                        remaining = session.remaining_seconds(crf)
+                        if can_encode(remaining) and (
+                            session.expected_complete_wall(sampler) < deadline.remaining
                         ):
-                            # The requested size can guide candidate selection
-                            # before spending a complete export on an apparently
-                            # oversized setting. This never certifies feasibility
-                            # and does not claim globally best quality.
-                            break
-                        # Reusable continuous export is the high-fidelity action.
-                        # Admission is an estimate; the shared deadline still enforces cancellation.
-                        rate = sum(
-                            r.get("transcode_wall_seconds", r["encode_wall_seconds"])
-                            for r in recent
-                        ) / sum(media.blocks[i]["duration"] for i in sampler.observed)
-                        fixed_cost = max(
-                            r["encode_wall_seconds"]
-                            - r.get("transcode_wall_seconds", r["encode_wall_seconds"])
-                            for r in recent
-                        )
-                        expected_full_seconds = max(0.1, (fixed_cost + rate * media.duration) * 1.5)
-                        if expected_full_seconds < deadline.remaining and can_encode(
-                            media.duration
-                        ):
-                            full = perform(crf)
+                            full = session.complete(crf)
                             snapshot = exact(full)
                             emit(snapshot)
                             break
-                    if snapshot is None:
-                        result["status"] = "constraints_unmet"
-                        break
+                        if (
+                            search is not None
+                            and all(i in sampler.observed for i in sampler.pilots)
+                            and estimate["estimated_bytes"] > request.size.max_bytes
+                        ):
+                            break
+                if snapshot is None:
+                    result["stop_reason"] = "no_more_admissible_work"
+                    break
+                actual = snapshot["uncertainty"]["kind"] == "exact"
                 result["candidates"].append(
                     {
                         "crf": crf,
@@ -217,57 +296,86 @@ class Engine:
                         "evidence": snapshot["uncertainty"]["kind"],
                     }
                 )
-                if qualifies(snapshot):
-                    result["status"] = "satisfied"
+                if search:
+                    if not actual:
+                        search.observe(
+                            crf, snapshot["estimated_bytes"], actual=False, record=snapshot
+                        )
+                    verified = search.best_actual()
+                    if verified is not None:
+                        best = verified.record
+                    next_crf = search.propose()
+                    if next_crf is None:
+                        result["stop_reason"] = "allowed_grid_search_finished"
+                        break
+                    crf = next_crf
+                else:
+                    result["stop_reason"] = (
+                        "exact_export_complete" if actual else "no_more_admissible_work"
+                    )
                     break
-                if request.size.max_bytes is None:
-                    result["status"] = "constraints_unmet"
-                    break
-                remaining_crfs = [q for q in crf_grid if q not in tried]
-                if not remaining_crfs:
-                    result["status"] = "constraints_unmet"
-                    break
-                # Log-rate/CRF relation proposes the next candidate. The decision
-                # is verified by encoding; monotonicity is never used as a proof.
-                ratio = snapshot["estimated_bytes"] / request.size.max_bytes
-                proposed = crf + 6 * math.log2(max(ratio, 1.01)) + 0.5
-                crf = min(remaining_crfs, key=lambda q: abs(q - proposed))
-            if result["status"] == "in_progress":
-                result["status"] = "constraints_unmet"
-        except BudgetExhausted:
+            else:
+                result["stop_reason"] = "candidate_limit_reached"
+            if (
+                result["estimate"] is not None
+                and result["estimate"]["uncertainty"]["kind"] != "exact"
+            ):
+                media.verify_source()
+                if isinstance(session, SegmentedSession):
+                    session.adapter.source_verified = True
+            if isinstance(session, SegmentedSession):
+                result["segment_plan"] = session.adapter.plan()
+            result["status"] = "constraints_unmet"
+        except BudgetExhausted as error:
             result["status"] = "budget_exhausted"
+            result["stop_reason"] = str(error)
+            if result["estimate"] is not None and (
+                result["estimate"]["uncertainty"]["kind"] != "exact" and asset is None
+            ):
+                result["estimate"]["uncertainty"] = {
+                    "kind": "uncalibrated",
+                    "interval_bytes": None,
+                    "coverage": None,
+                    "reason": "Final source identity verification did not finish within budget.",
+                }
+        finally:
+            if search:
+                result["quality_search"] = search.summary()
+            if best is not None:
+                result["estimate"] = best
         return self._finish(result, request, deadline)
 
     @staticmethod
     def _finish(result, request, deadline):
         result["elapsed_seconds"] = deadline.elapsed
+        result["unmet"] = []
         estimate = result["estimate"]
-        unmet = []
         if estimate is None:
-            unmet.append("no_estimate_within_budget")
+            result["unmet"].append("no_estimate_within_budget")
         else:
             interval = estimate["uncertainty"].get("interval_bytes")
             if interval is None:
-                unmet.append("reliability_not_calibrated")
+                result["unmet"].append("reliability_not_calibrated")
             elif (
                 relative_error_bound(estimate["estimated_bytes"], interval)
                 > request.reliability.relative_error
             ):
-                unmet.append("relative_error_target_not_met")
+                result["unmet"].append("relative_error_target_not_met")
             if request.size.max_bytes is not None:
                 if estimate["uncertainty"]["kind"] != "exact":
-                    unmet.append("size_limit_not_verified")
+                    result["unmet"].append("size_limit_not_verified")
                 elif estimate["estimated_bytes"] > request.size.max_bytes:
-                    unmet.append("size_limit_exceeded_at_tested_setting")
-        result["unmet"] = unmet
+                    result["unmet"].append("size_limit_exceeded_at_tested_setting")
+        if not result["unmet"]:
+            result["status"] = "satisfied"
         result["alternatives"] = []
-        if unmet:
+        if result["unmet"]:
             result["alternatives"].append(
                 "Increase the compute budget to permit further probes or a verified export."
             )
             if request.size.max_bytes is not None:
                 result["alternatives"].append(
-                    "Explicitly relax the size limit or expand the allowed CRF range."
+                    "Relax the size limit or expand the allowed CRF range."
                 )
         return result
 

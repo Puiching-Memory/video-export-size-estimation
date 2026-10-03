@@ -66,6 +66,8 @@ class EncodeSpec:
     video_filter: str | None = None
     audio_bitrate: int = 128_000
     drop_audio: bool = False
+    export_mode: str = "continuous"
+    segment_seconds: float = 4.0
 
     def __post_init__(self):
         object.__setattr__(self, "source", Path(self.source).resolve())
@@ -87,6 +89,9 @@ class EncodeSpec:
         integer(self.audio_bitrate, "audio_bitrate", 1)
         if type(self.drop_audio) is not bool:
             raise ValueError("drop_audio must be a boolean")
+        if self.export_mode not in {"continuous", "segmented"}:
+            raise ValueError("export_mode must be continuous or segmented")
+        positive(self.segment_seconds, "segment_seconds")
         if self.video_filter:
             number = r"-?(?:\d+(?:\.\d*)?|\.\d+)"
             patterns = [
@@ -119,16 +124,31 @@ class Request:
     size: SizeConstraint = field(default_factory=SizeConstraint)
     sample_seconds: float = 4.0
     seed: int = 0
+    probe_mode: str = "auto"
+    sampling_plan: str = "temporal"
 
     def __post_init__(self):
         positive(self.sample_seconds, "sample_seconds")
         integer(self.seed, "seed", 0)
+        if self.probe_mode not in {"auto", "context", "bare"}:
+            raise ValueError("probe_mode must be auto, context, or bare")
+        if self.sampling_plan not in {"temporal", "content"}:
+            raise ValueError("sampling_plan must be temporal or content")
         if self.size.max_bytes is not None and self.size.max_crf < self.encode.crf:
             raise ValueError("max_crf cannot be lower than the starting crf")
 
     @classmethod
     def from_dict(cls, payload: dict):
-        allowed = {"encode", "compute", "reliability", "size", "sample_seconds", "seed"}
+        allowed = {
+            "encode",
+            "compute",
+            "reliability",
+            "size",
+            "sample_seconds",
+            "seed",
+            "probe_mode",
+            "sampling_plan",
+        }
         unknown = set(payload) - allowed
         if unknown:
             raise ValueError(f"unknown request fields: {sorted(unknown)}")
@@ -139,4 +159,6 @@ class Request:
             size=SizeConstraint(**payload.get("size", {})),
             sample_seconds=payload.get("sample_seconds", 4.0),
             seed=payload.get("seed", 0),
+            probe_mode=payload.get("probe_mode", "auto"),
+            sampling_plan=payload.get("sampling_plan", "temporal"),
         )

@@ -18,6 +18,12 @@ class Deadline:
     def __init__(self, seconds: float):
         self.started = time.monotonic()
         self.ends = self.started + seconds
+        self.pass_fds = set()
+
+    def bind_fd(self, descriptor: int):
+        """Keep a prepared immutable input available to every child process."""
+        os.fstat(descriptor)
+        self.pass_fds.add(descriptor)
 
     @property
     def remaining(self):
@@ -34,7 +40,11 @@ class Deadline:
     def run(self, command: list[str]) -> subprocess.CompletedProcess:
         self.check()
         process = subprocess.Popen(
-            command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            start_new_session=True,
+            pass_fds=tuple(sorted(self.pass_fds)),
         )
         try:
             out, err = process.communicate(timeout=self.remaining)
@@ -80,12 +90,21 @@ class Cache:
         artifact = self.root / f"{key}.mp4"
         try:
             record = json.loads(metadata.read_text())
+            if not isinstance(record, dict):
+                return None
+            checksum = record.pop("record_checksum", None)
+            if checksum != canonical_key(record):
+                return None
+            if record.get("key") != key or type(record.get("file_bytes")) is not int:
+                return None
+            if not isinstance(record.get("sha256"), str):
+                return None
             if artifact.stat().st_size != record["file_bytes"]:
                 return None
             if digest(artifact, deadline) != record["sha256"]:
                 return None
             return {**record, "artifact": str(artifact), "cache_hit": True}
-        except (OSError, ValueError, KeyError):
+        except (OSError, ValueError, KeyError, TypeError):
             return None
 
     def temporary(self):
@@ -96,9 +115,11 @@ class Cache:
     def publish(self, key: str, temporary: Path, record: dict, deadline: Deadline):
         record = {
             **record,
+            "key": key,
             "file_bytes": temporary.stat().st_size,
             "sha256": digest(temporary, deadline),
         }
+        record["record_checksum"] = canonical_key(record)
         artifact = self.root / f"{key}.mp4"
         metadata = self.root / f"{key}.json"
         descriptor, meta_path = tempfile.mkstemp(prefix="partial-", suffix=".json", dir=self.root)
