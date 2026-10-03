@@ -1,0 +1,97 @@
+{
+  "note": "Functional two-second native-resolution Media.encode exports only. No size prediction, confidence, HDR fidelity, or full-length export performance evaluation.",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "configuration": {
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium",
+    "threads": 2
+  },
+  "cases": [
+    {
+      "id": "debugging",
+      "source_sha256": "8004be81aedb40f9c26db25ff72d8725d832ef3b95747fb4c9fc8a3693eb4e8e",
+      "window_seconds": [
+        0,
+        2
+      ],
+      "passed": true,
+      "width": 1920,
+      "height": 1080,
+      "video_frames": 60,
+      "audio_preserved": false,
+      "output_sha256": "867724b86d2b05f0297d6eaeb5e56d643fa12858c3844755957b075e077826c7",
+      "output_bytes": 508856,
+      "output_duration": 2.0,
+      "predictor_accuracy_evaluated": false
+    },
+    {
+      "id": "mobile-sharing",
+      "source_sha256": "a446b655410e8bec834ec9790d5ac6a2b07e72395f48ea5806697b327a309ada",
+      "window_seconds": [
+        0,
+        2
+      ],
+      "passed": true,
+      "width": 1078,
+      "height": 2220,
+      "video_frames": 30,
+      "audio_preserved": false,
+      "output_sha256": "1e9abbda9f558f20caf059621036e4b7e74e3dda4252252f412813e146b2c6e0",
+      "output_bytes": 241809,
+      "output_duration": 2.0,
+      "predictor_accuracy_evaluated": false
+    },
+    {
+      "id": "shaky-fireworks-4k",
+      "source_sha256": "9a3c3a6df0bf50adb1e692377f1376026e398719e6e889a2f1b154a1d373034e",
+      "window_seconds": [
+        0,
+        2
+      ],
+      "passed": true,
+      "width": 3840,
+      "height": 2160,
+      "video_frames": 60,
+      "audio_preserved": false,
+      "output_sha256": "65817aed978bce69465cd2328abe6df7256cf3828b585aca3c625072d89f4841",
+      "output_bytes": 6004661,
+      "output_duration": 2.002,
+      "predictor_accuracy_evaluated": false
+    },
+    {
+      "id": "cosmos-sdr-long",
+      "source_sha256": "96ace08a4d61878cfb7cc8b850b7f5aa7ba304de45017eaf832ccd3d52893130",
+      "window_seconds": [
+        0,
+        2
+      ],
+      "passed": true,
+      "width": 2048,
+      "height": 858,
+      "video_frames": 48,
+      "audio_preserved": true,
+      "output_sha256": "8eec3de85e7a936a40fcd925150cf4bfc1a2eb74a1dfa48fbd58f5434c452db5",
+      "output_bytes": 39857,
+      "output_duration": 2.0,
+      "predictor_accuracy_evaluated": false
+    },
+    {
+      "id": "cosmos-vfr-90s",
+      "source_sha256": "adc1cab246e494c533e38c5b9cc1c15938aad6a2b79910c83107c12aad1fee13",
+      "window_seconds": [
+        40,
+        2
+      ],
+      "passed": true,
+      "width": 2048,
+      "height": 858,
+      "video_frames": 24,
+      "audio_preserved": true,
+      "output_sha256": "a45ad2a0f04fd7da1618a5070c9c7a5f56b0b0bb4ec15d6cb51f3342cee49c43",
+      "output_bytes": 1305349,
+      "output_duration": 2.0,
+      "predictor_accuracy_evaluated": false
+    }
+  ]
+}

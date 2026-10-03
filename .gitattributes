@@ -1,0 +1,2 @@
+# Preserve publisher notices/checksum lists byte-for-byte, including CRLF.
+benchmarks/corpora/**/notices/* -text -whitespace

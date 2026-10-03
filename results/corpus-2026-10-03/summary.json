@@ -1,0 +1,32 @@
+{
+  "upstream_assets": 24,
+  "derived_workflow_cases": 1,
+  "old_development_cases": 9,
+  "total_cases_including_development": 34,
+  "source_groups": 16,
+  "upstream_bytes": 17058125828,
+  "sdr_8bit_upstream_assets": 20,
+  "precision_or_hdr_boundary_upstream_assets": 4,
+  "split_counts": {
+    "calibration_reserved": 13,
+    "test_reserved": 11
+  },
+  "class_counts": {
+    "a1_4k": 1,
+    "a2_2k": 6,
+    "b2_scc": 4,
+    "b1_syn": 1,
+    "e_nonpristine": 7,
+    "workflow-long": 4,
+    "hdr2_2k": 1
+  },
+  "full_decode_passes": 24,
+  "derived_decode_and_vfr_passes": 1,
+  "short_export_passes": 5,
+  "automated_tests_passed": 26,
+  "unmodified_upstream_files_kept": 24,
+  "separate_one_byte_canonical_copies": 2,
+  "upstream_strict_decode_anomalies": 2,
+  "predictor_accuracy_evaluated": false,
+  "note": "Cases and multiple versions are not independent samples. New predictors were not scored or calibrated on this corpus."
+}

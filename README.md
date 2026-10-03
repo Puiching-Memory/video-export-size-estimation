@@ -78,6 +78,8 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 - [架构与接口边界](docs/architecture.md)
 - [评测协议和复现方式](docs/evaluation.md)
+- [新增工业相关视频语料：AOM CTC 子集、长片与 VFR](docs/corpus.md)
+- [新增语料的完整解码与导出验证记录](results/corpus-2026-10-03/README.md)
 - [云端实测结果与已知缺口](results/development-2026-10-02/README.md)
 - [文献综述](survey.tex)
 

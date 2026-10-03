@@ -1,0 +1,887 @@
+{
+  "schema_version": 1,
+  "id": "industrial-v1",
+  "snapshot_date": "2026-10-03",
+  "status": "reserved-unscored",
+  "description": "Open-licensed subset of published AOM CTC sequences plus Netflix long-form distributions. Not a complete CTC execution or certification.",
+  "split_policy": "Preassigned before predictor evaluation; variants and conservatively grouped related captures share group_id and split. Calibration inputs have no error labels or calibrated model yet.",
+  "assets": [
+    {
+      "id": "neon-4k",
+      "title": "Neon1224_3840x2160_2997fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a1_4k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a1_4k/Neon1224_3840x2160_2997fps.y4m",
+      "filename": "Neon1224_3840x2160_2997fps.y4m",
+      "expected_bytes": 3234816844,
+      "publisher_md5": "139d81dab11673da3a349b71e66680c0",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a1_4k/a1_4k.md5",
+      "source_group": "neon-4k",
+      "group_id": "skinner-capture-family",
+      "split": "calibration_reserved",
+      "tags": [
+        "urban",
+        "night",
+        "4k"
+      ],
+      "expected_video": {
+        "width": 3840,
+        "height": 2160,
+        "frame_rate": "30000/1001",
+        "frames": 130,
+        "bit_depth": 10
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/neon-4k.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a1_4k/Neon1224_3840x2160_2997fps_Copyright.txt",
+        "notice_sha256": "c457d9ad430cff4d2d50a6d4496c35cfd2052d6a12af8a0673f6c63c868a59fc"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a1_4k/",
+      "engine_scope": "precision_or_hdr_boundary"
+    },
+    {
+      "id": "motorcycle",
+      "title": "Motorcycle_1920x1080_30fps_8bit",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/Motorcycle_1920x1080_30fps_8bit.y4m",
+      "filename": "Motorcycle_1920x1080_30fps_8bit.y4m",
+      "expected_bytes": 404352842,
+      "publisher_md5": "5cfdfe0fccc9392815a662839a01cdf4",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/a2_2k.md5",
+      "source_group": "motorcycle",
+      "group_id": "birkbeck-capture-family",
+      "split": "calibration_reserved",
+      "tags": [
+        "camera-motion",
+        "outdoor"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "30/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/motorcycle.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/Motorcycle_1920x1080_30fps_8bit_Copyright.txt",
+        "notice_sha256": "b6e6ad6fce72e138d7a7fd8f8172f1ad8d842b264d5161d6c1b63029c331b594"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a2_2k/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "mountain-bike",
+      "title": "MountainBike_1920x1080_30fps_8bit",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/MountainBike_1920x1080_30fps_8bit.y4m",
+      "filename": "MountainBike_1920x1080_30fps_8bit.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "0cee002a42b85abc5d3f54d79bed9d6c",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/a2_2k.md5",
+      "source_group": "mountain-bike",
+      "group_id": "birkbeck-capture-family",
+      "split": "calibration_reserved",
+      "tags": [
+        "sports",
+        "outdoor"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "30/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/mountain-bike.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/MountainBike_1920x1080_30fps_8bit_Copyright.txt",
+        "notice_sha256": "21f129dbef6e61561b9d3a6a1c73db37287b4360471944f70a715de99e060f2e"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a2_2k/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "trees-grass",
+      "title": "TreesAndGrass_1920_1080_30fps_8bit",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/TreesAndGrass_1920_1080_30fps_8bit.y4m",
+      "filename": "TreesAndGrass_1920_1080_30fps_8bit.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "8e27a24fad8b0c60b3e1afd924c88d02",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/a2_2k.md5",
+      "source_group": "trees-grass",
+      "group_id": "trees-grass",
+      "split": "test_reserved",
+      "tags": [
+        "foliage",
+        "fine-texture"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "30/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/trees-grass.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/TreesAndGrass_1920_1080_30fps_8bit_Copyright.txt",
+        "notice_sha256": "0fbb30f16b0426d20b0ca6808ba290e242aba1792dac836d58219be777bbac78"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a2_2k/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "vertical-carnaby",
+      "title": "Vertical_Carnaby_1080x1920_5994",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/Vertical_Carnaby_1080x1920_5994.y4m",
+      "filename": "Vertical_Carnaby_1080x1920_5994.y4m",
+      "expected_bytes": 404352846,
+      "publisher_md5": "c25e250593bbe1bb054a0f2d25e4c05b",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/a2_2k.md5",
+      "source_group": "vertical-carnaby",
+      "group_id": "skinner-capture-family",
+      "split": "calibration_reserved",
+      "tags": [
+        "portrait",
+        "urban"
+      ],
+      "expected_video": {
+        "width": 1080,
+        "height": 1920,
+        "frame_rate": "60000/1001",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/vertical-carnaby.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/Vertical_Carnaby_1080x1920_5994_Copyright.txt",
+        "notice_sha256": "18dde68c7116b60e6351f2eb9e9737dcb7b1753e3df7a761cbe33fbe5160f58a"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a2_2k/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "vertical-bees",
+      "title": "Vertical_bees_1080x1920_2997",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/Vertical_bees_1080x1920_2997.y4m",
+      "filename": "Vertical_bees_1080x1920_2997.y4m",
+      "expected_bytes": 404352846,
+      "publisher_md5": "14cc7326a6b201f838380868ff2b7ee7",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/a2_2k.md5",
+      "source_group": "vertical-bees",
+      "group_id": "skinner-capture-family",
+      "split": "calibration_reserved",
+      "tags": [
+        "portrait",
+        "nature"
+      ],
+      "expected_video": {
+        "width": 1080,
+        "height": 1920,
+        "frame_rate": "30000/1001",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/vertical-bees.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/Vertical_bees_1080x1920_2997_Copyright.txt",
+        "notice_sha256": "b42f45b196912668d6fb5d9ecb30dbbc5c0de8f02b60afaeab3797c44e3db27b"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a2_2k/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "walking-street",
+      "title": "WalkingInStreet_1920x1080_30fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "a2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/WalkingInStreet_1920x1080_30fps.y4m",
+      "filename": "WalkingInStreet_1920x1080_30fps.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "5b118d38d7528f33a4d8df379a9c3b25",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/a2_2k.md5",
+      "source_group": "walking-street",
+      "group_id": "walking-street",
+      "split": "test_reserved",
+      "tags": [
+        "camera-motion",
+        "urban",
+        "portrait"
+      ],
+      "expected_video": {
+        "width": 1080,
+        "height": 1920,
+        "frame_rate": "30/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/walking-street.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/a2_2k/WalkingInStreet_1920x1080_30fps_Copyright.txt",
+        "notice_sha256": "5cb0040f8611ee051ecf6b38da9883769a9b7946108b64e7918e7d07d909e63c"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/a2_2k/",
+      "engine_scope": "sdr_candidate",
+      "metadata_note": "Upstream filename says 1920x1080; Y4M header and decoded frames are 1080x1920."
+    },
+    {
+      "id": "debugging",
+      "title": "Debugging_1920x1080_30fps_8bit_420",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "b2_scc",
+      "url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/Debugging_1920x1080_30fps_8bit_420.y4m",
+      "filename": "Debugging_1920x1080_30fps_8bit_420.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "894eebe772ff66c44e73ac6db5f64bc2",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/b2_scc.md5",
+      "source_group": "debugging",
+      "group_id": "netflix-screen-capture-2021",
+      "split": "calibration_reserved",
+      "tags": [
+        "screen",
+        "text",
+        "code"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "30/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/debugging.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/Debugging_1920x1080_30fps_8bit_420_Copyright.txt",
+        "notice_sha256": "e6c2dcd20c85602c9b51ab6a4787ed19103168c90d727215ad026824eaa95583"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/b2_scc/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "spreadsheet",
+      "title": "Spreadsheet_1920x1080_30fps_8bit_420_130f",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "b2_scc",
+      "url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/Spreadsheet_1920x1080_30fps_8bit_420_130f.y4m",
+      "filename": "Spreadsheet_1920x1080_30fps_8bit_420_130f.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "c8656a9bd40eb3493cbf8300faa5c5a7",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/b2_scc.md5",
+      "source_group": "spreadsheet",
+      "group_id": "netflix-screen-capture-2021",
+      "split": "calibration_reserved",
+      "tags": [
+        "screen",
+        "text",
+        "spreadsheet"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "30/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/spreadsheet.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/Spreadsheet_1920x1080_30fps_8bit_420_130f_Copyright.txt",
+        "notice_sha256": "56402b5eff091ca5685dfd4b39c6e41f2dd9918d0998a8bd17ad91b626f0b3b3"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/b2_scc/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "scene-composition",
+      "title": "SceneComposition_1",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "b2_scc",
+      "url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/SceneComposition_1.y4m",
+      "filename": "SceneComposition_1.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "40f97cbe8d890982af41e1d7b1bfbd39",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/b2_scc.md5",
+      "source_group": "scene-composition",
+      "group_id": "yuchen-screen-capture-family",
+      "split": "test_reserved",
+      "tags": [
+        "screen",
+        "compositing"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "15/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/scene-composition.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/SceneComposition_1.txt",
+        "notice_sha256": "2e76fa35b6369e4b0fee290916d379234e0d02b735ee3dbfa356854b20947422"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/b2_scc/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "mobile-sharing",
+      "title": "MobileDeviceScreenSharing",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "b2_scc",
+      "url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/MobileDeviceScreenSharing.y4m",
+      "filename": "MobileDeviceScreenSharing.y4m",
+      "expected_bytes": 466667040,
+      "publisher_md5": "360460f9c70fceaafac5ff024f8cdfa0",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/b2_scc.md5",
+      "source_group": "mobile-sharing",
+      "group_id": "yuchen-screen-capture-family",
+      "split": "test_reserved",
+      "tags": [
+        "screen",
+        "portrait",
+        "mobile"
+      ],
+      "expected_video": {
+        "width": 1078,
+        "height": 2220,
+        "frame_rate": "15/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/mobile-sharing.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/b2_scc/MobileDeviceScreenSharing.txt",
+        "notice_sha256": "2e76fa35b6369e4b0fee290916d379234e0d02b735ee3dbfa356854b20947422"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/b2_scc/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "glass-half",
+      "title": "GlassHalf_1920x1080p_24p_8bit_420",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "b1_syn",
+      "url": "https://media.xiph.org/video/aomctc/test_set/b1_syn/GlassHalf_1920x1080p_24p_8bit_420.y4m",
+      "filename": "GlassHalf_1920x1080p_24p_8bit_420.y4m",
+      "expected_bytes": 404352840,
+      "publisher_md5": "c91eb60c3953dd7dee1bf04aa8fad3e6",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/b1_syn/b1_syn.md5",
+      "source_group": "glass-half",
+      "group_id": "glass-half-2015",
+      "split": "calibration_reserved",
+      "tags": [
+        "animation",
+        "flat-regions"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "24/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/glass-half.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/b1_syn/GlassHalf_1920x1080p_24p_8bit_420_Copyright.txt",
+        "notice_sha256": "c3ce2a82f7252c31871e3b4477042aba20fd6f07d6be06f318cf60b2d4fa1184"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/b1_syn/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "noise-ocean-game",
+      "title": "Noise_Ocean_1920x1080_60fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Noise_Ocean_1920x1080_60fps.y4m",
+      "filename": "Noise_Ocean_1920x1080_60fps.y4m",
+      "expected_bytes": 404352842,
+      "publisher_md5": "2a568ca797530a398ef7ed9261b52436",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "noise-ocean-game",
+      "group_id": "hellblade-brfabinho",
+      "split": "test_reserved",
+      "tags": [
+        "gaming",
+        "water",
+        "nonpristine"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "60/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/noise-ocean-game.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Noise_Ocean_1920x1080_60fps_Copyright.txt",
+        "notice_sha256": "645a758b950c044e4b37f00425c367cb44f9c958aabfdd217ceb7fb8e49de9c8"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "noise-soccer-game",
+      "title": "Noise_Soccer_1920x1080_50fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Noise_Soccer_1920x1080_50fps.y4m",
+      "filename": "Noise_Soccer_1920x1080_50fps.y4m",
+      "expected_bytes": 404352843,
+      "publisher_md5": "867db8d23d1ed7e39c4ac350a7b48490",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "noise-soccer-game",
+      "group_id": "pes2017-ady-metzeler",
+      "split": "calibration_reserved",
+      "tags": [
+        "gaming",
+        "sports",
+        "nonpristine"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "50/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/noise-soccer-game.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Noise_Soccer_1920x1080_50fps_Copyright.txt",
+        "notice_sha256": "df69e06eb6eb81f367bae6b8d69d509dc5e40d2da73995907f7d0cd828bef274"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate",
+      "transport_cleanup": {
+        "operation": "remove-one-terminal-newline",
+        "bytes_removed": 1,
+        "sha256": "a354bbe4a8faf950fbadc221e5d5c96dd72b3ebb43b2aef2f9ec822261800bfb",
+        "reason": "Publisher-MD5-matching object has an extra newline after all 130 complete frames; FFmpeg -xerror rejects the original at EOF. Keep original and create a separate byte-identical frame-payload copy."
+      }
+    },
+    {
+      "id": "shaky-walk",
+      "title": "Shaky_Walk_1920x1080_25fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Shaky_Walk_1920x1080_25fps.y4m",
+      "filename": "Shaky_Walk_1920x1080_25fps.y4m",
+      "expected_bytes": 404352842,
+      "publisher_md5": "069e589e05706720c28a48a9b0c7b76c",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "shaky-walk",
+      "group_id": "maks-zoo-vlog19",
+      "split": "test_reserved",
+      "tags": [
+        "vlog",
+        "camera-shake",
+        "nonpristine"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "25/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/shaky-walk.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Shaky_Walk_1920x1080_25fps_Copyright.txt",
+        "notice_sha256": "e1c0b4b6a62758655084357dd6712f867cf564d27bdf470f3d7dd2082624a073"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "artistic-concert",
+      "title": "Artistic_Concert_1920x1080_25fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Artistic_Concert_1920x1080_25fps.y4m",
+      "filename": "Artistic_Concert_1920x1080_25fps.y4m",
+      "expected_bytes": 404352842,
+      "publisher_md5": "932c06e8d91a88440a7b63007543fabc",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "artistic-concert",
+      "group_id": "annalynn-concert",
+      "split": "calibration_reserved",
+      "tags": [
+        "concert",
+        "nonpristine"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "25/1",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/artistic-concert.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Artistic_Concert_1920x1080_25fps_Copyright.txt",
+        "notice_sha256": "d6106ed559cf551e53c1edbf45a9b9c19ce6a10f5548fbda8e0899e25c035649"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "artistic-intro",
+      "title": "Artistic_Intro_1920x1080_2997fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Artistic_Intro_1920x1080_2997fps.y4m",
+      "filename": "Artistic_Intro_1920x1080_2997fps.y4m",
+      "expected_bytes": 404352848,
+      "publisher_md5": "1bcd7696379bcbf7dd788d63c176fcb4",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "artistic-intro",
+      "group_id": "catarsis-la-falacia",
+      "split": "test_reserved",
+      "tags": [
+        "graphics",
+        "nonpristine"
+      ],
+      "expected_video": {
+        "width": 1920,
+        "height": 1080,
+        "frame_rate": "30000/1001",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/artistic-intro.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Artistic_Intro_1920x1080_2997fps_Copyright.txt",
+        "notice_sha256": "973ca7ea2ac3e06f9010d20683d2323a9c812683cd2aa61b5244909777d5a200"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "shaky-baseball-4k",
+      "title": "Shaky_Baseball_3840x2160_5994fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Shaky_Baseball_3840x2160_5994fps.y4m",
+      "filename": "Shaky_Baseball_3840x2160_5994fps.y4m",
+      "expected_bytes": 1617408849,
+      "publisher_md5": "c1c3523304c1092772ad096bd8c48f55",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "shaky-baseball-4k",
+      "group_id": "hirune5656-marines",
+      "split": "test_reserved",
+      "tags": [
+        "stadium",
+        "camera-shake",
+        "4k"
+      ],
+      "expected_video": {
+        "width": 3840,
+        "height": 2160,
+        "frame_rate": "60000/1001",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/shaky-baseball-4k.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Shaky_Baseball_3840x2160_5994fps_Copyright.txt",
+        "notice_sha256": "cca00ddda465e33f0fbc03a89a88597b3e0ac12f38bac3fb957fb1e6820dc36b"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate",
+      "transport_cleanup": {
+        "operation": "remove-one-terminal-newline",
+        "bytes_removed": 1,
+        "sha256": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+        "reason": "Publisher-MD5-matching object has an extra newline after all 130 complete frames; FFmpeg -xerror rejects the original at EOF. Keep original and create a separate byte-identical frame-payload copy."
+      }
+    },
+    {
+      "id": "shaky-fireworks-4k",
+      "title": "Shaky_Fireworks_3840x2160_2997fps",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "e_nonpristine",
+      "url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Shaky_Fireworks_3840x2160_2997fps.y4m",
+      "filename": "Shaky_Fireworks_3840x2160_2997fps.y4m",
+      "expected_bytes": 1617408848,
+      "publisher_md5": "71c9f8a87f0da64d27fa18f2f5924eb7",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/class_e.md5",
+      "source_group": "shaky-fireworks-4k",
+      "group_id": "aivaras-mazda-vlog",
+      "split": "test_reserved",
+      "tags": [
+        "fireworks",
+        "camera-shake",
+        "4k"
+      ],
+      "expected_video": {
+        "width": 3840,
+        "height": 2160,
+        "frame_rate": "30000/1001",
+        "frames": 130,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-SA-4.0",
+        "notice_file": "notices/shaky-fireworks-4k.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/Shaky_Fireworks_3840x2160_2997fps_Copyright.txt",
+        "notice_sha256": "ddf8911b26cb1a0f54388c36582161e585f781d75c46382b23a9a47dfe738413"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/e_nonpristine/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "cosmos-sdr-long",
+      "title": "CosmosLaundromat_2048x858_24fps_SDR",
+      "collection": "Netflix Open Content",
+      "class": "workflow-long",
+      "url": "https://download.opencontent.netflix.com.s3.amazonaws.com/TechblogAssets/CosmosLaundromat/encodes/CosmosLaundromat_2048x858_24fps_SDR.mp4",
+      "filename": "CosmosLaundromat_2048x858_24fps_SDR.mp4",
+      "expected_bytes": 491245034,
+      "publisher_md5": null,
+      "source_group": "cosmos-laundromat-2015",
+      "group_id": "cosmos-laundromat-2015",
+      "split": "calibration_reserved",
+      "tags": [
+        "long-form",
+        "scene-changes",
+        "animation",
+        "audio"
+      ],
+      "expected_video": {
+        "width": 2048,
+        "height": 858,
+        "frame_rate": "24/1",
+        "frames": 17520,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream distribution MP4; already lossy encoded",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/TechblogAssets-creative-commons-attribution-4-intl-public-license.txt",
+        "notice_url": "https://download.opencontent.netflix.com.s3.amazonaws.com/TechblogAssets/creative-commons-attribution-4-intl-public-license.txt",
+        "notice_sha256": "7d3512159f970cdcf296e8404be05947228d0bfaf72801cb5b3077f4330f71f9"
+      },
+      "provenance": "https://opencontent.netflix.com/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "cosmos-hdr-long",
+      "title": "CosmosLaundromat_2k24p_HDR_P3PQ",
+      "collection": "Netflix Open Content",
+      "class": "workflow-long",
+      "url": "https://download.opencontent.netflix.com.s3.amazonaws.com/CosmosLaundromat/CosmosLaundromat_2k24p_HDR_P3PQ.mp4",
+      "filename": "CosmosLaundromat_2k24p_HDR_P3PQ.mp4",
+      "expected_bytes": 729482878,
+      "publisher_md5": null,
+      "source_group": "cosmos-laundromat-2015",
+      "group_id": "cosmos-laundromat-2015",
+      "split": "calibration_reserved",
+      "tags": [
+        "long-form",
+        "scene-changes",
+        "animation",
+        "publisher-labelled-hdr-preview"
+      ],
+      "expected_video": {
+        "width": 2048,
+        "height": 858,
+        "frame_rate": "24000/1001",
+        "frames": 18192,
+        "bit_depth": 8
+      },
+      "signal": "HDR-PQ",
+      "source_representation": "unaltered upstream distribution MP4; already lossy encoded",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/CosmosLaundromat-creative-commons-attribution-4-intl-public-license.txt",
+        "notice_url": "https://download.opencontent.netflix.com.s3.amazonaws.com/CosmosLaundromat/creative-commons-attribution-4-intl-public-license.txt",
+        "notice_sha256": "7d3512159f970cdcf296e8404be05947228d0bfaf72801cb5b3077f4330f71f9"
+      },
+      "provenance": "https://opencontent.netflix.com/",
+      "engine_scope": "precision_or_hdr_boundary",
+      "metadata_note": "Publisher-labelled HDR/P3PQ MP4 is actually H.264 8-bit, without embedded color primaries/transfer tags and without audio. Not an HDR10 conformance source."
+    },
+    {
+      "id": "meridian-sdr-long",
+      "title": "Meridian_3840x2160_5994fps_SDR",
+      "collection": "Netflix Open Content",
+      "class": "workflow-long",
+      "url": "https://download.opencontent.netflix.com.s3.amazonaws.com/TechblogAssets/Meridian/encodes/Meridian_3840x2160_5994fps_SDR.mp4",
+      "filename": "Meridian_3840x2160_5994fps_SDR.mp4",
+      "expected_bytes": 1299914020,
+      "publisher_md5": null,
+      "source_group": "meridian-2016",
+      "group_id": "meridian-2016",
+      "split": "test_reserved",
+      "tags": [
+        "long-form",
+        "scene-changes",
+        "live-action",
+        "audio"
+      ],
+      "expected_video": {
+        "width": 3840,
+        "height": 2160,
+        "frame_rate": "60000/1001",
+        "frames": 43093,
+        "bit_depth": 8
+      },
+      "signal": "SDR",
+      "source_representation": "unaltered upstream distribution MP4; already lossy encoded",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/TechblogAssets-creative-commons-attribution-4-intl-public-license.txt",
+        "notice_url": "https://download.opencontent.netflix.com.s3.amazonaws.com/TechblogAssets/creative-commons-attribution-4-intl-public-license.txt",
+        "notice_sha256": "7d3512159f970cdcf296e8404be05947228d0bfaf72801cb5b3077f4330f71f9"
+      },
+      "provenance": "https://opencontent.netflix.com/",
+      "engine_scope": "sdr_candidate"
+    },
+    {
+      "id": "meridian-hdr-long",
+      "title": "Meridian_UHD4k5994_HDR_P3PQ",
+      "collection": "Netflix Open Content",
+      "class": "workflow-long",
+      "url": "https://download.opencontent.netflix.com.s3.amazonaws.com/Meridian/Meridian_UHD4k5994_HDR_P3PQ.mp4",
+      "filename": "Meridian_UHD4k5994_HDR_P3PQ.mp4",
+      "expected_bytes": 850587087,
+      "publisher_md5": null,
+      "source_group": "meridian-2016",
+      "group_id": "meridian-2016",
+      "split": "test_reserved",
+      "tags": [
+        "long-form",
+        "scene-changes",
+        "live-action",
+        "publisher-labelled-hdr-preview"
+      ],
+      "expected_video": {
+        "width": 3840,
+        "height": 2160,
+        "frame_rate": "60000/1001",
+        "frames": 43093,
+        "bit_depth": 8
+      },
+      "signal": "HDR-PQ",
+      "source_representation": "unaltered upstream distribution MP4; already lossy encoded",
+      "license": {
+        "id": "CC-BY-4.0",
+        "notice_file": "notices/Meridian-creative-commons-attribution-4-intl-public-license.txt",
+        "notice_url": "https://download.opencontent.netflix.com.s3.amazonaws.com/Meridian/creative-commons-attribution-4-intl-public-license.txt",
+        "notice_sha256": "7d3512159f970cdcf296e8404be05947228d0bfaf72801cb5b3077f4330f71f9"
+      },
+      "provenance": "https://opencontent.netflix.com/",
+      "engine_scope": "precision_or_hdr_boundary",
+      "metadata_note": "Publisher-labelled HDR/P3PQ MP4 is actually H.264 8-bit, without embedded color primaries/transfer tags and without audio. Not an HDR10 conformance source."
+    },
+    {
+      "id": "cosmos-caterpillar-hdr10",
+      "title": "Cosmos Caterpillar (CTC HDR10)",
+      "collection": "AOM CTC public test_set snapshot",
+      "class": "hdr2_2k",
+      "url": "https://media.xiph.org/video/aomctc/test_set/hdr2_2k/CosmosCaterpillar_2048x858p24_hdr10.y4m",
+      "filename": "CosmosCaterpillar_2048x858p24_hdr10.y4m",
+      "expected_bytes": 685302597,
+      "publisher_md5": "793c7f42b657ca2b5755a46c853ce4a8",
+      "publisher_checksum_url": "https://media.xiph.org/video/aomctc/test_set/hdr2_2k/hdr2_2k.md5",
+      "source_group": "cosmos-laundromat-2015",
+      "group_id": "cosmos-laundromat-2015",
+      "split": "calibration_reserved",
+      "tags": [
+        "animation",
+        "hdr10",
+        "pq"
+      ],
+      "expected_video": {
+        "width": 2048,
+        "height": 858,
+        "frame_rate": "24/1",
+        "frames": 130,
+        "bit_depth": 10
+      },
+      "signal": "HDR-PQ",
+      "source_representation": "unaltered upstream Y4M sequence",
+      "license": {
+        "id": "CC-BY-3.0",
+        "notice_file": "notices/cosmos-caterpillar-hdr10.txt",
+        "notice_url": "https://media.xiph.org/video/aomctc/test_set/hdr2_2k/CosmosCaterpillar_2048x858p24_hdr10_Copyright.txt",
+        "notice_sha256": "554465e71c01c1d112d1b3a26b46eba3dce9c1376840450c22a6f2fe6f764d97"
+      },
+      "provenance": "https://media.xiph.org/video/aomctc/test_set/hdr2_2k/",
+      "engine_scope": "precision_or_hdr_boundary",
+      "color_interpretation": {
+        "source": "publisher copyright notice (Y4M does not reliably carry these tags)",
+        "primaries": "BT.2100 / BT.2020",
+        "transfer": "PQ",
+        "range": "limited",
+        "original_gamut": "DCI-P3 D65"
+      }
+    }
+  ]
+}

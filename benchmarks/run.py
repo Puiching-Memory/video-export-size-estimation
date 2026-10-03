@@ -173,8 +173,11 @@ def components(spec, cache, seconds, method):
 
 
 def run(manifest, output, ab_av1, budgets, methods):
+    dataset = json.loads(manifest.read_text())
+    cases = dataset["cases"]
+    if any(case.get("scope") == "precision_or_hdr_boundary" for case in cases):
+        raise ValueError("This x264 8-bit benchmark requires the sdr_8bit manifest.")
     output.mkdir(parents=True, exist_ok=False)
-    cases = json.loads(manifest.read_text())["cases"]
     code_root = Path(__file__).resolve().parents[1]
     for directory in ["src", "benchmarks", "tests"]:
         shutil.copytree(
@@ -193,7 +196,7 @@ def run(manifest, output, ab_av1, budgets, methods):
         code_hash.update(path.read_bytes())
     metadata = {
         "schema_version": 1,
-        "split": "development",
+        "split": dataset["split"],
         "source_code_sha256": code_hash.hexdigest(),
         "budgets_seconds": budgets,
         "methods": methods,

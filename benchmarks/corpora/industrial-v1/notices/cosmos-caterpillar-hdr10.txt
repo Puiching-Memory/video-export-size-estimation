@@ -1,0 +1,20 @@
+High Dynamic Range (HDR) Digital Video Sequence "Cosmos Caterpillar"
+
+"Cosmos Laundromat: First Cycle"
+(CC) Blender Foundation | gooseberry.blender.org
+
+
+2048x858p, YCbCr 4:2:0, BT.2100, PQ TF, 10 bit, narrow range, 24 fps, 130 frames.
+(Original content color gamut is DCI-P3 D65)
+
+COPYRIGHT AND LICENSE INFORMATION
+
+The video sequence "Cosmos Laundromat" has been created 
+by Blender Foundation. This version of the sequence 
+has been remastered as the high dynamic range and wide 
+color gamut video by Netflix Inc. This video sequence 
+is licensed under the Creative Commons Attribution 3.0 
+International License. To view a copy of this license, 
+visit http://creativecommons.org/licenses/by/3.0/ 
+For questions about licensing rights for Gooseberry 
+content you can email: foundation@blender.org
