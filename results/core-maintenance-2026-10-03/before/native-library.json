@@ -1,0 +1,242 @@
+{
+  "audited_commit": "d300d1f",
+  "audited_src_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2",
+  "record": {
+    "scope": "Proof of runtime DSO identity omission. Copied library changed only equal-length revision string, not encoder instructions; not a real new revision accuracy test. System library untouched.",
+    "root": "/tmp/vsize-toolchain-audit-9k0yfuc2",
+    "version_identical": true,
+    "original_library_sha256": "2965dc6471b4f72884fa17fc9c9ff8f43b604a0c6d7a2364ff40040e7181d9f6",
+    "modified_library_sha256": "4423cd52a665e959af2c10c1a1ffb7eeacb3ea03701f5746cda9c9b23cfc7368",
+    "baseline": {
+      "schema_version": 2,
+      "requested": {
+        "compute": {
+          "wall_seconds": 10,
+          "max_probes": 0,
+          "threads": 1,
+          "max_encode_fraction": null
+        },
+        "reliability": {
+          "relative_error": 0.1,
+          "coverage": 0.95
+        },
+        "size": {
+          "max_bytes": null,
+          "max_crf": 35.0,
+          "max_candidates": 5
+        },
+        "configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23.0,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "continuous",
+          "segment_seconds": 4.0
+        },
+        "sample_seconds": 4.0,
+        "seed": 0,
+        "probe_mode": "auto",
+        "sampling_plan": "temporal"
+      },
+      "status": "satisfied",
+      "estimate": {
+        "estimated_bytes": 2995,
+        "selected_crf": 23.0,
+        "uncertainty": {
+          "kind": "exact",
+          "interval_bytes": [
+            2995,
+            2995
+          ],
+          "coverage": 1.0
+        },
+        "artifact": "/tmp/vsize-toolchain-audit-9k0yfuc2/cache/c04f720e15721e0920a814db814c6010ad4e5fd4506fac62645810474be3000d.mp4",
+        "sha256": "bcdcf9fde6b90e333d5ec60ab1719d3f711ff337270cf38d9d62f002a2a142f5",
+        "cache_hit": false,
+        "sample_count": 0,
+        "source_hash": "903494ccba1adb9cdcb621bdbec204a6893bd90c3ed1d86787ef557df6da48e2",
+        "export_mode": "continuous"
+      },
+      "candidates": [
+        {
+          "crf": 23.0,
+          "estimated_bytes": 2995,
+          "evidence": "exact"
+        }
+      ],
+      "unmet": [],
+      "elapsed_seconds": 0.3363907899984042,
+      "first_estimate_seconds": 0.3363840079982765,
+      "attempted_encode_seconds": 1.0,
+      "attempted_audio_seconds": 0.0,
+      "audio_preparation_seconds": 0.0,
+      "total_probe_count": 0,
+      "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+      "prepared_asset": null,
+      "calibration_note": null,
+      "content_discovery": null,
+      "stop_reason": "exact_export_complete",
+      "source_hash": "903494ccba1adb9cdcb621bdbec204a6893bd90c3ed1d86787ef557df6da48e2",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "pilot_count": 1,
+      "alternatives": []
+    },
+    "reused": {
+      "schema_version": 2,
+      "requested": {
+        "compute": {
+          "wall_seconds": 10,
+          "max_probes": 0,
+          "threads": 1,
+          "max_encode_fraction": null
+        },
+        "reliability": {
+          "relative_error": 0.1,
+          "coverage": 0.95
+        },
+        "size": {
+          "max_bytes": null,
+          "max_crf": 35.0,
+          "max_candidates": 5
+        },
+        "configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23.0,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "continuous",
+          "segment_seconds": 4.0
+        },
+        "sample_seconds": 4.0,
+        "seed": 0,
+        "probe_mode": "auto",
+        "sampling_plan": "temporal"
+      },
+      "status": "satisfied",
+      "estimate": {
+        "estimated_bytes": 2995,
+        "selected_crf": 23.0,
+        "uncertainty": {
+          "kind": "exact",
+          "interval_bytes": [
+            2995,
+            2995
+          ],
+          "coverage": 1.0
+        },
+        "artifact": "/tmp/vsize-toolchain-audit-9k0yfuc2/cache/c04f720e15721e0920a814db814c6010ad4e5fd4506fac62645810474be3000d.mp4",
+        "sha256": "bcdcf9fde6b90e333d5ec60ab1719d3f711ff337270cf38d9d62f002a2a142f5",
+        "cache_hit": true,
+        "sample_count": 0,
+        "source_hash": "903494ccba1adb9cdcb621bdbec204a6893bd90c3ed1d86787ef557df6da48e2",
+        "export_mode": "continuous"
+      },
+      "candidates": [
+        {
+          "crf": 23.0,
+          "estimated_bytes": 2995,
+          "evidence": "exact"
+        }
+      ],
+      "unmet": [],
+      "elapsed_seconds": 0.1954447620009887,
+      "first_estimate_seconds": 0.19543744499969762,
+      "attempted_encode_seconds": 0.0,
+      "attempted_audio_seconds": 0.0,
+      "audio_preparation_seconds": 0.0,
+      "total_probe_count": 0,
+      "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+      "prepared_asset": null,
+      "calibration_note": null,
+      "content_discovery": null,
+      "stop_reason": "exact_export_complete",
+      "source_hash": "903494ccba1adb9cdcb621bdbec204a6893bd90c3ed1d86787ef557df6da48e2",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "pilot_count": 1,
+      "alternatives": []
+    },
+    "fresh": {
+      "schema_version": 2,
+      "requested": {
+        "compute": {
+          "wall_seconds": 10,
+          "max_probes": 0,
+          "threads": 1,
+          "max_encode_fraction": null
+        },
+        "reliability": {
+          "relative_error": 0.1,
+          "coverage": 0.95
+        },
+        "size": {
+          "max_bytes": null,
+          "max_crf": 35.0,
+          "max_candidates": 5
+        },
+        "configuration": {
+          "codec": "libx264",
+          "container": "mp4",
+          "crf": 23.0,
+          "preset": "medium",
+          "video_filter": null,
+          "audio_bitrate": 128000,
+          "drop_audio": false,
+          "export_mode": "continuous",
+          "segment_seconds": 4.0
+        },
+        "sample_seconds": 4.0,
+        "seed": 0,
+        "probe_mode": "auto",
+        "sampling_plan": "temporal"
+      },
+      "status": "satisfied",
+      "estimate": {
+        "estimated_bytes": 2995,
+        "selected_crf": 23.0,
+        "uncertainty": {
+          "kind": "exact",
+          "interval_bytes": [
+            2995,
+            2995
+          ],
+          "coverage": 1.0
+        },
+        "artifact": "/tmp/vsize-toolchain-audit-9k0yfuc2/freshcache/c04f720e15721e0920a814db814c6010ad4e5fd4506fac62645810474be3000d.mp4",
+        "sha256": "527ca3e3005489bd87511bed1c72f601f805fe0c5d3d6e670343223811fe9c5a",
+        "cache_hit": false,
+        "sample_count": 0,
+        "source_hash": "903494ccba1adb9cdcb621bdbec204a6893bd90c3ed1d86787ef557df6da48e2",
+        "export_mode": "continuous"
+      },
+      "candidates": [
+        {
+          "crf": 23.0,
+          "estimated_bytes": 2995,
+          "evidence": "exact"
+        }
+      ],
+      "unmet": [],
+      "elapsed_seconds": 0.3837558049999643,
+      "first_estimate_seconds": 0.3837517569991178,
+      "attempted_encode_seconds": 1.0,
+      "attempted_audio_seconds": 0.0,
+      "audio_preparation_seconds": 0.0,
+      "total_probe_count": 0,
+      "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+      "prepared_asset": null,
+      "calibration_note": null,
+      "content_discovery": null,
+      "stop_reason": "exact_export_complete",
+      "source_hash": "903494ccba1adb9cdcb621bdbec204a6893bd90c3ed1d86787ef557df6da48e2",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "pilot_count": 1,
+      "alternatives": []
+    }
+  }
+}

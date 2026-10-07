@@ -1,0 +1,68 @@
+[h264 @ 0x5652e8127280] Reinit context to 640x368, pix_fmt: yuv420p
+Input #0, matroska,webm, from '/tmp/video-estimation-research/bunny-full.mkv':
+  Metadata:
+    AB_AV1_FFMPEG_ARGS: -c:v libx264 -crf 23 -preset medium
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    ENCODER         : Lavf61.7.103
+  Duration: 00:01:00.08, start: 0.000000, bitrate: 588 kb/s
+  Stream #0:0(eng): Video: h264 (High), 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:01:00.083000000
+[out#0/null @ 0x5652e8214ac0] Adding streams from explicit maps...
+[vost#0:0/wrapped_avframe @ 0x5652e81a33c0] Created video stream from input stream 0:0
+[Parsed_fps_0 @ 0x5652e80c8b00] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+[vost#0:0/wrapped_avframe @ 0x5652e81a33c0] Starting thread...
+[vf#0:0 @ 0x5652e81a3900] Starting thread...
+[vist#0:0/h264 @ 0x5652e8128b00] [dec:h264 @ 0x5652e81a1c80] Starting thread...
+[in#0/matroska,webm @ 0x5652e8124800] Starting thread...
+[h264 @ 0x5652e81a2000] Reinit context to 640x368, pix_fmt: yuv420p
+[graph -1 input from stream 0:0 @ 0x7fe940001940] w:640 h:360 pixfmt:yuv420p tb:1/1000 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[Parsed_fps_0 @ 0x7fe940001580] fps=30000/1001
+[graph -1 input from stream 0:0 @ 0x7fe940001940] video frame properties congruent with link at pts_time: 0
+[Parsed_fps_0 @ 0x7fe940001580] Set first pts to 0
+Output #0, null, to 'pipe:':
+  Metadata:
+    AB_AV1_FFMPEG_ARGS: -c:v libx264 -crf 23 -preset medium
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: wrapped_avframe, 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, q=2-31, 200 kb/s, 29.97 fps, 29.97 tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        DURATION        : 00:01:00.083000000
+        encoder         : Lavc61.19.101 wrapped_avframe
+[out#0/null @ 0x5652e8214ac0] Starting thread...
+frame=  904 fps=0.0 q=-0.0 size=N/A time=00:00:30.16 bitrate=N/A speed=60.3x    frame= 1585 fps=1585 q=-0.0 size=N/A time=00:00:52.88 bitrate=N/A speed=52.9x    [in#0/matroska,webm @ 0x5652e8124800] EOF while reading input
+[in#0/matroska,webm @ 0x5652e8124800] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x5652e8128b00] [dec:h264 @ 0x5652e81a1c80] Decoder thread received EOF packet
+[vist#0:0/h264 @ 0x5652e8128b00] [dec:h264 @ 0x5652e81a1c80] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x5652e8128b00] [dec:h264 @ 0x5652e81a1c80] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x5652e81a3900] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x5652e81a3900] All consumers returned EOF
+[Parsed_fps_0 @ 0x7fe940001580] 1440 frames in, 1801 frames out; 0 frames dropped, 361 frames duplicated.
+[vf#0:0 @ 0x5652e81a3900] Terminating thread with return code 0 (success)
+[vost#0:0/wrapped_avframe @ 0x5652e81a33c0] Encoder thread received EOF
+[vost#0:0/wrapped_avframe @ 0x5652e81a33c0] Terminating thread with return code 0 (success)
+[out#0/null @ 0x5652e8214ac0] All streams finished
+[out#0/null @ 0x5652e8214ac0] Terminating thread with return code 0 (success)
+[out#0/null @ 0x5652e8214ac0] Output file #0 (pipe:):
+[out#0/null @ 0x5652e8214ac0]   Output stream #0:0 (video): 1801 frames encoded; 1801 packets muxed (792440 bytes); 
+[out#0/null @ 0x5652e8214ac0]   Total: 1801 packets (792440 bytes) muxed
+[out#0/null @ 0x5652e8214ac0] video:774KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 1801 fps=1649 q=-0.0 Lsize=N/A time=00:01:00.09 bitrate=N/A speed=  55x    
+[AVIOContext @ 0x5652e81246c0] Statistics: 567 bytes written, 0 seeks, 3 writeouts
+bench: utime=1.112s stime=0.093s rtime=1.093s
+bench: maxrss=40160KiB
+[in#0/matroska,webm @ 0x5652e8124800] Input file #0 (/tmp/video-estimation-research/bunny-full.mkv):
+[in#0/matroska,webm @ 0x5652e8124800]   Input stream #0:0 (video): 1440 packets read (4410773 bytes); 1440 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x5652e8124800]   Total: 1440 packets (4410773 bytes) demuxed
+[AVIOContext @ 0x5652e812d080] Statistics: 4422169 bytes read, 0 seeks

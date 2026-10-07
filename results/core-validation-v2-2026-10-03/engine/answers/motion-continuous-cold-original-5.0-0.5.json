@@ -1,0 +1,158 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 5.0,
+      "max_probes": 6,
+      "threads": 1,
+      "max_encode_fraction": 0.5
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": null,
+      "max_crf": 35.0,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 1.0
+    },
+    "sample_seconds": 1.0,
+    "seed": 20261003,
+    "probe_mode": "auto",
+    "sampling_plan": "content"
+  },
+  "status": "constraints_unmet",
+  "estimate": {
+    "estimated_bytes": 937311,
+    "estimated_payload_bytes": 929848.0,
+    "fixed_bytes": 7463,
+    "sampled_seconds": 6.0,
+    "sample_count": 6,
+    "audit_count": 3,
+    "sampling_standard_error_bytes": 28673.870788576838,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "observed_blocks": [
+      1,
+      3,
+      11,
+      14,
+      18,
+      20
+    ],
+    "pilot_indices": [
+      11,
+      1,
+      18
+    ]
+  },
+  "candidates": [
+    {
+      "crf": 23.0,
+      "estimated_bytes": 937311,
+      "evidence": "uncalibrated"
+    }
+  ],
+  "unmet": [
+    "reliability_not_calibrated"
+  ],
+  "elapsed_seconds": 2.166621117001341,
+  "first_estimate_seconds": 0.8458848590016714,
+  "attempted_encode_seconds": 6.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 6,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": null,
+  "calibration_note": null,
+  "content_discovery": {
+    "cache_hit": false,
+    "elapsed_seconds": 0.4105562480035587,
+    "key": "ea094156b72dab5c8c05b7a72292c32b5de4acabe5e96eae97a1153a21dfd7b6",
+    "preview_fps": 4,
+    "resolution": [
+      96,
+      54
+    ]
+  },
+  "stop_reason": "no_more_admissible_work",
+  "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "pilot_count": 3,
+  "prediction_family": {
+    "family_schema": 1,
+    "model_policy": "budgeted-content-or-temporal-residual-v2",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 1.0
+    },
+    "crf_grid": [
+      23.0
+    ],
+    "sample_seconds": 1.0,
+    "probe_policy": {
+      "kind": "x264-central-packet-v1",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 40,
+      "b_delay_frames": 3,
+      "guard_frames": 2,
+      "fps_rule": "last_explicit_fps_filter_else_source_average",
+      "payload_rule": "central_pts_exclude_init_sei_plus_periodic_i_candidate",
+      "global_initialization": "maximum_observed_added_once",
+      "container_model": "mp4_table_census_v1_else_2048_plus_6_per_frame",
+      "requested_mode": "auto",
+      "automatic_mode_rule": "freeze_before_encoding_if_all_padded_pilots_fit",
+      "max_encode_fraction": 0.5,
+      "bare_fallback": "independent-short-encode-v2",
+      "sampling_plan": "content",
+      "preview_rule": "4fps_96x54_mean_gradient_and_frame_difference",
+      "pilot_count_rule": "min_3_blocks_probe_limit_and_video_fraction"
+    },
+    "seed_strategy": {
+      "kind": "fixed",
+      "seed": 20261003
+    },
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "threads": 1,
+    "variants": [
+      "original"
+    ],
+    "prefix_policy": {
+      "kind": "all_prefixes_up_to_maximum",
+      "minimum_prefix": 1,
+      "maximum_prefix": 6
+    }
+  },
+  "prediction_family_key": "4dbae5d3ed317f82959cfb43c71f3c331844a991105935da593df969dadae9ca",
+  "alternatives": [
+    "Increase the compute budget to permit further probes or a verified export."
+  ]
+}

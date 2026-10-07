@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 15,
+      "max_probes": 0,
+      "threads": 1,
+      "max_encode_fraction": null
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": 4190958,
+      "max_crf": 35,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4
+    },
+    "sample_seconds": 2,
+    "seed": 20261003,
+    "probe_mode": "auto"
+  },
+  "status": "budget_exhausted",
+  "estimate": {
+    "estimated_bytes": 5987083,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        5987083,
+        5987083
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/grain-continuous/c2e48dcc57be47b711f5e63653fdf614a7f8a93c554b2b322a667ee5eec0a665.mp4",
+    "sha256": "32d0577c2144d689f528295a59f4218ce71c0196c9d552b86239a33eae3c70ec",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "export_mode": "continuous"
+  },
+  "candidates": [
+    {
+      "crf": 23.0,
+      "estimated_bytes": 5987083,
+      "evidence": "exact"
+    }
+  ],
+  "unmet": [
+    "size_limit_exceeded_at_tested_setting"
+  ],
+  "elapsed_seconds": 15.014175536001858,
+  "first_estimate_seconds": 8.784690631997364,
+  "attempted_encode_seconds": 48.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 0,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "bytes": 16081831,
+    "ingest_seconds": 0.03477455499523785,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "stop_reason": "subprocess exceeded wall-clock budget",
+  "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "quality_search": {
+    "objective": "lowest_verified_feasible_crf",
+    "allowed_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0
+    ],
+    "attempted_crfs": [
+      23.0,
+      24.0
+    ],
+    "actual_crfs": [
+      23.0
+    ],
+    "unverified_lower_crfs": [],
+    "best_crf": null,
+    "best_bytes": null,
+    "feasibility": "no_verified_feasible",
+    "optimality": "unknown",
+    "warnings": []
+  },
+  "alternatives": [
+    "Increase the compute budget to permit further probes or a verified export.",
+    "Relax the size limit or expand the allowed CRF range."
+  ]
+}

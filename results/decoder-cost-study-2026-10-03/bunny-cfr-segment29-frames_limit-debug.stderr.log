@@ -1,0 +1,1325 @@
+Splitting the commandline.
+Reading option '-hide_banner' ... matched as option 'hide_banner' (do not show program banner) with argument '1'.
+Reading option '-loglevel' ... matched as option 'loglevel' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '-xerror' ... matched as option 'xerror' (exit on error) with argument '1'.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Reading option '-nostats' ... matched as option 'stats' (print progress report during encoding) with argument 0.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-filter_threads' ... matched as option 'filter_threads' (number of non-complex filter threads) with argument '1'.
+Reading option '-filter_complex_threads' ... matched as option 'filter_complex_threads' (number of threads for -filter_complex) with argument '1'.
+Reading option '-ss' ... matched as option 'ss' (start transcoding at specified time) with argument '56.000000'.
+Reading option '-copyts' ... matched as option 'copyts' (copy timestamps) with argument '1'.
+Reading option '-i' ... matched as input url with argument '/tmp/video-estimation-research/bunny-full.mkv'.
+Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '0:0'.
+Reading option '-an' ... matched as option 'an' (disable audio) with argument '1'.
+Reading option '-sn' ... matched as option 'sn' (disable subtitle) with argument '1'.
+Reading option '-dn' ... matched as option 'dn' (disable data) with argument '1'.
+Reading option '-map_metadata' ... matched as option 'map_metadata' (set metadata information of outfile from infile) with argument '-1'.
+Reading option '-vf' ... matched as option 'vf' (alias for -filter:v (apply filters to video streams)) with argument 'trim=start_pts=58000:end_pts=60083,setpts=PTS-STARTPTS'.
+Reading option '-fps_mode' ... matched as option 'fps_mode' (set framerate mode for matching video streams; overrides vsync) with argument 'cfr'.
+Reading option '-r' ... matched as option 'r' (override input framerate/convert to given output framerate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-c:v' ... matched as option 'c' (select encoder/decoder ('copy' to copy stream without reencoding)) with argument 'libx264'.
+Reading option '-crf' ... matched as AVOption 'crf' with argument '23'.
+Reading option '-preset' ... matched as AVOption 'preset' with argument 'medium'.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-x264-params' ... matched as AVOption 'x264-params' with argument 'open-gop=0:keyint=250:min-keyint=1'.
+Reading option '-movflags' ... matched as AVOption 'movflags' with argument '+faststart'.
+Reading option '-frames:v' ... matched as option 'frames' (set the number of frames to output) with argument '48'.
+Reading option '-benchmark_all' ... matched as option 'benchmark_all' (add timings for each task) with argument '1'.
+Reading option '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-cfr-segment29-frames_limit-debug.mp4' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option hide_banner (do not show program banner) with argument 1.
+Applying option loglevel (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option y (overwrite output files) with argument 1.
+Applying option xerror (exit on error) with argument 1.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Applying option nostats (print progress report during encoding) with argument 0.
+Applying option filter_threads (number of non-complex filter threads) with argument 1.
+Applying option filter_complex_threads (number of threads for -filter_complex) with argument 1.
+Applying option copyts (copy timestamps) with argument 1.
+Applying option benchmark_all (add timings for each task) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /tmp/video-estimation-research/bunny-full.mkv.
+Applying option ss (start transcoding at specified time) with argument 56.000000.
+Successfully parsed a group of options.
+Opening an input file: /tmp/video-estimation-research/bunny-full.mkv.
+[AVFormatContext @ 0x561a306778c0] Opening '/tmp/video-estimation-research/bunny-full.mkv' for reading
+[file @ 0x561a30677f00] Setting default whitelist 'file,crypto,data'
+[matroska,webm @ 0x561a306778c0] Format matroska,webm probed with size=2048 and score=100
+st:0 removing common factor 1000000 from timebase
+[matroska,webm @ 0x561a306778c0] Before avformat_find_stream_info() pos: 1018 bytes read:32768 seeks:0 nb_streams:1
+[h264 @ 0x561a3067a200] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x561a3067a200] Decoding VUI
+[h264 @ 0x561a3067a200] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x561a3067a200] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x561a3067a200] Decoding VUI
+[h264 @ 0x561a3067a200] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x561a3067a200] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x561a3067a200] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x561a3067a200] Format yuv420p chosen by get_format().
+[h264 @ 0x561a3067a200] Reinit context to 640x368, pix_fmt: yuv420p
+[h264 @ 0x561a3067a200] no picture 
+[matroska,webm @ 0x561a306778c0] All info found
+[matroska,webm @ 0x561a306778c0] After avformat_find_stream_info() pos: 27864 bytes read:32768 seeks:0 frames:4
+Input #0, matroska,webm, from '/tmp/video-estimation-research/bunny-full.mkv':
+  Metadata:
+    AB_AV1_FFMPEG_ARGS: -c:v libx264 -crf 23 -preset medium
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    ENCODER         : Lavf61.7.103
+  Duration: 00:01:00.08, start: 0.000000, bitrate: 588 kb/s
+  Stream #0:0(eng), 4, 1/1000: Video: h264 (High), 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:01:00.083000000
+Successfully opened the file.
+Parsing a group of options: output url /workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-cfr-segment29-frames_limit-debug.mp4.
+Applying option map (set input stream mapping) with argument 0:0.
+Applying option an (disable audio) with argument 1.
+Applying option sn (disable subtitle) with argument 1.
+Applying option dn (disable data) with argument 1.
+Applying option map_metadata (set metadata information of outfile from infile) with argument -1.
+Applying option vf (alias for -filter:v (apply filters to video streams)) with argument trim=start_pts=58000:end_pts=60083,setpts=PTS-STARTPTS.
+Applying option fps_mode (set framerate mode for matching video streams; overrides vsync) with argument cfr.
+Applying option r (override input framerate/convert to given output framerate (Hz value, fraction or abbreviation)) with argument 24.
+Applying option c:v (select encoder/decoder ('copy' to copy stream without reencoding)) with argument libx264.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Applying option frames:v (set the number of frames to output) with argument 48.
+Successfully parsed a group of options.
+Opening an output file: /workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-cfr-segment29-frames_limit-debug.mp4.
+[out#0/mp4 @ 0x561a30767a00] Adding streams from explicit maps...
+[vost#0:0/libx264 @ 0x561a3067b3c0] Created video stream from input stream 0:0
+[AVFilterGraph @ 0x561a3067a5c0] Setting 'start_pts' to value '58000'
+[AVFilterGraph @ 0x561a3067a5c0] Setting 'end_pts' to value '60083'
+[AVFilterGraph @ 0x561a3067a5c0] Setting 'expr' to value 'PTS-STARTPTS'
+[h264 @ 0x561a306f4e80] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x561a306f4e80] Decoding VUI
+[h264 @ 0x561a306f4e80] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[file @ 0x561a3067fdc0] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+[vost#0:0/libx264 @ 0x561a3067b3c0] Starting thread...
+[vf#0:0 @ 0x561a306f6300] Starting thread...
+[vist#0:0/h264 @ 0x561a3067ba80] [dec:h264 @ 0x561a306f4b00] Starting thread...
+[in#0/matroska,webm @ 0x561a306776c0] Starting thread...
+[h264 @ 0x561a30767e00] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x561a30767e00] Decoding VUI
+[h264 @ 0x561a30767e00] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x561a306f4e80] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x561a306f4e80] Format yuv420p chosen by get_format().
+[h264 @ 0x561a306f4e80] Reinit context to 640x368, pix_fmt: yuv420p
+[h264 @ 0x561a306f4e80] no picture 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[h264 @ 0x561a306f4e80] no picture 
+bench:        2 user        0 sys        3 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[AVFilterGraph @ 0x7fb434001000] Setting 'start_pts' to value '58000'
+[AVFilterGraph @ 0x7fb434001000] Setting 'end_pts' to value '60083'
+[AVFilterGraph @ 0x7fb434001000] Setting 'expr' to value 'PTS-STARTPTS'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'video_size' to value '640x360'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'pix_fmt' to value '0'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'time_base' to value '1/1000'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'pixel_aspect' to value '0/1'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'colorspace' to value '6'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'range' to value '1'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] Setting 'frame_rate' to value '24/1'
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] w:640 h:360 pixfmt:yuv420p tb:1/1000 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[format @ 0x7fb434003140] Setting 'pix_fmts' to value 'yuv420p'
+[format @ 0x7fb434003140] Setting 'color_ranges' to value 'tv|pc'
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        4 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[AVFilterGraph @ 0x7fb434001000] query_formats: 6 queried, 15 merged, 0 already done, 0 delayed
+[Parsed_trim_0 @ 0x7fb4340017c0] TB:0.001000 FRAME_RATE:24.000000 SAMPLE_RATE:nan
+[graph -1 input from stream 0:0 @ 0x7fb4340020c0] video frame properties congruent with link at pts_time: 47.708
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        1 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        1 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        1 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        1 sys       28 real decode_video 0:0 
+bench:        0 user        1 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        1 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        4 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        1 sys        2 real decode_video 0:0 
+bench:        0 user        2 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        0 user        2 sys        2 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        1 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        1 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        1 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        1 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        1 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        1 sys        3 real decode_video 0:0 
+bench:        1 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        1 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        0 user        2 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        3 real decode_video 0:0 
+bench:        0 user        1 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        0 user        2 sys        4 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        0 user        3 sys        5 real decode_video 0:0 
+bench:        0 user        2 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        1 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        1 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        2 user        0 sys        3 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        3 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        3 user        0 sys        4 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        4 user        0 sys       31 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:       36 user        0 sys       38 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        6 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        5 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        3 sys        3 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        1 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        6 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        3 user        0 sys        4 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        3 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        3 user        0 sys        5 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        3 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:       43 user        0 sys       45 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        3 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys       17 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        4 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        5 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 5(IDR), nal_ref_idc: 3
+bench:        0 user      225 sys        1 real decode_video 0:0 
+bench:        0 user        2 sys        3 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        1 sys        1 real decode_video 0:0 
+bench:        0 user        1 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        1 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        0 user        1 sys        2 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        0 user        1 sys        2 real decode_video 0:0 
+bench:        0 user        1 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        1 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[libx264 @ 0x561a3067a200] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+bench:        1 user        0 sys        2 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[libx264 @ 0x561a3067a200] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x561a3067a200] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-cfr-segment29-frames_limit-debug.mp4':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0, 0, 1/12288: Video: h264, 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 0/1, q=2-31, bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+24 fps, 12288 tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x561a30767a00] Starting thread...
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.0416667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.0416667 queue head 0 ts 0.0416667
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.0833333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.0833333 queue head 0 ts 0.0833333
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.125
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.125 queue head 0 ts 0.125
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.166667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.166667 queue head 0 ts 0.166667
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.208333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.208333 queue head 0 ts 0.208333
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.25
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.25 queue head 0 ts 0.25
+bench:        2 user        0 sys        5 real decode_video 0:0 
+bench:        2 user        0 sys        1 real decode_video 0:0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.291667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.291667 queue head 0 ts 0.291667
+bench:      584 user        0 sys      521 real encode_video 0.0 
+bench:      471 user        0 sys      471 real encode_video 0.0 
+bench:        0 user      563 sys      561 real encode_video 0.0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        2 sys        2 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.333333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.333333 queue head 0 ts 0.333333
+bench:        0 user        2 sys        4 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.375
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.375 queue head 0 ts 0.375
+bench:        0 user 18446744073709550534 sys 18446744073709550593 real encode_video 0.0 
+bench:        0 user      479 sys      478 real encode_video 0.0 
+bench:       31 user      548 sys      579 real encode_video 0.0 
+bench:        0 user      597 sys      597 real encode_video 0.0 
+bench:       45 user     2281 sys     2327 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.416667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.416667 queue head 0 ts 0.416667
+bench:        0 user        2 sys        5 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.458333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.458333 queue head 0 ts 0.458333
+bench:        0 user        2 sys        5 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.5
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.5 queue head 0 ts 0.5
+bench:        0 user        1 sys        2 real decode_video 0:0 
+bench:        0 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.541667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.541667 queue head 0 ts 0.541667
+bench:        0 user 18446744073709549785 sys 18446744073709549899 real encode_video 0.0 
+bench:        0 user      507 sys      507 real encode_video 0.0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.583333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.583333 queue head 0 ts 0.583333
+bench:      658 user      158 sys      493 real encode_video 0.0 
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.625
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.625 queue head 0 ts 0.625
+bench:      359 user        0 sys      325 real encode_video 0.0 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.666667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.666667 queue head 0 ts 0.666667
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.708333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.708333 queue head 0 ts 0.708333
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.75
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.75 queue head 0 ts 0.75
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.791667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.791667 queue head 0 ts 0.791667
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.833333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.833333 queue head 0 ts 0.833333
+bench:        2 user        0 sys        9 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.875
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.875 queue head 0 ts 0.875
+bench:     3875 user        0 sys      581 real encode_video 0.0 
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.916667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.916667 queue head 0 ts 0.916667
+bench:      541 user        0 sys      481 real encode_video 0.0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 0.958333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 0.958333 queue head 0 ts 0.958333
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        4 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:     1929 user      442 sys      596 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1 queue head 0 ts 1
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        1 sys        1 real decode_video 0:0 
+    Last message repeated 1 times
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        0 user      156 sys       55 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.041667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.041667 queue head 0 ts 1.041667
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        1 real decode_video 0:0 
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:        1 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:      171 user       40 sys      230 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.083333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.083333 queue head 0 ts 1.083333
+bench:        2 user        0 sys        3 real decode_video 0:0 
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:      369 user       87 sys      196 real encode_video 0.0 
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.125
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.125 queue head 0 ts 1.125
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:      362 user       85 sys       95 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.166667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.166667 queue head 0 ts 1.166667
+bench:        0 user        1 sys        3 real decode_video 0:0 
+bench:        0 user        0 sys        0 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        0 user        1 sys        2 real decode_video 0:0 
+bench:     1991 user      962 sys     2046 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.208333
+bench:        2 user        1 sys        2 real decode_video 0:0 
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.208333 queue head 0 ts 1.208333
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        4 real decode_video 0:0 
+[in#0/matroska,webm @ 0x561a306776c0] EOF while reading input
+[in#0/matroska,webm @ 0x561a306776c0] Terminating thread with return code 0 (success)
+bench:      422 user     1021 sys     1130 real encode_video 0.0 
+bench:        1 user        1 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.25
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.25 queue head 0 ts 1.25
+bench:        1 user        1 sys        2 real decode_video 0:0 
+bench:      400 user       97 sys      354 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.291667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.291667 queue head 0 ts 1.291667
+bench:        1 user        1 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:      309 user       75 sys       48 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.333333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.333333 queue head 0 ts 1.333333
+bench:        1 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:      467 user      114 sys      407 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.375
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.375 queue head 0 ts 1.375
+bench:        1 user        0 sys        3 real decode_video 0:0 
+bench:       12 user        3 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:     3818 user      928 sys     4428 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.416667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.416667 queue head 0 ts 1.416667
+bench:        1 user        1 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+bench:        2 user        0 sys        2 real decode_video 0:0 
+bench:     1367 user     1332 sys     2365 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.458333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.458333 queue head 0 ts 1.458333
+bench:        1 user        1 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        0 sys        2 real decode_video 0:0 
+bench:      322 user       79 sys       88 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.5
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.5 queue head 0 ts 1.5
+bench:        0 user        0 sys        1 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+bench:        1 user        1 sys        2 real decode_video 0:0 
+bench:      355 user       87 sys       42 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.541667
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[h264 @ 0x561a306f4e80] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.541667 queue head 0 ts 1.541667
+bench:      825 user        0 sys      438 real encode_video 0.0 
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.583333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.583333 queue head 0 ts 1.583333
+bench:        1 user        0 sys        2 real decode_video 0:0 
+[vist#0:0/h264 @ 0x561a3067ba80] [dec:h264 @ 0x561a306f4b00] Decoder thread received EOF packet
+bench:        3 user        0 sys        3 real decode_video 0:0 
+bench:     3521 user        0 sys     3438 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.625
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.625 queue head 0 ts 1.625
+bench:       89 user        0 sys        8 real decode_video 0:0 
+bench:     2201 user        0 sys     2107 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.666667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.666667 queue head 0 ts 1.666667
+bench:        2 user        0 sys        2 real decode_video 0:0 
+[vist#0:0/h264 @ 0x561a3067ba80] [dec:h264 @ 0x561a306f4b00] Decoder returned EOF, finishing
+bench:      609 user        0 sys      439 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.708333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.708333 queue head 0 ts 1.708333
+[vist#0:0/h264 @ 0x561a3067ba80] [dec:h264 @ 0x561a306f4b00] Terminating thread with return code 0 (success)
+bench:      601 user        0 sys      561 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.75
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.75 queue head 0 ts 1.75
+bench:      536 user        0 sys      493 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.791667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.791667 queue head 0 ts 1.791667
+bench:        0 user      581 sys      562 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.833333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.833333 queue head 0 ts 1.833333
+bench:        0 user      535 sys      486 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.875
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.875 queue head 0 ts 1.875
+bench:        0 user      598 sys      582 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.916667
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.916667 queue head 0 ts 1.916667
+bench:        0 user      540 sys      500 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 1.958333
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 1.958333 queue head 0 ts 1.958333
+bench:      374 user      419 sys      769 real encode_video 0.0 
+[out#0/mp4 @ 0x561a30767a00] sq: send 0 ts 2
+[out#0/mp4 @ 0x561a30767a00] sq: 0 frames_max 48 reached
+[out#0/mp4 @ 0x561a30767a00] sq: finish 0; head ts 2
+[out#0/mp4 @ 0x561a30767a00] sq: finish queue
+[out#0/mp4 @ 0x561a30767a00] sq: receive 0 ts 2 queue head 0 ts 2
+bench:      570 user      141 sys      667 real encode_video 0.0 
+[vf#0:0 @ 0x561a306f6300] All consumers returned EOF
+[out#0/mp4 @ 0x561a30767a00] sq: 0 EOF
+[out#0/mp4 @ 0x561a30767a00] sq: finish queue
+[vf#0:0 @ 0x561a306f6300] Terminating thread with return code 0 (success)
+bench:      974 user        0 sys      988 real encode_video 0.0 
+bench:      517 user        0 sys      517 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   0 QP=17.82 NAL=3 Slice:I Poc:0   I:920  P:0    SKIP:0    size=19444 bytes
+bench:    42356 user       34 sys    42449 real encode_video 0.0 
+bench:       29 user        6 sys       37 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   1 QP=18.25 NAL=2 Slice:P Poc:2   I:19   P:362  SKIP:539  size=1192 bytes
+bench:     9968 user     4516 sys    14508 real encode_video 0.0 
+bench:       25 user        6 sys       36 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   2 QP=17.71 NAL=2 Slice:P Poc:4   I:17   P:219  SKIP:684  size=1037 bytes
+bench:    11963 user     1131 sys    13863 real encode_video 0.0 
+bench:       28 user        7 sys       36 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   3 QP=18.43 NAL=2 Slice:P Poc:8   I:34   P:228  SKIP:658  size=1379 bytes
+bench:    13005 user        0 sys    12982 real encode_video 0.0 
+bench:       30 user        0 sys       30 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   4 QP=24.47 NAL=0 Slice:B Poc:6   I:2    P:165  SKIP:753  size=438 bytes
+bench:    13632 user      808 sys    14409 real encode_video 0.0 
+bench:       24 user        5 sys       30 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   5 QP=18.59 NAL=2 Slice:P Poc:10  I:16   P:231  SKIP:673  size=1062 bytes
+bench:    13620 user        0 sys    13582 real encode_video 0.0 
+bench:       28 user        0 sys       29 real encode_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   6 QP=19.15 NAL=2 Slice:P Poc:12  I:13   P:235  SKIP:672  size=1062 bytes
+bench:    16516 user       54 sys    16541 real encode_video 0.0 
+bench:       22 user        5 sys       29 real encode_video 0.0 
+[vost#0:0/libx264 @ 0x561a3067b3c0] Encoder thread received EOF
+[libx264 @ 0x561a3067a200] frame=   7 QP=18.52 NAL=2 Slice:P Poc:14  I:9    P:221  SKIP:690  size=1011 bytes
+bench:     9471 user      110 sys     9554 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   8 QP=18.50 NAL=2 Slice:P Poc:16  I:15   P:242  SKIP:663  size=1176 bytes
+bench:    10948 user        0 sys    10916 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=   9 QP=19.06 NAL=2 Slice:P Poc:20  I:25   P:271  SKIP:624  size=1628 bytes
+bench:    16785 user        0 sys    16756 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  10 QP=25.02 NAL=0 Slice:B Poc:18  I:0    P:173  SKIP:747  size=422 bytes
+bench:     3115 user     4680 sys     7740 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  11 QP=19.04 NAL=2 Slice:P Poc:22  I:11   P:233  SKIP:676  size=1171 bytes
+bench:    14519 user     1151 sys    15645 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  12 QP=19.43 NAL=2 Slice:P Poc:28  I:56   P:240  SKIP:624  size=2265 bytes
+bench:    13415 user        0 sys    13372 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  13 QP=25.67 NAL=2 Slice:B Poc:24  I:1    P:176  SKIP:743  size=582 bytes
+bench:    13112 user        0 sys    13132 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  14 QP=26.18 NAL=0 Slice:B Poc:26  I:1    P:157  SKIP:762  size=464 bytes
+bench:     9149 user        0 sys     9544 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  15 QP=17.93 NAL=2 Slice:P Poc:32  I:177  P:468  SKIP:275  size=4115 bytes
+bench:    24024 user        0 sys    24000 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  16 QP=23.92 NAL=0 Slice:B Poc:30  I:5    P:241  SKIP:674  size=568 bytes
+bench:    10716 user        0 sys    10563 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  17 QP=18.18 NAL=2 Slice:P Poc:34  I:21   P:336  SKIP:563  size=1447 bytes
+bench:    11588 user        0 sys    11542 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  18 QP=17.73 NAL=2 Slice:P Poc:38  I:22   P:340  SKIP:558  size=1738 bytes
+bench:    17846 user        0 sys    17817 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  19 QP=24.39 NAL=0 Slice:B Poc:36  I:1    P:183  SKIP:736  size=400 bytes
+bench:     8004 user        0 sys     7971 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  20 QP=18.27 NAL=2 Slice:P Poc:46  I:28   P:340  SKIP:552  size=2111 bytes
+bench:    19393 user        0 sys    19356 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  21 QP=23.02 NAL=2 Slice:B Poc:42  I:0    P:232  SKIP:688  size=596 bytes
+bench:    10716 user        0 sys    10671 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  22 QP=25.43 NAL=0 Slice:B Poc:40  I:2    P:172  SKIP:746  size=335 bytes
+bench:     7618 user        0 sys     7590 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  23 QP=24.91 NAL=0 Slice:B Poc:44  I:0    P:169  SKIP:751  size=320 bytes
+bench:    10631 user        0 sys    10606 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  24 QP=17.45 NAL=2 Slice:P Poc:54  I:9    P:329  SKIP:582  size=1785 bytes
+bench:    14195 user        0 sys    14175 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  25 QP=23.39 NAL=2 Slice:B Poc:50  I:0    P:189  SKIP:731  size=488 bytes
+bench:     9761 user        0 sys     9723 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  26 QP=26.76 NAL=0 Slice:B Poc:48  I:0    P:147  SKIP:773  size=237 bytes
+bench:    10856 user        0 sys    10842 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  27 QP=24.41 NAL=0 Slice:B Poc:52  I:0    P:150  SKIP:770  size=221 bytes
+bench:     7213 user        0 sys     7194 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  28 QP=18.93 NAL=2 Slice:P Poc:62  I:9    P:395  SKIP:516  size=1892 bytes
+bench:    13684 user        0 sys    13668 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  29 QP=24.06 NAL=2 Slice:B Poc:58  I:0    P:182  SKIP:738  size=339 bytes
+bench:    13691 user       96 sys    13762 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  30 QP=21.76 NAL=0 Slice:B Poc:56  I:0    P:129  SKIP:791  size=187 bytes
+bench:     6568 user        0 sys     6540 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  31 QP=21.66 NAL=0 Slice:B Poc:60  I:0    P:140  SKIP:780  size=181 bytes
+bench:     6458 user        0 sys     6425 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  32 QP=18.44 NAL=2 Slice:P Poc:68  I:2    P:289  SKIP:629  size=1176 bytes
+bench:    13972 user        0 sys    14005 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  33 QP=26.75 NAL=2 Slice:B Poc:64  I:0    P:88   SKIP:832  size=136 bytes
+bench:     7746 user        0 sys     7723 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  34 QP=21.21 NAL=0 Slice:B Poc:66  I:0    P:108  SKIP:812  size=127 bytes
+bench:     6094 user        0 sys     6182 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  35 QP=19.61 NAL=2 Slice:P Poc:76  I:4    P:308  SKIP:608  size=1152 bytes
+bench:    15157 user        0 sys    15156 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  36 QP=22.55 NAL=2 Slice:B Poc:72  I:0    P:186  SKIP:734  size=235 bytes
+bench:     9370 user        0 sys     9347 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  37 QP=22.44 NAL=0 Slice:B Poc:70  I:0    P:138  SKIP:782  size=170 bytes
+bench:     6209 user        0 sys     6186 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  38 QP=21.00 NAL=0 Slice:B Poc:74  I:0    P:77   SKIP:843  size=93 bytes
+bench:     5361 user        0 sys     5348 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  39 QP=20.01 NAL=2 Slice:P Poc:84  I:0    P:218  SKIP:702  size=620 bytes
+bench:    13356 user        0 sys    13340 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  40 QP=21.66 NAL=2 Slice:B Poc:80  I:0    P:156  SKIP:764  size=222 bytes
+bench:     9260 user        0 sys     9231 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  41 QP=21.39 NAL=0 Slice:B Poc:78  I:0    P:82   SKIP:838  size=110 bytes
+bench:     5751 user        0 sys     5712 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  42 QP=21.23 NAL=0 Slice:B Poc:82  I:0    P:71   SKIP:849  size=101 bytes
+bench:    10322 user        0 sys    10304 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  43 QP=22.65 NAL=2 Slice:P Poc:92  I:1    P:172  SKIP:747  size=372 bytes
+bench:     6443 user        0 sys     6418 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  44 QP=21.70 NAL=2 Slice:B Poc:88  I:0    P:165  SKIP:755  size=252 bytes
+bench:     8877 user        0 sys     8856 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  45 QP=21.00 NAL=0 Slice:B Poc:86  I:0    P:81   SKIP:839  size=94 bytes
+bench:     5489 user        0 sys     5465 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  46 QP=21.92 NAL=0 Slice:B Poc:90  I:0    P:109  SKIP:811  size=136 bytes
+bench:    11539 user        0 sys    11512 real flush_video 0.0 
+[libx264 @ 0x561a3067a200] frame=  47 QP=22.74 NAL=2 Slice:P Poc:94  I:0    P:102  SKIP:818  size=198 bytes
+bench:     5026 user        0 sys     5003 real flush_video 0.0 
+bench:       28 user        0 sys       29 real flush_video 0.0 
+[vost#0:0/libx264 @ 0x561a3067b3c0] Terminating thread with return code 0 (success)
+[out#0/mp4 @ 0x561a30767a00] All streams finished
+[out#0/mp4 @ 0x561a30767a00] Terminating thread with return code 0 (success)
+[mp4 @ 0x561a3067ac40] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x561a3067ac40] Opening '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-cfr-segment29-frames_limit-debug.mp4' for reading
+[file @ 0x561a30709080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x561a307091c0] Statistics: 57224 bytes read, 0 seeks
+[AVIOContext @ 0x561a30706fc0] Statistics: 115773 bytes written, 4 seeks, 5 writeouts
+[out#0/mp4 @ 0x561a30767a00] Output file #0 (/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-cfr-segment29-frames_limit-debug.mp4):
+[out#0/mp4 @ 0x561a30767a00]   Output stream #0:0 (video): 48 frames encoded; 48 packets muxed (57175 bytes); 
+[out#0/mp4 @ 0x561a30767a00]   Total: 48 packets (57175 bytes) muxed
+[out#0/mp4 @ 0x561a30767a00] video:56KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.452121%
+frame=   48 fps=0.0 q=28.0 Lsize=      57KiB time=00:00:00.00 bitrate=N/A speed=   0x    
+bench: utime=0.807s stime=0.071s rtime=0.855s
+bench: maxrss=96320KiB
+[libx264 @ 0x561a3067a200] frame I:1     Avg QP:17.82  size: 19444
+[libx264 @ 0x561a3067a200] frame P:21    Avg QP:18.98  size:  1409
+[libx264 @ 0x561a3067a200] frame B:26    Avg QP:23.38  size:   287
+[libx264 @ 0x561a3067a200] consecutive B-frames: 20.8% 16.7% 12.5% 50.0%
+[libx264 @ 0x561a3067a200] mb I  I16..4: 17.2% 49.6% 33.3%
+[libx264 @ 0x561a3067a200] mb P  I16..4:  0.7%  1.2%  0.5%  P16..4: 22.3%  5.5%  2.1%  0.0%  0.0%    skip:67.6%
+[libx264 @ 0x561a3067a200] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 15.0%  0.9%  0.2%  direct: 0.2%  skip:83.8%  L0:42.9% L1:52.8% BI: 4.4%
+[libx264 @ 0x561a3067a200] 8x8 transform intra:49.2% inter:80.3%
+[libx264 @ 0x561a3067a200] coded y,uvDC,uvAC intra: 52.9% 75.7% 22.7% inter: 3.1% 6.7% 0.1%
+[libx264 @ 0x561a3067a200] i16 v,h,dc,p: 13% 34% 13% 40%
+[libx264 @ 0x561a3067a200] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 28% 16%  6%  5%  4%  5%  5%  7%
+[libx264 @ 0x561a3067a200] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 20% 17%  6%  8%  6%  6%  5%  5%
+[libx264 @ 0x561a3067a200] i8c dc,h,v,p: 43% 26% 22%  9%
+[libx264 @ 0x561a3067a200] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x561a3067a200] ref P L0: 75.6% 10.0% 12.1%  2.3%
+[libx264 @ 0x561a3067a200] ref B L0: 90.2%  8.7%  1.1%
+[libx264 @ 0x561a3067a200] ref B L1: 98.9%  1.1%
+[libx264 @ 0x561a3067a200] kb/s:225.95
+[in#0/matroska,webm @ 0x561a306776c0] Input file #0 (/tmp/video-estimation-research/bunny-full.mkv):
+[in#0/matroska,webm @ 0x561a306776c0]   Input stream #0:0 (video): 295 packets read (877467 bytes); 295 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x561a306776c0]   Total: 295 packets (877467 bytes) demuxed
+[AVIOContext @ 0x561a30680080] Statistics: 912363 bytes read, 1 seeks

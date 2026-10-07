@@ -1,0 +1,126 @@
+{
+  "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/walking-street/WalkingInStreet_1920x1080_30fps.y4m",
+  "source_sha256": "4ff5db10965fff3cf47b706461a88767ed4a52ba4d78fccd89c6d2564a5f7c22",
+  "source_bytes": 404352840,
+  "source_inspection": {
+    "video": {
+      "codec_name": "rawvideo",
+      "width": 1080,
+      "height": 1920,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "duration": "4.333333"
+    },
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/industrial-v1/walking-street/WalkingInStreet_1920x1080_30fps.y4m"
+    ]
+  },
+  "source_frame_count": {
+    "frames": 130,
+    "source_header": "YUV4MPEG2 W1080 H1920 F30:1 Ip A0:0 C420jpeg XYSCSS=420JPEG",
+    "frame_payload_bytes": 3110400
+  },
+  "frame_rate": "30",
+  "modes": {
+    "continuous": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/walking-street-continuous/89fb81401103a7d0c60f65d24e0eb07df0cc6b8e831e8f65ce948cd1a515c3db.mp4",
+      "sha256": "8877bfdacc4a2393ee2eb9898011b324b2c2d077a317379ba2f1a990728926dc",
+      "file_bytes": 11644351,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1080,
+          "height": 1920,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "4.333333",
+          "nb_frames": "130",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/walking-street-continuous/89fb81401103a7d0c60f65d24e0eb07df0cc6b8e831e8f65ce948cd1a515c3db.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      }
+    },
+    "segmented": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/walking-street-segmented/40d719ad46632ef3c525a6ace3efc07ac4427d3e4dc813c309307b2e53a42d64.mp4",
+      "sha256": "b1ff12e6ccc5b20021e8958fec5f053608ea0522f503fe5c9d5630a74cdc7eac",
+      "file_bytes": 12101437,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1080,
+          "height": 1920,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "4.333333",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/walking-street-segmented/40d719ad46632ef3c525a6ace3efc07ac4427d3e4dc813c309307b2e53a42d64.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "segmented",
+        "segment_seconds": 0.5
+      }
+    }
+  },
+  "verification_wall_seconds": 0.8127032490010606
+}

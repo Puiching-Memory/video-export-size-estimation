@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 30,
+      "max_probes": 6,
+      "threads": 1,
+      "max_encode_fraction": 0.2
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": null,
+      "max_crf": 35.0,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "veryfast",
+      "video_filter": "fps=12,scale=640:360",
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "sample_seconds": 4,
+    "seed": 20261003,
+    "probe_mode": "auto",
+    "sampling_plan": "temporal"
+  },
+  "status": "budget_exhausted",
+  "estimate": {
+    "estimated_bytes": 14571781,
+    "estimated_payload_bytes": 14467095.459958998,
+    "fixed_bytes": 104686,
+    "sampled_seconds": 4,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "context",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23,
+    "artifact": null,
+    "source_hash": "526b5dad800cdbd7f208bd35d717928bda0ee712a2dd21a6326a43a80717e496",
+    "observed_blocks": [
+      30
+    ],
+    "pilot_indices": [
+      30,
+      90,
+      150
+    ]
+  },
+  "candidates": [],
+  "unmet": [
+    "reliability_not_calibrated"
+  ],
+  "elapsed_seconds": 30.019930419002776,
+  "first_estimate_seconds": 17.02766143700137,
+  "attempted_encode_seconds": 14.5,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 2,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "526b5dad800cdbd7f208bd35d717928bda0ee712a2dd21a6326a43a80717e496",
+    "bytes": 1299914020,
+    "ingest_seconds": 2.227811062002729,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "content_discovery": null,
+  "stop_reason": "subprocess exceeded wall-clock budget",
+  "source_hash": "526b5dad800cdbd7f208bd35d717928bda0ee712a2dd21a6326a43a80717e496",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "pilot_count": 3,
+  "prediction_family": {
+    "family_schema": 1,
+    "model_policy": "budgeted-content-or-temporal-residual-v2",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "preset": "veryfast",
+      "video_filter": "fps=12,scale=640:360",
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "crf_grid": [
+      23.0
+    ],
+    "sample_seconds": 4.0,
+    "probe_policy": {
+      "kind": "x264-central-packet-v1",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 10,
+      "b_delay_frames": 3,
+      "guard_frames": 2,
+      "fps_rule": "last_explicit_fps_filter_else_source_average",
+      "payload_rule": "central_pts_exclude_init_sei_plus_periodic_i_candidate",
+      "global_initialization": "maximum_observed_added_once",
+      "container_model": "mp4_table_census_v1_else_2048_plus_6_per_frame",
+      "requested_mode": "auto",
+      "automatic_mode_rule": "freeze_before_encoding_if_all_padded_pilots_fit",
+      "max_encode_fraction": 0.2,
+      "bare_fallback": "independent-short-encode-v2",
+      "sampling_plan": "temporal",
+      "preview_rule": "4fps_96x54_mean_gradient_and_frame_difference",
+      "pilot_count_rule": "min_3_blocks_probe_limit_and_video_fraction"
+    },
+    "seed_strategy": {
+      "kind": "fixed",
+      "seed": 20261003
+    },
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "threads": 1,
+    "variants": [
+      "original"
+    ],
+    "prefix_policy": {
+      "kind": "all_prefixes_up_to_maximum",
+      "minimum_prefix": 1,
+      "maximum_prefix": 6
+    }
+  },
+  "prediction_family_key": "340cdf1fa9f9e241d79b0a0f5b777f719d92896f24abeae3a5f9b44f9723c748",
+  "alternatives": [
+    "Increase the compute budget to permit further probes or a verified export."
+  ]
+}

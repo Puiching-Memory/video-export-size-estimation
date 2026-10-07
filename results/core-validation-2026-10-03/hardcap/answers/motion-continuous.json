@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 15,
+      "max_probes": 0,
+      "threads": 1,
+      "max_encode_fraction": null
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": 597276,
+      "max_crf": 35,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4
+    },
+    "sample_seconds": 2,
+    "seed": 20261003,
+    "probe_mode": "auto"
+  },
+  "status": "satisfied",
+  "estimate": {
+    "estimated_bytes": 578765,
+    "selected_crf": 27.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        578765,
+        578765
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/motion-continuous/5f2e769e1e86b3eb30409fd698fd562836262313056f8ac3052044c6080295c7.mp4",
+    "sha256": "b46319cf574e05ea0bc1460b02896074568d156680155d227704f8232509769e",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "export_mode": "continuous"
+  },
+  "candidates": [
+    {
+      "crf": 23.0,
+      "estimated_bytes": 853251,
+      "evidence": "exact"
+    },
+    {
+      "crf": 24.0,
+      "estimated_bytes": 777762,
+      "evidence": "exact"
+    },
+    {
+      "crf": 27.0,
+      "estimated_bytes": 578765,
+      "evidence": "exact"
+    },
+    {
+      "crf": 26.0,
+      "estimated_bytes": 639856,
+      "evidence": "exact"
+    },
+    {
+      "crf": 25.0,
+      "estimated_bytes": 704533,
+      "evidence": "exact"
+    }
+  ],
+  "unmet": [],
+  "elapsed_seconds": 10.670285724001587,
+  "first_estimate_seconds": 2.2333271910029,
+  "attempted_encode_seconds": 120.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 0,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+    "bytes": 1368858,
+    "ingest_seconds": 0.003568035004718695,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "stop_reason": "allowed_grid_search_finished",
+  "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "quality_search": {
+    "objective": "lowest_verified_feasible_crf",
+    "allowed_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0
+    ],
+    "attempted_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0
+    ],
+    "actual_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0
+    ],
+    "unverified_lower_crfs": [],
+    "best_crf": 27.0,
+    "best_bytes": 578765,
+    "feasibility": "verified_feasible",
+    "optimality": "lowest_verified_feasible_on_grid",
+    "warnings": []
+  },
+  "alternatives": []
+}

@@ -1,0 +1,268 @@
+{
+  "purpose": "API capability diagnostic; artificial 1-second fixture; no accuracy or industrial acceptance claim",
+  "x264_commit": "31e19f9",
+  "source": "lavfi testsrc2=size=64x48:rate=8:duration=1, raw yuv420p, 8 frames",
+  "experiments": [
+    {
+      "name": "crf_normal",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "debug",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "yuv420p",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "8",
+        "-i",
+        ".research/encoder-state-diagnostic/source.yuv",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "23",
+        "-threads",
+        "1",
+        "-f",
+        "h264",
+        "-y",
+        ".research/encoder-state-diagnostic/crf_normal.h264"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.12025671699666418,
+      "file_bytes": 2028,
+      "vcl_nal_count": 8,
+      "vcl_bytes": 1272,
+      "vcl_sha256": "46967ac898acf56f10795ede1a117e785747f509c56a3839c86e804a3ba5dde0",
+      "parameter_line": null,
+      "errors": []
+    },
+    {
+      "name": "crf_stats_write_exact",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "debug",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "yuv420p",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "8",
+        "-i",
+        ".research/encoder-state-diagnostic/source.yuv",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "23",
+        "-threads",
+        "1",
+        "-pass",
+        "1",
+        "-fastfirstpass",
+        "0",
+        "-passlogfile",
+        ".research/encoder-state-diagnostic/exactstats",
+        "-f",
+        "h264",
+        "-y",
+        ".research/encoder-state-diagnostic/crf_stats_write_exact.h264"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.07938171000569128,
+      "file_bytes": 2028,
+      "vcl_nal_count": 8,
+      "vcl_bytes": 1272,
+      "vcl_sha256": "46967ac898acf56f10795ede1a117e785747f509c56a3839c86e804a3ba5dde0",
+      "parameter_line": null,
+      "errors": []
+    },
+    {
+      "name": "crf_stats_write_default_fast",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "debug",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "yuv420p",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "8",
+        "-i",
+        ".research/encoder-state-diagnostic/source.yuv",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "23",
+        "-threads",
+        "1",
+        "-pass",
+        "1",
+        "-passlogfile",
+        ".research/encoder-state-diagnostic/faststats",
+        "-f",
+        "h264",
+        "-y",
+        ".research/encoder-state-diagnostic/crf_stats_write_default_fast.h264"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.11802395799895748,
+      "file_bytes": 1980,
+      "vcl_nal_count": 8,
+      "vcl_bytes": 1232,
+      "vcl_sha256": "3a9e17905d06d14e552040e580d30023d803c3da31dcf9919349386f85035c57",
+      "parameter_line": null,
+      "errors": []
+    },
+    {
+      "name": "crf_stats_read",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "debug",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "yuv420p",
+        "-video_size",
+        "64x48",
+        "-framerate",
+        "8",
+        "-i",
+        ".research/encoder-state-diagnostic/source.yuv",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "23",
+        "-threads",
+        "1",
+        "-pass",
+        "2",
+        "-passlogfile",
+        ".research/encoder-state-diagnostic/exactstats",
+        "-f",
+        "h264",
+        "-y",
+        ".research/encoder-state-diagnostic/crf_stats_read.h264"
+      ],
+      "returncode": 187,
+      "wall_seconds": 0.6115279529985855,
+      "file_bytes": 0,
+      "vcl_nal_count": 0,
+      "vcl_bytes": 0,
+      "vcl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "parameter_line": null,
+      "errors": [
+        "[libx264 @ 0x56092e5955c0] CRF/CQP is incompatible with 2pass.",
+        "[vost#0:0/libx264 @ 0x56092e598480] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height."
+      ]
+    }
+  ],
+  "source_sha256": "2be97fcd6d0334386df3378304df742977749df5430be353455b16a393e58e40",
+  "stats_files": [
+    {
+      "name": "faststats-0.log",
+      "bytes": 1402,
+      "sha256": "e14e429f131ccf886e5410fa9443f3fc1ee3b3695a1d347d0e332a0fd919332c",
+      "text_preview": "#options: 64x48 fps=8/1 timebase=1/8 bitdepth=8 cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=8 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00\nin:0 out:0 type:I dur:2 cpbdur:2 q:24.45 aq:22.58 tex:7462 mv:352 misc:5810 imb:12 pmb:0 smb:0 d:- ref:;\nin:4 out:1 type:P dur:2 cpbdur:2 q:24.45 aq:26.00 tex:391 mv:3 misc:102 imb:0 pmb:1 smb:11 d:- ref:0 ;\nin:2 out:2 type:B dur:2 cpbdur:2 q:24.45 aq:27.00 tex:242 mv:4 misc:98 imb:0 pmb:1 smb:11 d:- ref:0 ;\nin:1 out:3 type:b dur:2 cpbdur:2 q:24.45 aq:30.00 tex:226 mv:5 misc:89 imb:0 pmb:1 smb:11 d:- ref:0 ;\nin:3 "
+    },
+    {
+      "name": "exactstats-0.log",
+      "bytes": 1425,
+      "sha256": "477568b07d28748deb4891382b4a43615d5b000fbe77c748b6dbd901a2569e8c",
+      "text_preview": "#options: 64x48 fps=8/1 timebase=1/8 bitdepth=8 cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=8 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00\nin:0 out:0 type:I dur:2 cpbdur:2 q:24.45 aq:22.58 tex:7767 mv:368 misc:5873 imb:12 pmb:0 smb:0 d:- ref:;\nin:4 out:1 type:P dur:2 cpbdur:2 q:24.45 aq:26.00 tex:454 mv:3 misc:103 imb:0 pmb:1 smb:11 d:- ref:4 ;\nin:2 out:2 type:B dur:2 cpbdur:2 q:24.45 aq:27.00 tex:182 mv:9 misc:97 imb:0 pmb:1 smb:11 d:- ref:2 ;\nin:1 out:3 type:b dur:2 cpbdur:2 q:24.45 aq:30.00 tex:108 mv:6 misc:102 imb:0 pmb:2 smb:10 d:- ref:4 ;"
+    },
+    {
+      "name": "faststats-0.log.mbtree",
+      "bytes": 125,
+      "sha256": "59b86e6db697b914ae5c5c7d527dba5bc50f516b1dc38c81b4948f3813a05bb3",
+      "text_preview": null
+    },
+    {
+      "name": "exactstats-0.log.mbtree",
+      "bytes": 125,
+      "sha256": "59b86e6db697b914ae5c5c7d527dba5bc50f516b1dc38c81b4948f3813a05bb3",
+      "text_preview": null
+    }
+  ],
+  "version": [
+    "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "built with gcc 14 (Debian 14.2.0-19)",
+    "configuration: --prefix=/usr --extra-version=0+deb13u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-libmfx --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared"
+  ],
+  "source_files": [
+    {
+      "path": "common/base.h",
+      "sha256": "bc78e03b833985f10a278f5dcec3da7ee800e38218e7ad9d53b4bfe666ba4baa",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/common/base.h"
+    },
+    {
+      "path": "common/common.h",
+      "sha256": "7b51ceebe2361cbb30227c9f4fdec088cdb3997226c91dc39edc709c4c2933ab",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/common/common.h"
+    },
+    {
+      "path": "common/frame.c",
+      "sha256": "daca9eb48564ad960249ba079c980ecd206febe0ae9edb891b5d5dadef802262",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/common/frame.c"
+    },
+    {
+      "path": "common/frame.h",
+      "sha256": "3bebbadda7bfdfd2017c708bde2f4556daad8b6fc8f44fb1bdab5616b13722fd",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/common/frame.h"
+    },
+    {
+      "path": "encoder/encoder.c",
+      "sha256": "5bdac6592b556782a05b3fee0c5bfca4daffc9a372d06af1cc70b1f06406e9d6",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/encoder/encoder.c"
+    },
+    {
+      "path": "encoder/lookahead.c",
+      "sha256": "df8323cef7a7a17af4169c7896ccb991c71f9e5a7256bdf0869bd0f2e0b11e66",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/encoder/lookahead.c"
+    },
+    {
+      "path": "encoder/ratecontrol.c",
+      "sha256": "c03cb0025d983ceee142644ba4328da5c59f53f2bd0f83bd6225dbaa6a31f87c",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/encoder/ratecontrol.c"
+    },
+    {
+      "path": "encoder/ratecontrol.h",
+      "sha256": "98b59316641bd3367e8c79082ef0b61b3c359fad185234a80d823417809429b4",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/encoder/ratecontrol.h"
+    },
+    {
+      "path": "encoder/slicetype.c",
+      "sha256": "15cea2a5022ff01b4a92f5061c5131cc84ab98c9408ac578068cd7fc10f84d09",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/encoder/slicetype.c"
+    },
+    {
+      "path": "x264.h",
+      "sha256": "adfaae08c4c22ecccc5f26d4879c79084ee779cc83e2aa99150541d8ddd7cd3e",
+      "url": "https://raw.githubusercontent.com/mirror/x264/31e19f9/x264.h"
+    }
+  ]
+}

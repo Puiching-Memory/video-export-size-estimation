@@ -1,0 +1,304 @@
+{
+  "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+  "blocks": [
+    {
+      "start": 0.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 10.841945271984994,
+      "visual_change": 6.855372299382717,
+      "features": [
+        0.0,
+        -1.6050479364451848,
+        -2.714823624859799
+      ]
+    },
+    {
+      "start": 1.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 10.891890792232154,
+      "visual_change": 8.350163966049383,
+      "features": [
+        0.0,
+        -1.4634869568824729,
+        -1.4289695995299982
+      ]
+    },
+    {
+      "start": 2.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.376712319320314,
+      "visual_change": 9.144675925925927,
+      "features": [
+        0.0,
+        -0.11945617406572782,
+        -0.8269587119306923
+      ]
+    },
+    {
+      "start": 3.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.570366002795247,
+      "visual_change": 11.511091820987653,
+      "features": [
+        0.0,
+        0.40273449844287995,
+        0.720724767853114
+      ]
+    },
+    {
+      "start": 4.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.788549884604068,
+      "visual_change": 11.339265046296296,
+      "features": [
+        0.0,
+        0.9815191593608148,
+        0.6186430227298836
+      ]
+    },
+    {
+      "start": 5.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.84356156212071,
+      "visual_change": 11.313512731481481,
+      "features": [
+        0.0,
+        1.1258919953690112,
+        0.6032212774335451
+      ]
+    },
+    {
+      "start": 6.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 12.143417432141675,
+      "visual_change": 11.76977237654321,
+      "features": [
+        0.0,
+        1.9021218642335522,
+        0.8717918994148027
+      ]
+    },
+    {
+      "start": 7.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.971355143624262,
+      "visual_change": 12.832706404320987,
+      "features": [
+        0.0,
+        1.4589011528424842,
+        1.4619908568360598
+      ]
+    },
+    {
+      "start": 8.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.404137702747434,
+      "visual_change": 11.267988040123457,
+      "features": [
+        0.0,
+        -0.045008522739290735,
+        0.5758797943316606
+      ]
+    },
+    {
+      "start": 9.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.102966617933724,
+      "visual_change": 9.123408564814815,
+      "features": [
+        0.0,
+        -0.8717266361613989,
+        -0.8424498746168704
+      ]
+    },
+    {
+      "start": 10.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.621912641601384,
+      "visual_change": 10.029706790123457,
+      "features": [
+        0.0,
+        0.5403754991612357,
+        -0.209534421397412
+      ]
+    },
+    {
+      "start": 11.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.406723537092207,
+      "visual_change": 11.026331018518519,
+      "features": [
+        0.0,
+        -0.03799763236646468,
+        0.4290237019115764
+      ]
+    },
+    {
+      "start": 12.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.050113614421274,
+      "visual_change": 9.10035686728395,
+      "features": [
+        0.0,
+        -1.0189281093986617,
+        -0.8592775465801309
+      ]
+    },
+    {
+      "start": 13.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 10.766272090735223,
+      "visual_change": 8.291425540123456,
+      "features": [
+        0.0,
+        -1.8206706956653524,
+        -1.475487891179965
+      ]
+    },
+    {
+      "start": 14.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.339488683382985,
+      "visual_change": 9.204475308641976,
+      "features": [
+        0.0,
+        -0.22076603448411786,
+        -0.7835742108040898
+      ]
+    },
+    {
+      "start": 15.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.322348996836956,
+      "visual_change": 11.345293209876543,
+      "features": [
+        0.0,
+        -0.2675171335654979,
+        0.6222483329030034
+      ]
+    },
+    {
+      "start": 16.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.494003261888999,
+      "visual_change": 11.046730324074074,
+      "features": [
+        0.0,
+        0.19778805466831792,
+        0.4415339845294816
+      ]
+    },
+    {
+      "start": 17.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.524722371639267,
+      "visual_change": 11.118152006172838,
+      "features": [
+        0.0,
+        0.28038385665327525,
+        0.48516844500929424
+      ]
+    },
+    {
+      "start": 18.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.960373393192098,
+      "visual_change": 11.731819058641975,
+      "features": [
+        0.0,
+        1.4304136458808387,
+        0.849820094136655
+      ]
+    },
+    {
+      "start": 19.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.733924909890028,
+      "visual_change": 12.710165895061728,
+      "features": [
+        0.0,
+        0.8375453672642371,
+        1.3963073587045074
+      ]
+    },
+    {
+      "start": 20.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.458566308985251,
+      "visual_change": 11.403935185185185,
+      "features": [
+        0.0,
+        0.10225455151301387,
+        0.657229210130772
+      ]
+    },
+    {
+      "start": 21.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 10.832757330630034,
+      "visual_change": 9.207658179012345,
+      "features": [
+        0.0,
+        -1.631154398438194,
+        -0.7812721673813813
+      ]
+    },
+    {
+      "start": 22.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.333220063720624,
+      "visual_change": 9.824122299382715,
+      "features": [
+        0.0,
+        -0.23785711078186048,
+        -0.3484204546281415
+      ]
+    },
+    {
+      "start": 23.0,
+      "duration": 1.0,
+      "input_bytes": 0,
+      "visual_texture": 11.450210103350619,
+      "visual_change": 11.20384837962963,
+      "features": [
+        0.0,
+        0.07968769560432414,
+        0.5371857569840588
+      ]
+    }
+  ],
+  "discovery": {
+    "cache_hit": false,
+    "elapsed_seconds": 0.4383686880028108,
+    "key": "ea094156b72dab5c8c05b7a72292c32b5de4acabe5e96eae97a1153a21dfd7b6",
+    "preview_fps": 4,
+    "resolution": [
+      96,
+      54
+    ],
+    "cold_elapsed_seconds": 0.4383686880028108
+  }
+}

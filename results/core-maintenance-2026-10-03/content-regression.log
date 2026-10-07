@@ -1,0 +1,14 @@
+test_large_integer_endpoints_keep_one_byte_relative_error (test_content_engine.ContentContracts.test_large_integer_endpoints_keep_one_byte_relative_error) ... ok
+test_sampling_plan_round_trip_and_validation (test_content_engine.ContentContracts.test_sampling_plan_round_trip_and_validation) ... ok
+test_actual_preview_subprocess_timeout_leaves_no_publishable_feature_partial (test_content_engine.RealContentDiscovery.test_actual_preview_subprocess_timeout_leaves_no_publishable_feature_partial) ... ok
+test_content_bare_budget_selects_rare_and_quiet_content_without_certifying_confidence (test_content_engine.RealContentDiscovery.test_content_bare_budget_selects_rare_and_quiet_content_without_certifying_confidence) ... ok
+test_malformed_json_and_tampered_checksum_are_rebuilt_from_pixels (test_content_engine.RealContentDiscovery.test_malformed_json_and_tampered_checksum_are_rebuilt_from_pixels) ... ok
+test_noninteger_windows_assign_high_texture_to_the_actual_content_interval (test_content_engine.RealContentDiscovery.test_noninteger_windows_assign_high_texture_to_the_actual_content_interval) ... ok
+test_prepared_upload_keeps_its_features_when_named_source_is_replaced (test_content_engine.RealContentDiscovery.test_prepared_upload_keeps_its_features_when_named_source_is_replaced) ... ok
+test_preview_avoids_source_packet_scan_and_hot_cache_avoids_another_decode (test_content_engine.RealContentDiscovery.test_preview_avoids_source_packet_scan_and_hot_cache_avoids_another_decode) ... ok
+test_source_filter_and_block_plan_each_change_feature_identity (test_content_engine.RealContentDiscovery.test_source_filter_and_block_plan_each_change_feature_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 11.122s
+
+OK

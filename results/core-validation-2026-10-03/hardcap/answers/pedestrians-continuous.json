@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 15,
+      "max_probes": 0,
+      "threads": 1,
+      "max_encode_fraction": null
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": 411556,
+      "max_crf": 35,
+      "max_candidates": 5
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23.0,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4
+    },
+    "sample_seconds": 2,
+    "seed": 20261003,
+    "probe_mode": "auto"
+  },
+  "status": "satisfied",
+  "estimate": {
+    "estimated_bytes": 395181,
+    "selected_crf": 26.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        395181,
+        395181
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/hardcap/.vsize-cache/pedestrians-continuous/7dd8a5a959fc88027ed12bbb1cd9e645232ebcd08f6c6487cb5638018666890f.mp4",
+    "sha256": "38fe1f6552111ca48b92e1996a9d290a7a765517047ab26025457adba85588f7",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "export_mode": "continuous"
+  },
+  "candidates": [
+    {
+      "crf": 23.0,
+      "estimated_bytes": 587937,
+      "evidence": "exact"
+    },
+    {
+      "crf": 24.0,
+      "estimated_bytes": 513951,
+      "evidence": "exact"
+    },
+    {
+      "crf": 26.0,
+      "estimated_bytes": 395181,
+      "evidence": "exact"
+    },
+    {
+      "crf": 25.0,
+      "estimated_bytes": 451299,
+      "evidence": "exact"
+    }
+  ],
+  "unmet": [],
+  "elapsed_seconds": 6.614099561003968,
+  "first_estimate_seconds": 1.9375485760028823,
+  "attempted_encode_seconds": 160.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 0,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+    "bytes": 1097614,
+    "ingest_seconds": 0.0022432919940911233,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "stop_reason": "allowed_grid_search_finished",
+  "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "quality_search": {
+    "objective": "lowest_verified_feasible_crf",
+    "allowed_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0
+    ],
+    "attempted_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0
+    ],
+    "actual_crfs": [
+      23.0,
+      24.0,
+      25.0,
+      26.0
+    ],
+    "unverified_lower_crfs": [],
+    "best_crf": 26.0,
+    "best_bytes": 395181,
+    "feasibility": "verified_feasible",
+    "optimality": "lowest_verified_feasible_on_grid",
+    "warnings": []
+  },
+  "alternatives": []
+}

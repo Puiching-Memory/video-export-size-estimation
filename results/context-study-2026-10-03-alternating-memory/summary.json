@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "contract": {
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium",
+    "pixel_format": "yuv420p",
+    "threads": 1,
+    "filter_threads": 1,
+    "audio": "dropped",
+    "keyint": "x264 default 250 (verified in encoder log)"
+  },
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "manifest_sha256": "228636910cc161c21569d0c2de3eb5c7143bf320cc446653ce6a7e5078bf78ee",
+  "script_sha256": "90813ca280d2641af7e1165608dd7f6836cfd6cd428f270fff65fc9fa6af0de6",
+  "padding": {
+    "before": 6.0,
+    "after": 2.0
+  },
+  "block_seconds": 2.0,
+  "reference_uses": "scoring only; encoded after candidate measurements",
+  "cases": [
+    {
+      "id": "alternating",
+      "group_id": "synthetic-alternating",
+      "duration": 24.0,
+      "frames": 576,
+      "fps": 24.0,
+      "source_sha256": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+      "reference_file_bytes": 4206639,
+      "reference_payload_bytes": 4199684,
+      "reference_container_bytes": 6955,
+      "reference_picture_types": {
+        "I": {
+          "frames": 3,
+          "bytes": 69405
+        },
+        "P": {
+          "frames": 237,
+          "bytes": 2944178
+        },
+        "B": {
+          "frames": 336,
+          "bytes": 1186101
+        }
+      },
+      "reference_encode_seconds": 4.426061759004369,
+      "census_estimates": {
+        "old_file": {
+          "estimate": 4070795.0,
+          "target": 4206639,
+          "relative_error": -0.03229276389060243
+        },
+        "clip_payload": {
+          "estimate": 4053511.0,
+          "target": 4199684,
+          "relative_error": -0.034805713953716566
+        },
+        "startup_corrected": {
+          "estimate": 4009026.697531915,
+          "target": 4199684,
+          "relative_error": -0.04539801148564637
+        },
+        "context_payload": {
+          "estimate": 4179863,
+          "target": 4199684,
+          "relative_error": -0.004719640811070569
+        },
+        "context_gop_corrected": {
+          "estimate": 4189038.804964539,
+          "target": 4199684,
+          "relative_error": -0.002534760957124571,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 9175.804964539007
+        },
+        "context_gop_no_sei": {
+          "estimate": 4187658.804964539,
+          "target": 4199684,
+          "relative_error": -0.002863357108644604,
+          "guessed_periodic_i_count": 2,
+          "guessed_periodic_i_excess": 7795.8049645390065
+        }
+      },
+      "limitations": [
+        "A census of all blocks isolates context bias and spends more than a full encode.",
+        "Scene selection and uncertainty coverage are not evaluated.",
+        "Startup correction uses guessed keyint 250 and local first-I excess.",
+        "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+        "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+      ]
+    }
+  ]
+}

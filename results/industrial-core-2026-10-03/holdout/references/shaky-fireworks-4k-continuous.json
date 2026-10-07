@@ -1,0 +1,106 @@
+{
+  "case": "shaky-fireworks-4k",
+  "mode": "continuous",
+  "answer": {
+    "schema_version": 2,
+    "requested": {
+      "compute": {
+        "wall_seconds": 120,
+        "max_probes": 0,
+        "threads": 1,
+        "max_encode_fraction": 1.0
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      },
+      "sample_seconds": 0.5,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "content"
+    },
+    "status": "satisfied",
+    "estimate": {
+      "estimated_bytes": 12753861,
+      "selected_crf": 23,
+      "uncertainty": {
+        "kind": "exact",
+        "interval_bytes": [
+          12753861,
+          12753861
+        ],
+        "coverage": 1.0
+      },
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-fireworks-4k-continuous/bfd0bd40873787d10469bea37759a4f81df9a5f46979337ffc28a724c11254e1.mp4",
+      "sha256": "5b6b692f1c42d348ba8de19a6b46fd9b9d45b5b609dd994f57ad102446f113a7",
+      "cache_hit": false,
+      "sample_count": 0,
+      "source_hash": "9a3c3a6df0bf50adb1e692377f1376026e398719e6e889a2f1b154a1d373034e",
+      "export_mode": "continuous"
+    },
+    "candidates": [
+      {
+        "crf": 23,
+        "estimated_bytes": 12753861,
+        "evidence": "exact"
+      }
+    ],
+    "unmet": [],
+    "elapsed_seconds": 112.45971245699911,
+    "first_estimate_seconds": 112.45965395100211,
+    "attempted_encode_seconds": 4.337667,
+    "attempted_audio_seconds": 0.0,
+    "audio_preparation_seconds": 0.0,
+    "total_probe_count": 0,
+    "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+    "prepared_asset": {
+      "source_hash": "9a3c3a6df0bf50adb1e692377f1376026e398719e6e889a2f1b154a1d373034e",
+      "bytes": 1617408848,
+      "ingest_seconds": 2.1615349970015814,
+      "ingest_in_request_budget": false,
+      "identity": "linux_sealed_memfd"
+    },
+    "calibration_note": null,
+    "content_discovery": null,
+    "stop_reason": "exact_export_complete",
+    "source_hash": "9a3c3a6df0bf50adb1e692377f1376026e398719e6e889a2f1b154a1d373034e",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "pilot_count": 1,
+    "alternatives": []
+  },
+  "reference_wall_seconds": 112.45971245699911,
+  "source_ingest_seconds": 2.1615349970015814,
+  "file_bytes": 12753861,
+  "inspection": {
+    "passed": true,
+    "mode": "continuous",
+    "frames": 130,
+    "width": 3840,
+    "height": 2160,
+    "frame_rate": "30000/1001",
+    "video_duration": "4.337667",
+    "format_duration": "4.337667",
+    "audio_streams": 0,
+    "file_bytes": 12753861,
+    "inspection_seconds": 10.118706388006103,
+    "byte_accounting": null,
+    "native_dimensions": true,
+    "validation_kind": "full_decode_metadata_and_exact_container_identity_not_prediction_accuracy"
+  }
+}

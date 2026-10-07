@@ -1,0 +1,72 @@
+[matroska,webm @ 0x55aae9740540] max_analyze_duration 5000000 reached at 5019000 microseconds st:1
+[matroska,webm @ 0x55aae9740540] Could not find codec parameters for stream 0 (Video: h264, 1 reference frame, none(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144): unspecified pixel format
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, matroska,webm, from '/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-delayed-video.mkv':
+  Metadata:
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    MAJOR_BRAND     : mp42
+    ENCODER         : Lavf61.7.103
+  Duration: 00:00:25.02, start: -0.021000, bitrate: 812 kb/s
+  Stream #0:0(eng): Video: h264, 1 reference frame, none(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:00:24.499000000
+  Stream #0:1: Audio: aac (LC), 48000 Hz, mono, fltp, delay 1024
+      Metadata:
+        ENCODER         : Lavc61.19.101 aac
+        DURATION        : 00:00:25.021000000
+[out#0/framehash @ 0x55aae9796840] Adding streams from explicit maps...
+[vost#0:0/rawvideo @ 0x55aae9796a00] Created video stream from input stream 0:0
+[Parsed_fps_0 @ 0x55aae96ecb00] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x55aae9796a00] Starting thread...
+[vf#0:0 @ 0x55aae9798380] Starting thread...
+[vist#0:0/h264 @ 0x55aae979d6c0] [dec:h264 @ 0x55aae979d580] Starting thread...
+[in#0/matroska,webm @ 0x55aae9740280] Starting thread...
+[h264 @ 0x55aae97c5bc0] Reinit context to 256x144, pix_fmt: yuv420p
+[graph -1 input from stream 0:0 @ 0x7fae50002180] w:256 h:144 pixfmt:yuv420p tb:1/1000 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[Parsed_fps_0 @ 0x7fae50001780] fps=12/1
+[Parsed_fps_0 @ 0x7fae50001780] TB:0.083333 FRAME_RATE:12.000000 SAMPLE_RATE:nan
+[graph -1 input from stream 0:0 @ 0x7fae50002180] video frame properties congruent with link at pts_time: -0.187
+[Parsed_fps_0 @ 0x7fae50001780] Set first pts to 0
+Output #0, framehash, to 'pipe:1':
+  Metadata:
+    MINOR_VERSION   : 1
+    COMPATIBLE_BRANDS: mp42avc1
+    MAJOR_BRAND     : mp42
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, q=2-31, 5308 kb/s, 12 tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        DURATION        : 00:00:24.499000000
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/framehash @ 0x55aae9796840] Starting thread...
+[vf#0:0 @ 0x55aae9798380] All consumers returned EOF
+[Parsed_fps_0 @ 0x7fae50001780] 6 frames in, 3 frames out; 3 frames dropped, 0 frames duplicated.
+[vf#0:0 @ 0x55aae9798380] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x55aae979d6c0] [dec:h264 @ 0x55aae979d580] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x55aae979d6c0] [dec:h264 @ 0x55aae979d580] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x55aae979d6c0] All consumers of this stream are done
+[in#0/matroska,webm @ 0x55aae9740280] All consumers are done
+[in#0/matroska,webm @ 0x55aae9740280] Terminating thread with return code 0 (success)
+[vost#0:0/rawvideo @ 0x55aae9796a00] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x55aae9796a00] Terminating thread with return code 0 (success)
+[out#0/framehash @ 0x55aae9796840] All streams finished
+[out#0/framehash @ 0x55aae9796840] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x55aae97b07c0] Statistics: 553 bytes written, 0 seeks, 4 writeouts
+[out#0/framehash @ 0x55aae9796840] Output file #0 (pipe:1):
+[out#0/framehash @ 0x55aae9796840]   Output stream #0:0 (video): 3 frames encoded; 3 packets muxed (165888 bytes); 
+[out#0/framehash @ 0x55aae9796840]   Total: 3 packets (165888 bytes) muxed
+[out#0/framehash @ 0x55aae9796840] video:162KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    3 fps=0.0 q=-0.0 Lsize=       1KiB time=00:00:05.50 bitrate=   0.8kbits/s speed= 810x    
+bench: utime=0.008s stime=0.000s rtime=0.007s
+bench: maxrss=36680KiB
+[in#0/matroska,webm @ 0x55aae9740280] Input file #0 (/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-delayed-video.mkv):
+[in#0/matroska,webm @ 0x55aae9740280]   Input stream #0:0 (video): 20 packets read (59514 bytes); 11 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x55aae9740280]   Total: 20 packets (59514 bytes) demuxed
+[AVIOContext @ 0x55aae9748d00] Statistics: 98578 bytes read, 3 seeks

@@ -1,0 +1,87 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 304927,
+    "estimated_payload_bytes": 298942.0,
+    "fixed_bytes": 5985,
+    "sampled_seconds": 1.001001001001001,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Fixed-prefix sampling variance is not an anytime coverage certificate."
+    },
+    "export_mode": "segmented",
+    "probe_mode": "actual_export_segments",
+    "bias_status": "sampled_segments_are_reused_unchanged",
+    "known_byte_accounting": {
+      "init_bytes": 737,
+      "video_payload_bytes": 0,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 5248,
+      "video_samples": 262,
+      "audio_samples": 0,
+      "video_duration_ticks": 131000,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reusable_sample_count": 1,
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "observed_blocks": [
+      2
+    ],
+    "pilot_indices": [
+      2,
+      9
+    ],
+    "elapsed_seconds": 0.798597893997794
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 298149,
+    "estimated_payload_bytes": 292163.6666666666,
+    "fixed_bytes": 5985,
+    "sampled_seconds": 2.002002002002002,
+    "sample_count": 2,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Fixed-prefix sampling variance is not an anytime coverage certificate."
+    },
+    "export_mode": "segmented",
+    "probe_mode": "actual_export_segments",
+    "bias_status": "sampled_segments_are_reused_unchanged",
+    "known_byte_accounting": {
+      "init_bytes": 737,
+      "video_payload_bytes": 0,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 5248,
+      "video_samples": 262,
+      "audio_samples": 0,
+      "video_duration_ticks": 131000,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reusable_sample_count": 2,
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "observed_blocks": [
+      2,
+      9
+    ],
+    "pilot_indices": [
+      2,
+      9
+    ],
+    "elapsed_seconds": 1.1148526559991296
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "method": "continuous",
+    "prefix": null,
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "lifecycle": "prepared",
+    "cases": 9,
+    "estimates": 9,
+    "no_estimate_rate": 0.0,
+    "within_10_percent_of_all_cases": 1.0,
+    "median_ape_percent": 0.0,
+    "worst_ape_percent": 6.07271030387918,
+    "median_encoded_media_fraction": 1.1197916666666667,
+    "median_wall_seconds": 2.979349473003822,
+    "exact_estimates": 7,
+    "certified_satisfied": 7
+  }
+]

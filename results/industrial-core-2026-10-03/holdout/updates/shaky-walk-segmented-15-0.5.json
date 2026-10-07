@@ -1,0 +1,134 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 11326167,
+    "estimated_payload_bytes": 11322295.833333334,
+    "fixed_bytes": 3871,
+    "sampled_seconds": 0.48,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Fixed-prefix sampling variance is not an anytime coverage certificate."
+    },
+    "export_mode": "segmented",
+    "probe_mode": "actual_export_segments",
+    "bias_status": "sampled_segments_are_reused_unchanged",
+    "known_byte_accounting": {
+      "init_bytes": 735,
+      "video_payload_bytes": 0,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 3136,
+      "video_samples": 130,
+      "audio_samples": 0,
+      "video_duration_ticks": 66560,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reusable_sample_count": 1,
+    "selected_crf": 23,
+    "artifact": null,
+    "source_hash": "1401b5031a8b427fe96514691c305654eb196a8219fd7fe0b5ab2a7b3a6b7d22",
+    "observed_blocks": [
+      8
+    ],
+    "pilot_indices": [
+      8,
+      1,
+      0
+    ],
+    "elapsed_seconds": 3.1797394560053363
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 11402679,
+    "estimated_payload_bytes": 11398808.333333334,
+    "fixed_bytes": 3871,
+    "sampled_seconds": 0.96,
+    "sample_count": 2,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Fixed-prefix sampling variance is not an anytime coverage certificate."
+    },
+    "export_mode": "segmented",
+    "probe_mode": "actual_export_segments",
+    "bias_status": "sampled_segments_are_reused_unchanged",
+    "known_byte_accounting": {
+      "init_bytes": 735,
+      "video_payload_bytes": 0,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 3136,
+      "video_samples": 130,
+      "audio_samples": 0,
+      "video_duration_ticks": 66560,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reusable_sample_count": 2,
+    "selected_crf": 23,
+    "artifact": null,
+    "source_hash": "1401b5031a8b427fe96514691c305654eb196a8219fd7fe0b5ab2a7b3a6b7d22",
+    "observed_blocks": [
+      1,
+      8
+    ],
+    "pilot_indices": [
+      8,
+      1,
+      0
+    ],
+    "elapsed_seconds": 5.940689433999069
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 11393296,
+    "estimated_payload_bytes": 11389424.833333334,
+    "fixed_bytes": 3871,
+    "sampled_seconds": 1.44,
+    "sample_count": 3,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Fixed-prefix sampling variance is not an anytime coverage certificate."
+    },
+    "export_mode": "segmented",
+    "probe_mode": "actual_export_segments",
+    "bias_status": "sampled_segments_are_reused_unchanged",
+    "known_byte_accounting": {
+      "init_bytes": 735,
+      "video_payload_bytes": 0,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 3136,
+      "video_samples": 130,
+      "audio_samples": 0,
+      "video_duration_ticks": 66560,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reusable_sample_count": 3,
+    "selected_crf": 23,
+    "artifact": null,
+    "source_hash": "1401b5031a8b427fe96514691c305654eb196a8219fd7fe0b5ab2a7b3a6b7d22",
+    "observed_blocks": [
+      0,
+      1,
+      8
+    ],
+    "pilot_indices": [
+      8,
+      1,
+      0
+    ],
+    "elapsed_seconds": 13.60454978299822
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 311662,
+    "estimated_payload_bytes": 307688.26425799995,
+    "fixed_bytes": 3974,
+    "sampled_seconds": 1.0,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "observed_blocks": [
+      3
+    ],
+    "pilot_indices": [
+      3,
+      9
+    ],
+    "elapsed_seconds": 0.8797325139967143
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 305606,
+    "estimated_payload_bytes": 301720.433234,
+    "fixed_bytes": 3886,
+    "sampled_seconds": 2.0,
+    "sample_count": 2,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+    "observed_blocks": [
+      3,
+      9
+    ],
+    "pilot_indices": [
+      3,
+      9
+    ],
+    "elapsed_seconds": 1.2534399239957565
+  }
+]

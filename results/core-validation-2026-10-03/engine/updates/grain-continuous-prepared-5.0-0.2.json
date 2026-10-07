@@ -1,0 +1,48 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 6060368,
+    "estimated_payload_bytes": 6054864.0,
+    "fixed_bytes": 5504.0,
+    "sampled_seconds": 2,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "elapsed_seconds": 1.1743838069960475
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 6087038,
+    "estimated_payload_bytes": 6081533.5,
+    "fixed_bytes": 5504.0,
+    "sampled_seconds": 4,
+    "sample_count": 2,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+    "elapsed_seconds": 2.16005118299654
+  }
+]

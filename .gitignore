@@ -1,0 +1,17 @@
+.research/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.vsize-cache/
+artifacts/
+build/
+dist/
+/results/**/*.mp4
+/results/**/*.mkv
+/results/**/*.h264
+/results/**/*.y4m
+/results/**/*.avcc
+/results/**/*.raw

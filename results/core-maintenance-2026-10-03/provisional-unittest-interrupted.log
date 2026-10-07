@@ -1,0 +1,129 @@
+test_child_process_reads_snapshot_with_explicit_fd_inheritance (test_assets.ImmutablePreparedAssets.test_child_process_reads_snapshot_with_explicit_fd_inheritance) ... ok
+test_close_invalidates_handles_but_preserves_metadata (test_assets.ImmutablePreparedAssets.test_close_invalidates_handles_but_preserves_metadata) ... ok
+test_empty_file_is_a_valid_captured_asset (test_assets.ImmutablePreparedAssets.test_empty_file_is_a_valid_captured_asset) ... ok
+test_external_fd_reuse_does_not_close_an_unrelated_file (test_assets.ImmutablePreparedAssets.test_external_fd_reuse_does_not_close_an_unrelated_file) ... ok
+test_full_hash_content_and_ingestion_metadata (test_assets.ImmutablePreparedAssets.test_full_hash_content_and_ingestion_metadata) ... ok
+test_growing_upload_is_bounded_during_copy_and_releases_fd (test_assets.ImmutablePreparedAssets.test_growing_upload_is_bounded_during_copy_and_releases_fd) ... ok
+test_kernel_refuses_writes_growth_shrink_and_further_seals (test_assets.ImmutablePreparedAssets.test_kernel_refuses_writes_growth_shrink_and_further_seals) ... ok
+test_manual_construction_cannot_claim_an_unverified_hash (test_assets.ImmutablePreparedAssets.test_manual_construction_cannot_claim_an_unverified_hash) ... ok
+test_mutation_during_copy_is_rejected_and_releases_fd (test_assets.ImmutablePreparedAssets.test_mutation_during_copy_is_rejected_and_releases_fd) ... ok
+test_nonregular_input_is_rejected (test_assets.ImmutablePreparedAssets.test_nonregular_input_is_rejected) ... ok
+test_original_mutation_and_replacement_do_not_change_snapshot (test_assets.ImmutablePreparedAssets.test_original_mutation_and_replacement_do_not_change_snapshot) ... ok
+test_partial_writes_copy_every_byte (test_assets.ImmutablePreparedAssets.test_partial_writes_copy_every_byte) ... ok
+test_read_failure_releases_snapshot_descriptor (test_assets.ImmutablePreparedAssets.test_read_failure_releases_snapshot_descriptor) ... ok
+test_sealing_failure_releases_snapshot_descriptor (test_assets.ImmutablePreparedAssets.test_sealing_failure_releases_snapshot_descriptor) ... ok
+test_size_limit_rejects_before_allocating_snapshot (test_assets.ImmutablePreparedAssets.test_size_limit_rejects_before_allocating_snapshot) ... ok
+test_large_integer_endpoints_keep_one_byte_relative_error (test_content_engine.ContentContracts.test_large_integer_endpoints_keep_one_byte_relative_error) ... ok
+test_sampling_plan_round_trip_and_validation (test_content_engine.ContentContracts.test_sampling_plan_round_trip_and_validation) ... ok
+test_actual_preview_subprocess_timeout_leaves_no_publishable_feature_partial (test_content_engine.RealContentDiscovery.test_actual_preview_subprocess_timeout_leaves_no_publishable_feature_partial) ... FAIL
+test_content_bare_budget_selects_rare_and_quiet_content_without_certifying_confidence (test_content_engine.RealContentDiscovery.test_content_bare_budget_selects_rare_and_quiet_content_without_certifying_confidence) ... ok
+test_malformed_json_and_tampered_checksum_are_rebuilt_from_pixels (test_content_engine.RealContentDiscovery.test_malformed_json_and_tampered_checksum_are_rebuilt_from_pixels) ... ok
+test_noninteger_windows_assign_high_texture_to_the_actual_content_interval (test_content_engine.RealContentDiscovery.test_noninteger_windows_assign_high_texture_to_the_actual_content_interval) ... ok
+test_prepared_upload_keeps_its_features_when_named_source_is_replaced (test_content_engine.RealContentDiscovery.test_prepared_upload_keeps_its_features_when_named_source_is_replaced) ... ok
+test_preview_avoids_source_packet_scan_and_hot_cache_avoids_another_decode (test_content_engine.RealContentDiscovery.test_preview_avoids_source_packet_scan_and_hot_cache_avoids_another_decode) ... ok
+test_source_filter_and_block_plan_each_change_feature_identity (test_content_engine.RealContentDiscovery.test_source_filter_and_block_plan_each_change_feature_identity) ... ok
+test_lookahead_uses_output_frames_and_preserves_encoding_cost (test_context_probe.ContextPolicy.test_lookahead_uses_output_frames_and_preserves_encoding_cost) ... ok
+test_window_bounds_and_tail_truncation_are_explicit (test_context_probe.ContextPolicy.test_window_bounds_and_tail_truncation_are_explicit) ... ok
+test_central_measurement_audio_selection_cost_and_cached_artifact (test_context_probe.RealContextProbe.test_central_measurement_audio_selection_cost_and_cached_artifact) ... ok
+test_dropped_audio_and_source_tail_are_reported (test_context_probe.RealContextProbe.test_dropped_audio_and_source_tail_are_reported) ... ok
+test_first_window_initialization_sei_is_separate_and_i_is_not_blindly_added (test_context_probe.RealContextProbe.test_first_window_initialization_sei_is_separate_and_i_is_not_blindly_added) ... ok
+test_axes_validate_independently (test_contracts.Contracts.test_axes_validate_independently) ... ok
+test_calibration_cannot_cross_encoder_builds_or_thread_settings (test_contracts.Contracts.test_calibration_cannot_cross_encoder_builds_or_thread_settings) ... ok
+test_calibration_needs_enough_independent_groups_for_all_looks (test_contracts.Contracts.test_calibration_needs_enough_independent_groups_for_all_looks) ... ok
+test_filters_cannot_hide_external_inputs_or_time_dependence (test_contracts.Contracts.test_filters_cannot_hide_external_inputs_or_time_dependence) ... ok
+test_random_audit_corrects_proxy_bias_in_expectation (test_contracts.Contracts.test_random_audit_corrects_proxy_bias_in_expectation) ... ok
+test_relative_error_is_relative_to_truth (test_contracts.Contracts.test_relative_error_is_relative_to_truth) ... ok
+test_sequential_risk_spending_covers_all_prefixes_and_configurations (test_contracts.Contracts.test_sequential_risk_spending_covers_all_prefixes_and_configurations) ... ok
+test_checked_in_catalog_preserves_group_splits_and_notices (test_corpus.CorpusIntegrity.test_checked_in_catalog_preserves_group_splits_and_notices) ... ok
+test_declared_terminal_cleanup_preserves_all_pixel_bytes (test_corpus.CorpusIntegrity.test_declared_terminal_cleanup_preserves_all_pixel_bytes) ... ok
+test_pixel_precision_hdr_and_missing_frames_are_not_silently_accepted (test_corpus.CorpusIntegrity.test_pixel_precision_hdr_and_missing_frames_are_not_silently_accepted) ... ok
+test_related_sources_cannot_cross_splits (test_corpus.CorpusIntegrity.test_related_sources_cannot_cross_splits) ... ok
+test_resumes_only_the_requested_range_and_verifies_complete_bytes (test_corpus.CorpusIntegrity.test_resumes_only_the_requested_range_and_verifies_complete_bytes) ... ok
+test_same_size_corruption_is_rejected_without_overwriting (test_corpus.CorpusIntegrity.test_same_size_corruption_is_rejected_without_overwriting) ... ok
+test_server_ignoring_range_restarts_instead_of_appending (test_corpus.CorpusIntegrity.test_server_ignoring_range_restarts_instead_of_appending) ... ok
+test_sha_lock_catches_changed_object_without_publisher_checksum (test_corpus.CorpusIntegrity.test_sha_lock_catches_changed_object_without_publisher_checksum) ... ok
+test_truncation_never_becomes_a_video_or_lock (test_corpus.CorpusIntegrity.test_truncation_never_becomes_a_video_or_lock) ... ok
+test_wrong_resume_offset_is_not_published (test_corpus.CorpusIntegrity.test_wrong_resume_offset_is_not_published) ... ok
+test_segmented_fraction_changes_family_when_it_changes_pilot_strategy (test_engine_family.EngineFamilyIntegration.test_segmented_fraction_changes_family_when_it_changes_pilot_strategy) ... ok
+test_callback_budget_stop_keeps_the_lowest_newly_verified_feasible_crf (test_engine_prepared.PreparedMediaEncoding.test_callback_budget_stop_keeps_the_lowest_newly_verified_feasible_crf) ... ok
+test_cancelled_uncached_audio_work_is_recorded_before_completion (test_engine_prepared.PreparedMediaEncoding.test_cancelled_uncached_audio_work_is_recorded_before_completion) ... ok
+test_engine_empty_cache_and_zero_video_budget_does_not_start_encode_work (test_engine_prepared.PreparedMediaEncoding.test_engine_empty_cache_and_zero_video_budget_does_not_start_encode_work) ... ok
+test_engine_limited_probe_avoids_whole_source_scan_and_accounts_video_work (test_engine_prepared.PreparedMediaEncoding.test_engine_limited_probe_avoids_whole_source_scan_and_accounts_video_work) ... ok
+test_engine_reports_preparation_cost_separately_and_exports_snapshot (test_engine_prepared.PreparedMediaEncoding.test_engine_reports_preparation_cost_separately_and_exports_snapshot) ... ok
+test_engine_tiny_deadline_returns_without_publishable_partials (test_engine_prepared.PreparedMediaEncoding.test_engine_tiny_deadline_returns_without_publishable_partials) ... ok
+test_engine_upload_identity_survives_original_path_becoming_a_symlink (test_engine_prepared.PreparedMediaEncoding.test_engine_upload_identity_survives_original_path_becoming_a_symlink) ... ok
+test_engine_verified_cache_is_available_with_zero_new_video_budget (test_engine_prepared.PreparedMediaEncoding.test_engine_verified_cache_is_available_with_zero_new_video_budget) ... ok
+test_media_full_export_uses_inherited_sealed_fd_without_source_hash_reads (test_engine_prepared.PreparedMediaEncoding.test_media_full_export_uses_inherited_sealed_fd_without_source_hash_reads) ... ok
+test_media_rejects_asset_for_another_source_path (test_engine_prepared.PreparedMediaEncoding.test_media_rejects_asset_for_another_source_path) ... ok
+test_media_rejects_closed_asset_before_starting_an_encoder (test_engine_prepared.PreparedMediaEncoding.test_media_rejects_closed_asset_before_starting_an_encoder) ... ok
+test_original_mutation_does_not_change_uncached_output_of_the_upload_version (test_engine_prepared.PreparedMediaEncoding.test_original_mutation_does_not_change_uncached_output_of_the_upload_version) ... ok
+test_segmented_audio_cost_is_explicit_and_video_fraction_is_enforced (test_engine_prepared.PreparedMediaEncoding.test_segmented_audio_cost_is_explicit_and_video_fraction_is_enforced) ... ok
+test_continuous_and_segmented_results_never_share_artifact_cache (test_engine_segmented.SegmentedEngineIntegration.test_continuous_and_segmented_results_never_share_artifact_cache) ... ok
+test_entire_audio_tail_and_decoded_pcm_match_single_full_aac_encode (test_engine_segmented.SegmentedEngineIntegration.test_entire_audio_tail_and_decoded_pcm_match_single_full_aac_encode) ... ok
+test_fractional_rate_b_frames_and_three_frame_tail_decode_completely (test_engine_segmented.SegmentedEngineIntegration.test_fractional_rate_b_frames_and_three_frame_tail_decode_completely) ... ok
+test_partial_cached_probes_then_exact_census_reuses_actual_samples (test_engine_segmented.SegmentedEngineIntegration.test_partial_cached_probes_then_exact_census_reuses_actual_samples) ... ok
+test_pipeline_version_invalidates_complete_artifact_cache (test_engine_segmented.SegmentedEngineIntegration.test_pipeline_version_invalidates_complete_artifact_cache) ... ok
+test_tampered_metadata_is_rejected_then_rebuilt_from_valid_cached_samples (test_engine_segmented.SegmentedEngineIntegration.test_tampered_metadata_is_rejected_then_rebuilt_from_valid_cached_samples) ... ok
+test_vfr_requires_explicit_fps_and_converted_export_preserves_all_frames (test_engine_segmented.SegmentedEngineIntegration.test_vfr_requires_explicit_fps_and_converted_export_preserves_all_frames) ... ok
+test_actual_encode_interruption_leaves_no_publishable_artifact (test_ffmpeg.RealEncoding.test_actual_encode_interruption_leaves_no_publishable_artifact) ... ok
+test_budgeted_prediction_never_claims_unvalidated_confidence (test_ffmpeg.RealEncoding.test_budgeted_prediction_never_claims_unvalidated_confidence) ... ok
+test_cache_corruption_is_rejected (test_ffmpeg.RealEncoding.test_cache_corruption_is_rejected) ... Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/__main__.py", line 18, in <module>
+    main(module=None)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/main.py", line 105, in __init__
+    self.runTests()
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/main.py", line 281, in runTests
+    self.result = testRunner.run(self.test)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/runner.py", line 240, in run
+    test(result)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/suite.py", line 122, in run
+    test(result)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/suite.py", line 122, in run
+    test(result)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/suite.py", line 122, in run
+    test(result)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py", line 690, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "/workspace/video-export-size-estimation/tests/test_ffmpeg.py", line 191, in test_cache_corruption_is_rejected
+    first = engine.run(self.request())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/video-export-size-estimation/src/vsize/engine.py", line 278, in run
+    full = session.complete(crf)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/video-export-size-estimation/src/vsize/sessions.py", line 142, in complete
+    return self.media.encode(crf)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/video-export-size-estimation/src/vsize/media.py", line 402, in encode
+    encoded = self.deadline.run(command)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/video-export-size-estimation/src/vsize/runtime.py", line 50, in run
+    out, err = process.communicate(timeout=self.remaining)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 2115, in _communicate
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

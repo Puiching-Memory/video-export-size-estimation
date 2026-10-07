@@ -1,0 +1,31 @@
+test_axes_validate_independently (test_contracts.Contracts.test_axes_validate_independently) ... ok
+test_calibration_cannot_cross_encoder_builds_or_thread_settings (test_contracts.Contracts.test_calibration_cannot_cross_encoder_builds_or_thread_settings) ... ok
+test_calibration_needs_enough_independent_groups_for_all_looks (test_contracts.Contracts.test_calibration_needs_enough_independent_groups_for_all_looks) ... ok
+test_filters_cannot_hide_external_inputs_or_time_dependence (test_contracts.Contracts.test_filters_cannot_hide_external_inputs_or_time_dependence) ... ok
+test_random_audit_corrects_proxy_bias_in_expectation (test_contracts.Contracts.test_random_audit_corrects_proxy_bias_in_expectation) ... ok
+test_relative_error_is_relative_to_truth (test_contracts.Contracts.test_relative_error_is_relative_to_truth) ... ok
+test_sequential_risk_spending_covers_all_prefixes_and_configurations (test_contracts.Contracts.test_sequential_risk_spending_covers_all_prefixes_and_configurations) ... ok
+test_checked_in_catalog_preserves_group_splits_and_notices (test_corpus.CorpusIntegrity.test_checked_in_catalog_preserves_group_splits_and_notices) ... ok
+test_declared_terminal_cleanup_preserves_all_pixel_bytes (test_corpus.CorpusIntegrity.test_declared_terminal_cleanup_preserves_all_pixel_bytes) ... ok
+test_pixel_precision_hdr_and_missing_frames_are_not_silently_accepted (test_corpus.CorpusIntegrity.test_pixel_precision_hdr_and_missing_frames_are_not_silently_accepted) ... ok
+test_related_sources_cannot_cross_splits (test_corpus.CorpusIntegrity.test_related_sources_cannot_cross_splits) ... ok
+test_resumes_only_the_requested_range_and_verifies_complete_bytes (test_corpus.CorpusIntegrity.test_resumes_only_the_requested_range_and_verifies_complete_bytes) ... ok
+test_same_size_corruption_is_rejected_without_overwriting (test_corpus.CorpusIntegrity.test_same_size_corruption_is_rejected_without_overwriting) ... ok
+test_server_ignoring_range_restarts_instead_of_appending (test_corpus.CorpusIntegrity.test_server_ignoring_range_restarts_instead_of_appending) ... ok
+test_sha_lock_catches_changed_object_without_publisher_checksum (test_corpus.CorpusIntegrity.test_sha_lock_catches_changed_object_without_publisher_checksum) ... ok
+test_truncation_never_becomes_a_video_or_lock (test_corpus.CorpusIntegrity.test_truncation_never_becomes_a_video_or_lock) ... ok
+test_wrong_resume_offset_is_not_published (test_corpus.CorpusIntegrity.test_wrong_resume_offset_is_not_published) ... ok
+test_actual_encode_interruption_leaves_no_publishable_artifact (test_ffmpeg.RealEncoding.test_actual_encode_interruption_leaves_no_publishable_artifact) ... ok
+test_budgeted_prediction_never_claims_unvalidated_confidence (test_ffmpeg.RealEncoding.test_budgeted_prediction_never_claims_unvalidated_confidence) ... ok
+test_cache_corruption_is_rejected (test_ffmpeg.RealEncoding.test_cache_corruption_is_rejected) ... ok
+test_deadline_terminates_work_and_drops_partial_artifacts (test_ffmpeg.RealEncoding.test_deadline_terminates_work_and_drops_partial_artifacts) ... ok
+test_exact_export_cache_and_materialization (test_ffmpeg.RealEncoding.test_exact_export_cache_and_materialization) ... ok
+test_filter_change_invalidates_artifact (test_ffmpeg.RealEncoding.test_filter_change_invalidates_artifact) ... ok
+test_size_search_reuses_full_cost_after_probe_budget_is_spent (test_ffmpeg.RealEncoding.test_size_search_reuses_full_cost_after_probe_budget_is_spent) ... ok
+test_strict_limit_search_and_failure (test_ffmpeg.RealEncoding.test_strict_limit_search_and_failure) ... ok
+test_zero_probe_limit_allows_complete_export (test_ffmpeg.RealEncoding.test_zero_probe_limit_allows_complete_export) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 44.203s
+
+OK

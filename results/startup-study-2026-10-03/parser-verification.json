@@ -1,0 +1,66 @@
+{
+  "real_ffprobe_crosschecks": [
+    {
+      "case": "static",
+      "frames": 24,
+      "avcc_slice_picture_types_match_ffprobe_decode": true,
+      "scoring_only_validation_command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pict_type",
+        "-of",
+        "json",
+        "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.2/5bbed13d73bf4ba5ab1da7b2698de2153f7df5313730251ae1ba21de4c6eed66.mp4"
+      ]
+    },
+    {
+      "case": "screen",
+      "frames": 24,
+      "avcc_slice_picture_types_match_ffprobe_decode": true,
+      "scoring_only_validation_command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pict_type",
+        "-of",
+        "json",
+        "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/screen-continuous-prepared-5.0-0.2/54c7aea1c407cd40a0285d4b7b3ed873c2d5b70397de0ce027ad98672a04106e.mp4"
+      ]
+    },
+    {
+      "case": "pedestrians",
+      "frames": 10,
+      "avcc_slice_picture_types_match_ffprobe_decode": true,
+      "scoring_only_validation_command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-threads",
+        "1",
+        "-select_streams",
+        "v:0",
+        "-show_frames",
+        "-show_entries",
+        "frame=pict_type",
+        "-of",
+        "json",
+        "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/d689bc0f21128136196be6839f3fb0d0e67ae3c5168e25e010d909708a0904ae.mp4"
+      ]
+    }
+  ],
+  "synthetic_parser_checks": "passed",
+  "scoring_only": true
+}

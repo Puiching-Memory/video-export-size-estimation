@@ -1,0 +1,23 @@
+{
+  "encode": {
+    "source": "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+    "crf": 23,
+    "preset": "medium",
+    "drop_audio": true,
+    "export_mode": "segmented",
+    "segment_seconds": 4
+  },
+  "compute": {
+    "wall_seconds": 30,
+    "max_probes": 0,
+    "threads": 1,
+    "max_encode_fraction": null
+  },
+  "size": {
+    "max_candidates": 1
+  },
+  "sample_seconds": 4,
+  "seed": 20261003,
+  "probe_mode": "auto",
+  "sampling_plan": "temporal"
+}

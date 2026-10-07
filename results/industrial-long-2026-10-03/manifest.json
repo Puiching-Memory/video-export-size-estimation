@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-03T06:43:45.994609+00:00",
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2",
+  "source": {
+    "id": "meridian-sdr-long",
+    "group_id": "meridian-2016",
+    "split": "test_reserved",
+    "path": "/workspace/video-export-size-estimation/artifacts/industrial-v1/meridian-sdr-long/Meridian_3840x2160_5994fps_SDR.mp4",
+    "sha256": "526b5dad800cdbd7f208bd35d717928bda0ee712a2dd21a6326a43a80717e496",
+    "bytes": 1299914020,
+    "video_duration_seconds": 718.933333,
+    "width": 3840,
+    "height": 2160,
+    "frame_rate": "60000/1001"
+  },
+  "target": {
+    "codec": "libx264",
+    "container": "mp4",
+    "crf": 23,
+    "preset": "veryfast",
+    "video_filter": "fps=12,scale=640:360",
+    "audio_bitrate": 128000,
+    "drop_audio": true,
+    "export_mode": "continuous",
+    "segment_seconds": 4.0
+  },
+  "requests": [
+    {
+      "encode": {
+        "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/meridian-sdr-long/Meridian_3840x2160_5994fps_SDR.mp4",
+        "crf": 23,
+        "preset": "veryfast",
+        "video_filter": "fps=12,scale=640:360",
+        "audio_bitrate": 128000,
+        "drop_audio": true,
+        "export_mode": "continuous",
+        "segment_seconds": 4.0
+      },
+      "compute": {
+        "wall_seconds": 30,
+        "max_probes": 6,
+        "threads": 1,
+        "max_encode_fraction": 0.2
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "sample_seconds": 4,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "temporal"
+    },
+    {
+      "encode": {
+        "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/meridian-sdr-long/Meridian_3840x2160_5994fps_SDR.mp4",
+        "crf": 23,
+        "preset": "veryfast",
+        "video_filter": "fps=12,scale=640:360",
+        "audio_bitrate": 128000,
+        "drop_audio": true,
+        "export_mode": "continuous",
+        "segment_seconds": 4.0
+      },
+      "compute": {
+        "wall_seconds": 30,
+        "max_probes": 6,
+        "threads": 1,
+        "max_encode_fraction": 0.2
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "sample_seconds": 4,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "content"
+    },
+    {
+      "encode": {
+        "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/meridian-sdr-long/Meridian_3840x2160_5994fps_SDR.mp4",
+        "crf": 23,
+        "preset": "veryfast",
+        "video_filter": "fps=12,scale=640:360",
+        "audio_bitrate": 128000,
+        "drop_audio": true,
+        "export_mode": "continuous",
+        "segment_seconds": 4.0
+      },
+      "compute": {
+        "wall_seconds": 60,
+        "max_probes": 6,
+        "threads": 1,
+        "max_encode_fraction": 0.2
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "sample_seconds": 4,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "temporal"
+    },
+    {
+      "encode": {
+        "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/meridian-sdr-long/Meridian_3840x2160_5994fps_SDR.mp4",
+        "crf": 23,
+        "preset": "veryfast",
+        "video_filter": "fps=12,scale=640:360",
+        "audio_bitrate": 128000,
+        "drop_audio": true,
+        "export_mode": "continuous",
+        "segment_seconds": 4.0
+      },
+      "compute": {
+        "wall_seconds": 60,
+        "max_probes": 6,
+        "threads": 1,
+        "max_encode_fraction": 0.2
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "sample_seconds": 4,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "content"
+    }
+  ],
+  "reference_deadline_seconds": 1800,
+  "reference_policy": "one full continuous export, no temporal window, after all predictions saved",
+  "prior_label_exposure": "three throughput windows only; full target size not generated/read",
+  "claim_scope": "one long held-out source, downscaled 640x360 12fps output; uncalibrated estimator"
+}

@@ -1,0 +1,37 @@
+{
+  "job": "content-30s",
+  "sampling_plan": "content",
+  "wall_budget_seconds": 30,
+  "state": "budget_exhausted",
+  "stop_reason": "subprocess exceeded wall-clock budget",
+  "unmet": [
+    "no_estimate_within_budget"
+  ],
+  "prediction_bytes": null,
+  "uncertainty_kind": null,
+  "wall_seconds": 30.00932116700278,
+  "engine_elapsed_seconds": 30.0089834399987,
+  "first_estimate_seconds": null,
+  "prepared_ingest_seconds": 2.227811062002729,
+  "ingest_plus_request_seconds": 32.23713222900551,
+  "charged_encode_seconds": 0.0,
+  "charged_encode_fraction": 0.0,
+  "attempted_audio_seconds": 0.0,
+  "total_probe_count": 0,
+  "pilot_count": 3,
+  "selected_probe_mode": null,
+  "prediction_family": null,
+  "content_discovery": null,
+  "preview_observations": [
+    {
+      "started_utc": "2026-10-03T06:44:18.737791+00:00",
+      "status": "failed",
+      "failure_type": "BudgetExhausted",
+      "failure": "subprocess exceeded wall-clock budget",
+      "elapsed_seconds": 29.825437088999024
+    }
+  ],
+  "source_duration_seconds": 718.933333,
+  "cache_initially_empty": true,
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2"
+}

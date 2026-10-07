@@ -1,0 +1,68 @@
+[
+  {
+    "job": "temporal-30s",
+    "prefix": 1,
+    "elapsed_seconds": 17.027663118999044,
+    "prediction_bytes": 14571781,
+    "reference_bytes": 15965193,
+    "signed_error_percent": -8.727811809102459,
+    "absolute_error_percent": 8.727811809102459,
+    "uncertainty_kind": "uncalibrated",
+    "post_label_selection_used": false
+  },
+  {
+    "job": "temporal-60s",
+    "prefix": 1,
+    "elapsed_seconds": 15.818534250000084,
+    "prediction_bytes": 14571781,
+    "reference_bytes": 15965193,
+    "signed_error_percent": -8.727811809102459,
+    "absolute_error_percent": 8.727811809102459,
+    "uncertainty_kind": "uncalibrated",
+    "post_label_selection_used": false
+  },
+  {
+    "job": "temporal-60s",
+    "prefix": 2,
+    "elapsed_seconds": 29.86705346200324,
+    "prediction_bytes": 30593083,
+    "reference_bytes": 15965193,
+    "signed_error_percent": 91.62363398926652,
+    "absolute_error_percent": 91.62363398926652,
+    "uncertainty_kind": "uncalibrated",
+    "post_label_selection_used": false
+  },
+  {
+    "job": "temporal-60s",
+    "prefix": 3,
+    "elapsed_seconds": 36.49689082700206,
+    "prediction_bytes": 20818615,
+    "reference_bytes": 15965193,
+    "signed_error_percent": 30.40002084534774,
+    "absolute_error_percent": 30.40002084534774,
+    "uncertainty_kind": "uncalibrated",
+    "post_label_selection_used": false
+  },
+  {
+    "job": "temporal-60s",
+    "prefix": 4,
+    "elapsed_seconds": 43.94145958300214,
+    "prediction_bytes": 20766282,
+    "reference_bytes": 15965193,
+    "signed_error_percent": 30.072226499234933,
+    "absolute_error_percent": 30.072226499234933,
+    "uncertainty_kind": "uncalibrated",
+    "post_label_selection_used": false
+  },
+  {
+    "job": "temporal-60s",
+    "prefix": 5,
+    "elapsed_seconds": 55.01477355800307,
+    "prediction_bytes": 30414776,
+    "reference_bytes": 15965193,
+    "signed_error_percent": 90.50678560541047,
+    "absolute_error_percent": 90.50678560541047,
+    "uncertainty_kind": "uncalibrated",
+    "post_label_selection_used": false
+  }
+]

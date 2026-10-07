@@ -1,0 +1,47 @@
+{
+  "ultrafast": {
+    "rc_lookahead": 0,
+    "bframes": 0,
+    "keyint": 250
+  },
+  "superfast": {
+    "rc_lookahead": 0,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "veryfast": {
+    "rc_lookahead": 10,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "faster": {
+    "rc_lookahead": 20,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "fast": {
+    "rc_lookahead": 30,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "medium": {
+    "rc_lookahead": 40,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "slow": {
+    "rc_lookahead": 50,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "slower": {
+    "rc_lookahead": 60,
+    "bframes": 3,
+    "keyint": 250
+  },
+  "veryslow": {
+    "rc_lookahead": 60,
+    "bframes": 8,
+    "keyint": 250
+  }
+}

@@ -1,0 +1,1566 @@
+{
+  "1": {
+    "fps": 1,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=1,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 24,
+    "output_bytes": 124416,
+    "preview_process_wall_seconds": 0.33717199099919526,
+    "preview_prepare_wall_seconds": 0.3397804370033555,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 9.572256818014639,
+        "change_mean": 4.059895833333334,
+        "texture_max": 9.59248547206591,
+        "change_max": 4.7515432098765435,
+        "preview_frames": 2,
+        "features": [
+          3.3166247903553994,
+          2.7895912806566203
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 1.6883680555555556,
+        "texture_max": 0.0,
+        "change_max": 3.376736111111111,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          1.5329012695595112
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 9.572256818014639,
+        "change_mean": 4.059895833333334,
+        "texture_max": 9.59248547206591,
+        "change_max": 4.7515432098765435,
+        "preview_frames": 2,
+        "features": [
+          3.3166247903553994,
+          2.7895912806566203,
+          3.3166247903553994,
+          2.452763033788787
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 1.6883680555555556,
+        "texture_max": 0.0,
+        "change_max": 3.376736111111111,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          1.5329012695595112,
+          -0.30151134457776363,
+          2.0002542791271187
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          -0.3015113445777636,
+          -0.43224925502161315,
+          -0.30151134457776363,
+          -0.44530173129159056
+        ]
+      }
+    ]
+  },
+  "2": {
+    "fps": 2,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=2,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 48,
+    "output_bytes": 248832,
+    "preview_process_wall_seconds": 0.3304593599968939,
+    "preview_prepare_wall_seconds": 0.3341465299963602,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 2.3833839627238955,
+        "change_mean": 0.8355999228395061,
+        "texture_max": 9.533535850895582,
+        "change_max": 3.3423996913580245,
+        "preview_frames": 4,
+        "features": [
+          1.4707920134970915,
+          0.8668199157775357
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 7.072268254165287,
+        "change_mean": 4.389998070987654,
+        "texture_max": 9.51057297988157,
+        "change_max": 4.750771604938271,
+        "preview_frames": 4,
+        "features": [
+          2.826653047018379,
+          3.1092891336048742
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 2.3833839627238955,
+        "change_mean": 0.8355999228395061,
+        "texture_max": 9.533535850895582,
+        "change_max": 3.3423996913580245,
+        "preview_frames": 4,
+        "features": [
+          1.4707920134970915,
+          0.8668199157775357,
+          2.237311781996561,
+          1.9927291975066515
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 7.072268254165287,
+        "change_mean": 4.389998070987654,
+        "texture_max": 9.51057297988157,
+        "change_max": 4.750771604938271,
+        "preview_frames": 4,
+        "features": [
+          2.826653047018379,
+          3.1092891336048742,
+          2.2348235961842167,
+          2.4590964216663043
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          -0.4297445060515471,
+          -0.397610904938241,
+          -0.44721353781807777,
+          -0.44518256191729566
+        ]
+      }
+    ]
+  },
+  "4": {
+    "fps": 4,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 96,
+    "output_bytes": 497664,
+    "preview_process_wall_seconds": 0.3120485980034573,
+    "preview_prepare_wall_seconds": 0.3216751979998662,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 2.369049782310861,
+        "change_mean": 1.0126109182098766,
+        "texture_max": 9.49283372871382,
+        "change_max": 4.715470679012346,
+        "preview_frames": 8,
+        "features": [
+          1.4619660552556706,
+          1.0880912343842806
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 7.120067829591012,
+        "change_mean": 3.9599488811728394,
+        "texture_max": 9.589414836882563,
+        "change_max": 4.761574074074074,
+        "preview_frames": 8,
+        "features": [
+          2.8317879367761996,
+          3.0211680343660245
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 2.369049782310861,
+        "change_mean": 1.0126109182098766,
+        "texture_max": 9.49283372871382,
+        "change_max": 4.715470679012346,
+        "preview_frames": 8,
+        "features": [
+          1.4619660552556706,
+          1.0880912343842806,
+          2.2308437229098277,
+          2.2298916836287104
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 7.120067829591012,
+        "change_mean": 3.9599488811728394,
+        "texture_max": 9.589414836882563,
+        "change_max": 4.761574074074074,
+        "preview_frames": 8,
+        "features": [
+          2.8317879367761996,
+          3.0211680343660245,
+          2.241282080394181,
+          2.242230087576768
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          -0.42937539920318707,
+          -0.4109259268750305,
+          -0.4472125803304009,
+          -0.4472121771205478
+        ]
+      }
+    ]
+  },
+  "8": {
+    "fps": 8,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/brief-burst.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=8,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 192,
+    "output_bytes": 995328,
+    "preview_process_wall_seconds": 0.3221953630054486,
+    "preview_prepare_wall_seconds": 0.3362372420015163,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 2.359462092896024,
+        "visual_change": 1.0884934413580247,
+        "features": [
+          0.0,
+          1.461547321033974,
+          1.1903536080769288
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 7.085327964664018,
+        "visual_change": 3.731288580246914,
+        "features": [
+          0.0,
+          2.8320307491148666,
+          2.9746190604482536
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          -0.429357807014884,
+          -0.41649726685251826
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 2.3594620928960244,
+        "change_mean": 1.0884934413580247,
+        "texture_max": 9.524692660634816,
+        "change_max": 4.749228395061729,
+        "preview_frames": 16,
+        "features": [
+          1.4615473210339742,
+          1.1903536080769288,
+          2.2314854090923175,
+          2.234705481545274
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 7.085327964664018,
+        "change_mean": 3.731288580246914,
+        "texture_max": 9.609719923498474,
+        "change_max": 4.759452160493828,
+        "preview_frames": 16,
+        "features": [
+          2.8320307491148666,
+          2.9746190604482536,
+          2.2406427330247376,
+          2.2374297819676725
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          -0.429357807014884,
+          -0.41649726685251826,
+          -0.44721281421170545,
+          -0.4472135263512945
+        ]
+      }
+    ]
+  }
+}

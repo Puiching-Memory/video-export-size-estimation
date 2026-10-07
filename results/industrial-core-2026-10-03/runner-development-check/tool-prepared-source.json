@@ -1,0 +1,10 @@
+{
+  "scope": "development_fixture_structural_only",
+  "fixture": "generated 128x96 24fps 2s raw Y4M",
+  "ab_av1_version": "0.11.7",
+  "sample_duration": "500ms",
+  "sample_count": 3,
+  "sealed_memfd_child_inheritance_passed": true,
+  "wall_seconds": 0.8085084410049603,
+  "holdout_accuracy_evaluated": false
+}

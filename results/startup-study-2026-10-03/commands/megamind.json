@@ -1,0 +1,86 @@
+[
+  {
+    "command": [
+      "ffmpeg",
+      "-version"
+    ],
+    "wall_seconds": 0.07305653700313997
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4"
+    ],
+    "wall_seconds": 0.0818672780005727
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/megamind.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "wall_seconds": 0.22364819100039313
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/megamind-continuous-prepared-5.0-0.2/2d7212f92729703b5fe74e1490f89ffc0ba861c567b0826cf4250c8077979801.mp4"
+    ],
+    "wall_seconds": 0.08878472699871054
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/megamind-continuous-prepared-5.0-0.2/8a65c3263d82b537722d2a1ba0ca19c1cc2f6161560ba8752a86edd4ba416e0a.mp4"
+    ],
+    "wall_seconds": 0.08282339599827537
+  }
+]

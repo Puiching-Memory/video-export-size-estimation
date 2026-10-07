@@ -1,0 +1,32 @@
+{
+  "key": "4d39ace832e8bdff352889bc12798527a815ab2ae0d29290e9df21676516e3f3",
+  "crf": 23,
+  "window": null,
+  "duration": 718.916667,
+  "video_frames": 8627,
+  "width": 640,
+  "height": 360,
+  "payload_bytes": 15862784,
+  "encode_wall_seconds": 971.0952183019981,
+  "transcode_wall_seconds": 970.791,
+  "source_hash": "526b5dad800cdbd7f208bd35d717928bda0ee712a2dd21a6326a43a80717e496",
+  "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+  "configuration": {
+    "codec": "libx264",
+    "container": "mp4",
+    "crf": 23,
+    "preset": "veryfast",
+    "video_filter": "fps=12,scale=640:360",
+    "audio_bitrate": 128000,
+    "drop_audio": true,
+    "export_mode": "continuous",
+    "segment_seconds": 4.0
+  },
+  "file_bytes": 15965193,
+  "sha256": "88b5e290d353ad1778985f362b0cb70c57c169ce3c16c5f67d89b4b799cd2fee",
+  "record_checksum": "9e813415b45878124802c251d4335e3ffc79a56e25b4d0a98f534ca5f1071c15",
+  "artifact": "/workspace/video-export-size-estimation/results/industrial-long-2026-10-03/reference/.vsize-cache/full/4d39ace832e8bdff352889bc12798527a815ab2ae0d29290e9df21676516e3f3.mp4",
+  "cache_hit": false,
+  "reference_stage_wall_seconds": 971.3229611889983,
+  "reference_ingest_seconds": 2.2250530419987626
+}

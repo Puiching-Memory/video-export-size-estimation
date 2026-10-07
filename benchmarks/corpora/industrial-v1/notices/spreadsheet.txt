@@ -1,0 +1,16 @@
+Digital Video Sequence "Spreadsheet"
+Copyright (C)  NETFLIX INC.  2021 
+
+1920x1080p, 8-bit, RGB24, BT.709, 30 fps, 130 frames 
+1920x1080p, 8-bit, YCbCr 4:2:0, BT.709, 30 fps, 130 frames
+
+COPYRIGHT AND LICENSE INFORMATION
+August, 2021
+
+NETFLIX INC.
+100 Winchester Circle, Los Gatos, CA 95032, USA
+
+The video sequence provided above and all intellectual property rights therein 
+remain the property of Netflix Inc. This video sequence is licensed under the 
+Creative Commons Attribution 4.0 International License. To view a copy of this license, visit 
+https://creativecommons.org/licenses/by/4.0/

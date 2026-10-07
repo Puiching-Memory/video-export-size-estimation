@@ -1,0 +1,53 @@
+Input #0, yuv4mpegpipe, from '/workspace/video-export-size-estimation/artifacts/industrial-v1/artistic-intro/Artistic_Intro_1920x1080_2997fps.y4m':
+  Duration: 00:00:04.34, start: 0.000000, bitrate: 745751 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p(progressive), 1920x1080, SAR 1:1 DAR 16:9, 29.97 fps, 29.97 tbr, 29.97 tbn
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/artistic-intro-continuous/c6bc3e6da9970737b40408e769444a6d6efcb95a92107a69403db6eff0facdae.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:04.34, start: 0.000000, bitrate: 9587 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 9583 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/artistic-intro-segmented/310d5210e89db18630ff43f90aba53ad3f335c585d0b6242e90eb669f77e19a3.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso6mp41
+  Duration: 00:00:04.34, start: 0.000000, bitrate: 10025 kb/s
+  Stream #2:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 10018 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)
+      Metadata:
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format:default
+  Stream #1:0 (h264) -> format:default
+  Stream #2:0 (h264) -> format:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+  ssim:default -> Stream #0:1 (wrapped_avframe)
+  psnr:default -> Stream #0:2 (wrapped_avframe)
+  ssim:default -> Stream #0:3 (wrapped_avframe)
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:1: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:2: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:3: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+[ssim@segmented @ 0x7f313000c340] SSIM Y:0.976401 (16.271056) U:0.963734 (14.405049) V:0.970387 (15.285179) All:0.973288 (15.732861)
+[psnr@segmented @ 0x7f313000be80] PSNR y:38.466312 u:41.087096 v:42.791704 average:39.331453 min:36.384420 max:41.396593
+[ssim@continuous @ 0x7f313000bac0] SSIM Y:0.977176 (16.415990) U:0.964208 (14.462145) V:0.970477 (15.298390) All:0.973898 (15.833236)
+[psnr@continuous @ 0x7f313000b6c0] PSNR y:38.646336 u:41.194739 v:42.824014 average:39.492111 min:36.392456 max:41.390945
+[out#0/null @ 0x55eaa989f2c0] video:223KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  130 fps= 94 q=-0.0 Lq=-0.0 q=-0.0 q=-0.0 size=N/A time=00:00:04.30 bitrate=N/A speed=3.12x    

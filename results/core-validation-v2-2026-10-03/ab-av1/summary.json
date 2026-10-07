@@ -1,0 +1,19 @@
+[
+  {
+    "method": "ab-av1-official-estimate",
+    "prefix": 3,
+    "budget_seconds": 5,
+    "max_encode_fraction": null,
+    "lifecycle": "cold-original",
+    "cases": 9,
+    "estimates": 9,
+    "no_estimate_rate": 0.0,
+    "within_10_percent_of_all_cases": 0.6666666666666666,
+    "median_ape_percent": 6.481680068350348,
+    "worst_ape_percent": 67.38951864629539,
+    "median_encoded_media_fraction": 0.125,
+    "median_wall_seconds": 1.512790626999049,
+    "exact_estimates": 0,
+    "certified_satisfied": 0
+  }
+]

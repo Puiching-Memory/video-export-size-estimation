@@ -1,0 +1,1566 @@
+{
+  "1": {
+    "fps": 1,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=1,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 24,
+    "output_bytes": 124416,
+    "preview_process_wall_seconds": 0.19441401400399627,
+    "preview_prepare_wall_seconds": 0.19819031899533002,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 2,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "2": {
+    "fps": 2,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=2,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 48,
+    "output_bytes": 248832,
+    "preview_process_wall_seconds": 0.4787248599968734,
+    "preview_prepare_wall_seconds": 0.48852018199977465,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 4,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "4": {
+    "fps": 4,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 96,
+    "output_bytes": 497664,
+    "preview_process_wall_seconds": 0.5866305509989616,
+    "preview_prepare_wall_seconds": 0.5941433810003218,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 8,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "8": {
+    "fps": 8,
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=8,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "decoded_source_seconds": 24.0,
+    "output_preview_frames": 192,
+    "output_bytes": 995328,
+    "preview_process_wall_seconds": 0.38417572400067,
+    "preview_prepare_wall_seconds": 0.39892525599861983,
+    "mean_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "visual_texture": 0.0,
+        "visual_change": 0.0,
+        "features": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "max_blocks": [
+      {
+        "start": 0,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 2,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 4,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 6,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 8,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 10,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 12,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 14,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 16,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 18,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 20,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "start": 22,
+        "duration": 2,
+        "input_bytes": 0,
+        "texture_mean": 0.0,
+        "change_mean": 0.0,
+        "texture_max": 0.0,
+        "change_max": 0.0,
+        "preview_frames": 16,
+        "features": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  }
+}

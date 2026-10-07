@@ -1,0 +1,13 @@
+{
+  "tests": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "passed": 16,
+    "failed": 0
+  },
+  "style": "ruff 0.14.9 check and format --check passed",
+  "installed_cli": "editable install in isolated virtual environment; exact export and uncalibrated exit status checked",
+  "github_actions": "configured, not run remotely",
+  "latex": "not built: ctexart.cls unavailable",
+  "quality": "PSNR; XPSNR failed with SIGFPE on the diagnostic input",
+  "scope": "development evidence, not SOTA or production certification"
+}

@@ -1,0 +1,170 @@
+{
+  "type": "result",
+  "schema_version": 2,
+  "requested": {
+    "compute": {
+      "wall_seconds": 30,
+      "max_probes": 0,
+      "threads": 1,
+      "max_encode_fraction": null
+    },
+    "reliability": {
+      "relative_error": 0.1,
+      "coverage": 0.95
+    },
+    "size": {
+      "max_bytes": null,
+      "max_crf": 35.0,
+      "max_candidates": 1
+    },
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "crf": 23,
+      "preset": "medium",
+      "video_filter": null,
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "segmented",
+      "segment_seconds": 4
+    },
+    "sample_seconds": 4,
+    "seed": 20261003,
+    "probe_mode": "auto",
+    "sampling_plan": "temporal"
+  },
+  "status": "satisfied",
+  "estimate": {
+    "estimated_bytes": 24590,
+    "selected_crf": 23,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        24590,
+        24590
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-maintenance-2026-10-03/runtime/.vsize-cache/cli-export/01ea494953a720d80f476b495f14e3f88c04138a72d16027cde7973e73404049.mp4",
+    "sha256": "a59b9e707f20af73cc4ea8aff2d52bdd2a21614ae231c271dfbd34cb3fdfe854",
+    "cache_hit": false,
+    "sample_count": 0,
+    "source_hash": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+    "export_mode": "segmented",
+    "byte_accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 14064,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reused_segments": 0,
+    "segment_count": 6
+  },
+  "candidates": [
+    {
+      "crf": 23,
+      "estimated_bytes": 24590,
+      "evidence": "exact"
+    }
+  ],
+  "unmet": [],
+  "elapsed_seconds": 3.464509719000489,
+  "first_estimate_seconds": 3.464489814003173,
+  "attempted_encode_seconds": 24.0,
+  "attempted_audio_seconds": 0.0,
+  "audio_preparation_seconds": 0.0,
+  "total_probe_count": 0,
+  "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+  "prepared_asset": {
+    "source_hash": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+    "bytes": 18154,
+    "ingest_seconds": 0.00030046999745536596,
+    "ingest_in_request_budget": false,
+    "identity": "linux_sealed_memfd"
+  },
+  "calibration_note": null,
+  "content_discovery": null,
+  "stop_reason": "exact_export_complete",
+  "source_hash": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+  "toolchain_key": "905401be530fb5a0fd6fb4986edf1f24a91f9fc45aaac1d6eee46520bc6ee1f7",
+  "segment_plan": {
+    "pipeline": "independent-cfr-x264-v2-source-starts",
+    "semantics": "independent_segments",
+    "source_hash": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+    "toolchain_key": "905401be530fb5a0fd6fb4986edf1f24a91f9fc45aaac1d6eee46520bc6ee1f7",
+    "plan_hash": "71c855da2cbd9cfbbb29ae9df4092153b2154f5fb5c1e2584e21916450fe7e13",
+    "source_frames": 576,
+    "source_geometry": [
+      384,
+      216
+    ],
+    "source_presentation_starts": {
+      "video": null,
+      "audio": null,
+      "method": "not_required_without_audio"
+    },
+    "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+    "output_rate": "24",
+    "total_frames": 576,
+    "duration": 24.0,
+    "segment_frames": 96,
+    "segments": [
+      {
+        "index": 0,
+        "start_frame": 0,
+        "frame_count": 96,
+        "start_tick": 0,
+        "end_tick": 49152
+      },
+      {
+        "index": 1,
+        "start_frame": 96,
+        "frame_count": 96,
+        "start_tick": 49152,
+        "end_tick": 98304
+      },
+      {
+        "index": 2,
+        "start_frame": 192,
+        "frame_count": 96,
+        "start_tick": 98304,
+        "end_tick": 147456
+      },
+      {
+        "index": 3,
+        "start_frame": 288,
+        "frame_count": 96,
+        "start_tick": 147456,
+        "end_tick": 196608
+      },
+      {
+        "index": 4,
+        "start_frame": 384,
+        "frame_count": 96,
+        "start_tick": 196608,
+        "end_tick": 245760
+      },
+      {
+        "index": 5,
+        "start_frame": 480,
+        "frame_count": 96,
+        "start_tick": 245760,
+        "end_tick": 294912
+      }
+    ],
+    "prepare_seconds": 0.109624899996561,
+    "prepare_cache_hit": false,
+    "source_identity_verified_at_publication": true,
+    "fps_conversion_access": "timestamp_seek"
+  },
+  "pilot_count": 1,
+  "alternatives": [],
+  "published_file": "/workspace/video-export-size-estimation/results/core-maintenance-2026-10-03/runtime/.vsize-cache/published-static.mp4",
+  "publication_seconds": 0.0018910360013251193,
+  "end_to_end_seconds": 3.46736199100269
+}

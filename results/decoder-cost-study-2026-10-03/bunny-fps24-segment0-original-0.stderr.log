@@ -1,0 +1,61 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/video-estimation-research/bunny.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    creation_time   : 2010-02-09T01:55:39.000000Z
+  Duration: 00:01:00.10, start: 0.000000, bitrate: 733 kb/s
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, stereo, fltp, 65 kb/s (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive), 640x360, 612 kb/s, 23.96 fps, 24 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: none (rtp  / 0x20707472), 45 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+  Stream #0:3[0x4](eng): Data: none (rtp  / 0x20707472), 5 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+[libx264 @ 0x55ec2b696140] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x55ec2b696140] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x55ec2b696140] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/workspace/video-export-size-estimation/artifacts/decoder-cost-study-2026-10-03/bunny-fps24-segment0-original-0.mp4':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive), 640x360, q=2-31, 24 fps, 12288 tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[mp4 @ 0x55ec2b6b6280] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x55ec2b6a9500] video:86KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.587013%
+frame=   48 fps=0.0 q=28.0 Lsize=      87KiB time=00:00:01.91 bitrate= 373.5kbits/s speed=3.65x    
+bench: utime=0.521s stime=0.031s rtime=0.525s
+bench: maxrss=95380KiB
+[libx264 @ 0x55ec2b696140] frame I:4     Avg QP:16.94  size:  7004
+[libx264 @ 0x55ec2b696140] frame P:17    Avg QP:17.27  size:  1389
+[libx264 @ 0x55ec2b696140] frame B:27    Avg QP:17.37  size:  1325
+[libx264 @ 0x55ec2b696140] consecutive B-frames: 18.8% 12.5% 18.8% 50.0%
+[libx264 @ 0x55ec2b696140] mb I  I16..4: 44.0% 35.3% 20.7%
+[libx264 @ 0x55ec2b696140] mb P  I16..4: 17.1% 51.6%  0.2%  P16..4:  8.3%  1.5%  0.4%  0.0%  0.0%    skip:20.9%
+[libx264 @ 0x55ec2b696140] mb B  I16..4: 16.6% 15.4%  0.0%  B16..8:  6.2%  0.8%  0.5%  direct:24.2%  skip:36.3%  L0:51.1% L1:36.8% BI:12.1%
+[libx264 @ 0x55ec2b696140] 8x8 transform intra:58.9% inter:88.4%
+[libx264 @ 0x55ec2b696140] coded y,uvDC,uvAC intra: 8.8% 13.4% 2.4% inter: 7.6% 33.8% 0.0%
+[libx264 @ 0x55ec2b696140] i16 v,h,dc,p: 52% 29% 14%  4%
+[libx264 @ 0x55ec2b696140] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 21% 40%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x55ec2b696140] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 18% 17%  7%  7%  7%  8%  5%  8%
+[libx264 @ 0x55ec2b696140] i8c dc,h,v,p: 78% 16%  6%  1%
+[libx264 @ 0x55ec2b696140] Weighted P-Frames: Y:64.7% UV:52.9%
+[libx264 @ 0x55ec2b696140] ref P L0: 70.7% 26.2%  2.8%  0.3%  0.0%
+[libx264 @ 0x55ec2b696140] ref B L0: 95.1%  4.4%  0.5%
+[libx264 @ 0x55ec2b696140] ref B L1: 98.4%  1.6%
+[libx264 @ 0x55ec2b696140] kb/s:349.61

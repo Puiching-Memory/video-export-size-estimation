@@ -1,0 +1,158 @@
+[
+  {
+    "command": [
+      "ffmpeg",
+      "-version"
+    ],
+    "wall_seconds": 0.20206902900099522
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4"
+    ],
+    "wall_seconds": 0.10246217799431179
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/static.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "wall_seconds": 0.19412450499658007
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.2/5bbed13d73bf4ba5ab1da7b2698de2153f7df5313730251ae1ba21de4c6eed66.mp4"
+    ],
+    "wall_seconds": 0.08580164100567345
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.5/c8f4eec2a4a44e56179fb900f41cf9233cb44438b064ff22ff032b90172d7d28.mp4"
+    ],
+    "wall_seconds": 0.08337099799973657
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.2/eda6fb64572fa3938a035caf3eb2473d09776ef9749e04a7c2054998e7ca2a75.mp4"
+    ],
+    "wall_seconds": 0.09236826700362144
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.5/5f7e1486c5bab3b09e31004f95c379ce0ef61cc266c891b93142cd072b8911f0.mp4"
+    ],
+    "wall_seconds": 0.08792706499662017
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.2/e9528779ba8a0f2da07e8ed1fbd933ef3fe69d7cae93455e4b8965dd6a0fd89a.mp4"
+    ],
+    "wall_seconds": 0.08610110700101359
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/static-continuous-prepared-5.0-0.2/3882b5e95b9aaa1b4532e6c30e0b70626f6a4b133b26a745e69819faa0a4a2c5.mp4"
+    ],
+    "wall_seconds": 0.10246837700105971
+  }
+]

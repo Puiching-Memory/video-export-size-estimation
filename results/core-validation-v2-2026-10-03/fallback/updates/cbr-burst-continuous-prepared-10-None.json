@@ -1,0 +1,54 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 19113,
+    "estimated_payload_bytes": 10608.0,
+    "fixed_bytes": 8505,
+    "sampled_seconds": 1.0,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "context",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23.0,
+    "artifact": null,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "observed_blocks": [
+      0
+    ],
+    "pilot_indices": [
+      0,
+      18,
+      16
+    ],
+    "elapsed_seconds": 0.9467907829966862
+  },
+  {
+    "type": "estimate",
+    "estimated_bytes": 652210,
+    "selected_crf": 23.0,
+    "uncertainty": {
+      "kind": "exact",
+      "interval_bytes": [
+        652210,
+        652210
+      ],
+      "coverage": 1.0
+    },
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/fallback/.vsize-cache/cbr-burst-continuous-prepared-10-None/cbb1268160f76f5c1287f180ee2505d1552b1d895df7c09300f5daf0d0075ded.mp4",
+    "sha256": "4aaa8abb05ddb4995258c90955203d6442633bae101702edb6fa8a8e994d0ebd",
+    "cache_hit": false,
+    "sample_count": 1,
+    "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+    "export_mode": "continuous",
+    "elapsed_seconds": 2.4449023449997185
+  }
+]

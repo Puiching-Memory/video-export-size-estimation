@@ -1,0 +1,158 @@
+[
+  {
+    "command": [
+      "ffmpeg",
+      "-version"
+    ],
+    "wall_seconds": 0.08668932800355833
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/motion.mp4"
+    ],
+    "wall_seconds": 0.24767753199557774
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/motion.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "wall_seconds": 0.42942975500045577
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/motion-continuous-prepared-5.0-0.2/45429d5106c0a8b6596c34d1446b36ff68dfebb7c939b45acaa9afa14998ae89.mp4"
+    ],
+    "wall_seconds": 0.09247583500109613
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/motion-continuous-prepared-5.0-0.5/4b511c60ae0f37d1262482023c8bbb3bdb7aefcff22a5a303bfb184f933d3872.mp4"
+    ],
+    "wall_seconds": 0.08081443599803606
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/motion-continuous-prepared-5.0-0.2/a6a7e488237caf0c78d3ea391c66a43efdcf435d12489f5c7052bc12283dcb3a.mp4"
+    ],
+    "wall_seconds": 0.08823328799917363
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/motion-continuous-prepared-5.0-0.2/8b008a12fa42c98a6d6cb2fad2141d3b4be753eecb2aedd5e53ef3998fea3e56.mp4"
+    ],
+    "wall_seconds": 0.07909857799677411
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/motion-continuous-prepared-5.0-0.2/c7528ca9e1e77ced119e37be3001960ba4549dbb3c91689b557ebe27ef4993ba.mp4"
+    ],
+    "wall_seconds": 0.08322564300033264
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/motion-continuous-prepared-5.0-0.5/cc1ec6525076755d632451396da90a23a02554ff6dda71ef82c314e47f7eb075.mp4"
+    ],
+    "wall_seconds": 0.08108222099690465
+  }
+]

@@ -1,0 +1,251 @@
+{
+  "static": {
+    "file_bytes": 24590,
+    "payload_bytes": 14064,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/static/final-segmented.mp4",
+    "sha256": "a59b9e707f20af73cc4ea8aff2d52bdd2a21614ae231c271dfbd34cb3fdfe854",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 14064,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 0.7885141519946046,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "ec0fcbb3eda0ae2cd90bf998d20523f578a095bbd5574eac1d7ccc51b9e0cf28",
+      "93df5af9eeb86a3e9d60c798cd2417145102e49a4ec34d79eb08c631993404e7",
+      "f48ff426ab1d7397f083e289166919fcb764f7d2cc616e627a03b1f6746940a4",
+      "aebe91d71d69f140ae2381242f70e45f487d8c5334712b09babbd40c945bb7f8",
+      "60f52edf3bfbc62ec4f3a4562d3203a9ca69cd49dacabd52dbc6f3c76eb935e3",
+      "7cc48e638ea24a5dad6a72aad8a7a0680a29802ac1199355ba9bfbf54f9b4c29"
+    ]
+  },
+  "motion": {
+    "file_bytes": 865262,
+    "payload_bytes": 854736,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/motion/final-segmented.mp4",
+    "sha256": "3ceaaba6519756616702f470bca24b41a73a80b25201b41a12d2017daee92098",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 854736,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 1.0323303140030475,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "bd22d0868cfc904f850d1a7768745c347714506e718e6e3095c0c0afcdd52f68",
+      "4e7af9e86dd38887f3d46eeb72b8a64abb84fefd89d04eee2c11bdc2c125a796",
+      "465acb49c7197c534ba9b632cbb42f4f2d5e4d5ffa17c4dd982d40b75b435ccb",
+      "61c877cfac0b9853c9951502704f4db768833acf906b74331ba1813ff1521f31",
+      "3a77addf5bd9fe8b85af28bc6e5e8725073e9175aa91a874280e740e8195a12d",
+      "332da853aad65a8c93561544e252cb06204e9182d0e032777af79001f8e05abd"
+    ]
+  },
+  "grain": {
+    "file_bytes": 5988249,
+    "payload_bytes": 5977723,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/grain/final-segmented.mp4",
+    "sha256": "9aa546c271f596cac2f2f2bcfc2ef256e277183d6579b1e35b9bbb73be67d94e",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 5977723,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 2.128870234002534,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "688bb4a469f869418fb168f1a2dee67de21d99cc9b7a9e32789d58e42a10aad6",
+      "28de0ade2e2ed4546e9f5bc6e192304874bf0eb95199dedc085ed05e88a1cd36",
+      "e3aa33ec346cebdb091c14e165543122e3bfd842db190dd5f83d2771c7307cea",
+      "e33b0b66c10dded5bda3d9be6c4fb317e5fa3c54c47ca7dbd16f2d8b6d242f38",
+      "af4cf620cc9a98efd188c05974c3729a6dcefd6dc88f5a4f2e0e2ecdc8869580",
+      "2f18e6b193a1ebfb779d6544b773147abad873dc155e5c9e911a93f615fabb3e"
+    ]
+  },
+  "brief-burst": {
+    "file_bytes": 1419890,
+    "payload_bytes": 1409364,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/brief-burst/final-segmented.mp4",
+    "sha256": "54ba737f0bcd1bf52722b3061b7d0871c4959fefee7cff4d55947eafc83eb88c",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 1409364,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 1.0307090470014373,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "c4b89ac05f122cd94436e1fe6827a9eea6ddeff1145cdb6edfbe4fcc9e5fc68b",
+      "11ed105bc1fcfd1f98e4903d6f167f531eeb43aeb9bb9b67f894360d78103b8e",
+      "d338216ac77ab4e34ce0d7465a96700a5a5ef416b2c4cfafaad983d659ccd080",
+      "484a4492a6bbec2f26d76701d184c5c934e91a795ad4a1ea9503a9a24a7c61e4",
+      "69a459bad43c4992667e38b2222e630ac38277fe11516d9c30ff1c4a0de5b235",
+      "65823894754fce3356313ab6269f9b5519d56e2af7aedddb9d1cbb3f2b597d53"
+    ]
+  },
+  "cbr-burst": {
+    "file_bytes": 660329,
+    "payload_bytes": 649803,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/cbr-burst/final-segmented.mp4",
+    "sha256": "42ffea5d93128007150a62dac36e8e3cb6e81be60e8002f96680c1eac9674e93",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 649803,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 1.0682254220009781,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "75ffebf0e6005a292fdcf13271b28af5587d1b9d17315ee0ed2e1c35acda27be",
+      "d75473d65b77612ed91e90659ed8f85fdb195c9bb18fa7de26af190c9e0ef43c",
+      "630a8663a0c4ab001afd2c8fc6caa6af915167dadbfa5d9158b9eed14d881661",
+      "c9c05eac6dcd87546cf591c9f85a0bb2e53aaa9ffa9db506a4f6529cbdde7a91",
+      "66167c9860090870bbaee60f3c9c6507e3b0d27fbb731de1855adb2582d320a1",
+      "65475bcc43d4907bd2455215230e631811c4d0d48abebbc5e68b6616a47fa1e2"
+    ]
+  },
+  "alternating": {
+    "file_bytes": 4067026,
+    "payload_bytes": 4056500,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/alternating/final-segmented.mp4",
+    "sha256": "dccb69d14d50f0b328c94f5b1e5f1570fd3a83ddd383171f49a312033c12e421",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 4056500,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 1.5782682569988538,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "336c8b8e8f1dc37f032d1645b0bd0613c0516cfc49978eeb788b00673bccb5db",
+      "e51b997d977ba1735da60b8bd23ed1468242cfe6f9b3bd3d4a6c55b40038b8d5",
+      "3f84a90c9351275f736fc650a9fef59c5bf4b9261bc0086f0f21321928d7539f",
+      "2ba281a5e8383669a2a3963e04b25967a474a3d04049633aac80a31d9fc6520f",
+      "38504c9b127c4912038fdbad27c73d7500c7763a5135ff80f9a1bfc3a999d3a4",
+      "e3b13e5ee008d1434ce0b54c87e7866b00f5f1f54765cb5e868b510055b396ce"
+    ]
+  },
+  "screen": {
+    "file_bytes": 129067,
+    "payload_bytes": 118541,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/screen/final-segmented.mp4",
+    "sha256": "bc7077ae6235add60343a3a37f8b90a6499bc5d921a56c0d94715028a9991d57",
+    "accounting": {
+      "init_bytes": 734,
+      "video_payload_bytes": 118541,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 9792,
+      "video_samples": 576,
+      "audio_samples": 0,
+      "video_duration_ticks": 294912,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 0.8711188260058407,
+    "reused_sample_segments": 6,
+    "total_segments": 6,
+    "sample_keys": [
+      "307afaf45fa527810cdb503939be79749f33e2fdec0d913a48cbcc7a76381183",
+      "49ca90085e39f5921a5494d76f6379636f65d2030f9d3f5f82df9e6c415215c0",
+      "0545514ef0c78230e223a2aa28e070594ea157e9b427023c931c7904f398555a",
+      "0aad8c6465db9dde381f79d900a3066e42b406300d2a0fc66013033144ad3b03",
+      "289dfd87890f76df875c710f2e14aee88dd3f27d26527663da747dcb88bbb9eb",
+      "e02751f473cb6ab1eb73d297285a97a2fb5fbb3acf9af4be266b96b723b76597"
+    ]
+  },
+  "pedestrians": {
+    "file_bytes": 768029,
+    "payload_bytes": 759937,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/pedestrians/final-segmented.mp4",
+    "sha256": "8ca025c5ee1eacd12c821abbcfe1794253baf8bad981d90db1b1e948ae54b62f",
+    "accounting": {
+      "init_bytes": 732,
+      "video_payload_bytes": 759937,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 7360,
+      "video_samples": 400,
+      "audio_samples": 0,
+      "video_duration_ticks": 409600,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 2.8023245350050274,
+    "reused_sample_segments": 6,
+    "total_segments": 10,
+    "sample_keys": [
+      "8b4abc2a42902cf1ac4cf7cd58a92921a870482b7e6e177b9a317541437f4384",
+      "fd5ad39124e8e15530f4b0d6ec8adfb0b911300c1103b983653a1adc8e69ee71",
+      "cb65bd6556d3a76c4d99894b0353ede3a7d5a17c479726c9b39dfe3a6151c225",
+      "818a96e3055f63f486410cefbe07af95260cd7196d8375b9c3b7b1cd12887346",
+      "70d5ac2a7e23bf391163e523dda887f102fb47e2ba9a0442f91a8e35fedbbb45",
+      "f6ef86c147110dbb2132377944f5209a75d59aa06e12d6deb993fb3c373d9ef4"
+    ]
+  },
+  "megamind": {
+    "file_bytes": 267785,
+    "payload_bytes": 262568,
+    "artifact": "/workspace/video-export-size-estimation/results/core-validation-2026-10-03/segmented/.vsize-cache/megamind/final-segmented.mp4",
+    "sha256": "1a043e2192af141a4ef691f981a89e553c805ce951b8c28d058e2f5ae330a17f",
+    "accounting": {
+      "init_bytes": 737,
+      "video_payload_bytes": 262568,
+      "audio_payload_bytes": 0,
+      "fragment_bytes": 4480,
+      "video_samples": 262,
+      "audio_samples": 0,
+      "video_duration_ticks": 131000,
+      "audio_duration_ticks": 0,
+      "audio_priming_samples": 0
+    },
+    "reference_wall_seconds": 0.5879412200010847,
+    "reused_sample_segments": 3,
+    "total_segments": 3,
+    "sample_keys": [
+      "4afc588e8b7e39f34a3c6857ba41f8fcf01379656ac67684f321004c8f2ddf33",
+      "9e155afaf552db3e1bd2eef4978b5c5d16659622c634c3c06b4df7f258d3582f",
+      "6fcdb967c2a3e1cedfa42ad5475ff8ea416084ed8a472bcbd1c895acc159757f"
+    ]
+  }
+}

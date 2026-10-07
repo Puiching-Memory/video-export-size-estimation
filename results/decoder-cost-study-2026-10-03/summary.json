@@ -1,0 +1,26 @@
+{
+  "paired_cases": 12,
+  "early_segment_decoding_ends_before_source_eof": true,
+  "all_outputs_equivalent": true,
+  "all_timing_replays_match_captured_sha256": true,
+  "all_diagnostic_replays_match_info_sha256": true,
+  "source_frames_saved_by_limit": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+  ],
+  "minimum_wall_ratio": 0.8786074467856606,
+  "maximum_wall_ratio": 1.2782863780064908,
+  "median_wall_ratio": 0.9986449252609915,
+  "conclusion": "Existing trim already ends source decoding; explicit frame limit saves at most one decoded frame in these cases.",
+  "timing_claim": "No strict speed or latency advantage claimed under concurrent jobs and two short repeats."
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "full_reference",
+  "started_utc": "2026-10-03T06:47:25.377110+00:00",
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2",
+  "runner_sha256": "080b402d7940b2a78ca049b4c09e577b77d83c9387b09384d3ba68a7d5f22f4f",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "cpu_max": "400000 100000",
+  "memory_max": "17179869184",
+  "concurrent_media_processes_at_start": [],
+  "latency_scope": "shared cloud CPU quota; page cache not flushed; one FFmpeg per runner"
+}

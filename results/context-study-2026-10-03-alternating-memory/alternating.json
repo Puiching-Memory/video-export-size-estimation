@@ -1,0 +1,851 @@
+{
+  "id": "alternating",
+  "group_id": "synthetic-alternating",
+  "duration": 24.0,
+  "frames": 576,
+  "fps": 24.0,
+  "source_sha256": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+  "reference_file_bytes": 4206639,
+  "reference_payload_bytes": 4199684,
+  "reference_container_bytes": 6955,
+  "reference_picture_types": {
+    "I": {
+      "frames": 3,
+      "bytes": 69405
+    },
+    "P": {
+      "frames": 237,
+      "bytes": 2944178
+    },
+    "B": {
+      "frames": 336,
+      "bytes": 1186101
+    }
+  },
+  "reference_encode_seconds": 4.426061759004369,
+  "census_estimates": {
+    "old_file": {
+      "estimate": 4070795.0,
+      "target": 4206639,
+      "relative_error": -0.03229276389060243
+    },
+    "clip_payload": {
+      "estimate": 4053511.0,
+      "target": 4199684,
+      "relative_error": -0.034805713953716566
+    },
+    "startup_corrected": {
+      "estimate": 4009026.697531915,
+      "target": 4199684,
+      "relative_error": -0.04539801148564637
+    },
+    "context_payload": {
+      "estimate": 4179863,
+      "target": 4199684,
+      "relative_error": -0.004719640811070569
+    },
+    "context_gop_corrected": {
+      "estimate": 4189038.804964539,
+      "target": 4199684,
+      "relative_error": -0.002534760957124571,
+      "guessed_periodic_i_count": 2,
+      "guessed_periodic_i_excess": 9175.804964539007
+    },
+    "context_gop_no_sei": {
+      "estimate": 4187658.804964539,
+      "target": 4199684,
+      "relative_error": -0.002863357108644604,
+      "guessed_periodic_i_count": 2,
+      "guessed_periodic_i_excess": 7795.8049645390065
+    }
+  },
+  "windows": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 1.1949776640030905,
+      "context_encode_seconds": 1.4668464709975524,
+      "clip_file_bytes": 1136565,
+      "clip_payload_bytes": 1135106,
+      "clip_container_bytes": 1459,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 27151
+        },
+        "P": {
+          "frames": 12,
+          "bytes": 307011
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 800944
+        }
+      },
+      "startup_i_excess": 3577.489361702126,
+      "startup_sei_bytes": 690,
+      "context_start": 0.0,
+      "context_duration": 4.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 27151
+        },
+        "P": {
+          "frames": 11,
+          "bytes": 287284
+        },
+        "B": {
+          "frames": 36,
+          "bytes": 821053
+        }
+      },
+      "candidates": {
+        "old_file": 1136565.0,
+        "clip_payload": 1135106.0,
+        "startup_corrected": 1132215.3885957445,
+        "context_payload": 1135488
+      },
+      "reference_window_payload": 1135488,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 27151
+        },
+        "P": {
+          "frames": 11,
+          "bytes": 287284
+        },
+        "B": {
+          "frames": 36,
+          "bytes": 821053
+        }
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.34714171499945223,
+      "context_encode_seconds": 1.5214612540003145,
+      "clip_file_bytes": 77496,
+      "clip_payload_bytes": 76053,
+      "clip_container_bytes": 1443,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6306
+        },
+        "P": {
+          "frames": 14,
+          "bytes": 30050
+        },
+        "B": {
+          "frames": 33,
+          "bytes": 39697
+        }
+      },
+      "startup_i_excess": 4822.021276595745,
+      "startup_sei_bytes": 690,
+      "context_start": 0.0,
+      "context_duration": 6.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 15,
+          "bytes": 37246
+        },
+        "B": {
+          "frames": 33,
+          "bytes": 39463
+        }
+      },
+      "candidates": {
+        "old_file": 77496.0,
+        "clip_payload": 76053.0,
+        "startup_corrected": 72156.80680851065,
+        "context_payload": 76709
+      },
+      "reference_window_payload": 76709,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 15,
+          "bytes": 37246
+        },
+        "B": {
+          "frames": 33,
+          "bytes": 39463
+        }
+      }
+    },
+    {
+      "index": 2,
+      "start": 4.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.23847860500245588,
+      "context_encode_seconds": 1.6531906070013065,
+      "clip_file_bytes": 72686,
+      "clip_payload_bytes": 71259,
+      "clip_container_bytes": 1427,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6096
+        },
+        "P": {
+          "frames": 16,
+          "bytes": 30845
+        },
+        "B": {
+          "frames": 31,
+          "bytes": 34318
+        }
+      },
+      "startup_i_excess": 4709.553191489362,
+      "startup_sei_bytes": 690,
+      "context_start": 0.0,
+      "context_duration": 8.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 16,
+          "bytes": 31892
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 35234
+        }
+      },
+      "candidates": {
+        "old_file": 72686.0,
+        "clip_payload": 71259.0,
+        "startup_corrected": 67453.68102127658,
+        "context_payload": 67126
+      },
+      "reference_window_payload": 67126,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 16,
+          "bytes": 31892
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 35234
+        }
+      }
+    },
+    {
+      "index": 3,
+      "start": 6.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.23939099500421435,
+      "context_encode_seconds": 2.561759070995322,
+      "clip_file_bytes": 77598,
+      "clip_payload_bytes": 76155,
+      "clip_container_bytes": 1443,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6748
+        },
+        "P": {
+          "frames": 12,
+          "bytes": 26528
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 42879
+        }
+      },
+      "startup_i_excess": 5271.255319148936,
+      "startup_sei_bytes": 690,
+      "context_start": 0.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 29587
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 42649
+        }
+      },
+      "candidates": {
+        "old_file": 77598.0,
+        "clip_payload": 76155.0,
+        "startup_corrected": 71895.82570212765,
+        "context_payload": 72236
+      },
+      "reference_window_payload": 72236,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 29587
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 42649
+        }
+      }
+    },
+    {
+      "index": 4,
+      "start": 8.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 1.1691843000007793,
+      "context_encode_seconds": 1.8176567520058597,
+      "clip_file_bytes": 1135911,
+      "clip_payload_bytes": 1134452,
+      "clip_container_bytes": 1459,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 27722
+        },
+        "P": {
+          "frames": 12,
+          "bytes": 305684
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 801046
+        }
+      },
+      "startup_i_excess": 4174.553191489362,
+      "startup_sei_bytes": 690,
+      "context_start": 2.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 47,
+          "bytes": 1187100
+        },
+        "B": {
+          "frames": 1,
+          "bytes": 20338
+        }
+      },
+      "candidates": {
+        "old_file": 1135911.0,
+        "clip_payload": 1134452.0,
+        "startup_corrected": 1131078.9610212767,
+        "context_payload": 1207438
+      },
+      "reference_window_payload": 1222464,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 35652
+        },
+        "P": {
+          "frames": 47,
+          "bytes": 1186812
+        },
+        "B": {
+          "frames": 0,
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "index": 5,
+      "start": 10.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.26278058599564247,
+      "context_encode_seconds": 1.618783159996383,
+      "clip_file_bytes": 73752,
+      "clip_payload_bytes": 72309,
+      "clip_container_bytes": 1443,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6212
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 27607
+        },
+        "B": {
+          "frames": 34,
+          "bytes": 38490
+        }
+      },
+      "startup_i_excess": 4805.680851063829,
+      "startup_sei_bytes": 690,
+      "context_start": 4.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 32869
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 39711
+        }
+      },
+      "candidates": {
+        "old_file": 73752.0,
+        "clip_payload": 72309.0,
+        "startup_corrected": 68426.00987234042,
+        "context_payload": 72580
+      },
+      "reference_window_payload": 73138,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 33297
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 39841
+        }
+      }
+    },
+    {
+      "index": 6,
+      "start": 12.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.2552780040059588,
+      "context_encode_seconds": 1.7310803459986346,
+      "clip_file_bytes": 72300,
+      "clip_payload_bytes": 70905,
+      "clip_container_bytes": 1395,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 5643
+        },
+        "P": {
+          "frames": 15,
+          "bytes": 29249
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 36013
+        }
+      },
+      "startup_i_excess": 4254.446808510638,
+      "startup_sei_bytes": 690,
+      "context_start": 6.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 15,
+          "bytes": 30067
+        },
+        "B": {
+          "frames": 33,
+          "bytes": 37116
+        }
+      },
+      "candidates": {
+        "old_file": 72300.0,
+        "clip_payload": 70905.0,
+        "startup_corrected": 67467.4069787234,
+        "context_payload": 67183
+      },
+      "reference_window_payload": 67089,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 15,
+          "bytes": 29954
+        },
+        "B": {
+          "frames": 33,
+          "bytes": 37135
+        }
+      }
+    },
+    {
+      "index": 7,
+      "start": 14.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.24571186400135048,
+      "context_encode_seconds": 2.5671791760032647,
+      "clip_file_bytes": 75840,
+      "clip_payload_bytes": 74397,
+      "clip_container_bytes": 1443,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6246
+        },
+        "P": {
+          "frames": 12,
+          "bytes": 26460
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 41691
+        }
+      },
+      "startup_i_excess": 4795.978723404255,
+      "startup_sei_bytes": 690,
+      "context_start": 8.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 29538
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 41878
+        }
+      },
+      "candidates": {
+        "old_file": 75840.0,
+        "clip_payload": 74397.0,
+        "startup_corrected": 70521.84919148935,
+        "context_payload": 71416
+      },
+      "reference_window_payload": 71082,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 13,
+          "bytes": 29565
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 41517
+        }
+      }
+    },
+    {
+      "index": 8,
+      "start": 16.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 1.1545024560036836,
+      "context_encode_seconds": 1.6165685330051929,
+      "clip_file_bytes": 1124124,
+      "clip_payload_bytes": 1122665,
+      "clip_container_bytes": 1459,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 27356
+        },
+        "P": {
+          "frames": 12,
+          "bytes": 304921
+        },
+        "B": {
+          "frames": 35,
+          "bytes": 790388
+        }
+      },
+      "startup_i_excess": 4051.553191489362,
+      "startup_sei_bytes": 690,
+      "context_start": 10.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 47,
+          "bytes": 1178055
+        },
+        "B": {
+          "frames": 1,
+          "bytes": 19820
+        }
+      },
+      "candidates": {
+        "old_file": 1124124.0,
+        "clip_payload": 1122665.0,
+        "startup_corrected": 1119391.3450212767,
+        "context_payload": 1197875
+      },
+      "reference_window_payload": 1197165,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 47,
+          "bytes": 1177517
+        },
+        "B": {
+          "frames": 1,
+          "bytes": 19648
+        }
+      }
+    },
+    {
+      "index": 9,
+      "start": 18.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.2678568949995679,
+      "context_encode_seconds": 1.716217854002025,
+      "clip_file_bytes": 77741,
+      "clip_payload_bytes": 76290,
+      "clip_container_bytes": 1451,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6583
+        },
+        "P": {
+          "frames": 17,
+          "bytes": 34574
+        },
+        "B": {
+          "frames": 30,
+          "bytes": 35133
+        }
+      },
+      "startup_i_excess": 5099.8723404255325,
+      "startup_sei_bytes": 690,
+      "context_start": 12.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 16,
+          "bytes": 38444
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 38916
+        }
+      },
+      "candidates": {
+        "old_file": 77741.0,
+        "clip_payload": 76290.0,
+        "startup_corrected": 72169.30314893617,
+        "context_payload": 77360
+      },
+      "reference_window_payload": 77893,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 17,
+          "bytes": 40876
+        },
+        "B": {
+          "frames": 31,
+          "bytes": 37017
+        }
+      }
+    },
+    {
+      "index": 10,
+      "start": 20.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.23836365100578405,
+      "context_encode_seconds": 1.5786581959982868,
+      "clip_file_bytes": 71718,
+      "clip_payload_bytes": 70299,
+      "clip_container_bytes": 1419,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6169
+        },
+        "P": {
+          "frames": 15,
+          "bytes": 29099
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 35031
+        }
+      },
+      "startup_i_excess": 4804.531914893617,
+      "startup_sei_bytes": 690,
+      "context_start": 14.0,
+      "context_duration": 10.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 14,
+          "bytes": 29102
+        },
+        "B": {
+          "frames": 34,
+          "bytes": 37195
+        }
+      },
+      "candidates": {
+        "old_file": 71718.0,
+        "clip_payload": 70299.0,
+        "startup_corrected": 66416.93821276596,
+        "context_payload": 66297
+      },
+      "reference_window_payload": 71124,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6602
+        },
+        "P": {
+          "frames": 14,
+          "bytes": 28423
+        },
+        "B": {
+          "frames": 33,
+          "bytes": 36099
+        }
+      }
+    },
+    {
+      "index": 11,
+      "start": 22.0,
+      "duration": 2.0,
+      "clip_encode_seconds": 0.2509724800038384,
+      "context_encode_seconds": 1.6163819450011943,
+      "clip_file_bytes": 75064,
+      "clip_payload_bytes": 73621,
+      "clip_container_bytes": 1443,
+      "clip_frames": 48,
+      "clip_picture_types": {
+        "I": {
+          "frames": 1,
+          "bytes": 6124
+        },
+        "P": {
+          "frames": 17,
+          "bytes": 32875
+        },
+        "B": {
+          "frames": 30,
+          "bytes": 34622
+        }
+      },
+      "startup_i_excess": 4687.893617021276,
+      "startup_sei_bytes": 690,
+      "context_start": 16.0,
+      "context_duration": 8.0,
+      "central_frames": 48,
+      "central_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 16,
+          "bytes": 31775
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 36380
+        }
+      },
+      "candidates": {
+        "old_file": 75064.0,
+        "clip_payload": 73621.0,
+        "startup_corrected": 69833.18195744681,
+        "context_payload": 68155
+      },
+      "reference_window_payload": 68170,
+      "reference_window_picture_types": {
+        "I": {
+          "frames": 0,
+          "bytes": 0
+        },
+        "P": {
+          "frames": 16,
+          "bytes": 31725
+        },
+        "B": {
+          "frames": 32,
+          "bytes": 36445
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "A census of all blocks isolates context bias and spends more than a full encode.",
+    "Scene selection and uncertainty coverage are not evaluated.",
+    "Startup correction uses guessed keyint 250 and local first-I excess.",
+    "Warmup can suppress normal periodic I frames; padding is not a guarantee of equivalence.",
+    "Periodic-I correction ignores GOP resets at scene cuts and uses forced-start I costs."
+  ]
+}

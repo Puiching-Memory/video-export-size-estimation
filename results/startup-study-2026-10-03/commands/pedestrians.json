@@ -1,0 +1,158 @@
+[
+  {
+    "command": [
+      "ffmpeg",
+      "-version"
+    ],
+    "wall_seconds": 0.07479511400015326
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/pedestrians.mp4"
+    ],
+    "wall_seconds": 0.08271908800088568
+  },
+  {
+    "command": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-threads",
+      "1",
+      "-filter_threads",
+      "1",
+      "-i",
+      "/workspace/video-export-size-estimation/artifacts/corpus-v1/pedestrians.mp4",
+      "-map",
+      "0:0",
+      "-vf",
+      "fps=4,scale=96:54:flags=area,format=gray",
+      "-an",
+      "-sn",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "gray",
+      "pipe:1"
+    ],
+    "wall_seconds": 0.2970363299973542
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/d689bc0f21128136196be6839f3fb0d0e67ae3c5168e25e010d909708a0904ae.mp4"
+    ],
+    "wall_seconds": 0.08522515799995745
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/967220c37f203d0cebd33cfc168f0cf864f56af65f3cd01f58c4365c17850516.mp4"
+    ],
+    "wall_seconds": 0.08051434800290735
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/710d4ad764b8de60f8467b4febac1353f374392849ed21d31b5db0fe081b0eba.mp4"
+    ],
+    "wall_seconds": 0.0784054180039675
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/9b06762ad078fcea76b6f7877e97247bd61932ccc07e9f3c537c8e1582ad1125.mp4"
+    ],
+    "wall_seconds": 0.08003508300316753
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/ed9b0e06c3a8b0a4e40760ba6787383093d128c4660a20f9ec7557d035a85888.mp4"
+    ],
+    "wall_seconds": 0.08042622599896276
+  },
+  {
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_streams",
+      "-show_packets",
+      "-show_data",
+      "-show_entries",
+      "stream=codec_name,time_base,extradata,width,height,sample_rate,channels,start_pts,duration_ts:packet=pts,dts,duration,pos,size,flags,side_data_list",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/results/core-validation-v2-2026-10-03/engine/.vsize-cache/pedestrians-continuous-prepared-5.0-0.2/623b73a7b405232c5e09ae67b61368d165561533bad0f32706c1ed005fba04c6.mp4"
+    ],
+    "wall_seconds": 0.08140992500557331
+  }
+]

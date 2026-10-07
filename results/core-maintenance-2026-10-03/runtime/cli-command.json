@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/workspace/video-export-size-estimation/.venv/bin/python",
+    "-m",
+    "vsize.cli",
+    "/workspace/video-export-size-estimation/results/core-maintenance-2026-10-03/runtime/static-export-request.json",
+    "--cache",
+    "/workspace/video-export-size-estimation/results/core-maintenance-2026-10-03/runtime/.vsize-cache/cli-export",
+    "--prepare",
+    "--output",
+    "/workspace/video-export-size-estimation/results/core-maintenance-2026-10-03/runtime/.vsize-cache/published-static.mp4"
+  ],
+  "concurrent_media_processes": [],
+  "source_sha256": "b4440e98a293e38ffb1356a51068e1a75677ac0ba7e2e7417ec469d286f0ca3a"
+}

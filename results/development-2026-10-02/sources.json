@@ -1,0 +1,12 @@
+[
+  {
+    "name": "pedestrians",
+    "url": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/vtest.avi",
+    "sha256": "45cddc9490be69345cbdab64ca583be65987e864ca408038e648db99e10516cf"
+  },
+  {
+    "name": "megamind",
+    "url": "https://raw.githubusercontent.com/opencv/opencv/master/samples/data/Megamind.avi",
+    "sha256": "0057387cb7e75c8fd1663b62cfdc51fa53f527795d0fe3c1fea2fd159d3130b5"
+  }
+]

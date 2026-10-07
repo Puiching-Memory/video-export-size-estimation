@@ -1,0 +1,681 @@
+{
+  "static": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "32dc6710d41e0987770fa27bbde42b1a18860e35455f4ff597feab7345a96461",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "6b474ee2e5ffa5260acd3a737dfd0d18fa20e5163abae279670b1be6a00f00d0",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.08676599900354631,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "ec0fcbb3eda0ae2cd90bf998d20523f578a095bbd5574eac1d7ccc51b9e0cf28",
+      "93df5af9eeb86a3e9d60c798cd2417145102e49a4ec34d79eb08c631993404e7",
+      "f48ff426ab1d7397f083e289166919fcb764f7d2cc616e627a03b1f6746940a4",
+      "aebe91d71d69f140ae2381242f70e45f487d8c5334712b09babbd40c945bb7f8",
+      "60f52edf3bfbc62ec4f3a4562d3203a9ca69cd49dacabd52dbc6f3c76eb935e3",
+      "7cc48e638ea24a5dad6a72aad8a7a0680a29802ac1199355ba9bfbf54f9b4c29"
+    ]
+  },
+  "motion": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "d9506da8f8d33fd9f6d2e03e33e4506eee9cb17f3022d863b9ba6567091174f2",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "54ea48610d1bd705b7c30a270a7e5df046939f6bac8858dbc8ef9af41e5e314b",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.07950174500001594,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "bd22d0868cfc904f850d1a7768745c347714506e718e6e3095c0c0afcdd52f68",
+      "4e7af9e86dd38887f3d46eeb72b8a64abb84fefd89d04eee2c11bdc2c125a796",
+      "465acb49c7197c534ba9b632cbb42f4f2d5e4d5ffa17c4dd982d40b75b435ccb",
+      "61c877cfac0b9853c9951502704f4db768833acf906b74331ba1813ff1521f31",
+      "3a77addf5bd9fe8b85af28bc6e5e8725073e9175aa91a874280e740e8195a12d",
+      "332da853aad65a8c93561544e252cb06204e9182d0e032777af79001f8e05abd"
+    ]
+  },
+  "grain": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "d9f78cc9c2b1c41858368f4033879dfd5538735b1b01d1213dbe84abf676b529",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "8abd2857746a1d648eaa8560893770eb8a579be9a851d36296ee656165a85c6a",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.08794409000256564,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "688bb4a469f869418fb168f1a2dee67de21d99cc9b7a9e32789d58e42a10aad6",
+      "28de0ade2e2ed4546e9f5bc6e192304874bf0eb95199dedc085ed05e88a1cd36",
+      "e3aa33ec346cebdb091c14e165543122e3bfd842db190dd5f83d2771c7307cea",
+      "e33b0b66c10dded5bda3d9be6c4fb317e5fa3c54c47ca7dbd16f2d8b6d242f38",
+      "af4cf620cc9a98efd188c05974c3729a6dcefd6dc88f5a4f2e0e2ecdc8869580",
+      "2f18e6b193a1ebfb779d6544b773147abad873dc155e5c9e911a93f615fabb3e"
+    ]
+  },
+  "brief-burst": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "99b156b5c96829e8d1ab0acb99d90317f103a3e4edd9b59c94087ac3a8ce825d",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "e97b56748b4c39a4a4b2183d6e682eb771f50caeb494e101589121cb7000e3a1",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.08552493999741273,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "c4b89ac05f122cd94436e1fe6827a9eea6ddeff1145cdb6edfbe4fcc9e5fc68b",
+      "11ed105bc1fcfd1f98e4903d6f167f531eeb43aeb9bb9b67f894360d78103b8e",
+      "d338216ac77ab4e34ce0d7465a96700a5a5ef416b2c4cfafaad983d659ccd080",
+      "484a4492a6bbec2f26d76701d184c5c934e91a795ad4a1ea9503a9a24a7c61e4",
+      "69a459bad43c4992667e38b2222e630ac38277fe11516d9c30ff1c4a0de5b235",
+      "65823894754fce3356313ab6269f9b5519d56e2af7aedddb9d1cbb3f2b597d53"
+    ]
+  },
+  "cbr-burst": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "39902bf14cb3adf00f9e2dcc502d7703176d709e378f352ce22aaa0803a36d32",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "33e3af15cfb57c31fa7d65a78915936d5609e09b62fc9cd1526a870ec1fc50d4",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.08251694299542578,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "75ffebf0e6005a292fdcf13271b28af5587d1b9d17315ee0ed2e1c35acda27be",
+      "d75473d65b77612ed91e90659ed8f85fdb195c9bb18fa7de26af190c9e0ef43c",
+      "630a8663a0c4ab001afd2c8fc6caa6af915167dadbfa5d9158b9eed14d881661",
+      "c9c05eac6dcd87546cf591c9f85a0bb2e53aaa9ffa9db506a4f6529cbdde7a91",
+      "66167c9860090870bbaee60f3c9c6507e3b0d27fbb731de1855adb2582d320a1",
+      "65475bcc43d4907bd2455215230e631811c4d0d48abebbc5e68b6616a47fa1e2"
+    ]
+  },
+  "alternating": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "da3404a8ed8bb6b4c4a1d24ad7256e01bb73a89fb2a0446b1a5d3f42e4aebd94",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "19f52a5cde045e96a0fc6fa42bf214f2a9c902e41cf824d5fb031aacff63d473",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.08825144499860471,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "336c8b8e8f1dc37f032d1645b0bd0613c0516cfc49978eeb788b00673bccb5db",
+      "e51b997d977ba1735da60b8bd23ed1468242cfe6f9b3bd3d4a6c55b40038b8d5",
+      "3f84a90c9351275f736fc650a9fef59c5bf4b9261bc0086f0f21321928d7539f",
+      "2ba281a5e8383669a2a3963e04b25967a474a3d04049633aac80a31d9fc6520f",
+      "38504c9b127c4912038fdbad27c73d7500c7763a5135ff80f9a1bfc3a999d3a4",
+      "e3b13e5ee008d1434ce0b54c87e7866b00f5f1f54765cb5e868b510055b396ce"
+    ]
+  },
+  "screen": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "ad17d3f642b25e0c8ba2abe0308cfa26c1faea63860a4df949cbf579d10c7ddf",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "202b80fd774fa4f9989631f4d720b4ef30a4b35e031f8fb314973b1f55cc56b7",
+      "source_frames": 576,
+      "source_geometry": [
+        384,
+        216
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "24",
+      "total_frames": 576,
+      "duration": 24.0,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 0,
+          "end_tick": 49152
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 49152,
+          "end_tick": 98304
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 96,
+          "start_tick": 98304,
+          "end_tick": 147456
+        },
+        {
+          "index": 3,
+          "start_frame": 288,
+          "frame_count": 96,
+          "start_tick": 147456,
+          "end_tick": 196608
+        },
+        {
+          "index": 4,
+          "start_frame": 384,
+          "frame_count": 96,
+          "start_tick": 196608,
+          "end_tick": 245760
+        },
+        {
+          "index": 5,
+          "start_frame": 480,
+          "frame_count": 96,
+          "start_tick": 245760,
+          "end_tick": 294912
+        }
+      ],
+      "prepare_seconds": 0.08168640900112223,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "307afaf45fa527810cdb503939be79749f33e2fdec0d913a48cbcc7a76381183",
+      "49ca90085e39f5921a5494d76f6379636f65d2030f9d3f5f82df9e6c415215c0",
+      "0545514ef0c78230e223a2aa28e070594ea157e9b427023c931c7904f398555a",
+      "0aad8c6465db9dde381f79d900a3066e42b406300d2a0fc66013033144ad3b03",
+      "289dfd87890f76df875c710f2e14aee88dd3f27d26527663da747dcb88bbb9eb",
+      "e02751f473cb6ab1eb73d297285a97a2fb5fbb3acf9af4be266b96b723b76597"
+    ]
+  },
+  "pedestrians": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "485d76adebb8ed8d0f2b821c553a370db4939d4ce1147b9418e9196594f87546",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "17668673998048cae589f4c0c849ee71603fbf426d75d5662b6cd90a9704b24b",
+      "source_frames": 400,
+      "source_geometry": [
+        384,
+        288
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "10",
+      "total_frames": 400,
+      "duration": 40.0,
+      "segment_frames": 40,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 40,
+          "start_tick": 0,
+          "end_tick": 40960
+        },
+        {
+          "index": 1,
+          "start_frame": 40,
+          "frame_count": 40,
+          "start_tick": 40960,
+          "end_tick": 81920
+        },
+        {
+          "index": 2,
+          "start_frame": 80,
+          "frame_count": 40,
+          "start_tick": 81920,
+          "end_tick": 122880
+        },
+        {
+          "index": 3,
+          "start_frame": 120,
+          "frame_count": 40,
+          "start_tick": 122880,
+          "end_tick": 163840
+        },
+        {
+          "index": 4,
+          "start_frame": 160,
+          "frame_count": 40,
+          "start_tick": 163840,
+          "end_tick": 204800
+        },
+        {
+          "index": 5,
+          "start_frame": 200,
+          "frame_count": 40,
+          "start_tick": 204800,
+          "end_tick": 245760
+        },
+        {
+          "index": 6,
+          "start_frame": 240,
+          "frame_count": 40,
+          "start_tick": 245760,
+          "end_tick": 286720
+        },
+        {
+          "index": 7,
+          "start_frame": 280,
+          "frame_count": 40,
+          "start_tick": 286720,
+          "end_tick": 327680
+        },
+        {
+          "index": 8,
+          "start_frame": 320,
+          "frame_count": 40,
+          "start_tick": 327680,
+          "end_tick": 368640
+        },
+        {
+          "index": 9,
+          "start_frame": 360,
+          "frame_count": 40,
+          "start_tick": 368640,
+          "end_tick": 409600
+        }
+      ],
+      "prepare_seconds": 0.09097157899668673,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "8b4abc2a42902cf1ac4cf7cd58a92921a870482b7e6e177b9a317541437f4384",
+      "fd5ad39124e8e15530f4b0d6ec8adfb0b911300c1103b983653a1adc8e69ee71",
+      "cb65bd6556d3a76c4d99894b0353ede3a7d5a17c479726c9b39dfe3a6151c225",
+      "818a96e3055f63f486410cefbe07af95260cd7196d8375b9c3b7b1cd12887346",
+      "70d5ac2a7e23bf391163e523dda887f102fb47e2ba9a0442f91a8e35fedbbb45",
+      "f6ef86c147110dbb2132377944f5209a75d59aa06e12d6deb993fb3c373d9ef4"
+    ]
+  },
+  "megamind": {
+    "plan": {
+      "pipeline": "independent-cfr-x264-v1",
+      "semantics": "independent_segments",
+      "source_hash": "7936f0881fe0cc8120c526eeb00238433bf909e2c9598cdcdf85ec39cc901675",
+      "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+      "plan_hash": "a035944a5f8eab971c486b2e6aa4e2ea6f7afa1b202994930cf0b8907071101a",
+      "source_frames": 262,
+      "source_geometry": [
+        384,
+        282
+      ],
+      "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+      "output_rate": "2997/125",
+      "total_frames": 262,
+      "duration": 10.927594260927595,
+      "segment_frames": 96,
+      "segments": [
+        {
+          "index": 0,
+          "start_frame": 0,
+          "frame_count": 96,
+          "start_tick": 995,
+          "end_tick": 48995
+        },
+        {
+          "index": 1,
+          "start_frame": 96,
+          "frame_count": 96,
+          "start_tick": 48995,
+          "end_tick": 96995
+        },
+        {
+          "index": 2,
+          "start_frame": 192,
+          "frame_count": 70,
+          "start_tick": 96995,
+          "end_tick": 131995
+        }
+      ],
+      "prepare_seconds": 0.07811180499993498,
+      "prepare_cache_hit": false,
+      "source_identity_verified_at_publication": false,
+      "fps_conversion_access": "timestamp_seek"
+    },
+    "sample_keys": [
+      "4afc588e8b7e39f34a3c6857ba41f8fcf01379656ac67684f321004c8f2ddf33",
+      "9e155afaf552db3e1bd2eef4978b5c5d16659622c634c3c06b4df7f258d3582f",
+      "6fcdb967c2a3e1cedfa42ad5475ff8ea416084ed8a472bcbd1c895acc159757f"
+    ]
+  }
+}

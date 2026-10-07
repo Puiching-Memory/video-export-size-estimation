@@ -1,0 +1,48 @@
+[h264 @ 0x55d15ffd28c0] Reinit context to 256x144, pix_fmt: yuv420p
+Input #0, matroska,webm, from '/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-gap.mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: mp42avc1
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    ENCODER         : Lavf61.7.103
+  Duration: 00:00:19.38, start: 0.000000, bitrate: 1043 kb/s
+  Stream #0:0(eng): Video: h264 (High 4:4:4 Predictive), 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:00:19.375000000
+[out#0/matroska @ 0x55d160089300] Adding streams from explicit maps...
+[vost#0:0/copy @ 0x55d16004e040] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Output #0, matroska, to '/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-offset.mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: mp42avc1
+    MAJOR_BRAND     : mp42
+    MINOR_VERSION   : 1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: h264 (High 4:4:4 Predictive), 1 reference frame (H264 / 0x34363248), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 256x144, q=2-31, 24 fps, 24 tbr, 1k tbn (default)
+      Metadata:
+        HANDLER_NAME    : Apple Video Media Handler
+        VENDOR_ID       : [0][0][0][0]
+        ENCODER         : Lavc61.19.101 libx264
+        DURATION        : 00:00:19.375000000
+[out#0/matroska @ 0x55d160089300] Starting thread...
+[in#0/matroska,webm @ 0x55d15ffd0280] Starting thread...
+[in#0/matroska,webm @ 0x55d15ffd0280] EOF while reading input
+[in#0/matroska,webm @ 0x55d15ffd0280] Terminating thread with return code 0 (success)
+[out#0/matroska @ 0x55d160089300] All streams finished
+[out#0/matroska @ 0x55d160089300] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x55d16004efc0] Statistics: 2528910 bytes written, 2 seeks, 11 writeouts
+[out#0/matroska @ 0x55d160089300] Output file #0 (/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-offset.mkv):
+[out#0/matroska @ 0x55d160089300]   Output stream #0:0 (video): 298 packets muxed (2524884 bytes); 
+[out#0/matroska @ 0x55d160089300]   Total: 298 packets (2524884 bytes) muxed
+[out#0/matroska @ 0x55d160089300] video:2466KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.130857%
+frame=  298 fps=0.0 q=-1.0 Lsize=    2469KiB time=00:00:00.00 bitrate=N/A speed=   0x    
+bench: utime=0.009s stime=0.000s rtime=0.008s
+bench: maxrss=35100KiB
+[in#0/matroska,webm @ 0x55d15ffd0280] Input file #0 (/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/sources/bunny-derived-vfr-gap.mkv):
+[in#0/matroska,webm @ 0x55d15ffd0280]   Input stream #0:0 (video): 298 packets read (2524884 bytes); 
+[in#0/matroska,webm @ 0x55d15ffd0280]   Total: 298 packets (2524884 bytes) demuxed
+[AVIOContext @ 0x55d15ffd8c80] Statistics: 2528110 bytes read, 0 seeks

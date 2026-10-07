@@ -1,0 +1,106 @@
+{
+  "case": "shaky-baseball-4k",
+  "mode": "continuous",
+  "answer": {
+    "schema_version": 2,
+    "requested": {
+      "compute": {
+        "wall_seconds": 120,
+        "max_probes": 0,
+        "threads": 1,
+        "max_encode_fraction": 1.0
+      },
+      "reliability": {
+        "relative_error": 0.1,
+        "coverage": 0.95
+      },
+      "size": {
+        "max_bytes": null,
+        "max_crf": 35.0,
+        "max_candidates": 5
+      },
+      "configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      },
+      "sample_seconds": 0.5,
+      "seed": 20261003,
+      "probe_mode": "auto",
+      "sampling_plan": "content"
+    },
+    "status": "satisfied",
+    "estimate": {
+      "estimated_bytes": 6212486,
+      "selected_crf": 23,
+      "uncertainty": {
+        "kind": "exact",
+        "interval_bytes": [
+          6212486,
+          6212486
+        ],
+        "coverage": 1.0
+      },
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-baseball-4k-continuous/bea7b090485c5e91596f1173eabdd52e0748c3b5664cce967a012c7cc93cff94.mp4",
+      "sha256": "09ac1d9576071135428d78e46a879477ec2dc5cb6f8d1cb02b2ce0485f2eb76d",
+      "cache_hit": false,
+      "sample_count": 0,
+      "source_hash": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+      "export_mode": "continuous"
+    },
+    "candidates": [
+      {
+        "crf": 23,
+        "estimated_bytes": 6212486,
+        "evidence": "exact"
+      }
+    ],
+    "unmet": [],
+    "elapsed_seconds": 77.56021474100271,
+    "first_estimate_seconds": 77.56016992300283,
+    "attempted_encode_seconds": 2.168833,
+    "attempted_audio_seconds": 0.0,
+    "audio_preparation_seconds": 0.0,
+    "total_probe_count": 0,
+    "encode_fraction_basis": "requested_output_video_seconds; audio charged to wall budget",
+    "prepared_asset": {
+      "source_hash": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+      "bytes": 1617408848,
+      "ingest_seconds": 3.160954340004537,
+      "ingest_in_request_budget": false,
+      "identity": "linux_sealed_memfd"
+    },
+    "calibration_note": null,
+    "content_discovery": null,
+    "stop_reason": "exact_export_complete",
+    "source_hash": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "pilot_count": 1,
+    "alternatives": []
+  },
+  "reference_wall_seconds": 77.56021474100271,
+  "source_ingest_seconds": 3.160954340004537,
+  "file_bytes": 6212486,
+  "inspection": {
+    "passed": true,
+    "mode": "continuous",
+    "frames": 130,
+    "width": 3840,
+    "height": 2160,
+    "frame_rate": "60000/1001",
+    "video_duration": "2.168833",
+    "format_duration": "2.168833",
+    "audio_streams": 0,
+    "file_bytes": 6212486,
+    "inspection_seconds": 10.34348818899889,
+    "byte_accounting": null,
+    "native_dimensions": true,
+    "validation_kind": "full_decode_metadata_and_exact_container_identity_not_prediction_accuracy"
+  }
+}

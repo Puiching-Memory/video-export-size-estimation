@@ -1,0 +1,270 @@
+Splitting the commandline.
+Reading option '-hide_banner' ... matched as option 'hide_banner' (do not show program banner) with argument '1'.
+Reading option '-loglevel' ... matched as option 'loglevel' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '-nostats' ... matched as option 'stats' (print progress report during encoding) with argument 0.
+Reading option '-benchmark' ... matched as option 'benchmark' (add timings for benchmarking) with argument '1'.
+Reading option '-threads' ... matched as AVOption 'threads' with argument '1'.
+Reading option '-filter_threads' ... matched as option 'filter_threads' (number of non-complex filter threads) with argument '1'.
+Reading option '-ss' ... matched as option 'ss' (start transcoding at specified time) with argument '10.0'.
+Reading option '-i' ... matched as input url with argument '/proc/self/fd/4'.
+Reading option '-t' ... matched as option 't' (stop transcoding after specified duration) with argument '4.875'.
+Reading option '-map' ... matched as option 'map' (set input stream mapping) with argument '0:0'.
+Reading option '-an' ... matched as option 'an' (disable audio) with argument '1'.
+Reading option '-sn' ... matched as option 'sn' (disable subtitle) with argument '1'.
+Reading option '-dn' ... matched as option 'dn' (disable data) with argument '1'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-fps_mode' ... matched as option 'fps_mode' (set framerate mode for matching video streams; overrides vsync) with argument 'passthrough'.
+Reading option '-f' ... matched as option 'f' (force container format (auto-detected otherwise)) with argument 'rawvideo'.
+Reading option '/workspace/video-export-size-estimation/artifacts/development-fixed/static-leading2.i420' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option hide_banner (do not show program banner) with argument 1.
+Applying option loglevel (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option y (overwrite output files) with argument 1.
+Applying option nostats (print progress report during encoding) with argument 0.
+Applying option benchmark (add timings for benchmarking) with argument 1.
+Applying option filter_threads (number of non-complex filter threads) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /proc/self/fd/4.
+Applying option ss (start transcoding at specified time) with argument 10.0.
+Successfully parsed a group of options.
+Opening an input file: /proc/self/fd/4.
+[AVFormatContext @ 0x55b9ff079480] Opening '/proc/self/fd/4' for reading
+[file @ 0x55b9ff079ac0] Setting default whitelist 'file,crypto,data'
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] ISO: File Type Major Brand: isom
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] Unknown dref type 0x206c7275 size 12
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] Processing st: 0, edit list 0 - media time: 1024, duration: 294912
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] Offset DTS by 1024 to make first pts zero.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] Setting codecpar->delay to 2 for stream st: 0
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] Before avformat_find_stream_info() pos: 18154 bytes read:18154 seeks:0 nb_streams:1
+[h264 @ 0x55b9ff07a240] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff07a240] Decoding VUI
+[h264 @ 0x55b9ff07a240] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff07a240] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff07a240] Decoding VUI
+[h264 @ 0x55b9ff07a240] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff07a240] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[h264 @ 0x55b9ff07a240] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x55b9ff07a240] Format yuv420p chosen by get_format().
+[h264 @ 0x55b9ff07a240] Reinit context to 384x224, pix_fmt: yuv420p
+[h264 @ 0x55b9ff07a240] no picture 
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] All info found
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff079480] After avformat_find_stream_info() pos: 808 bytes read:18154 seeks:0 frames:1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/proc/self/fd/4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:24.00, start: 0.000000, bitrate: 6 kb/s
+  Stream #0:0[0x1](und), 1, 1/12288: Video: h264 (High), 1 reference frame (avc1 / 0x31637661), yuv420p(progressive, left), 384x216 [SAR 1:1 DAR 16:9], 0/1, 3 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Successfully opened the file.
+Parsing a group of options: output url /workspace/video-export-size-estimation/artifacts/development-fixed/static-leading2.i420.
+Applying option t (stop transcoding after specified duration) with argument 4.875.
+Applying option map (set input stream mapping) with argument 0:0.
+Applying option an (disable audio) with argument 1.
+Applying option sn (disable subtitle) with argument 1.
+Applying option dn (disable data) with argument 1.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Applying option fps_mode (set framerate mode for matching video streams; overrides vsync) with argument passthrough.
+Applying option f (force container format (auto-detected otherwise)) with argument rawvideo.
+Successfully parsed a group of options.
+Opening an output file: /workspace/video-export-size-estimation/artifacts/development-fixed/static-leading2.i420.
+[out#0/rawvideo @ 0x55b9ff0fa780] Adding streams from explicit maps...
+[vost#0:0/rawvideo @ 0x55b9ff07b340] Created video stream from input stream 0:0
+[h264 @ 0x55b9ff08a440] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff08a440] Decoding VUI
+[h264 @ 0x55b9ff08a440] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[file @ 0x55b9ff08cd80] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x55b9ff07b340] Starting thread...
+[vf#0:0 @ 0x55b9ff0facc0] Starting thread...
+[vist#0:0/h264 @ 0x55b9ff0fadc0] [dec:h264 @ 0x55b9ff07bbc0] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff0791c0] Starting thread...
+[h264 @ 0x55b9ff13b240] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff13b240] Decoding VUI
+[h264 @ 0x55b9ff13b240] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[h264 @ 0x55b9ff08a440] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x55b9ff08a440] Format yuv420p chosen by get_format().
+[h264 @ 0x55b9ff08a440] Reinit context to 384x224, pix_fmt: yuv420p
+[h264 @ 0x55b9ff08a440] no picture 
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[h264 @ 0x55b9ff08a440] no picture 
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'video_size' to value '384x216'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'pix_fmt' to value '0'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'time_base' to value '1/12288'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'pixel_aspect' to value '1/1'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'colorspace' to value '2'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'range' to value '0'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] Setting 'frame_rate' to value '24/1'
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] w:384 h:216 pixfmt:yuv420p tb:1/12288 fr:24/1 sar:1/1 csp:unknown range:unknown
+[format @ 0x7fd450002640] Setting 'pix_fmts' to value 'yuv420p'
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[AVFilterGraph @ 0x7fd450001000] query_formats: 6 queried, 15 merged, 0 already done, 0 delayed
+[graph -1 input from stream 0:0 @ 0x7fd4500017c0] video frame properties congruent with link at pts_time: 0
+detected 5 logical cores
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+Output #0, rawvideo, to '/workspace/video-export-size-estimation/artifacts/development-fixed/static-leading2.i420':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+  Stream #0:0(und), 0, 1/24: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p(progressive, left), 384x216 [SAR 1:1 DAR 16:9], 0/1, q=2-31, 23887 kb/s, 24 fps, 24 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/rawvideo @ 0x55b9ff0fa780] Starting thread...
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[h264 @ 0x55b9ff08a440] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[h264 @ 0x55b9ff08a440] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+    Last message repeated 1 times
+[h264 @ 0x55b9ff08a440] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+    Last message repeated 1 times
+[out_#0:0 @ 0x7fd450002480] EOF on sink link out_#0:0:default.
+[vf#0:0 @ 0x55b9ff0facc0] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x55b9ff0facc0] All consumers returned EOF
+[vf#0:0 @ 0x55b9ff0facc0] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x55b9ff0fadc0] [dec:h264 @ 0x55b9ff07bbc0] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x55b9ff0fadc0] [dec:h264 @ 0x55b9ff07bbc0] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x55b9ff0fadc0] All consumers of this stream are done
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff0791c0] All consumers are done
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff0791c0] Terminating thread with return code 0 (success)
+[vost#0:0/rawvideo @ 0x55b9ff07b340] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x55b9ff07b340] Terminating thread with return code 0 (success)
+[out#0/rawvideo @ 0x55b9ff0fa780] All streams finished
+[out#0/rawvideo @ 0x55b9ff0fa780] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x55b9ff0fe580] Statistics: 14556672 bytes written, 0 seeks, 56 writeouts
+[out#0/rawvideo @ 0x55b9ff0fa780] Output file #0 (/workspace/video-export-size-estimation/artifacts/development-fixed/static-leading2.i420):
+[out#0/rawvideo @ 0x55b9ff0fa780]   Output stream #0:0 (video): 117 frames encoded; 117 packets muxed (14556672 bytes); 
+[out#0/rawvideo @ 0x55b9ff0fa780]   Total: 117 packets (14556672 bytes) muxed
+[out#0/rawvideo @ 0x55b9ff0fa780] video:14216KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=  117 fps=0.0 q=-0.0 Lsize=   14216KiB time=00:00:04.87 bitrate=23887.9kbits/s speed= 178x    
+bench: utime=0.015s stime=0.039s rtime=0.028s
+bench: maxrss=41632KiB
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff0791c0] Input file #0 (/proc/self/fd/4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff0791c0]   Input stream #0:0 (video): 130 packets read (2214 bytes); 119 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55b9ff0791c0]   Total: 130 packets (2214 bytes) demuxed
+[AVIOContext @ 0x55b9ff081c00] Statistics: 18154 bytes read, 0 seeks

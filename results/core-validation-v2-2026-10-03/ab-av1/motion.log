@@ -1,0 +1,7 @@
+[2026-10-03T06:20:04Z INFO  ab_av1::command::sample_encode] encoding sample 1/3 crf 23
+[2026-10-03T06:20:04Z INFO  ab_av1::command::sample_encode] sample 1/3 crf 23 (65%)
+[2026-10-03T06:20:04Z INFO  ab_av1::command::sample_encode] encoding sample 2/3 crf 23
+[2026-10-03T06:20:04Z INFO  ab_av1::command::sample_encode] sample 2/3 crf 23 (67%)
+[2026-10-03T06:20:05Z INFO  ab_av1::command::sample_encode] encoding sample 3/3 crf 23
+[2026-10-03T06:20:05Z INFO  ab_av1::command::sample_encode] sample 3/3 crf 23 (67%)
+[2026-10-03T06:20:05Z INFO  ab_av1::command::sample_encode] crf 23 predicted video stream size 887.26 KiB (66%) taking 4 seconds

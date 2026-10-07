@@ -1,0 +1,53 @@
+Input #0, yuv4mpegpipe, from '/workspace/video-export-size-estimation/artifacts/industrial-v1/shaky-walk/Shaky_Walk_1920x1080_25fps.y4m':
+  Duration: 00:00:05.20, start: 0.000000, bitrate: 622081 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p(progressive), 1920x1080, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 25 tbn
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-continuous/e873b39941fd1e30abe1b5b79fed2eb464aba31ca2b6c12b12cc6228074f922b.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:05.20, start: 0.000000, bitrate: 16882 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 16878 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/shaky-walk-segmented/c6b2b30ee9ceaf89d2ecbeba650cd793fd07591b7adc068e88f0a5a2d3c82c04.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso6mp41
+  Duration: 00:00:05.20, start: 0.000000, bitrate: 17561 kb/s
+  Stream #2:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 17555 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+      Metadata:
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format:default
+  Stream #1:0 (h264) -> format:default
+  Stream #2:0 (h264) -> format:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+  ssim:default -> Stream #0:1 (wrapped_avframe)
+  psnr:default -> Stream #0:2 (wrapped_avframe)
+  ssim:default -> Stream #0:3 (wrapped_avframe)
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:1: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:2: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:3: Video: wrapped_avframe, yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+[ssim@segmented @ 0x7f890000bd80] SSIM Y:0.971153 (15.399066) U:0.994380 (22.502687) V:0.994865 (22.894223) All:0.978976 (16.772935)
+[psnr@segmented @ 0x7f890000b8c0] PSNR y:38.623503 u:50.944878 v:51.361707 average:40.264666 min:37.391700 max:46.554961
+[ssim@continuous @ 0x7f890000b500] SSIM Y:0.971174 (15.402181) U:0.994387 (22.508154) V:0.994867 (22.896238) All:0.978992 (16.776110)
+[psnr@continuous @ 0x7f890000b100] PSNR y:38.573042 u:50.981799 v:51.397655 average:40.216546 min:36.089300 max:46.898688
+[out#0/null @ 0x557a92b38000] video:223KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  130 fps= 44 q=-0.0 Lq=-0.0 q=-0.0 q=-0.0 size=N/A time=00:00:05.16 bitrate=N/A speed=1.74x    

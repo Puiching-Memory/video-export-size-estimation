@@ -1,0 +1,26 @@
+[
+  {
+    "id": "noise-soccer-game",
+    "publisher_md5": "867db8d23d1ed7e39c4ac350a7b48490",
+    "original_strict_decode_exit_code": 183,
+    "stderr": "[in#0/yuv4mpegpipe @ 0x5573e6e23080] Error during demuxing: Invalid data found when processing input\n[in#0/yuv4mpegpipe @ 0x5573e6e23080] Task finished with error code: -1094995529 (Invalid data found when processing input)\n[in#0/yuv4mpegpipe @ 0x5573e6e23080] Terminating thread with return code -1094995529 (Invalid data found when processing input)\n",
+    "transport_cleanup": {
+      "operation": "remove-one-terminal-newline",
+      "bytes_removed": 1,
+      "sha256": "a354bbe4a8faf950fbadc221e5d5c96dd72b3ebb43b2aef2f9ec822261800bfb",
+      "reason": "Publisher-MD5-matching object has an extra newline after all 130 complete frames; FFmpeg -xerror rejects the original at EOF. Keep original and create a separate byte-identical frame-payload copy."
+    }
+  },
+  {
+    "id": "shaky-baseball-4k",
+    "publisher_md5": "c1c3523304c1092772ad096bd8c48f55",
+    "original_strict_decode_exit_code": 183,
+    "stderr": "[in#0/yuv4mpegpipe @ 0x55577ff52080] Error during demuxing: Invalid data found when processing input\n[in#0/yuv4mpegpipe @ 0x55577ff52080] Task finished with error code: -1094995529 (Invalid data found when processing input)\n[in#0/yuv4mpegpipe @ 0x55577ff52080] Terminating thread with return code -1094995529 (Invalid data found when processing input)\n",
+    "transport_cleanup": {
+      "operation": "remove-one-terminal-newline",
+      "bytes_removed": 1,
+      "sha256": "8b2a2eb0e2eb3803c3ad44cccf4bd48551e02d83d089c475968a2a221a2418ea",
+      "reason": "Publisher-MD5-matching object has an extra newline after all 130 complete frames; FFmpeg -xerror rejects the original at EOF. Keep original and create a separate byte-identical frame-payload copy."
+    }
+  }
+]

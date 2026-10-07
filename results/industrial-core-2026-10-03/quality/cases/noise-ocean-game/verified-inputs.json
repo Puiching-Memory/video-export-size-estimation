@@ -1,0 +1,126 @@
+{
+  "source": "/workspace/video-export-size-estimation/artifacts/industrial-v1/noise-ocean-game/Noise_Ocean_1920x1080_60fps.y4m",
+  "source_sha256": "4476c6f068d5e29551cca2fdcdb6a02ca0b9f8943a2e083ce2d129c2726e0803",
+  "source_bytes": 404352842,
+  "source_inspection": {
+    "video": {
+      "codec_name": "rawvideo",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "duration": "2.166667"
+    },
+    "command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+      "-of",
+      "json",
+      "/workspace/video-export-size-estimation/artifacts/industrial-v1/noise-ocean-game/Noise_Ocean_1920x1080_60fps.y4m"
+    ]
+  },
+  "source_frame_count": {
+    "frames": 130,
+    "source_header": "YUV4MPEG2 W1920 H1080 F60:1 Ip A1:1 C420mpeg2 XYSCSS=420MPEG2",
+    "frame_payload_bytes": 3110400
+  },
+  "frame_rate": "60",
+  "modes": {
+    "continuous": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-continuous/6e0ac5af756bfffb0c3a505c02bc7ec7721171c08d4c27ef6a73159ffaeecc9b.mp4",
+      "sha256": "a566a392df7ea7ddc67a3b0662d57b2970809139efa7c41b4fb4a1ffc0757a22",
+      "file_bytes": 7874724,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "60/1",
+          "duration": "2.166667",
+          "nb_frames": "130",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-continuous/6e0ac5af756bfffb0c3a505c02bc7ec7721171c08d4c27ef6a73159ffaeecc9b.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "continuous",
+        "segment_seconds": 0.5
+      }
+    },
+    "segmented": {
+      "artifact": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-segmented/68cfd973426852ac6404582363553c17eb02044b1b8b1e7cdeb48fab9c96f985.mp4",
+      "sha256": "044024d2d2bc9b0513959f676f02a0c0cd025a1aac4088356132a41a5e725013",
+      "file_bytes": 7119484,
+      "inspection": {
+        "video": {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "60/1",
+          "duration": "2.166667",
+          "nb_read_packets": "130"
+        },
+        "command": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_packets",
+          "-show_entries",
+          "stream=codec_name,width,height,pix_fmt,avg_frame_rate,r_frame_rate,nb_frames,nb_read_packets,duration,color_range,color_space,color_transfer,color_primaries",
+          "-of",
+          "json",
+          "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/noise-ocean-game-segmented/68cfd973426852ac6404582363553c17eb02044b1b8b1e7cdeb48fab9c96f985.mp4"
+        ]
+      },
+      "export_configuration": {
+        "codec": "libx264",
+        "container": "mp4",
+        "crf": 23,
+        "preset": "medium",
+        "video_filter": null,
+        "audio_bitrate": 128000,
+        "drop_audio": false,
+        "export_mode": "segmented",
+        "segment_seconds": 0.5
+      }
+    }
+  },
+  "verification_wall_seconds": 1.1522853599963128
+}

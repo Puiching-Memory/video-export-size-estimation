@@ -1,0 +1,10 @@
+test_lookahead_uses_output_frames_and_preserves_encoding_cost (test_context_probe.ContextPolicy.test_lookahead_uses_output_frames_and_preserves_encoding_cost) ... ok
+test_window_bounds_and_tail_truncation_are_explicit (test_context_probe.ContextPolicy.test_window_bounds_and_tail_truncation_are_explicit) ... ok
+test_central_measurement_audio_selection_cost_and_cached_artifact (test_context_probe.RealContextProbe.test_central_measurement_audio_selection_cost_and_cached_artifact) ... ok
+test_dropped_audio_and_source_tail_are_reported (test_context_probe.RealContextProbe.test_dropped_audio_and_source_tail_are_reported) ... ok
+test_first_window_initialization_sei_is_separate_and_i_is_not_blindly_added (test_context_probe.RealContextProbe.test_first_window_initialization_sei_is_separate_and_i_is_not_blindly_added) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.447s
+
+OK

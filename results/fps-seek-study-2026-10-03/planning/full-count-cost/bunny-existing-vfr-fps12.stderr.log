@@ -1,0 +1,78 @@
+[h264 @ 0x558d58d08300] Reinit context to 640x368, pix_fmt: yuv420p
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/video-estimation-research/bunny.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    creation_time   : 2010-02-09T01:55:39.000000Z
+  Duration: 00:01:00.10, start: 0.000000, bitrate: 733 kb/s
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, stereo, fltp, 65 kb/s (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Video: h264 (Constrained Baseline), 1 reference frame (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, 612 kb/s, 23.96 fps, 24 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: none (rtp  / 0x20707472), 45 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+  Stream #0:3[0x4](eng): Data: none (rtp  / 0x20707472), 5 kb/s
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : hint media handler
+[out#0/null @ 0x558d58d1b780] Adding streams from explicit maps...
+[vost#0:0/wrapped_avframe @ 0x558d58d27840] Created video stream from input stream 0:1
+[Parsed_fps_0 @ 0x558d58dd60c0] 0 frames in, 0 frames out; 0 frames dropped, 0 frames duplicated.
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+[vost#0:0/wrapped_avframe @ 0x558d58d27840] Starting thread...
+[vf#0:0 @ 0x558d58d28c00] Starting thread...
+[vist#0:1/h264 @ 0x558d58d1b600] [dec:h264 @ 0x558d58dd5f00] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x558d58d05800] Starting thread...
+[h264 @ 0x558d58dd0bc0] Reinit context to 640x368, pix_fmt: yuv420p
+[graph -1 input from stream 0:1 @ 0x7fa284001940] w:640 h:360 pixfmt:yuv420p tb:1/600 fr:24/1 sar:0/1 csp:smpte170m range:tv
+[Parsed_fps_0 @ 0x7fa284001580] fps=12/1
+[graph -1 input from stream 0:1 @ 0x7fa284001940] video frame properties congruent with link at pts_time: 0
+[Parsed_fps_0 @ 0x7fa284001580] Set first pts to 0
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: mp42avc1
+    encoder         : Lavf61.7.103
+  Stream #0:0(eng): Video: wrapped_avframe, 1 reference frame, yuv420p(tv, smpte170m/smpte170m/bt709, progressive, topleft), 640x360, q=2-31, 200 kb/s, 12 fps, 12 tbn (default)
+      Metadata:
+        creation_time   : 2010-02-09T01:55:39.000000Z
+        handler_name    : Apple Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 wrapped_avframe
+[out#0/null @ 0x558d58d1b780] Starting thread...
+frame=  582 fps=0.0 q=-0.0 size=N/A time=00:00:48.50 bitrate=N/A speed=  97x    [in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x558d58d05800] EOF while reading input
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x558d58d05800] Terminating thread with return code 0 (success)
+[vist#0:1/h264 @ 0x558d58d1b600] [dec:h264 @ 0x558d58dd5f00] Decoder thread received EOF packet
+[vist#0:1/h264 @ 0x558d58d1b600] [dec:h264 @ 0x558d58dd5f00] Decoder returned EOF, finishing
+[vist#0:1/h264 @ 0x558d58d1b600] [dec:h264 @ 0x558d58dd5f00] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x558d58d28c00] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x558d58d28c00] All consumers returned EOF
+[vost#0:0/wrapped_avframe @ 0x558d58d27840] Encoder thread received EOF
+[Parsed_fps_0 @ 0x7fa284001580] 1440 frames in, 721 frames out; 719 frames dropped, 0 frames duplicated.
+[out#0/null @ 0x558d58d1b780] All streams finished
+[vf#0:0 @ 0x558d58d28c00] Terminating thread with return code 0 (success)
+[vost#0:0/wrapped_avframe @ 0x558d58d27840] Terminating thread with return code 0 (success)
+[out#0/null @ 0x558d58d1b780] Terminating thread with return code 0 (success)
+[out#0/null @ 0x558d58d1b780] Output file #0 (pipe:):
+[out#0/null @ 0x558d58d1b780]   Output stream #0:0 (video): 721 frames encoded; 721 packets muxed (317240 bytes); 
+[out#0/null @ 0x558d58d1b780]   Total: 721 packets (317240 bytes) muxed
+[out#0/null @ 0x558d58d1b780] video:310KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  721 fps=0.0 q=-0.0 Lsize=N/A time=00:01:00.08 bitrate=N/A speed=98.5x    
+[AVIOContext @ 0x558d58d056c0] Statistics: 371 bytes written, 0 seeks, 2 writeouts
+bench: utime=0.641s stime=0.041s rtime=0.613s
+bench: maxrss=39344KiB
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x558d58d05800] Input file #0 (/tmp/video-estimation-research/bunny.mp4):
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x558d58d05800]   Input stream #0:1 (video): 1440 packets read (4598601 bytes); 1440 frames decoded; 0 decode errors; 
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x558d58d05800]   Total: 1440 packets (4598601 bytes) demuxed
+[AVIOContext @ 0x558d58d0e080] Statistics: 5510872 bytes read, 0 seeks

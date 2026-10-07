@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "development_only_costed_replay",
+  "manifest_sha256": "228636910cc161c21569d0c2de3eb5c7143bf320cc446653ce6a7e5078bf78ee",
+  "script_sha256": "6258c068753166649384406c4a041ef205622309c954c90eddbc658370636adc",
+  "threads": 1,
+  "crf": 23,
+  "preset": "medium",
+  "audio": "dropped; corpus has no audio",
+  "rates": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "preview_resolution": [
+    96,
+    54
+  ],
+  "block_seconds": 2,
+  "pilots": 3,
+  "audits": 3,
+  "seed": 20261003,
+  "cost_accounting": "per-method cold probe times are charged even if experiments reuse measurements",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+}

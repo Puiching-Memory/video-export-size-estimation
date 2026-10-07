@@ -1,0 +1,78 @@
+{
+  "job": "temporal-30s",
+  "sampling_plan": "temporal",
+  "wall_budget_seconds": 30,
+  "state": "budget_exhausted",
+  "stop_reason": "subprocess exceeded wall-clock budget",
+  "unmet": [
+    "reliability_not_calibrated"
+  ],
+  "prediction_bytes": 14571781,
+  "uncertainty_kind": "uncalibrated",
+  "wall_seconds": 30.02046053900267,
+  "engine_elapsed_seconds": 30.019930419002776,
+  "first_estimate_seconds": 17.02766143700137,
+  "prepared_ingest_seconds": 2.227811062002729,
+  "ingest_plus_request_seconds": 32.2482716010054,
+  "charged_encode_seconds": 14.5,
+  "charged_encode_fraction": 0.020168768555345315,
+  "attempted_audio_seconds": 0.0,
+  "total_probe_count": 2,
+  "pilot_count": 3,
+  "selected_probe_mode": "context",
+  "prediction_family": {
+    "family_schema": 1,
+    "model_policy": "budgeted-content-or-temporal-residual-v2",
+    "configuration": {
+      "codec": "libx264",
+      "container": "mp4",
+      "preset": "veryfast",
+      "video_filter": "fps=12,scale=640:360",
+      "audio_bitrate": 128000,
+      "drop_audio": true,
+      "export_mode": "continuous",
+      "segment_seconds": 4.0
+    },
+    "crf_grid": [
+      23.0
+    ],
+    "sample_seconds": 4.0,
+    "probe_policy": {
+      "kind": "x264-central-packet-v1",
+      "leading_seconds": 2.0,
+      "lookahead_frames": 10,
+      "b_delay_frames": 3,
+      "guard_frames": 2,
+      "fps_rule": "last_explicit_fps_filter_else_source_average",
+      "payload_rule": "central_pts_exclude_init_sei_plus_periodic_i_candidate",
+      "global_initialization": "maximum_observed_added_once",
+      "container_model": "mp4_table_census_v1_else_2048_plus_6_per_frame",
+      "requested_mode": "auto",
+      "automatic_mode_rule": "freeze_before_encoding_if_all_padded_pilots_fit",
+      "max_encode_fraction": 0.2,
+      "bare_fallback": "independent-short-encode-v2",
+      "sampling_plan": "temporal",
+      "preview_rule": "4fps_96x54_mean_gradient_and_frame_difference",
+      "pilot_count_rule": "min_3_blocks_probe_limit_and_video_fraction"
+    },
+    "seed_strategy": {
+      "kind": "fixed",
+      "seed": 20261003
+    },
+    "toolchain_key": "764c5f67fdd267e43e612723595448d3b208d212baee7c127db2ef5014e06c60",
+    "threads": 1,
+    "variants": [
+      "original"
+    ],
+    "prefix_policy": {
+      "kind": "all_prefixes_up_to_maximum",
+      "minimum_prefix": 1,
+      "maximum_prefix": 6
+    }
+  },
+  "content_discovery": null,
+  "preview_observations": [],
+  "source_duration_seconds": 718.933333,
+  "cache_initially_empty": true,
+  "source_code_sha256": "f39dca1c9f04afec908f1171daa898e2bf4c3fa82073cdb5908d8b9eec562ee2"
+}

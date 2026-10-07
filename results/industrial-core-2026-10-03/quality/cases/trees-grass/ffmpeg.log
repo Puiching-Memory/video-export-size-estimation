@@ -1,0 +1,53 @@
+Input #0, yuv4mpegpipe, from '/workspace/video-export-size-estimation/artifacts/industrial-v1/trees-grass/TreesAndGrass_1920_1080_30fps_8bit.y4m':
+  Duration: 00:00:04.33, start: 0.000000, bitrate: 746497 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p(progressive), 1920x1080, 30 fps, 30 tbr, 30 tbn
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/trees-grass-continuous/3acbec4300b851da0e28053e352f9849f2c4e4ed3c11ea6a042b973e0abbfeeb.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:04.33, start: 0.000000, bitrate: 24303 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 24299 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/.vsize-cache/references/trees-grass-segmented/37eaa09c08f0013db1c11daeae07e74d101ae7fcfd3ac8b16887e93b3368ee77.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso6mp41
+  Duration: 00:00:04.33, start: 0.000000, bitrate: 26753 kb/s
+  Stream #2:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 26746 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (rawvideo) -> format:default
+  Stream #1:0 (h264) -> format:default
+  Stream #2:0 (h264) -> format:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+  ssim:default -> Stream #0:1 (wrapped_avframe)
+  psnr:default -> Stream #0:2 (wrapped_avframe)
+  ssim:default -> Stream #0:3 (wrapped_avframe)
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 1920x1080, q=2-31, 200 kb/s, 1000k tbn (default)
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:1: Video: wrapped_avframe, yuv420p(progressive), 1920x1080, q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:2: Video: wrapped_avframe, yuv420p(progressive), 1920x1080, q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+  Stream #0:3: Video: wrapped_avframe, yuv420p(progressive), 1920x1080, q=2-31, 200 kb/s, 1000k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+[ssim@segmented @ 0x7f0f1800c2c0] SSIM Y:0.953974 (13.369921) U:0.934364 (11.828570) V:0.959695 (13.946411) All:0.951659 (13.156827)
+[psnr@segmented @ 0x7f0f1800be00] PSNR y:32.566231 u:39.343661 v:43.020934 average:34.012980 min:32.462024 max:37.476025
+[ssim@continuous @ 0x7f0f1800ba40] SSIM Y:0.955527 (13.519003) U:0.934310 (11.825018) V:0.959668 (13.943541) All:0.952681 (13.249632)
+[psnr@continuous @ 0x7f0f1800b640] PSNR y:32.713435 u:39.357435 v:43.037694 average:34.150803 min:32.440331 max:37.047670
+[out#0/null @ 0x560a7a439000] video:223KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  130 fps= 50 q=-0.0 Lq=-0.0 q=-0.0 q=-0.0 size=N/A time=00:00:04.30 bitrate=N/A speed=1.65x    

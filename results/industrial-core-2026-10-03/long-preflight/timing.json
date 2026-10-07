@@ -1,0 +1,47 @@
+[
+  {
+    "window_start_seconds": 60,
+    "window_seconds": 10,
+    "wall_seconds": 21.127570994998678,
+    "state": "completed",
+    "error": null,
+    "extrapolated_full_timeline_seconds": 1518.9347788406092,
+    "scale": "640:360",
+    "output_fps": 12,
+    "preset": "veryfast",
+    "threads": 1,
+    "native_4k_validated": false,
+    "prediction_accuracy_evaluated": false,
+    "warning": "Sparse throughput windows are an estimate, not a full-length completion proof."
+  },
+  {
+    "window_start_seconds": 300,
+    "window_seconds": 10,
+    "wall_seconds": 20.545404659998894,
+    "state": "completed",
+    "error": null,
+    "extrapolated_full_timeline_seconds": 1477.0808102272429,
+    "scale": "640:360",
+    "output_fps": 12,
+    "preset": "veryfast",
+    "threads": 1,
+    "native_4k_validated": false,
+    "prediction_accuracy_evaluated": false,
+    "warning": "Sparse throughput windows are an estimate, not a full-length completion proof."
+  },
+  {
+    "window_start_seconds": 600,
+    "window_seconds": 10,
+    "wall_seconds": 12.93087069899775,
+    "state": "completed",
+    "error": null,
+    "extrapolated_full_timeline_seconds": 929.6454017382367,
+    "scale": "640:360",
+    "output_fps": 12,
+    "preset": "veryfast",
+    "threads": 1,
+    "native_4k_validated": false,
+    "prediction_accuracy_evaluated": false,
+    "warning": "Sparse throughput windows are an estimate, not a full-length completion proof."
+  }
+]

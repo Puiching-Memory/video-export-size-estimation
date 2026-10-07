@@ -1,0 +1,32 @@
+{
+  "adapter_suite": {
+    "tests": 18,
+    "seconds": 27.302,
+    "passed": true,
+    "note": "after fixing cache same-config test and using actual-admissible rawvideo regression"
+  },
+  "final_bgr24_specific_regression": {
+    "tests": 1,
+    "seconds": 2.878,
+    "passed": true
+  },
+  "engine_existing_integration": {
+    "tests": 6,
+    "seconds": 21.957,
+    "passed": true
+  },
+  "engine_complete_cache_pipeline_version_regression": {
+    "tests": 1,
+    "seconds": 7.779,
+    "passed": true
+  },
+  "ruff": {
+    "passed": true
+  },
+  "historical_accuracy_reevaluated": false,
+  "full_suite": "Parent runs separately after integration",
+  "missing_first_timestamp_regression": {
+    "passed": true,
+    "scope": "empty frames plus video/audio first frame without timestamps followed by valid later frame"
+  }
+}

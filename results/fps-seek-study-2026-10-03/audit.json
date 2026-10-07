@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "window_runner_matches": true,
+    "planning_runner_matches": true,
+    "plan_cost_runner_matches": true,
+    "frozen_src_unchanged_during_windows": true,
+    "frozen_src_unchanged_during_planning": true,
+    "frozen_src_unchanged_during_plan_cost": true
+  },
+  "results_jsonl_sha256": "9d5606fb60d2a95e86ef31337a974176f02cb6729351f5518ae2e418efc017cb",
+  "plan_results_sha256": "35c1458c631dd9ccc8a80209636d5576ecc39544b661cf5336d940c3df4441fc",
+  "completed": true
+}

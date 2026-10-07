@@ -1,0 +1,483 @@
+{
+  "development_only": true,
+  "not_accuracy_evaluation": true,
+  "source_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-y",
+    "-threads",
+    "1",
+    "-filter_threads",
+    "1",
+    "-filter_complex_threads",
+    "1",
+    "-copyts",
+    "-f",
+    "lavfi",
+    "-i",
+    "testsrc2=s=128x96:r=24:d=1",
+    "-f",
+    "lavfi",
+    "-i",
+    "anullsrc=r=48000:cl=mono",
+    "-map",
+    "0:v:0",
+    "-map",
+    "1:a:0",
+    "-vf",
+    "setpts=PTS+5.125/TB",
+    "-c:v",
+    "rawvideo",
+    "-pix_fmt",
+    "bgr24",
+    "-allow_raw_vfw",
+    "1",
+    "-threads",
+    "1",
+    "-c:a",
+    "aac",
+    "-t",
+    "7",
+    "/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/maintenance/rawvideo-delayed-video.mkv"
+  ],
+  "source_sha256": "e69c135e0d1f189c6fe53d41b91b34f4a6d87dd146fc513b22e91b39b708d347",
+  "frozen_adapter_path": "/workspace/video-export-size-estimation/results/industrial-core-2026-10-03/holdout/code/src/vsize/segmented_media.py",
+  "frozen_adapter_sha256": "97ea15c85e6135a612adf8d8b1a20b4dbcd01f33a7f6f26b111bd509ebb77c91",
+  "source_stream_summary": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "rawvideo",
+        "codec_long_name": "raw video",
+        "codec_type": "video",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "width": 128,
+        "height": 96,
+        "coded_width": 128,
+        "coded_height": 96,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "4:3",
+        "pix_fmt": "bgr24",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "gbr",
+        "field_order": "progressive",
+        "refs": 1,
+        "r_frame_rate": "1000/1",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/1000",
+        "start_pts": -21,
+        "start_time": "-0.021000",
+        "duration_ts": 7021,
+        "duration": "7.021000",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "ENCODER": "Lavc61.19.101 rawvideo",
+          "DURATION": "00:00:06.083000000"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 1024,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/1000",
+        "start_pts": -21,
+        "start_time": "-0.021000",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "ENCODER": "Lavc61.19.101 aac",
+          "DURATION": "00:00:07.021000000"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/maintenance/rawvideo-delayed-video.mkv",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "matroska,webm",
+      "format_long_name": "Matroska / WebM",
+      "start_time": "-0.021000",
+      "duration": "7.021000",
+      "size": "889905",
+      "bit_rate": "1013992",
+      "probe_score": 100,
+      "tags": {
+        "ENCODER": "Lavf61.7.103"
+      }
+    }
+  },
+  "input_first_video": {
+    "frames": [
+      {
+        "pts": 5125
+      },
+      {
+        "pts": 5167
+      },
+      {
+        "pts": 5208
+      },
+      {
+        "pts": 5250
+      },
+      {
+        "pts": 5292
+      },
+      {
+        "pts": 5333
+      },
+      {
+        "pts": 5375
+      },
+      {
+        "pts": 5417
+      }
+    ],
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "pix_fmt": "bgr24",
+        "time_base": "1/1000",
+        "start_pts": -21,
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "ENCODER": "Lavc61.19.101 rawvideo",
+          "DURATION": "00:00:06.083000000"
+        }
+      }
+    ]
+  },
+  "input_first_audio": {
+    "frames": [
+      {
+        "pts": -21,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 0,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 21,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 43,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 64,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 85,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 107,
+        "nb_samples": 1024
+      },
+      {
+        "pts": 128,
+        "nb_samples": 1024
+      }
+    ],
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "time_base": "1/1000",
+        "start_pts": -21,
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "ENCODER": "Lavc61.19.101 aac",
+          "DURATION": "00:00:07.021000000"
+        }
+      }
+    ]
+  },
+  "legacy_plan": {
+    "pipeline": "independent-cfr-x264-v1",
+    "semantics": "independent_segments",
+    "source_hash": "e69c135e0d1f189c6fe53d41b91b34f4a6d87dd146fc513b22e91b39b708d347",
+    "toolchain_key": "905401be530fb5a0fd6fb4986edf1f24a91f9fc45aaac1d6eee46520bc6ee1f7",
+    "plan_hash": "a3bf6722c943053fceebba7bd1c0cb978d9bcb252fe027dc7b1bff6f573cf789",
+    "source_frames": 24,
+    "source_geometry": [
+      128,
+      96
+    ],
+    "source_frame_count_method": "one_picture_per_sample; per-segment encoded count verified",
+    "output_rate": "12",
+    "total_frames": 12,
+    "duration": 1.0,
+    "segment_frames": 6,
+    "segments": [
+      {
+        "index": 0,
+        "start_frame": 0,
+        "frame_count": 6,
+        "start_tick": null,
+        "end_tick": null
+      },
+      {
+        "index": 1,
+        "start_frame": 6,
+        "frame_count": 6,
+        "start_tick": null,
+        "end_tick": null
+      }
+    ],
+    "prepare_seconds": 0.32930644499720074,
+    "prepare_cache_hit": false,
+    "source_identity_verified_at_publication": false,
+    "fps_conversion_access": "decode_from_start"
+  },
+  "legacy_output": {
+    "path": "/workspace/video-export-size-estimation/results/fps-seek-study-2026-10-03/maintenance/legacy-lost-delay.mp4",
+    "sha256": "806bddee1feca86c20bbf2cd27464c7f3a6f8a088b1643c636c682e7456ebcf4",
+    "bytes": 21123,
+    "exact_byte_accounting": true,
+    "first_video": {
+      "frames": [
+        {
+          "pts": 0,
+          "side_data_list": [
+            {
+              "side_data_type": "H.26[45] User Data Unregistered SEI message"
+            }
+          ]
+        },
+        {
+          "pts": 1024
+        },
+        {
+          "pts": 2048
+        },
+        {
+          "pts": 3072
+        },
+        {
+          "pts": 4096
+        },
+        {
+          "pts": 5120
+        },
+        {
+          "pts": 6144,
+          "side_data_list": [
+            {
+              "side_data_type": "H.26[45] User Data Unregistered SEI message"
+            }
+          ]
+        },
+        {
+          "pts": 10240
+        }
+      ],
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "pix_fmt": "yuv420p",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ]
+    },
+    "first_audio": {
+      "frames": [
+        {
+          "pts": 0,
+          "nb_samples": 1024
+        },
+        {
+          "pts": 1024,
+          "nb_samples": 1024
+        },
+        {
+          "pts": 2040,
+          "nb_samples": 1024
+        },
+        {
+          "pts": 3064,
+          "nb_samples": 1024
+        },
+        {
+          "pts": 4088,
+          "nb_samples": 1024
+        },
+        {
+          "pts": 5112,
+          "nb_samples": 1024
+        },
+        {
+          "pts": 6136,
+          "nb_samples": 1024
+        }
+      ],
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ]
+    },
+    "full_decode_passed": true
+  },
+  "maintenance_rejection": "independent-segment MP4 currently requires aligned video/audio starts in decoded presentation frames"
+}

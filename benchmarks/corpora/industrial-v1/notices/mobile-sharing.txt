@@ -1,0 +1,4 @@
+Digital Video Sequence “MobileDeviceScreenSharing_1078x2220_15fps”, “SceneComposition_1920x1080_15fps”, "MobileScreenSharing", "SceneComposition-1", "SceneComposition-2", and "SceneComposition-3"
+Content is subject to CC-BY-SA-4.0 license, subject to Copyright © Yu-Chen Sun
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+CC BY-SA 4.0

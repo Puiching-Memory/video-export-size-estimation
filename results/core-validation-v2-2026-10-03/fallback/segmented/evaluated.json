@@ -1,0 +1,369 @@
+[
+  {
+    "case": "static",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 39566,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 1.8047070710017579,
+    "first_estimate_seconds": 0.6690626780036837,
+    "first_estimate_reported_seconds": 0.6690148299967404,
+    "prepared_ingest_seconds": 0.00033425300352973863,
+    "cold_ingest_plus_request_seconds": 1.8050249660009285,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.17443556700163754,
+      "key": "d4760af3ddca5837175f778343e3adcdc9c4f61b8244a5ccf208e35df8a12b46",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 39566,
+    "signed_error_percent": 0.0,
+    "absolute_error_percent": 0.0,
+    "wall_vs_full_reference": 0.16549928959466914
+  },
+  {
+    "case": "motion",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 942078,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 2.6443839139974443,
+    "first_estimate_seconds": 1.0359347999983584,
+    "first_estimate_reported_seconds": 1.035933623003075,
+    "prepared_ingest_seconds": 0.004720320997876115,
+    "cold_ingest_plus_request_seconds": 2.649092138999549,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.35361389799800236,
+      "key": "ea094156b72dab5c8c05b7a72292c32b5de4acabe5e96eae97a1153a21dfd7b6",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 936150,
+    "signed_error_percent": 0.6332318538695647,
+    "absolute_error_percent": 0.6332318538695647,
+    "wall_vs_full_reference": 0.26650446107809267
+  },
+  {
+    "case": "grain",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 6054295,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 7.3824673280032584,
+    "first_estimate_seconds": 2.99336858499737,
+    "first_estimate_reported_seconds": 2.993367319002573,
+    "prepared_ingest_seconds": 0.02116141499573132,
+    "cold_ingest_plus_request_seconds": 7.403617186995689,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 1.852604200001224,
+      "key": "91e79d71c9107fa7f1e2fd544daa0a5fc50e46ed68b3efa5f762cdf16fcb53a1",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 6057720,
+    "signed_error_percent": -0.05653942407374268,
+    "absolute_error_percent": 0.05653942407374268,
+    "wall_vs_full_reference": 0.31726767299070757
+  },
+  {
+    "case": "brief-burst",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 1411668,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 3.50275444300496,
+    "first_estimate_seconds": 0.9326431230001617,
+    "first_estimate_reported_seconds": 0.9326416430048994,
+    "prepared_ingest_seconds": 0.005165094000403769,
+    "cold_ingest_plus_request_seconds": 3.507908158004284,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.3991985810062033,
+      "key": "a1b1b1e3a2451d9cb0b9c29820d5e7195f329d950d76d3b18f101d97e632dca5",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 1435333,
+    "signed_error_percent": -1.6487463187984996,
+    "absolute_error_percent": 1.6487463187984996,
+    "wall_vs_full_reference": 0.33988307096395437
+  },
+  {
+    "case": "cbr-burst",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 784260,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 3.0212451980041806,
+    "first_estimate_seconds": 0.9647706799951266,
+    "first_estimate_reported_seconds": 0.9647693909937516,
+    "prepared_ingest_seconds": 0.005986652002320625,
+    "cold_ingest_plus_request_seconds": 3.027214224995987,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.256695372001559,
+      "key": "cb30402c267313da0d0e8ef4a02e277c7d67ab1af283076c6cb188fade305a3f",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 689306,
+    "signed_error_percent": 13.77530443663626,
+    "absolute_error_percent": 13.77530443663626,
+    "wall_vs_full_reference": 0.32996655570156763
+  },
+  {
+    "case": "alternating",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 4089544,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 4.953225498000393,
+    "first_estimate_seconds": 1.9049487560041598,
+    "first_estimate_reported_seconds": 1.9049475110005005,
+    "prepared_ingest_seconds": 0.01280173799750628,
+    "cold_ingest_plus_request_seconds": 4.966015787002107,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 1.0064325499988627,
+      "key": "2078f6213d34a293ad2f1c9448ba42a8de693f584dd0d092eb8b93e595359702",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 4102371,
+    "signed_error_percent": -0.31267284211983215,
+    "absolute_error_percent": 0.31267284211983215,
+    "wall_vs_full_reference": 0.32275099888322045
+  },
+  {
+    "case": "screen",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 193846,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 2.0800217380019603,
+    "first_estimate_seconds": 0.7695956460011075,
+    "first_estimate_reported_seconds": 0.7695944190054433,
+    "prepared_ingest_seconds": 0.0007381730029010214,
+    "cold_ingest_plus_request_seconds": 2.080734390008729,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.25,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.21595965099550085,
+      "key": "617f12241a29fe7b584703aec36c41a63c2d976c6061d19f40aa94cdf4902901",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 191873,
+    "signed_error_percent": 1.028284333908358,
+    "absolute_error_percent": 1.028284333908358,
+    "wall_vs_full_reference": 0.24604354233636153
+  },
+  {
+    "case": "pedestrians",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "constraints_unmet",
+    "unmet": [
+      "reliability_not_calibrated"
+    ],
+    "prediction_bytes": 1392208,
+    "uncertainty_kind": "uncalibrated",
+    "wall_seconds": 2.3305712430010317,
+    "first_estimate_seconds": 0.8715820710058324,
+    "first_estimate_reported_seconds": 0.871580664999783,
+    "prepared_ingest_seconds": 0.0029198100019129924,
+    "cold_ingest_plus_request_seconds": 2.333477872001822,
+    "encoded_media_seconds": 6.0,
+    "encoded_media_fraction": 0.15,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": "actual_export_segments",
+    "total_probe_count": 6,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.3065243710007053,
+      "key": "43df0354c1e4963b507889543037df495f86100d4d52be811a24d1050f625273",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 1389837,
+    "signed_error_percent": 0.17059554465739257,
+    "absolute_error_percent": 0.17059554465739257,
+    "wall_vs_full_reference": 0.13820927781040393
+  },
+  {
+    "case": "megamind",
+    "method": "segmented",
+    "lifecycle": "prepared",
+    "budget_seconds": 10,
+    "max_encode_fraction": null,
+    "state": "satisfied",
+    "unmet": [],
+    "prediction_bytes": 300591,
+    "uncertainty_kind": "exact",
+    "wall_seconds": 6.0511443950017565,
+    "first_estimate_seconds": 0.894028326998523,
+    "first_estimate_reported_seconds": 0.8940270929961116,
+    "prepared_ingest_seconds": 0.0011290230031590909,
+    "cold_ingest_plus_request_seconds": 6.05224427000212,
+    "encoded_media_seconds": 10.927594260927592,
+    "encoded_media_fraction": 1.000000023877863,
+    "attempted_audio_seconds": 0.0,
+    "selected_probe_mode": null,
+    "total_probe_count": 1,
+    "pilot_count": 3,
+    "content_discovery": {
+      "cache_hit": false,
+      "elapsed_seconds": 0.23209965600108262,
+      "key": "9430c02cae87d6cc022ab2c903bf0bfb47d692733b0d3153660cc2571aa354a7",
+      "preview_fps": 4,
+      "resolution": [
+        96,
+        54
+      ]
+    },
+    "sampling_plan": "content",
+    "sample_seconds": 1.0,
+    "target": "segmented_mp4",
+    "actual_bytes": 300591,
+    "signed_error_percent": 0.0,
+    "absolute_error_percent": 0.0,
+    "wall_vs_full_reference": 1.0003910346133758
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "type": "estimate",
+    "estimated_bytes": 14069646,
+    "estimated_payload_bytes": 14067385.58456,
+    "fixed_bytes": 2260,
+    "sampled_seconds": 0.5,
+    "sample_count": 1,
+    "audit_count": 0,
+    "sampling_standard_error_bytes": null,
+    "uncertainty": {
+      "kind": "uncalibrated",
+      "interval_bytes": null,
+      "coverage": null,
+      "reason": "Sampling variance excludes encoder-context and muxing-model bias."
+    },
+    "container_model": "probe_mp4_sample_table_extrapolation",
+    "export_mode": "continuous",
+    "probe_mode": "bare",
+    "bias_status": "continuous_encoder_state_is_approximated",
+    "selected_crf": 23,
+    "artifact": null,
+    "source_hash": "0cc6405eb5f37318951d780dd1d4b0a3c0763aa087ba32fd9b89b1dededc4ccb",
+    "observed_blocks": [
+      2
+    ],
+    "pilot_indices": [
+      2
+    ],
+    "elapsed_seconds": 4.988221760002489
+  }
+]

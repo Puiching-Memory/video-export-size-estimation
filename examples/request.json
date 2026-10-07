@@ -1,0 +1,9 @@
+{
+  "encode": {"source": "input.mp4", "crf": 23, "preset": "medium"},
+  "compute": {"wall_seconds": 8, "max_probes": 6, "threads": 2},
+  "reliability": {"relative_error": 0.1, "coverage": 0.95},
+  "size": {"max_bytes": 20000000, "max_crf": 32, "max_candidates": 4},
+  "sample_seconds": 1,
+  "sampling_plan": "content",
+  "seed": 20261002
+}

@@ -1,0 +1,29 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/proc/self/fd/4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:40.00, start: 0.000000, bitrate: 219 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 384x288, 218 kb/s, 10 fps, 10 tbr, 10240 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+Output #0, rawvideo, to '/workspace/video-export-size-estimation/artifacts/first-match/pedestrians-leading2.i420':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Stream #0:0(und): Video: rawvideo (I420 / 0x30323449), yuv420p(progressive), 384x288, q=2-31, 13271 kb/s, 10 fps, 10 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/rawvideo @ 0x5569e45e8e40] video:12150KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=   75 fps=0.0 q=-0.0 Lsize=   12150KiB time=00:00:07.50 bitrate=13271.0kbits/s speed=61.6x    
+bench: utime=0.111s stime=0.015s rtime=0.122s
+bench: maxrss=38416KiB

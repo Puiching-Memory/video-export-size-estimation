@@ -1,0 +1,8 @@
+Digital Video Sequence "Glass Half"
+
+Copyright (C) Blender Cloud.
+
+Author: Ton Roosendaal
+
+The content is licensed under CC-BY 4.0	
+https://creativecommons.org/licenses/by/4.0/
